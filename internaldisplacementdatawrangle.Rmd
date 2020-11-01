@@ -1,0 +1,23 @@
+---
+title: "Data Wrangling for Internal Displacement Data"
+author: "Mythili Subbanna"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r, setup, include=FALSE}
+
+knitr::opts_chunk$set(
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
+```
+
+## Importing Excel File
+
+
+```{r cars}
+summary(cars)
+```
+

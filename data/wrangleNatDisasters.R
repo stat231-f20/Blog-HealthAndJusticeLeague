@@ -45,18 +45,18 @@ library(janitor)
 # read in the csv file
 my_path <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague"
 data <- read_excel(paste0(my_path,"/data/naturaldisasters.xlsx"), 
-                               col_types = c("skip", "text", "text", 
-                                             "text", "text", "text", "text", "text", 
-                                             "text", "text", "text", "text", "text", 
-                                             "text", "skip", "text", "text", "skip", 
-                                             "skip", "skip", "skip", "numeric", 
-                                             "numeric", "text", "text", "text", 
-                                             "text", "text", "numeric", "numeric", 
-                                             "numeric", "numeric", "numeric", 
-                                             "numeric", "numeric", "numeric", 
-                                             "numeric", "numeric", "numeric", 
-                                             "numeric", "numeric", "numeric", 
-                                             "numeric"))
+                   col_types = c("skip", "text", "text", 
+                                 "text", "text", "text", "text", "text", 
+                                 "text", "text", "text", "text", "text", 
+                                 "text", "skip", "text", "text", "skip", 
+                                 "skip", "skip", "skip", "numeric", 
+                                 "numeric", "text", "text", "text", 
+                                 "text", "text", "numeric", "numeric", 
+                                 "numeric", "numeric", "numeric", 
+                                 "numeric", "numeric", "numeric", 
+                                 "numeric", "numeric", "numeric", 
+                                 "numeric", "numeric", "numeric", 
+                                 "numeric"))
 
 data <- data %>% clean_names()
 
@@ -70,7 +70,7 @@ data1 <- data %>%
             entry_criteria, origin, associated_dis, aid_contribution, local_time,
             river_basin)) %>%
   rename(countrycode = iso, lat = latitude, long=longitude)
-  
+
 
 # convert latitude and longitude into numeric types
 # negative latitude if in the Southern hemisphere
@@ -98,4 +98,4 @@ datafinal <- data2 %>%
 
 write_csv(x = datafinal, 
           path = paste0(my_path,"/data/wrangled_natdisasters.csv"))
-  
+

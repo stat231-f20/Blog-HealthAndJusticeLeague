@@ -9,8 +9,6 @@ library(janitor)
 # WEBSITE: https://public.emdat.be/data
 # International Disaster database
 
-
-
 ######################################
 
 #TODO: Basic information about this dataset
@@ -62,8 +60,42 @@ data <- read_excel(paste0(my_path,"/data/naturaldisasters.xlsx"),
 
 data <- data %>% clean_names()
 
+data %>% filter(latitude == "-17.82")
 
+names(data)
 
-write_csv(x = data2, 
+#remove unnecessary variables
+data1 <- data %>%
+  select(-c(seq, disaster_subtype, disaster_subsubtype, event_name, 
+            entry_criteria, origin, associated_dis, aid_contribution, local_time,
+            river_basin)) %>%
+  rename(countrycode = iso, lat = latitude, long=longitude)
+  
+
+# convert latitude and longitude into numeric types
+# negative latitude if in the Southern hemisphere
+# negative longitude if in the Western hemisphere
+data2 <- data1 %>%
+  separate(col = lat, into = c("latnum", "latdir"), sep = " ", remove = TRUE) %>%
+  separate(col = long, into = c("longnum", "longdir"), sep = " ", remove = TRUE) %>%
+  mutate(latnum = as.numeric(latnum),
+         longnum = as.numeric(longnum)) %>%
+  mutate(latnumneg = latnum * -1, longnumneg = longnum * -1) %>%
+  select(-c(26, 27, 28)) %>%
+  rowwise() %>%
+  mutate(latitude = case_when(
+    (latnum >= 0 && latdir == "S") ~ latnumneg,
+    TRUE ~ latnum
+  )) %>%
+  rowwise() %>%
+  mutate(longitude = case_when(
+    (longnum >= 0 && longdir == "W") ~ longnumneg,
+    TRUE ~ longnum
+  ))
+
+datafinal <- data2 %>%
+  select(c(1:10), latitude, longitude, c(15:25), -disaster_group)
+
+write_csv(x = datafinal, 
           path = paste0(my_path,"/data/wrangled_natdisasters.csv"))
   

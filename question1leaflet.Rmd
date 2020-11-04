@@ -1,0 +1,77 @@
+---
+title: "Untitled"
+author: "Bella Han"
+date: "11/4/2020"
+output: html_document
+---
+
+```{r, message = FALSE}
+#loading packages
+library(tidyverse)
+library(readr)
+library(dplyr)
+library(maps)
+library(leaflet)
+```
+
+```{r, message = FALSE, warning = FALSE}
+#loading datasets
+path_bella <- "C:/Users/Bella/Desktop/git/Blog-HealthAndJusticeLeague/data"
+data_healthimp <- read_csv(paste0(path_bella,
+                             "/wrangled_HEimpacts.csv"))
+data_air <- read_csv(paste0(path_bella, 
+                            "/wrangled_PM25popexp.csv"))
+
+data_air <- data_air%>%
+  rename(Y1990 = "1990")
+```
+
+
+```{r, message = FALSE}
+#SOMEONE HELP ME WITH WRANGLING
+world_leaflet <- map("world", fill = TRUE, plot = FALSE)
+world_leaflet$names <- data_air$Country
+world_leaflet$Y1990 <- data_air$Y1990
+
+#world_leaflet$names == data_air$Country
+bins <- c(0, 10, 20, 30, 50, 70, 80, Inf)
+
+pal <- colorBin("YlOrRd", domain = world_leaflet$Y1990, bins = bins)
+
+labels <- sprintf(
+  "<strong>%s</strong><br/>%g µg / m<sup>3</sup>",
+  data_air$Country, world_leaflet$Y1990
+) %>% lapply(htmltools::HTML)
+
+leaflet(data = world_leaflet)%>%
+  addTiles()%>%
+  setView(0, 0, zoom = 1)%>%
+  addPolygons(fillColor = ~pal(Y1990),
+              weight = 2,
+              opacity = 1,
+              color = "white",
+              dashArray = "3",
+              fillOpacity = 0.7,
+              highlight = highlightOptions(weight = 5,
+                                           color = "#666",
+                                           dashArray = "",
+                                           fillOpacity = 0.7,
+                                           bringToFront = TRUE),
+              label = labels,
+              labelOptions = labelOptions(
+                style = list("font-weight" = "normal", padding = "3px 8px"),
+                textsize = "15px",
+                direction = "auto"))%>%
+  addLegend(pal = pal, values = ~Y1990, opacity = 0.7, title = NULL,
+    position = "bottomright")
+
+```
+
+
+```{r}
+# matches <- match(world_leaflet$names, data_air$Country)
+# matches <- matches[!is.na(matches)]
+# world_leaflet$names <- world_leaflet$names[-matches]
+```
+
+

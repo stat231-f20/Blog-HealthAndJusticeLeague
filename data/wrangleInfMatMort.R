@@ -1,6 +1,9 @@
 #wrangling done by Mythili
 
 
+#WHAT'S LEFT:
+####normalize values (subtract mean, divide by standard deviation or something)
+
 #loading packages
 library(readr)
 library(dplyr)

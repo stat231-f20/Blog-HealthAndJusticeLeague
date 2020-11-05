@@ -93,11 +93,47 @@ data2 <- data1 %>%
     TRUE ~ longnum
   ))
 
+relevant <- c("Drought", "Storm", "Flood", "Landslide", 
+              "Wildfire", "Extreme temperature")
+
 datafinal <- data2 %>%
-  select(c(1:10), latitude, longitude, c(15:25), -disaster_group)
+  select(c(1:10), c(15:25), -c(disaster_group, disaster_subgroup, starts_with("start_"), starts_with("end_"))) %>%
+  filter(disaster_type %in% relevant)
+
+datafinal_yearsum <- datafinal %>%
+  group_by(year, country, countrycode, disaster_type) %>%
+  summarize(deaths = sum(total_deaths, na.rm = TRUE), 
+            injured = sum(no_injured, na.rm = TRUE),
+            affected = sum(no_affected, na.rm = TRUE),
+            homeless = sum(no_homeless, na.rm = TRUE),
+            occurrence = n())
+
+datafinal_summary <- datafinal_yearsum %>%
+  pivot_longer(cols = c(deaths, injured, affected, homeless, occurrence),
+               names_to = "category",
+               values_to = "value") %>%
+  pivot_wider(id_cols = c(year, country, countrycode),
+              names_from = c(disaster_type, category),
+              values_from = value,
+              values_fill = 0) %>%
+  select(year, country, countrycode, ends_with("occurrence"), 
+         ends_with("deaths"), everything()) 
+
+datafinal_summary$totaldeaths <- rowSums(datafinal_summary[, 10:15], na.rm=TRUE)
+datafinal_summary$totalaffected <- rowSums(datafinal_summary[, 16:33], na.rm = TRUE)
+
+
+datafinal_summary <- datafinal_summary %>%
+  select(-c(10:33))
 
 write_csv(x = datafinal, 
           path = paste0(my_path,"/data/wrangled_natdisasters.csv"))
+
+write_csv(x = datafinal_yearsum, 
+          path =  paste0(my_path,"/data/wrangled_natdisasters_byyear.csv"))
+
+write_csv(x = datafinal_yearsum, 
+          path =  paste0(my_path,"/data/wrangled_natdisasters_briefsum.csv"))
 
 # To also merge latitude and longitude data,
 # library(maps)

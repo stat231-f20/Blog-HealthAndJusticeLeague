@@ -99,3 +99,6 @@ datafinal <- data2 %>%
 write_csv(x = datafinal, 
           path = paste0(my_path,"/data/wrangled_natdisasters.csv"))
 
+# To also merge latitude and longitude data,
+# library(maps)
+# world_map <- map_data(map = "world2", region = ".")

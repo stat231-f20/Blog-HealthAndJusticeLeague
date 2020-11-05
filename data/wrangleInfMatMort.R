@@ -18,25 +18,11 @@ origMATERN <- read_csv(paste0(path_in,"/maternalmortalityorig.csv"))
 
 
 
-#selecting necessary columns
-
-world_map <- map_data(map = "world", region = ".") %>%
-  select(c(5, 1:3))
-
-
-
 #informatively naming columns; joining infant mortality data w/ lat & long data
 
 reducedcolumnsINFANT <- origINFANT %>%
   select(c(5:6, 8:9)) %>%
-  rename(deaths_per_1000_live_births = 'Value') %>%
-  right_join(world_map, by = c("Country" = "region"))
-
-
-
-#rearranging columns so latitude and longitude are next to country
-
-reducedcolumnsINFANT <- reducedcolumnsINFANT[c(1:2, 5:7, 3:4)]
+  rename(deaths_per_1000_live_births = 'Value')
 
 
 
@@ -44,14 +30,13 @@ reducedcolumnsINFANT <- reducedcolumnsINFANT[c(1:2, 5:7, 3:4)]
 
 reducedcolumnsMATERN <- origMATERN %>%
   select(c(5:6, 8:9)) %>%
-  rename(deaths_per_100000_live_births = 'Value') %>%
-  right_join(world_map, by = c("Country" = "region"))
+  rename(deaths_per_100000_live_births = 'Value')
 
 
 
-#rearranging columns so latitude and longitude are next to country
-
-reducedcolumnsMATERN <- reducedcolumnsMATERN[c(1:2, 5:7, 3:4)]
+#combining tables for clustering
+infmatcombined <- reducedcolumnsINFANT %>%
+  right_join(reducedcolumnsMATERN, by = c("COU", "Country", "Year"))
 
 
 
@@ -59,9 +44,6 @@ reducedcolumnsMATERN <- reducedcolumnsMATERN[c(1:2, 5:7, 3:4)]
 
 path_out <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/data"
 
-write_csv(x = reducedcolumnsINFANT, 
-          path = paste0(path_out,"/wrangled_infantmortality.csv"))
-
-write_csv(x = reducedcolumnsMATERN, 
-          path = paste0(path_out,"/wrangled_maternalmortality.csv"))
+write_csv(x = infmatcombined, 
+          path = paste0(path_out,"/wrangled_infmatmortality.csv"))
 

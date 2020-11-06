@@ -1,0 +1,23 @@
+---
+title: "question3cluster"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+
+```{r cars}
+
+path_mythili <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/data"
+
+#loading data
+data_cluster1980s <- read_csv(paste0(path_mythili,"/wrangled_infmatmortcluster1980s.csv"))
+
+data_cluster2010s <- read_csv(paste0(path_mythili, "/wrangled_infmatmortcluster2010s.csv"))
+
+```
+

@@ -117,7 +117,10 @@ datafinal_all <- datafinal_yearsum %>%
             occurrence = sum(occurrence)) %>%
   mutate(disaster_type = "All") %>%
   select(c(1:3), disaster_type, everything()) %>%
-  bind_rows(datafinal_yearsum)
+  bind_rows(datafinal_yearsum) %>%
+  filter(year >= 1980) %>%
+  mutate(total = deaths + injured + affected + homeless)
+
 
 datafinal_summary <- datafinal_yearsum %>%
   pivot_longer(cols = c(deaths, injured, affected, homeless, occurrence),

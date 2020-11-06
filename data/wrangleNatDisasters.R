@@ -108,6 +108,20 @@ datafinal_yearsum <- datafinal %>%
             homeless = sum(no_homeless, na.rm = TRUE),
             occurrence = n())
 
+datafinal_all <- datafinal_yearsum %>%
+  group_by(year, country, countrycode) %>%
+  summarize(deaths = sum(deaths, na.rm = TRUE), 
+            injured = sum(injured, na.rm = TRUE),
+            affected = sum(affected, na.rm = TRUE),
+            homeless = sum(homeless, na.rm = TRUE),
+            occurrence = sum(occurrence)) %>%
+  mutate(disaster_type = "All") %>%
+  select(c(1:3), disaster_type, everything()) %>%
+  bind_rows(datafinal_yearsum) %>%
+  filter(year >= 1980) %>%
+  mutate(total = deaths + injured + affected + homeless)
+
+
 datafinal_summary <- datafinal_yearsum %>%
   pivot_longer(cols = c(deaths, injured, affected, homeless, occurrence),
                names_to = "category",
@@ -129,10 +143,10 @@ datafinal_summary <- datafinal_summary %>%
 write_csv(x = datafinal, 
           path = paste0(my_path,"/data/wrangled_natdisasters.csv"))
 
-write_csv(x = datafinal_yearsum, 
+write_csv(x = datafinal_all, 
           path =  paste0(my_path,"/data/wrangled_natdisasters_byyear.csv"))
 
-write_csv(x = datafinal_yearsum, 
+write_csv(x = datafinal_summary, 
           path =  paste0(my_path,"/data/wrangled_natdisasters_briefsum.csv"))
 
 # To also merge latitude and longitude data,

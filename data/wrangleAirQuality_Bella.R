@@ -63,6 +63,9 @@ PM25_exposure15 <- data_PM25_15
 PM25_exposure25 <- data_PM25_25
 PM25_exposure35 <- data_PM25_35
 
+write_csv(x = PM25_pop_exposure, 
+          path = paste0(path_bella,"/wrangled_PM25popexp.csv"))
+
 #------------------------------F--Y--I-----------------------------------------
 
 #Source of original data: https://stats.oecd.org/index.aspx?queryid=72722

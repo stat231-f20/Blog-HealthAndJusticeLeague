@@ -10,11 +10,8 @@ library(shiny)
 # calling in the datasets
 my_path <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague"
 world_map <- map_data(map = "world", region = ".")
-natdis0 <- read_csv(paste0(my_path, "/data/wrangled_natdisasters_byyear.csv"))
+natdis <- read_csv(paste0(my_path, "/data/wrangled_natdisasters_byyear.csv"))
 
-natdis <- natdis0 %>%
-  filter(year >= 1980) %>%
-  mutate(total = deaths + injured + affected + homeless)
 
 #The list of countries
 list_countries <- world_map %>%

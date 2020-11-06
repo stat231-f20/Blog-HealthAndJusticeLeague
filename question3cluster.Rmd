@@ -3,21 +3,87 @@ title: "question3cluster"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r , setup, include=FALSE}
+
+library(tidyverse)
+library(viridis)
+library(dplyr)
+library(mdsr)
+
+
+knitr::opts_chunk$set(
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
 ```
 
-## R Markdown
+## 1980s Cluster
 
 
-```{r cars}
+```{r, warning = FALSE}
 
 path_mythili <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/data"
 
 #loading data
 data_cluster1980s <- read_csv(paste0(path_mythili,"/wrangled_infmatmortcluster1980s.csv"))
 
-data_cluster2010s <- read_csv(paste0(path_mythili, "/wrangled_infmatmortcluster2010s.csv"))
+#making cluster reproducible, setting number of clusters
+set.seed(23)
+km_out <- kmeans(data_cluster1980s[,c(4:5)], centers=4, nstart=20)
+
+#vector of cluster assignments
+km_out$cluster
+
+# add cluster assignment to the data frame
+cluster1980s <- data_cluster1980s %>%
+  mutate(clust = as.character(km_out$cluster))
+
+# visualize the cluster assignments and centroids
+ggplot(data = cluster1980s, aes(x = avginfmort, y = avmatmort)) + 
+  geom_point(aes(color = clust)) +
+  #geom_text_repel(aes(label= `Country`, color = clust), size = 3) +
+  coord_fixed() +
+  geom_point(data = as.data.frame(km_out$centers)
+             , aes(x = avginfmort, y = avmatmort)
+             , pch = "X"
+             , size = 4) +
+  labs(x = "Average Infant Mortality in 1980s"
+       , y = "Average Maternal Mortality in 1980s" 
+       , color = "Cluster Assignment")
 
 ```
+
+## 2010s Cluster
+
+```{r, warning = FALSE}
+
+#loading data
+data_cluster2010s <- read_csv(paste0(path_mythili, "/wrangled_infmatmortcluster2010s.csv"))
+
+#making cluster reproducible, setting number of clusters
+set.seed(23)
+km_out <- kmeans(data_cluster2010s[,c(4:5)], centers=4, nstart=20)
+
+#vector of cluster assignments
+km_out$cluster
+
+# add cluster assignment to the data frame
+cluster2010s <- data_cluster2010s %>%
+  mutate(clust2 = as.character(km_out$cluster))
+
+# visualize the cluster assignments and centroids
+ggplot(data = cluster2010s, aes(x = avginfmort, y = avmatmort)) + 
+  geom_point(aes(color = clust2)) +
+  #geom_text_repel(aes(label= `Country`, color = clust2), size = 3) +
+  coord_fixed() +
+  geom_point(data = as.data.frame(km_out$centers)
+             , aes(x = avginfmort, y = avmatmort)
+             , pch = "X"
+             , size = 4) +
+  labs(x = "Average Infant Mortality in 2010s"
+       , y = "Average Maternal Mortality in 2010s" 
+       , color = "Cluster Assignment")
+
+```
+
+
 

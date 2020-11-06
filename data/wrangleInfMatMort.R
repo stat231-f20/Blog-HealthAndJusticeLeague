@@ -11,6 +11,8 @@
 
 ####line graph in shiny that allows user to select countries
 ###########will show extreme temps/whatever affects agricultural societies over time
+###########note all the inf/mat morts improve, 
+#################but maybe their values are still worse in certain countries vs. others when compared to temp
 
 #loading packages
 library(readr)

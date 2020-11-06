@@ -1,8 +1,16 @@
 #wrangling done by Mythili
 
 
-#WHAT'S LEFT:
-####normalize values (subtract mean, divide by standard deviation or something)
+#PLANS:
+####line graph in shiny that allows user to select countries and select either infant or maternal mortality
+###########the infant or maternal mortality will be graphed over time
+
+####k-means cluster that shows inf vs. mat mortality in 1980s vs 2010s
+###########normalize values (subtract mean, divide by standard deviation or something)
+###########will show developing vs. developed countries + how climate change affects them
+
+####line graph in shiny that allows user to select countries
+###########will show extreme temps/whatever affects agricultural societies over time
 
 #loading packages
 library(readr)
@@ -25,7 +33,8 @@ origMATERN <- read_csv(paste0(path_in,"/maternalmortalityorig.csv"))
 
 reducedcolumnsINFANT <- origINFANT %>%
   select(c(5:6, 8:9)) %>%
-  rename(deaths_per_1000_live_births = 'Value')
+  rename(deaths_per_1000_live_births = 'Value') %>%
+  mutate(decade = `Year` - `Year` %% 10)
 
 
 
@@ -33,20 +42,42 @@ reducedcolumnsINFANT <- origINFANT %>%
 
 reducedcolumnsMATERN <- origMATERN %>%
   select(c(5:6, 8:9)) %>%
-  rename(deaths_per_100000_live_births = 'Value')
-
+  rename(deaths_per_100000_live_births = 'Value') %>%
+  mutate(decade = `Year` - `Year` %% 10)
 
 
 #combining tables for clustering
-infmatcombined <- reducedcolumnsINFANT %>%
-  right_join(reducedcolumnsMATERN, by = c("COU", "Country", "Year"))
+infmatcluster <- reducedcolumnsINFANT %>%
+  right_join(reducedcolumnsMATERN, by = c("COU", "Country", "Year", "decade")) %>%
+  na.omit() %>%
+  group_by(COU, Country, decade) %>%
+  summarize(avginfmort = mean(deaths_per_1000_live_births)
+            , avmatmort = mean(deaths_per_100000_live_births)) %>%
+  arrange(decade)
 
+cluster1980s <- infmatcombined %>%
+  filter(decade %in% 1980)
+
+cluster2010s <- infmatcombined %>%
+  filter(decade %in% 2010)
+
+#combined tables for line graphs
+infmatline <- reducedcolumnsINFANT %>%
+  right_join(reducedcolumnsMATERN, by = c("COU", "Country", "Year", "decade")) %>%
+  na.omit() %>%
+  select(c(1:4, 6))
 
 
 #writing out infant/maternal mortality data frames to .csv files
 
 path_out <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/data"
 
-write_csv(x = infmatcombined, 
-          path = paste0(path_out,"/wrangled_infmatmortality.csv"))
+write_csv(x = cluster1980s, 
+          path = paste0(path_out,"/wrangled_infmatmortcluster1980s.csv"))
+
+write_csv(x = cluster2010s, 
+          path = paste0(path_out,"/wrangled_infmatmortcluster2010s.csv"))
+
+write_csv(x = infmatline, 
+          path = paste0(path_out,"/wrangled_infmatmortline.csv"))
 

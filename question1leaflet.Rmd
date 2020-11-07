@@ -5,11 +5,12 @@ date: "11/4/2020"
 output: html_document
 ---
 
-```{r, message = FALSE}
+```{r, message = FALSE, include = FALSE}
 #loading packages
 library(tidyverse)
 library(readr)
 library(dplyr)
+library(tabulizer)
 library(maps)
 library(leaflet)
 ```
@@ -17,16 +18,22 @@ library(leaflet)
 ```{r, message = FALSE, warning = FALSE}
 #use an appropriate path
 path_bella <- "C:/Users/Bella/Desktop/git/Blog-HealthAndJusticeLeague/data"
+path_PM25_guide <- 'https://apps.who.int/iris/bitstream/handle/10665/69477/WHO_SDE_PHE_OEH_06.02_eng.pdf;jsessionid=5F6D84FB5F54C304E800DCDDBC13E116?sequence=1'
 
 #loading data
+#ext_PM25_guide <- extract_tables(path_PM25_guide, output = "data.frame", row.names = NULL)
+#PM25_guide <- ext_PM25_guide[[1]]
 data_healthimp <- read_csv(paste0(path_bella,"/wrangled_HEimpacts.csv"))
 data_air <- read_csv(paste0(path_bella, "/wrangled_PM25popexp.csv"))
 
 #more wrangling smH
+##renaming column variable name to convert to string
 data_air <- data_air%>%
-  rename(Y1990 = "1990")
+  rename(Y1990 = "1990",
+         Y2005 = "2005",
+         Y2017 = "2017")
 
-#need to match the country name
+##need to match the country name
 data_air[16, 2] <- "South Korea"
 data_air[24, 2] <- "Slovakia"
 data_air[28, 2] <- "UK"
@@ -38,6 +45,41 @@ data_air[69, 2] <- "North Korea"
 data_air[103, 2] <- "Laos"
 data_air[111, 2] <- "Macedonia"
 data_air[162, 2] <- "Syria"
+
+##further wrangling the health impact data
+data_healthimp_wide <- data_healthimp%>%
+  pivot_wider(values_from = value,
+              names_from = c(risk, measure),
+              names_glue = "{risk}.{measure}")
+data_healthimp_wide <- data_healthimp_wide[(data_healthimp_wide$age == "all"), ]
+data_healthimp_wide <- data_healthimp_wide[, -5]
+
+###ambient PM2.5 pdeathsper1M only
+data_pdeaths_amb <- data_healthimp_wide[, c(1, 2, 3, 4, 6)]
+data_pdeaths_amb <- data_pdeaths_amb%>%
+  pivot_wider(values_from = `ambientpm2.5.pdeathsper1m`,
+              names_from = sex, 
+              names_glue = "{sex}")
+data_pdeaths_amb$pdeathsper1m <- data_pdeaths_amb$`F` + data_pdeaths_amb$M
+
+data_pdeaths_amb <- data_pdeaths_amb%>%
+  select(-c(`F`, M))%>%
+  pivot_wider(values_from = `pdeathsper1m`,
+              names_from = year,
+              names_glue = "Y{year}")
+
+###need to match the data AGAIN SMHHHHHHHHHHHHH
+data_pdeaths_amb[163, 2] <- "South Korea"
+data_pdeaths_amb[164, 2] <- "Slovakia"
+data_pdeaths_amb[181, 2] <- "UK"
+data_pdeaths_amb[195, 2] <- "USA"
+data_pdeaths_amb[41, 2] <- "China"
+data_pdeaths_amb[21, 2] <- "Republic of Congo"
+data_pdeaths_amb[45, 2] <- "Ivory Coast"
+data_pdeaths_amb[48, 2] <- "North Korea"
+data_pdeaths_amb[103, 2] <- "Laos"
+data_pdeaths_amb[104, 2] <- "Macedonia"
+data_pdeaths_amb[170, 2] <- "Syria"
 ```
 
 ```{r, message = FALSE}
@@ -47,6 +89,8 @@ world_leaflet <- map("world", unique(data_air$Country), fill = TRUE, plot = FALS
 world_leaflet$country <- vapply(strsplit(world_leaflet$names, ":"), function(x) x[1],
                                 FUN.VALUE = "a")
 world_leaflet$Y1990 <- data_air$Y1990[match(world_leaflet$country, data_air$Country)]
+world_leaflet$Y2005 <- data_air$Y2005[match(world_leaflet$country, data_air$Country)]
+world_leaflet$Y2017 <- data_air$Y2017[match(world_leaflet$country, data_air$Country)]
 
 #index <- grep(":", world_leaflet$names)
 # for (i in 1:length(index)){
@@ -56,24 +100,22 @@ world_leaflet$Y1990 <- data_air$Y1990[match(world_leaflet$country, data_air$Coun
 #   }
 # }
 
-bins <- c(0, 10, 20, 30, 50, 70, 80, Inf)
-pal <- colorBin("YlOrRd", domain = world_leaflet$Y1990, bins = bins)
+bins <- c(0, 10, 15, 25, 35, 55, Inf)
+pal1990 <- colorBin("YlOrRd", domain = world_leaflet$Y1990, bins = bins)
+pal2005 <- colorBin("YlOrRd", domain = world_leaflet$Y2005, bins = bins)
+pal2017 <- colorBin("YlOrRd", domain = world_leaflet$Y2017, bins = bins)
 
-labels <- sprintf(
-  "<strong>%s</strong><br/>%g µg / m<sup>3</sup>",
-  world_leaflet$country, world_leaflet$Y1990
-) %>% lapply(htmltools::HTML)
-
+#for 1990
 PM25_1990_leaflet <- leaflet(data = world_leaflet)%>%
   addTiles()%>%
-  setView(0, 0, zoom = 1)%>%
-  addPolygons(fillColor = ~pal(Y1990),
+  setView(0, 0, zoom = 1.5)%>%
+  addPolygons(fillColor = ~pal1990(Y1990),
               weight = 1,
               opacity = 1,
               color = "white",
               dashArray = "3",
               fillOpacity = 0.7,
-              highlight = highlightOptions(weight = 5,
+              highlight = highlightOptions(weight = 2,
                                            color = "#666",
                                            dashArray = "",
                                            fillOpacity = 0.7,
@@ -87,15 +129,157 @@ PM25_1990_leaflet <- leaflet(data = world_leaflet)%>%
               popup = paste0("Country: ", world_leaflet$country, "<br>",
                              "PM2.5 Value: ", round(world_leaflet$Y1990, 3), 
                              " µg / m<sup>3</sup><br>"))%>%
-  addLegend(pal = pal, values = ~Y1990, 
+  addLegend(pal = pal1990, values = ~Y1990, 
             opacity = 0.7, 
             title = "PM 2.5 Measure in 1990",
+            position = "bottomright")
+
+#for 2005
+PM25_2005_leaflet <- leaflet(data = world_leaflet)%>%
+  addTiles()%>%
+  setView(0, 0, zoom = 1.5)%>%
+  addPolygons(fillColor = ~pal2005(Y2005),
+              weight = 1,
+              opacity = 1,
+              color = "white",
+              dashArray = "3",
+              fillOpacity = 0.7,
+              highlight = highlightOptions(weight = 2,
+                                           color = "#666",
+                                           dashArray = "",
+                                           fillOpacity = 0.7,
+                                            bringToFront = TRUE),
+              label = sprintf("<strong>%s</strong><br/>%g µg / m<sup>3</sup>",
+                              world_leaflet$country, world_leaflet$Y2017)%>% 
+                lapply(htmltools::HTML),
+              labelOptions = labelOptions(style = list("font-weight" = "normal", padding = "3px 8px"),
+                                          textsize = "12px",
+                                          direction = "auto"),
+              popup = paste0("Country: ", world_leaflet$country, "<br>",
+                             "PM2.5 Value: ", round(world_leaflet$Y2005, 3), 
+                             " µg / m<sup>3</sup><br>"))%>%
+  addLegend(pal = pal2005, values = ~Y2005, 
+            opacity = 0.7, 
+            title = "PM 2.5 Measure in 2005",
+            position = "bottomright")
+
+
+#for 2017
+PM25_2017_leaflet <- leaflet(data = world_leaflet)%>%
+  addTiles()%>%
+  setView(0, 0, zoom = 1.5)%>%
+  addPolygons(fillColor = ~pal2017(Y2017),
+              weight = 1,
+              opacity = 1,
+              color = "white",
+              dashArray = "3",
+              fillOpacity = 0.7,
+              highlight = highlightOptions(weight = 2,
+                                           color = "#666",
+                                           dashArray = "",
+                                           fillOpacity = 0.7,
+                                            bringToFront = TRUE),
+              label = sprintf("<strong>%s</strong><br/>%g µg / m<sup>3</sup>",
+                              world_leaflet$country, world_leaflet$Y2017)%>% 
+                lapply(htmltools::HTML),
+              labelOptions = labelOptions(style = list("font-weight" = "normal", padding = "3px 8px"),
+                                          textsize = "12px",
+                                          direction = "auto"),
+              popup = paste0("Country: ", world_leaflet$country, "<br>",
+                             "PM2.5 Value: ", round(world_leaflet$Y2017, 3), 
+                             " µg / m<sup>3</sup><br>"))%>%
+  addLegend(pal = pal2017, values = ~Y2017, 
+            opacity = 0.7, 
+            title = "PM 2.5 Measure in 2017",
             position = "bottomright")
 ```
 
 ```{r}
-#final leaftlet for PM 2.5 in 1990
+#PM2.5 leaflets
 PM25_1990_leaflet
+PM25_2005_leaflet
+PM25_2017_leaflet
 ```
 
+```{r}
+#leaflet for pdeaths
+world_leaflet_pdeath <- map("world", unique(data_pdeaths_amb$country), 
+                            fill = TRUE, plot = FALSE)
+world_leaflet_pdeath$country <- vapply(strsplit(world_leaflet_pdeath$names, ":"),
+                                       function(x) x[1],
+                                FUN.VALUE = "a")
+world_leaflet_pdeath$Y1990 <- data_pdeaths_amb$Y1990[match(world_leaflet_pdeath$country, data_pdeaths_amb$country)]
+world_leaflet_pdeath$Y2017 <- data_pdeaths_amb$Y2017[match(world_leaflet_pdeath$country, data_pdeaths_amb$country)]
+
+bins2 <- c(0, 100, 200, 300, 400, 500, 600, 700, 800, Inf)
+pal1990_2 <- colorBin("YlGnBu", domain = world_leaflet$Y1990, bins = bins2)
+pal2017_2 <- colorBin("YlGnBu", domain = world_leaflet$Y2017, bins = bins2)
+
+#for 1990
+pdeath_1990_leaflet <- leaflet(data = world_leaflet_pdeath)%>%
+  addTiles()%>%
+  setView(0, 0, zoom = 1.5)%>%
+  addPolygons(fillColor = ~pal1990_2(Y1990),
+              weight = 1,
+              opacity = 1,
+              color = "white",
+              dashArray = "3",
+              fillOpacity = 0.7,
+              highlight = highlightOptions(weight = 2,
+                                           color = "#666",
+                                           dashArray = "",
+                                           fillOpacity = 0.7,
+                                            bringToFront = TRUE),
+              label = sprintf("<strong>%s</strong><br/>%g deaths per million",
+                              world_leaflet_pdeath$country, world_leaflet_pdeath$Y1990)%>% 
+                lapply(htmltools::HTML),
+              labelOptions = labelOptions(style = list("font-weight" = "normal",
+                                                       padding = "3px 8px"),
+                                          textsize = "12px",
+                                          direction = "auto"),
+              popup = paste0("Country: ", world_leaflet_pdeath$country, "<br>",
+                             "Number of Premature Deaths: ",
+                             round(world_leaflet_pdeath$Y1990, 3), 
+                             " per million <br>"))%>%
+  addLegend(pal = pal1990_2, values = ~Y1990, 
+            opacity = 0.7, 
+            title = "premature death per million in 1990",
+            position = "bottomright")
+
+#for 2017
+pdeath_2017_leaflet <- leaflet(data = world_leaflet_pdeath)%>%
+  addTiles()%>%
+  setView(0, 0, zoom = 1.5)%>%
+  addPolygons(fillColor = ~pal2017_2(Y2017),
+              weight = 1,
+              opacity = 1,
+              color = "white",
+              dashArray = "3",
+              fillOpacity = 0.7,
+              highlight = highlightOptions(weight = 2,
+                                           color = "#666",
+                                           dashArray = "",
+                                           fillOpacity = 0.7,
+                                            bringToFront = TRUE),
+              label = sprintf("<strong>%s</strong><br/>%g deaths per million",
+                              world_leaflet_pdeath$country, world_leaflet_pdeath$Y2017)%>% 
+                lapply(htmltools::HTML),
+              labelOptions = labelOptions(style = list("font-weight" = "normal",
+                                                       padding = "3px 8px"),
+                                          textsize = "12px",
+                                          direction = "auto"),
+              popup = paste0("Country: ", world_leaflet_pdeath$country, "<br>",
+                             "Number of Premature Deaths: ",
+                             round(world_leaflet_pdeath$Y2017, 3), 
+                             " per million <br>"))%>%
+  addLegend(pal = pal2017_2, values = ~Y2017, 
+            opacity = 0.7, 
+            title = "premature death per million in 2017",
+            position = "bottomright")
+```
+
+```{r}
+pdeath_1990_leaflet
+pdeath_2017_leaflet
+```
 

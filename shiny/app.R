@@ -1,3 +1,5 @@
+#FIXME: Thank you so much for taking a look at this code!
+
 library(leaflet)
 library(maps)
 library(readr)
@@ -9,11 +11,17 @@ library(shiny)
 
 # calling in the datasets
 my_path <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague"
-world_map <- map_data(map = "world", region = ".")
+# natural disaster dataset
 natdis <- read_csv(paste0(my_path, "/data/wrangled_natdisasters_byyear.csv"))
 #explicitly call maps:: because map() is masked by purrr packagef
 natdis_leaflet <- maps::map("world", fill = TRUE, plot = FALSE, wrap=c(-180,180))
+# This is the dataset containing 
+# the official country code, official country name, 
+# and country name used in maps package
+data(iso3166)
 
+#####
+# ignore this part
 # natdis_leaflet$country <- str_extract(natdis_leaflet$names, "[^:]+")
 # natdis_leaflet$code <- natdis_leaflet$country %>% countrycode(origin = "country.name", destination = "iso3c")
 # natdis_leaflet$freq <- natdis$occurrence[match(natdis_leaflet$code, natdis_react$countrycode)]
@@ -21,14 +29,14 @@ natdis_leaflet <- maps::map("world", fill = TRUE, plot = FALSE, wrap=c(-180,180)
 # natdis_leaflet$injured <- natdis$injured[match(natdis_leaflet$code, natdis_react$countrycode)]
 # natdis_leaflet$homeless <- natdis$homeless[match(natdis_leaflet$code, natdis_react$countrycode)]
 # natdis_leaflet$total <- natdis$total[match(natdis_leaflet$code, natdis_react$countrycode)]
+######
 
-data(iso3166)
-
-
+# a3 is iso3c country code
 list_countries <- iso3166 %>%
   select(a3, ISOname, mapname)
 
-
+######
+#ignore this part
 # check if the country code for important/significant countries ended up missing
 # world_missing <- world_code %>%
 #   filter(is.na(code))
@@ -38,8 +46,9 @@ list_countries <- iso3166 %>%
 # Chagos Archipelago, Grenadines, Heard Island, Kosovo, Madeira Islands, 
 # Micronesia, Saba, Saint Martin, Siachen Glacier, Sint Eustatius, 
 # Virgin Islands
+######
 
-# for selectInput drop-down choices
+# for selectInput drop-down choices(types of natural disasters)
 relevant <- c("All", "Drought","Storm", "Flood", "Landslide", 
               "Wildfire", "Extreme temperature")
 names(relevant) <- relevant
@@ -49,6 +58,7 @@ ui <- fluidPage(#theme = "bootstrap.min.css",
   titlePanel("Impacts of Natural Disasters"),
   sidebarLayout(
     sidebarPanel(
+      # year
       sliderInput(inputId = "year",
                   label = "Select the year",
                   min = 1980,
@@ -56,6 +66,7 @@ ui <- fluidPage(#theme = "bootstrap.min.css",
                   value = 2000,
                   sep = "",
                   ticks = TRUE),
+      # disaster type
       selectInput(inputId = "disaster",
                   label = "Select the disaster type",
                   choices = relevant,
@@ -68,17 +79,23 @@ ui <- fluidPage(#theme = "bootstrap.min.css",
 
 server <- function(input, output){
   
+  # natural disasters of a given type in a given year
   natdis_react <- reactive({
     natdis %>%
       filter(disaster_type == input$disaster) %>%
       filter(year == input$year) %>%
+      # Below operation is because the country names used in maps package and 
+      # the country names in natdis data differ
       right_join(list_countries, by = c("countrycode" = "a3"))
     
   })
   
   a <- reactive({
+    # country name
     natdis_leaflet$country <- str_extract(natdis_leaflet$names, "[^:]+")
     
+    # how many disasters occurred in a given year?
+    # Use mapname to fill in the corresponding values in the freq vector
     natdis_leaflet$freq <- natdis_react()$occurrence[match(natdis_leaflet$country,
                                                            natdis_react()$mapname)]
     
@@ -97,16 +114,15 @@ server <- function(input, output){
     natdis_leaflet$affected <- natdis_react()$affected[match(natdis_leaflet$country,
                                                              natdis_react()$mapname)]
     
-    
+    # deaths + injured + homeless + affected
     natdis_leaflet$total <- natdis_react()$total[match(natdis_leaflet$country,
                                                        natdis_react()$mapname)]
-    
     
     natdis_leaflet
   })
   
+  # will consider making this a logarithmic scale(?) instead of arbitrary numbers
   bins <- c(0, 1000, 5000, 10000, 50000, 100000, 500000, 1000000, 5000000, Inf)
-  
   pal_natdis <- reactive({
     colorBin("YlOrRd", domain = a()$total, bins = bins)
   })
@@ -115,7 +131,6 @@ server <- function(input, output){
     # Use leaflet() here, and only include aspects of the map that
     # won't need to change dynamically (at least, not unless the
     # entire map is being torn down and recreated).
-    # leaflet(data = world_leaflet) %>% 
     leaflet() %>%
       addTiles() %>%
       setView(0, 0, zoom = 1)
@@ -128,6 +143,7 @@ server <- function(input, output){
   observe({
     
     leafletProxy("natdisplot", data = a()) %>%
+      #FIXME: this is where I get the error
       addPolygons(fillColor = ~pal_natdis(),
                   weight = 2,
                   opacity = 1,
@@ -136,7 +152,7 @@ server <- function(input, output){
                   fillOpacity = 0.7,
                   popup = paste0("country: ", a()$country, "<br>",
                                  "occurred:", a()$freq, "<br>",
-                                 "deaths: ", a()$deaths, "<br>", #newline
+                                 "deaths: ", a()$deaths, "<br>", 
                                  "injured: ", a()$injured, "<br>",
                                  "affected: ", a()$affected, "<br>",
                                  "homeless: ", a()$homeless, "<br>"),
@@ -146,13 +162,15 @@ server <- function(input, output){
                     dashArray = "",
                     fillOpacity = 0.7,
                     bringToFront = TRUE)) #%>%
+    # FIXME: because of the error, I did not include legend for now
     # addLegend(pal = pal_natdis, values = ~total, opacity = 0.7, title = NULL,
     #           position = "bottomright")
     
     
   })
   
-  
+  #######
+  # before separating background and polygons
   # output$natdisplot <- renderLeaflet(
   #   leaflet(data = natdis_leaflet()) %>%
   #     addTiles() %>%
@@ -173,7 +191,7 @@ server <- function(input, output){
   #     addLegend(pal = pal_natdis, values = ~total, opacity = 0.7, title = NULL,
   #               position = "bottomright")
   # )
-  
+  ######
   
   
 }

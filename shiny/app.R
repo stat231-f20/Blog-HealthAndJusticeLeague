@@ -10,11 +10,11 @@ library(countrycode)
 library(shiny)
 
 # calling in the datasets
-my_path <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague"
+my_path <- "C:/Users/kcorreia/Dropbox (Amherst College)/Teaching/Fall 2020/Stat231/git/Blog-HealthAndJusticeLeague"
 # natural disaster dataset
 natdis <- read_csv(paste0(my_path, "/data/wrangled_natdisasters_byyear.csv"))
 #explicitly call maps:: because map() is masked by purrr packagef
-natdis_leaflet <- maps::map("world", fill = TRUE, plot = FALSE, wrap=c(-180,180))
+natdis_leaflet <- maps::map("world", fill = TRUE, plot = FALSE, wrap=c(-180,180)) 
 # This is the dataset containing 
 # the official country code, official country name, 
 # and country name used in maps package
@@ -73,7 +73,9 @@ ui <- fluidPage(#theme = "bootstrap.min.css",
                   selected = "All",
                   selectize = FALSE)),
     
-    mainPanel(leafletOutput("natdisplot"))))
+    mainPanel(leafletOutput("natdisplot"))
+  )
+)
 
 
 
@@ -127,29 +129,21 @@ server <- function(input, output){
     colorBin("YlOrRd", domain = a()$total, bins = bins)
   })
   
+  
   output$natdisplot <- renderLeaflet({
     # Use leaflet() here, and only include aspects of the map that
     # won't need to change dynamically (at least, not unless the
     # entire map is being torn down and recreated).
-    leaflet() %>%
+    leaflet(data = a()) %>%
       addTiles() %>%
-      setView(0, 0, zoom = 1)
-    
-  })
-  
-  # Incremental changes to the map should be performed in
-  # an observer. Each independent set of things that can change
-  # should be managed in its own observer.
-  observe({
-    
-    leafletProxy("natdisplot", data = a()) %>%
-      #FIXME: this is where I get the error
-      addPolygons(fillColor = ~pal_natdis(),
+      setView(0, 0, zoom = 1) %>%
+      # reference: https://stackoverflow.com/questions/48953149/dynamic-color-fill-for-polygon-using-leaflet-in-shiny-not-working
+      addPolygons(fillColor = ~pal_natdis()(total),
                   weight = 2,
                   opacity = 1,
                   color = "white",
                   dashArray = "3",
-                  fillOpacity = 0.7,
+                  fillOpacity = 0.5,
                   popup = paste0("country: ", a()$country, "<br>",
                                  "occurred:", a()$freq, "<br>",
                                  "deaths: ", a()$deaths, "<br>", 
@@ -161,12 +155,7 @@ server <- function(input, output){
                     color = "#666",
                     dashArray = "",
                     fillOpacity = 0.7,
-                    bringToFront = TRUE)) #%>%
-    # FIXME: because of the error, I did not include legend for now
-    # addLegend(pal = pal_natdis, values = ~total, opacity = 0.7, title = NULL,
-    #           position = "bottomright")
-    
-    
+                    bringToFront = TRUE))
   })
   
   #######

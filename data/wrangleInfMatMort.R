@@ -67,7 +67,11 @@ cluster2010s <- infmatcombined %>%
 infmatline <- reducedcolumnsINFANT %>%
   right_join(reducedcolumnsMATERN, by = c("COU", "Country", "Year", "decade")) %>%
   na.omit() %>%
-  select(c(1:4, 6))
+  mutate(NetChange_Infant = case_when(Country == lag(Country) ~ deaths_per_1000_live_births - lag(deaths_per_1000_live_births)
+                                    , Country != lag(Country) ~ NA_real_)
+         , NetChange_Maternal = case_when(Country == lag(Country) ~ deaths_per_100000_live_births - lag(deaths_per_100000_live_births)
+                                        , Country != lag(Country) ~ NA_real_)) %>%
+  select(c(1:3, 7:8))
 
 
 #writing out infant/maternal mortality data frames to .csv files

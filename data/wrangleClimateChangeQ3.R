@@ -21,7 +21,17 @@ origclimatedisaster_data <- read_excel(paste0(my_path,"/data/naturaldisasters.xl
                                  "numeric", "numeric", "numeric", 
                                  "numeric"))
 
+irrelevant <- c("Earthquake", "Epidemic", "Landslide"
+                , "Insect infestation", "Mass movement (dry)")
+
+countrymort_data <- read_csv(paste0(my_path,"/data/wrangled_infmatmortline.csv"))
+
+distinctcountries <- unique(countrymort_data$Country)
+
 reducedclimatedisaster_data <- origclimatedisaster_data %>% 
   clean_names() %>%
   select(c(1, 5:6, 10)) %>%
-  filter(year %in% c(1980:2018))
+  filter(c(country %in% distinctcountries)
+         , year %in% c(1980:2018)
+         , !(disaster_type %in% irrelevant))
+  

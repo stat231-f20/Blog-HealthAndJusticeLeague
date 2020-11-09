@@ -1,3 +1,4 @@
+#coding done by Mythili
 
 library(shinythemes)
 library(shiny)
@@ -9,11 +10,12 @@ path_in <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeL
 
 infmatmortdata <- read_csv(paste0(path_in,"/wrangled_infmatmortline.csv"))
 
-country_choices <- (infmatmortdata%>%
-                    count(country))$State
-state_choice_names <- c("Arizona", "California", "Colorado", "District of Columbia", "Delaware", "Florida", "Georgia", "Illinois", "Maryland", "Texas", "Virginia")
-names(state_choices) <- state_choice_names
+country_choices <- (infmatmortdata %>%
+                    count(Country))$Country
+country_choice_names <- unique(infmatmortdata$Country)
+names(country_choices) <- country_choice_names
 
+###CONTINUE ALTERING FROM HERE DOWN
 
 # ui 
 ui <- fluidPage(

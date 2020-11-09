@@ -1,3 +1,11 @@
+
+#load library
+library(dplyr)
+library(tidyverse)
+library(readr)
+library(readxl)
+library(janitor)
+
 my_path <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague"
 origclimatedisaster_data <- read_excel(paste0(my_path,"/data/naturaldisasters.xlsx"), 
                    col_types = c("skip", "text", "text", 

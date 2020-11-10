@@ -24,11 +24,12 @@ knitr::opts_chunk$set(
 path_mythili <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/data"
 
 #loading data
-data_cluster1980s <- read_csv(paste0(path_mythili,"/wrangled_infmatmortcluster1980s.csv"))
+data_cluster1980s <- read_csv(paste0(path_mythili,"/wrangled_infmatmortcluster1980s.csv")) %>%
+  mutate_at(c("avginfmort", "avmatmort"), funs(`std`=scale(.) %>% as.vector()))
 
 #making cluster reproducible, setting number of clusters
 set.seed(23)
-km_out <- kmeans(data_cluster1980s[,c(4:5)], centers=4, nstart=20)
+km_out <- kmeans(data_cluster1980s[,c("avginfmort_std", "avmatmort_std")], centers=4, nstart=20)
 
 #vector of cluster assignments
 km_out$cluster
@@ -38,12 +39,12 @@ cluster1980s <- data_cluster1980s %>%
   mutate(clust = as.character(km_out$cluster))
 
 # visualize the cluster assignments and centroids
-ggplot(data = cluster1980s, aes(x = avginfmort, y = avmatmort)) + 
+ggplot(data = cluster1980s, aes(x = avginfmort_std, y = avmatmort_std)) + 
   geom_point(aes(color = clust)) +
   #geom_text_repel(aes(label= `Country`, color = clust), size = 3) +
   coord_fixed() +
   geom_point(data = as.data.frame(km_out$centers)
-             , aes(x = avginfmort, y = avmatmort)
+             , aes(x = avginfmort_std, y = avmatmort_std)
              , pch = "X"
              , size = 4) +
   labs(x = "Average Infant Mortality in 1980s"

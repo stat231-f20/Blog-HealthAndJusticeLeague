@@ -1,3 +1,6 @@
+##### to replace wrangleClimateChangeQ3.R file
+
+
 
 #load library
 library(dplyr)
@@ -6,34 +9,19 @@ library(readr)
 library(readxl)
 library(janitor)
 
-###USE wrangled_natdisasters_by year.csv - you don't need to do frequency yourself!!!!!!!
 
 my_path <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague"
-origclimatedisaster_data <- read_excel(paste0(my_path,"/data/naturaldisasters.xlsx"), 
-                   col_types = c("skip", "text", "text", 
-                                 "text", "text", "text", "text", "text", 
-                                 "text", "text", "text", "text", "text", 
-                                 "text", "skip", "text", "text", "skip", 
-                                 "skip", "skip", "skip", "numeric", 
-                                 "numeric", "text", "text", "text", 
-                                 "text", "text", "numeric", "numeric", 
-                                 "numeric", "numeric", "numeric", 
-                                 "numeric", "numeric", "numeric", 
-                                 "numeric", "numeric", "numeric", 
-                                 "numeric", "numeric", "numeric", 
-                                 "numeric"))
-
-irrelevant <- c("Earthquake", "Epidemic"
-                , "Insect infestation", "Mass movement (dry)")
+climatedisaster_data <- read_csv(paste0(my_path,"/data/wrangled_natdisasters_byyear.csv"))
 
 countrymort_data <- read_csv(paste0(my_path,"/data/wrangled_infmatmortline.csv"))
 
-distinctcountries <- unique(countrymort_data$Country)
+distinctcountrycode <- unique(countrymort_data$COU)
 
-reducedclimatedisaster_data <- origclimatedisaster_data %>% 
-  clean_names() %>%
-  select(c(1, 5:6, 10)) %>%
-  filter(c(country %in% distinctcountries)
-         , year %in% c(1980:2018)
-         , !(disaster_type %in% irrelevant))
-  
+reducedclimatedisaster_data <- climatedisaster_data %>% 
+  select(c(1:4, 9)) %>%
+  filter(c(countrycode %in% distinctcountrycode)
+         , year %in% c(1980:2018))
+
+write_csv(reducedclimatedisaster_data, paste0(my_path,"/data/wrangled_climateq3.csv"))
+          
+          

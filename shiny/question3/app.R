@@ -1,3 +1,6 @@
+####### to replace question3 > app.r file
+
+
 #coding done by Mythili
 
 library(shinythemes)
@@ -11,35 +14,41 @@ path_in <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeL
 infmatmortdata <- read_csv(paste0(path_in,"/wrangled_infmatmortline.csv"))
 
 country_choices <- (infmatmortdata %>%
-                    count(Country))$Country
+                      count(Country))$Country
 country_choice_names <- unique(infmatmortdata$Country)
 names(country_choices) <- country_choice_names
 
-###CONTINUE ALTERING FROM HERE DOWN
+mort_choices_values = names(infmatmortdata)[4:5]
+mort_choices_names <- c("Net Change in Infant Mortality", "Net Change in Maternal Mortality")
+names(mort_choices) <- mort_choices_names
+
 
 # ui 
 ui <- fluidPage(
   
-  h1("Covid Case Growth and New Voter Registration Pre- and During the Pandemic"),
+  h1("Climate Disaster Effects on Infant and Maternal Mortality"),
   
   sidebarLayout(
     
     sidebarPanel(
       
-      h4("Choose a state, then click Plot to see how New Voter 
-         Registration, COVID Cases, and COVID-Related Deaths have changed in 2020!"),
-      selectInput(inputId = "state"
-                  , label = "Choose a State of Interest:"
-                  , choices = state_choices
-                  , selected = "AZ"), 
-      actionButton("go", "Plot", icon("fas fa-ambulance"), 
-                   style="color: #fff; background-color: grey; border-color: grey"),
+      h4("Choose countries to view how the frequency of 
+         climate disasters and infant/maternal mortality are related!"),
+      
+      checkboxGroupInput(inputId = "Countries"
+                         , label = "Choose countries to display data for: "
+                         , choices = country_choices
+                         , selected = NULL
+                         , inline = TRUE),
+      selectInput(inputId = "y"
+                  , label = "Choose a predictor variable of interest:"
+                  , choices = mort_choices_values
+                  , selected = infmatmortdata$NetChange_Infant)
     ),
     
     mainPanel(
       
       plotOutput(outputId = "bar1")
-      , plotOutput(outputId = "bar2")
       
     )
   )
@@ -49,37 +58,22 @@ ui <- fluidPage(
 # server
 server <- function(input,output){
   
-  use_data_tab1 <- eventReactive(input$go, {
-    filter(coviddata4, State %in% input$state)
+  use_data1_q3 <- reactive({
+    data1 <- filter(infmatmortdata, Country %in% input$Countries)
   })
   
-  use_data2_tab1 <- eventReactive(input$go, {
-    filter(votedata2, State %in% input$state)
-  })
-  
+
   output$bar1 <- renderPlot({
-    ggplot(data = use_data_tab1(), aes(x = month, y = nCases)) +
-      geom_bar(position = "dodge", stat = "identity", aes(fill = Casetype)) +
-      labs(x = "Month", y = "Net Increase in Instances Per Month"
-           , title = "Covid Case and Death Growth in 2020") + 
-      theme(legend.position="bottom", plot.title = element_text(hjust = 0.5)) + 
-      scale_fill_discrete(name="Condition Recorded"
-                          , breaks=c("monthlydeathincrease", "monthlynetincrease")
-                          , labels=c("Deaths", "Cases"))
-    
+    ggplot(data = use_data1_q3(), aes(x = Year, y = input$y)) +
+      geom_bar(position = "dodge", stat = "identity", aes(fill = input$Countries)) +
+      labs(x = "YEar", y = "Net Change in Mortality Per Month"
+           , title = "Infant and Maternal Mortality Worldwide from 1980-2018") +
+      theme(legend.position="bottom", plot.title = element_text(hjust = 0.5))
+      # scale_fill_discrete(name="Condition Recorded"
+      #                     , breaks=c("monthlydeathincrease", "monthlynetincrease")
+      #                     , labels=c("Deaths", "Cases"))
+
   })
-  
-  
-  output$bar2 <- renderPlot({
-    ggplot(data = use_data2_tab1(), aes(x = month, y = newvoters)) + 
-      geom_bar(stat = "identity", fill = "darkgrey") + 
-      labs(x = "Month", y = "Number of Newly Registered Voters"
-           , title = "Voter Registration in 2020") + 
-      scale_x_continuous(breaks = c(4,5,6,7)) + 
-      theme(plot.title = element_text(hjust = 0.5))
-    
-  })
-  
   
 }
 

@@ -21,7 +21,6 @@ mort_choices_values = names(infmatmortdata)[4:5]
 mort_choices_names <- c("Net Change in Infant Mortality", "Net Change in Maternal Mortality")
 names(mort_choices) <- mort_choices_names
 
-
 # ui 
 ui <- fluidPage(
   
@@ -34,11 +33,15 @@ ui <- fluidPage(
       h4("Choose countries to view how the frequency of 
          climate disasters and infant/maternal mortality are related!"),
       
-      checkboxGroupInput(inputId = "Countries"
-                         , label = "Choose countries to display data for: "
-                         , choices = country_choices
-                         , selected = NULL
-                         , inline = TRUE),
+      selectizeInput(inputId = "Countries"
+                     , label = "Choose two countries to display data for: "
+                     , choices = country_choices
+                     , selected = NULL
+                     , multiple = TRUE
+                     , options = list(maxItems = 2)
+
+      ),
+      
       selectInput(inputId = "y"
                   , label = "Choose a predictor variable of interest:"
                   , choices = mort_choices_values
@@ -61,16 +64,14 @@ server <- function(input,output){
     data1 <- filter(infmatmortdata, Country %in% input$Countries)
   })
   
-
+#maybe add line sayin
   output$bar1 <- renderPlot({
-    ggplot(data = use_data1_q3(), aes(x = Year, y = input$y)) +
-      geom_bar(position = "dodge", stat = "identity", aes(fill = input$Countries)) +
-      labs(x = "YEar", y = "Net Change in Mortality Per Month"
+    ggplot(data = use_data1_q3(), aes_string(x = "Year", y = input$y)) +
+      geom_bar(position = "dodge", stat = "identity", aes_string(fill = "Country")) +
+      labs(x = "Year", y = "Net Change in Mortality Per Month"
            , title = "Infant and Maternal Mortality Worldwide from 1980-2018") +
-      theme(legend.position="bottom", plot.title = element_text(hjust = 0.5))
-      # scale_fill_discrete(name="Condition Recorded"
-      #                     , breaks=c("monthlydeathincrease", "monthlynetincrease")
-      #                     , labels=c("Deaths", "Cases"))
+      theme(legend.position="bottom", plot.title = element_text(hjust = 0.5)) + 
+      facet_wrap(~ Country, ncol = 1)
 
   })
   

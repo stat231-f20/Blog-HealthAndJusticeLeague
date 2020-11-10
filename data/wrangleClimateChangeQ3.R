@@ -1,6 +1,3 @@
-##### to replace wrangleClimateChangeQ3.R file
-
-
 
 #load library
 library(dplyr)

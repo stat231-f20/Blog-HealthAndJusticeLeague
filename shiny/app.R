@@ -1,5 +1,3 @@
-#FIXME: Thank you so much for taking a look at this code!
-
 library(leaflet)
 library(maps)
 library(readr)
@@ -8,11 +6,13 @@ library(tidyverse)
 library(janitor)
 library(countrycode)
 library(shiny)
+library(shinythemes)
 
 # calling in the datasets
-my_path <- "C:/Users/kcorreia/Dropbox (Amherst College)/Teaching/Fall 2020/Stat231/git/Blog-HealthAndJusticeLeague"
+my_path <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague"
 # natural disaster dataset
-natdis <- read_csv(paste0(my_path, "/data/wrangled_natdisasters_byyear.csv"))
+natdis <- read_csv(paste0(my_path, "/data/wrangled_natdisasters_byyear.csv")) %>%
+  filter(disaster_type != "All")
 #explicitly call maps:: because map() is masked by purrr packagef
 natdis_leaflet <- maps::map("world", fill = TRUE, plot = FALSE, wrap=c(-180,180)) 
 # This is the dataset containing 
@@ -35,6 +35,9 @@ data(iso3166)
 list_countries <- iso3166 %>%
   select(a3, ISOname, mapname)
 
+# HTML Text: background info to display on the side
+
+
 ######
 #ignore this part
 # check if the country code for important/significant countries ended up missing
@@ -48,16 +51,29 @@ list_countries <- iso3166 %>%
 # Virgin Islands
 ######
 
+######
 # for selectInput drop-down choices(types of natural disasters)
-relevant <- c("All", "Drought","Storm", "Flood", "Landslide", 
-              "Wildfire", "Extreme temperature")
-names(relevant) <- relevant
+# relevant <- c("All", "Drought","Storm", "Flood", "Landslide", 
+#               "Wildfire", "Extreme temperature")
+# names(relevant) <- relevant
+######
 
-ui <- fluidPage(#theme = "bootstrap.min.css", 
+# for checkboxGroupInput choices
+relevant <- unique(natdis$disaster_type)
+
+ui <- fluidPage(theme = shinytheme("cerulean"), #theme = "bootstrap.min.css", 
   #tags$style("#state_select {border-color: #52B097;}"),
   titlePanel("Impacts of Natural Disasters"),
-  sidebarLayout(
-    sidebarPanel(
+  # Instead of sidebar, change the layout?
+  fluidRow(
+    column(width = 6, style = "padding: 20px",
+      # disaster type
+      checkboxGroupInput(inputId = "disaster",
+                         label = "Select disaster(s)",
+                         choices = relevant,
+                         selected = relevant,
+                         inline = TRUE)),
+    column(width = 6,
       # year
       sliderInput(inputId = "year",
                   label = "Select the year",
@@ -65,16 +81,42 @@ ui <- fluidPage(#theme = "bootstrap.min.css",
                   max = 2020,
                   value = 2000,
                   sep = "",
-                  ticks = TRUE),
-      # disaster type
-      selectInput(inputId = "disaster",
-                  label = "Select the disaster type",
-                  choices = relevant,
-                  selected = "All",
-                  selectize = FALSE)),
-    
-    mainPanel(leafletOutput("natdisplot"))
+                  ticks = TRUE,
+                  width = "90%"))),
+    fluidRow(
+      column(width = 3,
+             paste0("Source: EM-DAT (The International Disaster Database)", "<br>",
+                    "https://www.emdat.be/")),
+      column(width = 9,
+           leafletOutput("natdisplot"))
   )
+  
+  # sidebarLayout(
+  #   sidebarPanel(
+  #     # year
+  #     sliderInput(inputId = "year",
+  #                 label = "Select the year",
+  #                 min = 1980,
+  #                 max = 2020,
+  #                 value = 2000,
+  #                 sep = "",
+  #                 ticks = TRUE),
+  #     # disaster type
+  #     # selectInput(inputId = "disaster",
+  #     #             label = "Select the disaster type",
+  #     #             choices = relevant,
+  #     #             selected = "All",
+  #     #             selectize = FALSE)
+  #     
+  #     checkboxGroupInput(inputId = "disaster",
+  #                        label = "Select disaster(s)",
+  #                        choices = relevant,
+  #                        selected = relevant,
+  #                        inline = TRUE)
+  #     ),
+  #   
+  #   mainPanel(leafletOutput("natdisplot"))
+  # )
 )
 
 
@@ -84,7 +126,7 @@ server <- function(input, output){
   # natural disasters of a given type in a given year
   natdis_react <- reactive({
     natdis %>%
-      filter(disaster_type == input$disaster) %>%
+      filter(disaster_type %in% input$disaster) %>%
       filter(year == input$year) %>%
       # Below operation is because the country names used in maps package and 
       # the country names in natdis data differ
@@ -123,7 +165,6 @@ server <- function(input, output){
     natdis_leaflet
   })
   
-  # will consider making this a logarithmic scale(?) instead of arbitrary numbers
   bins <- c(0, 1000, 5000, 10000, 50000, 100000, 500000, 1000000, 5000000, Inf)
   pal_natdis <- reactive({
     colorBin("YlOrRd", domain = a()$total, bins = bins)
@@ -136,7 +177,16 @@ server <- function(input, output){
     # entire map is being torn down and recreated).
     leaflet(data = a()) %>%
       addTiles() %>%
-      setView(0, 0, zoom = 1) %>%
+      setView(80, 0, zoom = 1)
+      
+  })
+  
+  # separating it into observe section reduces the delay/lag 
+  # when variable selection changes because the background map is not being
+  # drawn all over again!
+  observe({
+    
+    leafletProxy("natdisplot", data = a()) %>%
       # reference: https://stackoverflow.com/questions/48953149/dynamic-color-fill-for-polygon-using-leaflet-in-shiny-not-working
       addPolygons(fillColor = ~pal_natdis()(total),
                   weight = 2,
@@ -144,8 +194,8 @@ server <- function(input, output){
                   color = "white",
                   dashArray = "3",
                   fillOpacity = 0.5,
-                  popup = paste0("country: ", a()$country, "<br>",
-                                 "occurred:", a()$freq, "<br>",
+                  popup = paste0("region: ", a()$country, "<br>",
+                                 "occurred: ", a()$freq, " time(s)", "<br>",
                                  "deaths: ", a()$deaths, "<br>", 
                                  "injured: ", a()$injured, "<br>",
                                  "affected: ", a()$affected, "<br>",
@@ -155,32 +205,12 @@ server <- function(input, output){
                     color = "#666",
                     dashArray = "",
                     fillOpacity = 0.7,
-                    bringToFront = TRUE))
+                    bringToFront = TRUE)) %>%
+    addLegend(pal = pal_natdis(), values = ~total, opacity = 0.7, title = NULL,
+              position = "bottomright")
+    
+    
   })
-  
-  #######
-  # before separating background and polygons
-  # output$natdisplot <- renderLeaflet(
-  #   leaflet(data = natdis_leaflet()) %>%
-  #     addTiles() %>%
-  #     setView(0, 0, zoom = 1)%>%
-  #     addPolygons(fillColor = ~pal_natdis(total),
-  #                 weight = 2,
-  #                 opacity = 1,
-  #                 color = "white",
-  #                 dashArray = "3",
-  #                 fillOpacity = 0.7,
-  #                 popup = paste0("country: ", natdis_leaflet()$country, "<br>",
-  #                                "occurred:", natdis_leaflet()$occurrence, "<br>",
-  #                                "deaths: ", natdis_leaflet()$deaths, "<br>", #newline
-  #                                "injured: ", natdis_leaflet()$injured, "<br>",
-  #                                "affected: ", natdis_leaflet()$affected, "<br>",
-  #                                "homeless: ", natdis_leaflet()$homeless, "<br>",
-  #                                )) %>%
-  #     addLegend(pal = pal_natdis, values = ~total, opacity = 0.7, title = NULL,
-  #               position = "bottomright")
-  # )
-  ######
   
   
 }

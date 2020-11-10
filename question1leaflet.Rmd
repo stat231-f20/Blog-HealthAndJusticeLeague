@@ -4,6 +4,14 @@ author: "Bella Han"
 date: "11/4/2020"
 output: html_document
 ---
+```{r}
+#Hi Professor Correia,
+#I unfortunately can't make it to your office hours today ):
+#Please take a look at line 300 and the leaflets made after that line!
+#When I used 'bins3' for all of the palettes used for creating the leaflet
+#the NA values didn't show up, but when I used a separate bin this error comes up.
+#Thank you!
+```
 
 ```{r, message = FALSE, include = FALSE}
 #loading packages
@@ -404,7 +412,7 @@ DALY_change_leaflet
 ```
 
 ```{r, message = FALSE}
-#trying out sth different--kinda don't know what to make out of the choropleths
+#trying out sth different in the meantime
 # library(ggplot2)
 # library(gganimate)
 # library(gifski)

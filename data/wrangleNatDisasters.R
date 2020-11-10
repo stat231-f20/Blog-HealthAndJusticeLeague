@@ -93,6 +93,23 @@ data2 <- data1 %>%
     TRUE ~ longnum
   ))
 
+# available disaster types
+# unique(data2$disaster_type)
+# [1] "Drought"            
+# [2] "Earthquake"         
+# [3] "Volcanic activity"  
+# [4] "Mass movement (dry)"
+# [5] "Storm"              
+# [6] "Flood"              
+# [7] "Epidemic"           
+# [8] "Landslide"          
+# [9] "Wildfire"           
+# [10] "Extreme temperature"
+# [11] "Fog"                
+# [12] "Insect infestation" 
+# [13] "Impact"             
+# [14] "Animal accident" 
+
 relevant <- c("Drought", "Storm", "Flood", "Landslide", 
               "Wildfire", "Extreme temperature")
 

@@ -6,6 +6,8 @@ library(readr)
 library(readxl)
 library(janitor)
 
+###USE wrangled_natdisasters_by year.csv - you don't need to do frequency yourself!!!!!!!
+
 my_path <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague"
 origclimatedisaster_data <- read_excel(paste0(my_path,"/data/naturaldisasters.xlsx"), 
                    col_types = c("skip", "text", "text", 
@@ -21,7 +23,7 @@ origclimatedisaster_data <- read_excel(paste0(my_path,"/data/naturaldisasters.xl
                                  "numeric", "numeric", "numeric", 
                                  "numeric"))
 
-irrelevant <- c("Earthquake", "Epidemic", "Landslide"
+irrelevant <- c("Earthquake", "Epidemic"
                 , "Insect infestation", "Mass movement (dry)")
 
 countrymort_data <- read_csv(paste0(my_path,"/data/wrangled_infmatmortline.csv"))

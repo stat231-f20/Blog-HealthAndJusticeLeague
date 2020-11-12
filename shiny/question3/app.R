@@ -57,8 +57,8 @@ ui <- fluidPage(
       
       selectInput(inputId = "disastfreq"
                   , label = "Choose a predictor variable of interest:"
-                  , choices = mort_choices_values
-                  , selected = infmatmortdata$NetChange_Infant)
+                  , choices = disastfreq_choices_values
+                  , selected = natdisastdata$All)
       
     ),
     
@@ -67,7 +67,7 @@ ui <- fluidPage(
     mainPanel(
       
       plotOutput(outputId = "bar1")
-      , plotOutput(OutputId = "bar2")
+      , plotOutput(outputId = "bar2")
       
     )
   )

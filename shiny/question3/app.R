@@ -37,7 +37,7 @@ ui <- fluidPage(
     
     sidebarPanel(
       
-      h4("Choose countries to view how the frequency of 
+      h4("Explore different variables to view how the frequency of 
          climate disasters and infant/maternal mortality are related!"),
       
       selectizeInput(inputId = "Countries"
@@ -78,7 +78,7 @@ ui <- fluidPage(
 server <- function(input,output){
   
   use_data1_q3 <- reactive({
-    data1 <- filter(infmatmortdata, Country %in% input$Countries)
+    data1 <- filter(infmatmortdata, isocode %in% input$Countries)
   })
   
 
@@ -88,15 +88,15 @@ server <- function(input,output){
       labs(x = "Year", y = "Net Change in Mortality Per Month"
            , title = "Infant and Maternal Mortality Worldwide from 1980-2018") +
       theme(legend.position="bottom", plot.title = element_text(hjust = 0.5)) + 
-      facet_wrap(~ Country, ncol = 1)
+      facet_wrap(~ isocode, ncol = 1)
 
   })
   
   output$bar2 <- renderPlot({
     ggplot(data = use_data1_q3(), aes_string(x = "Year", y = input$disastfreq)) +
       geom_bar(position = "dodge", stat = "identity", aes_string(fill = "isocode")) +
-      labs(x = "Year", y = "Net Change in Mortality Per Month"
-           , title = "Infant and Maternal Mortality Worldwide from 1980-2018") +
+      labs(x = "Year", y = "Frequency of Chosen Natural Disaster"
+           , title = "Natural Disaster Occurrences Worldwide Between 1980 and 2018") +
       theme(legend.position="bottom", plot.title = element_text(hjust = 0.5)) + 
       facet_wrap(~ Country, ncol = 1)
     

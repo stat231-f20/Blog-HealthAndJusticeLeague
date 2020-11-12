@@ -6,8 +6,7 @@ library(readr)
 library(readxl)
 library(janitor)
 
-#This library is new addition
-install.packages("countrycode")
+#FIXME: This library is new addition
 library(countrycode)
 # This library has a function countrycode() that can convert long country names 
 # into one of many different expressions 
@@ -24,9 +23,9 @@ names(climatedisaster_data)
 climatedis2 <- climatedisaster_data %>%
   mutate(isocode = countrycode(climatedisaster_data$country,
                                # Change long english country name into
-                               origin = "country.name", 
+                                                 origin = "country.name", 
                                # 3-character official country code
-                               destination = "iso3c"))
+                                                 destination = "iso3c"))
 
 # You will get the error saying:
 # Some values were not matched unambiguously: Azores Islands, Canary Is, 
@@ -63,7 +62,7 @@ mortality2 <- countrymort_data %>%
 # Therefore, I will try to filter the climate disasters data based on
 # the isocode present in mortality dataset
 # This way we don't have to deal with USA/United States/United States of America problem
-
+  
 isocode_mortality <- unique(mortality2$isocode)
 
 reducedclimatedis <- climatedis_fin %>% 
@@ -76,41 +75,4 @@ reducedclimatedis <- climatedis_fin %>%
 
 write_csv(reducedclimatedisaster_data, paste0(my_path,"/data/wrangled_climateq3.csv"))
 
-# I commented out your work so you can recover them whenever you want to
-######
-# 
-# #load library
-# library(dplyr)
-# library(tidyverse)
-# library(readr)
-# library(readxl)
-# library(janitor)
-# 
-# 
-# my_path <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague"
-# 
-# climatedisaster_data <- read_csv(paste0(my_path,"/data/wrangled_natdisasters_byyear.csv"))
-# 
-# climatedisaster_data$country <- gsub("Czech Republic (the)", "Czech Republic", climatedisaster_data$country)
-# climatedisaster_data$country <- gsub("Korea (the Republic of)", "Korea", climatedisaster_data$country)
-# climatedisaster_data$country <- gsub("Netherlands (the)", "Netherlands", climatedisaster_data$country)
-# climatedisaster_data$country <- gsub("Slovakia", "Slovakia Republic", climatedisaster_data$country)
-# climatedisaster_data$country <- gsub("United Kingdom of Great Britain and Northern Ireland (the)", "United Kingdom", climatedisaster_data$country)
-# climatedisaster_data$country <- gsub("United States of America (the)", "United States", climatedisaster_data$country)
-# 
-# 
-# countrymort_data <- read_csv(paste0(my_path,"/data/wrangled_infmatmortline.csv"))
-# 
-# distinctcountrycode <- unique(countrymort_data$COU)
-# 
-# reducedclimatedisaster_data <- climatedisaster_data %>% 
-#   select(c(1:4, 9)) %>%
-#   filter(c(countrycode %in% distinctcountrycode)
-#          , year %in% c(1980:2018)) %>%
-#   pivot_wider(id_cols = c(year, country, countrycode)
-#               , names_from = disaster_type
-#               , values_from = occurrence)
-# 
-# write_csv(reducedclimatedisaster_data, paste0(my_path,"/data/wrangled_climateq3.csv"))
-          
-######
+

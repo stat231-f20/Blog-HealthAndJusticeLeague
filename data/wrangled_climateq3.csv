@@ -308,7 +308,7 @@ year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temp
 1997,New Zealand,NZL,2,1,NA,1,NA,NA,NA
 1997,Poland,POL,2,NA,NA,1,NA,NA,1
 1997,Portugal,PRT,2,1,NA,NA,1,NA,NA
-1997,Slovakia,SVK,1,NA,NA,1,NA,NA,NA
+1997,Slovakia Republic,SVK,1,NA,NA,1,NA,NA,NA
 1997,Spain,ESP,2,1,NA,1,NA,NA,NA
 1997,Switzerland,CHE,1,NA,NA,1,NA,NA,NA
 1997,United Kingdom of Great Britain and Northern Ireland (the),GBR,3,NA,NA,2,NA,NA,1
@@ -329,7 +329,7 @@ year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temp
 1998,Netherlands (the),NLD,2,1,NA,1,NA,NA,NA
 1998,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
 1998,Poland,POL,2,NA,NA,1,NA,NA,1
-1998,Slovakia,SVK,1,NA,NA,1,NA,NA,NA
+1998,Slovakia Republic,SVK,1,NA,NA,1,NA,NA,NA
 1998,Spain,ESP,2,1,1,NA,NA,NA,NA
 1998,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
 1998,Turkey,TUR,3,NA,NA,3,NA,NA,NA
@@ -354,7 +354,7 @@ year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temp
 1999,Mexico,MEX,7,1,NA,4,1,NA,1
 1999,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
 1999,Poland,POL,2,1,NA,NA,NA,NA,1
-1999,Slovakia,SVK,1,NA,NA,1,NA,NA,NA
+1999,Slovakia Republic,SVK,1,NA,NA,1,NA,NA,NA
 1999,Spain,ESP,2,1,NA,NA,1,NA,NA
 1999,Sweden,SWE,1,1,NA,NA,NA,NA,NA
 1999,Switzerland,CHE,3,1,NA,1,NA,1,NA
@@ -378,7 +378,7 @@ year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temp
 2000,Norway,NOR,1,NA,NA,1,NA,NA,NA
 2000,Poland,POL,1,NA,NA,NA,NA,NA,1
 2000,Portugal,PRT,1,1,NA,NA,NA,NA,NA
-2000,Slovakia,SVK,1,NA,1,NA,NA,NA,NA
+2000,Slovakia Republic,SVK,1,NA,1,NA,NA,NA,NA
 2000,Spain,ESP,5,2,1,2,NA,NA,NA
 2000,Switzerland,CHE,1,NA,NA,NA,NA,1,NA
 2000,Turkey,TUR,4,NA,2,1,NA,NA,1
@@ -401,7 +401,7 @@ year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temp
 2001,Norway,NOR,1,NA,NA,1,NA,NA,NA
 2001,Poland,POL,2,NA,NA,1,NA,NA,1
 2001,Portugal,PRT,2,NA,1,1,NA,NA,NA
-2001,Slovakia,SVK,1,NA,NA,1,NA,NA,NA
+2001,Slovakia Republic,SVK,1,NA,NA,1,NA,NA,NA
 2001,Spain,ESP,1,1,NA,NA,NA,NA,NA
 2001,Switzerland,CHE,1,NA,NA,NA,NA,NA,1
 2001,Turkey,TUR,5,NA,NA,3,NA,1,1
@@ -427,7 +427,7 @@ year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temp
 2002,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
 2002,Poland,POL,3,2,NA,NA,NA,NA,1
 2002,Portugal,PRT,1,NA,NA,1,NA,NA,NA
-2002,Slovakia,SVK,1,NA,NA,1,NA,NA,NA
+2002,Slovakia Republic,SVK,1,NA,NA,1,NA,NA,NA
 2002,Spain,ESP,1,NA,NA,1,NA,NA,NA
 2002,Sweden,SWE,1,1,NA,NA,NA,NA,NA
 2002,Switzerland,CHE,3,1,NA,NA,NA,2,NA
@@ -453,7 +453,7 @@ year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temp
 2003,Netherlands (the),NLD,1,NA,NA,NA,NA,NA,1
 2003,New Zealand,NZL,1,1,NA,NA,NA,NA,NA
 2003,Portugal,PRT,3,NA,1,1,NA,NA,1
-2003,Slovakia,SVK,1,NA,NA,NA,NA,NA,1
+2003,Slovakia Republic,SVK,1,NA,NA,NA,NA,NA,1
 2003,Slovenia,SVN,1,NA,NA,NA,NA,NA,1
 2003,Spain,ESP,2,NA,1,NA,NA,NA,1
 2003,Switzerland,CHE,2,1,NA,NA,NA,NA,1
@@ -475,7 +475,7 @@ year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temp
 2004,New Zealand,NZL,2,NA,NA,2,NA,NA,NA
 2004,Poland,POL,1,NA,NA,1,NA,NA,NA
 2004,Portugal,PRT,2,NA,1,NA,1,NA,NA
-2004,Slovakia,SVK,2,1,NA,1,NA,NA,NA
+2004,Slovakia Republic,SVK,2,1,NA,1,NA,NA,NA
 2004,Spain,ESP,3,NA,1,1,NA,NA,1
 2004,Turkey,TUR,7,3,NA,3,NA,NA,1
 2004,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,NA,NA,1,NA,NA,NA
@@ -504,7 +504,7 @@ year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temp
 2005,Norway,NOR,1,1,NA,NA,NA,NA,NA
 2005,Poland,POL,4,2,NA,1,NA,NA,1
 2005,Portugal,PRT,2,NA,1,NA,NA,NA,1
-2005,Slovakia,SVK,2,NA,NA,1,NA,NA,1
+2005,Slovakia Republic,SVK,2,NA,NA,1,NA,NA,1
 2005,Slovenia,SVN,1,NA,NA,1,NA,NA,NA
 2005,Spain,ESP,2,NA,1,NA,NA,NA,1
 2005,Sweden,SWE,2,1,NA,NA,NA,NA,1
@@ -531,7 +531,7 @@ year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temp
 2006,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
 2006,Poland,POL,1,NA,NA,1,NA,NA,NA
 2006,Portugal,PRT,2,NA,NA,1,NA,NA,1
-2006,Slovakia,SVK,2,NA,NA,2,NA,NA,NA
+2006,Slovakia Republic,SVK,2,NA,NA,2,NA,NA,NA
 2006,Spain,ESP,3,NA,1,1,NA,NA,1
 2006,Switzerland,CHE,2,1,NA,1,NA,NA,NA
 2006,Turkey,TUR,2,NA,NA,2,NA,NA,NA
@@ -554,7 +554,7 @@ year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temp
 2007,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
 2007,New Zealand,NZL,1,1,NA,NA,NA,NA,NA
 2007,Poland,POL,2,2,NA,NA,NA,NA,NA
-2007,Slovakia,SVK,1,NA,NA,NA,NA,NA,1
+2007,Slovakia Republic,SVK,1,NA,NA,NA,NA,NA,1
 2007,Slovenia,SVN,2,2,NA,NA,NA,NA,NA
 2007,Spain,ESP,4,1,NA,3,NA,NA,NA
 2007,Switzerland,CHE,3,2,NA,1,NA,NA,NA
@@ -618,7 +618,7 @@ year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temp
 2010,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
 2010,Poland,POL,3,NA,NA,2,NA,NA,1
 2010,Portugal,PRT,3,1,NA,1,NA,NA,1
-2010,Slovakia,SVK,3,NA,NA,2,NA,NA,1
+2010,Slovakia Republic,SVK,3,NA,NA,2,NA,NA,1
 2010,Spain,ESP,2,1,NA,1,NA,NA,NA
 2010,Switzerland,CHE,2,1,NA,NA,NA,NA,1
 2010,Turkey,TUR,1,NA,NA,NA,NA,1,NA
@@ -661,7 +661,7 @@ year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temp
 2012,Netherlands (the),NLD,1,NA,NA,NA,NA,NA,1
 2012,New Zealand,NZL,1,1,NA,NA,NA,NA,NA
 2012,Poland,POL,4,1,NA,NA,NA,NA,3
-2012,Slovakia,SVK,1,NA,NA,NA,NA,NA,1
+2012,Slovakia Republic,SVK,1,NA,NA,NA,NA,NA,1
 2012,Slovenia,SVN,1,NA,NA,1,NA,NA,NA
 2012,Spain,ESP,2,NA,1,1,NA,NA,NA
 2012,Switzerland,CHE,2,NA,NA,NA,NA,NA,2
@@ -686,7 +686,7 @@ year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temp
 2013,New Zealand,NZL,2,1,NA,NA,1,NA,NA
 2013,Poland,POL,2,1,NA,NA,NA,NA,1
 2013,Portugal,PRT,3,2,1,NA,NA,NA,NA
-2013,Slovakia,SVK,1,NA,NA,1,NA,NA,NA
+2013,Slovakia Republic,SVK,1,NA,NA,1,NA,NA,NA
 2013,Spain,ESP,2,1,NA,1,NA,NA,NA
 2013,Sweden,SWE,1,1,NA,NA,NA,NA,NA
 2013,Switzerland,CHE,2,2,NA,NA,NA,NA,NA
@@ -767,7 +767,7 @@ year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temp
 2017,New Zealand,NZL,2,1,NA,1,NA,NA,NA
 2017,Poland,POL,1,1,NA,NA,NA,NA,NA
 2017,Portugal,PRT,2,NA,2,NA,NA,NA,NA
-2017,Slovakia,SVK,1,1,NA,NA,NA,NA,NA
+2017,Slovakia Republic,SVK,1,1,NA,NA,NA,NA,NA
 2017,Spain,ESP,2,NA,2,NA,NA,NA,NA
 2017,Turkey,TUR,1,1,NA,NA,NA,NA,NA
 2017,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,NA,NA,1,NA,NA,NA

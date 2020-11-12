@@ -69,13 +69,13 @@ isocode_mortality <- unique(mortality2$isocode)
 reducedclimatedis <- climatedis_fin %>% 
   select(year, country, isocode, disaster_type, occurrence) %>%
   filter(isocode %in% isocode_mortality
-         , year %in% c(1980:2018)) %>%
+         , year %in% c(2010:2018)) %>%
   pivot_wider(id_cols = c(year, country, isocode)
               , names_from = disaster_type
               , values_from = occurrence)
 
-write_csv(reducedclimatedisaster_data, paste0(my_path,"/data/wrangled_climateq3.csv"))
-write_csv(mortality2, paste0(my_path,"/data/wrangled_infmatmortline.csv"))
+write_csv(reducedclimatedis, paste0(my_path,"/data/wrangled_climateq3.csv"))
+write_csv(mortality2, paste0(my_path,"/data/wrangled_finalinfmatmortline.csv"))
 
 # I commented out your work so you can recover them whenever you want to
 ######

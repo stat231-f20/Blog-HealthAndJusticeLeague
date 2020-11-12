@@ -10,8 +10,11 @@ library(lubridate)
 
 path_in <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/data"
 
-infmatmortdata <- read_csv(paste0(path_in,"/wrangled_infmatmortline.csv"))
-natdisastdata <- read_csv(paste0(path_in,"/wrangled_climateq3.csv"))
+infmatmortdata <- read_csv(paste0(path_in,"/wrangled_finalinfmatmortline.csv")) %>%
+  filter(Year %in% c(2010:2018))
+
+natdisastdata <- read_csv(paste0(path_in,"/wrangled_climateq3.csv")) %>%
+  rename("Extreme_temperature" = "Extreme temperature")
 
 country_choices <- (infmatmortdata %>%
                       count(isocode))$isocode
@@ -52,13 +55,13 @@ ui <- fluidPage(
       selectInput(inputId = "mort"
                   , label = "Choose a predictor variable of interest:"
                   , choices = mort_choices_values
-                  , selected = infmatmortdata$NetChange_Infant
+                  , selected = "NetChange_Infant"
       ),
       
       selectInput(inputId = "disastfreq"
                   , label = "Choose a predictor variable of interest:"
                   , choices = disastfreq_choices_values
-                  , selected = natdisastdata$All)
+                  , selected = "All")
       
     ),
     
@@ -81,10 +84,14 @@ server <- function(input,output){
     data1 <- filter(infmatmortdata, isocode %in% input$Countries)
   })
   
+  use_data2_q3 <- reactive({
+    data2 <- filter(natdisastdata, isocode %in% input$Countries)
+  })
+  
 
   output$bar1 <- renderPlot({
     ggplot(data = use_data1_q3(), aes_string(x = "Year", y = input$mort)) +
-      geom_bar(position = "dodge", stat = "identity", aes_string(fill = "Country")) +
+      geom_bar(position = "dodge", stat = "identity", aes_string(fill = "isocode")) +
       labs(x = "Year", y = "Net Change in Mortality Per Month"
            , title = "Infant and Maternal Mortality Worldwide from 1980-2018") +
       theme(legend.position="bottom", plot.title = element_text(hjust = 0.5)) + 
@@ -93,12 +100,12 @@ server <- function(input,output){
   })
   
   output$bar2 <- renderPlot({
-    ggplot(data = use_data1_q3(), aes_string(x = "Year", y = input$disastfreq)) +
+    ggplot(data = use_data2_q3(), aes_string(x = "year", y = input$disastfreq)) +
       geom_bar(position = "dodge", stat = "identity", aes_string(fill = "isocode")) +
       labs(x = "Year", y = "Frequency of Chosen Natural Disaster"
            , title = "Natural Disaster Occurrences Worldwide Between 1980 and 2018") +
       theme(legend.position="bottom", plot.title = element_text(hjust = 0.5)) + 
-      facet_wrap(~ Country, ncol = 1)
+      facet_wrap(~ isocode, ncol = 1)
     
   })
   

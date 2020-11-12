@@ -1,801 +1,202 @@
-year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temperature
-1980,Australia,AUS,6,5,1,NA,NA,NA,NA
-1980,Austria,AUT,1,NA,NA,1,NA,NA,NA
-1980,Canada,CAN,1,NA,1,NA,NA,NA,NA
-1980,Denmark,DNK,1,1,NA,NA,NA,NA,NA
-1980,France,FRA,1,NA,NA,1,NA,NA,NA
-1980,Japan,JPN,2,1,NA,1,NA,NA,NA
-1980,Korea (the Republic of),KOR,2,2,NA,NA,NA,NA,NA
-1980,Mexico,MEX,2,NA,NA,2,NA,NA,NA
-1980,New Zealand,NZL,2,NA,NA,2,NA,NA,NA
-1980,Poland,POL,1,NA,NA,1,NA,NA,NA
-1980,Spain,ESP,1,NA,NA,NA,1,NA,NA
-1980,Turkey,TUR,2,NA,NA,1,NA,1,NA
-1980,United States of America (the),USA,7,3,NA,3,NA,NA,1
-1981,Australia,AUS,5,1,NA,3,1,NA,NA
-1981,Austria,AUT,1,1,NA,NA,NA,NA,NA
-1981,Canada,CAN,1,1,NA,NA,NA,NA,NA
-1981,Denmark,DNK,1,1,NA,NA,NA,NA,NA
-1981,France,FRA,1,NA,NA,1,NA,NA,NA
-1981,Japan,JPN,5,4,NA,NA,NA,1,NA
-1981,Korea (the Republic of),KOR,2,1,NA,NA,NA,1,NA
-1981,Mexico,MEX,1,1,NA,NA,NA,NA,NA
-1981,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
-1981,Portugal,PRT,1,NA,NA,1,NA,NA,NA
-1981,Spain,ESP,1,NA,NA,NA,1,NA,NA
-1981,Turkey,TUR,1,NA,NA,1,NA,NA,NA
-1981,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
-1981,United States of America (the),USA,4,3,NA,1,NA,NA,NA
-1982,Australia,AUS,3,3,NA,NA,NA,NA,NA
-1982,Austria,AUT,2,NA,NA,1,NA,1,NA
-1982,Belgium,BEL,1,1,NA,NA,NA,NA,NA
-1982,Canada,CAN,1,NA,NA,NA,NA,NA,1
-1982,Chile,CHL,1,NA,NA,1,NA,NA,NA
-1982,France,FRA,6,2,1,NA,1,2,NA
-1982,Italy,ITA,1,NA,NA,NA,NA,1,NA
-1982,Japan,JPN,5,4,NA,1,NA,NA,NA
-1982,Korea (the Republic of),KOR,2,2,NA,NA,NA,NA,NA
-1982,Mexico,MEX,3,1,NA,2,NA,NA,NA
-1982,Poland,POL,1,NA,NA,1,NA,NA,NA
-1982,Spain,ESP,2,NA,NA,2,NA,NA,NA
-1982,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
-1982,United States of America (the),USA,13,11,NA,2,NA,NA,NA
-1983,Australia,AUS,4,3,1,NA,NA,NA,NA
-1983,Austria,AUT,1,NA,NA,1,NA,NA,NA
-1983,Canada,CAN,1,NA,NA,1,NA,NA,NA
-1983,Denmark,DNK,1,1,NA,NA,NA,NA,NA
-1983,France,FRA,8,2,1,3,NA,2,NA
-1983,Greece,GRC,1,NA,1,NA,NA,NA,NA
-1983,Iceland,ISL,1,NA,NA,NA,NA,1,NA
-1983,Ireland,IRL,1,1,NA,NA,NA,NA,NA
-1983,Israel,ISR,1,NA,1,NA,NA,NA,NA
-1983,Italy,ITA,2,NA,1,NA,NA,1,NA
-1983,Japan,JPN,4,2,NA,NA,NA,2,NA
-1983,Luxembourg,LUX,1,NA,NA,1,NA,NA,NA
-1983,Mexico,MEX,3,2,NA,NA,NA,1,NA
-1983,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
-1983,Poland,POL,2,1,1,NA,NA,NA,NA
-1983,Portugal,PRT,3,NA,1,1,1,NA,NA
-1983,Spain,ESP,2,NA,NA,2,NA,NA,NA
-1983,Switzerland,CHE,3,2,NA,1,NA,NA,NA
-1983,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
-1983,United States of America (the),USA,9,6,NA,2,NA,NA,1
-1984,Australia,AUS,1,NA,NA,1,NA,NA,NA
-1984,Austria,AUT,2,1,NA,NA,NA,1,NA
-1984,Belgium,BEL,2,1,NA,1,NA,NA,NA
-1984,Canada,CAN,1,NA,NA,NA,1,NA,NA
-1984,Chile,CHL,2,2,NA,NA,NA,NA,NA
-1984,France,FRA,5,3,2,NA,NA,NA,NA
-1984,Greece,GRC,2,NA,2,NA,NA,NA,NA
-1984,Hungary,HUN,1,1,NA,NA,NA,NA,NA
-1984,Japan,JPN,1,NA,NA,NA,NA,1,NA
-1984,Korea (the Republic of),KOR,2,NA,NA,1,NA,1,NA
-1984,Mexico,MEX,2,1,NA,1,NA,NA,NA
-1984,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
-1984,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
-1984,Spain,ESP,3,2,1,NA,NA,NA,NA
-1984,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
-1984,Turkey,TUR,1,NA,NA,1,NA,NA,NA
-1984,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
-1984,United States of America (the),USA,14,11,NA,3,NA,NA,NA
-1985,Australia,AUS,5,2,2,1,NA,NA,NA
-1985,Austria,AUT,1,NA,NA,1,NA,NA,NA
-1985,Belgium,BEL,2,1,NA,NA,NA,NA,1
-1985,Canada,CAN,2,1,1,NA,NA,NA,NA
-1985,Denmark,DNK,1,1,NA,NA,NA,NA,NA
-1985,France,FRA,3,1,1,NA,NA,NA,1
-1985,Greece,GRC,2,NA,1,NA,NA,NA,1
-1985,Italy,ITA,1,NA,NA,1,NA,NA,NA
-1985,Japan,JPN,2,2,NA,NA,NA,NA,NA
-1985,Korea (the Republic of),KOR,1,1,NA,NA,NA,NA,NA
-1985,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
-1985,New Zealand,NZL,2,NA,NA,2,NA,NA,NA
-1985,Portugal,PRT,1,NA,1,NA,NA,NA,NA
-1985,Spain,ESP,3,NA,2,NA,NA,NA,1
-1985,Sweden,SWE,1,NA,NA,1,NA,NA,NA
-1985,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
-1985,Turkey,TUR,1,NA,1,NA,NA,NA,NA
-1985,United States of America (the),USA,15,10,NA,5,NA,NA,NA
-1986,Australia,AUS,6,5,NA,1,NA,NA,NA
-1986,Canada,CAN,4,1,2,1,NA,NA,NA
-1986,Chile,CHL,2,1,NA,1,NA,NA,NA
-1986,France,FRA,1,NA,1,NA,NA,NA,NA
-1986,Hungary,HUN,1,NA,NA,NA,1,NA,NA
-1986,Ireland,IRL,1,1,NA,NA,NA,NA,NA
-1986,Italy,ITA,1,NA,NA,1,NA,NA,NA
-1986,Japan,JPN,5,2,NA,1,NA,2,NA
-1986,Korea (the Republic of),KOR,1,1,NA,NA,NA,NA,NA
-1986,Mexico,MEX,1,NA,NA,1,NA,NA,NA
-1986,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
-1986,New Zealand,NZL,3,NA,NA,3,NA,NA,NA
-1986,Portugal,PRT,1,NA,1,NA,NA,NA,NA
-1986,Switzerland,CHE,2,2,NA,NA,NA,NA,NA
-1986,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
-1986,United States of America (the),USA,6,2,NA,3,NA,NA,1
-1987,Belgium,BEL,1,NA,NA,1,NA,NA,NA
-1987,Canada,CAN,3,1,NA,2,NA,NA,NA
-1987,Chile,CHL,3,NA,NA,2,NA,1,NA
-1987,France,FRA,2,1,NA,1,NA,NA,NA
-1987,Greece,GRC,3,1,1,NA,NA,NA,1
-1987,Ireland,IRL,1,NA,NA,1,NA,NA,NA
-1987,Italy,ITA,6,3,NA,1,NA,2,NA
-1987,Japan,JPN,1,1,NA,NA,NA,NA,NA
-1987,Korea (the Republic of),KOR,3,2,NA,1,NA,NA,NA
-1987,Mexico,MEX,2,NA,NA,2,NA,NA,NA
-1987,New Zealand,NZL,2,NA,1,1,NA,NA,NA
-1987,Poland,POL,1,NA,NA,1,NA,NA,NA
-1987,Spain,ESP,2,1,NA,1,NA,NA,NA
-1987,Switzerland,CHE,2,1,NA,1,NA,NA,NA
-1987,Turkey,TUR,1,NA,NA,NA,NA,NA,1
-1987,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
-1987,United States of America (the),USA,9,8,NA,NA,NA,NA,1
-1988,Australia,AUS,4,1,NA,3,NA,NA,NA
-1988,Canada,CAN,2,NA,NA,1,1,NA,NA
-1988,France,FRA,1,NA,NA,1,NA,NA,NA
-1988,Greece,GRC,1,NA,NA,NA,NA,NA,1
-1988,Iceland,ISL,1,NA,NA,1,NA,NA,NA
-1988,Japan,JPN,1,NA,NA,1,NA,NA,NA
-1988,Korea (the Republic of),KOR,1,NA,NA,NA,NA,1,NA
-1988,Mexico,MEX,5,3,NA,NA,1,NA,1
-1988,New Zealand,NZL,4,1,NA,3,NA,NA,NA
-1988,Switzerland,CHE,1,NA,NA,NA,NA,1,NA
-1988,Turkey,TUR,2,NA,NA,1,NA,1,NA
-1988,United States of America (the),USA,22,18,NA,3,1,NA,NA
-1989,Australia,AUS,3,2,NA,1,NA,NA,NA
-1989,Canada,CAN,2,1,1,NA,NA,NA,NA
-1989,Chile,CHL,1,NA,NA,1,NA,NA,NA
-1989,France,FRA,2,1,NA,NA,1,NA,NA
-1989,Japan,JPN,4,2,NA,1,NA,1,NA
-1989,Korea (the Republic of),KOR,1,1,NA,NA,NA,NA,NA
-1989,Mexico,MEX,2,NA,1,1,NA,NA,NA
-1989,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
-1989,Portugal,PRT,1,1,NA,NA,NA,NA,NA
-1989,Spain,ESP,3,2,NA,1,NA,NA,NA
-1989,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
-1989,United States of America (the),USA,17,16,NA,NA,NA,NA,1
-1990,Australia,AUS,5,2,1,2,NA,NA,NA
-1990,Austria,AUT,5,5,NA,NA,NA,NA,NA
-1990,Belgium,BEL,6,6,NA,NA,NA,NA,NA
-1990,Canada,CAN,1,NA,NA,1,NA,NA,NA
-1990,Chile,CHL,1,NA,NA,1,NA,NA,NA
-1990,Denmark,DNK,3,3,NA,NA,NA,NA,NA
-1990,Finland,FIN,2,2,NA,NA,NA,NA,NA
-1990,France,FRA,10,8,NA,NA,NA,1,1
-1990,Germany,DEU,6,6,NA,NA,NA,NA,NA
-1990,Greece,GRC,2,1,NA,NA,1,NA,NA
-1990,Ireland,IRL,4,4,NA,NA,NA,NA,NA
-1990,Italy,ITA,3,1,2,NA,NA,NA,NA
-1990,Japan,JPN,3,2,NA,1,NA,NA,NA
-1990,Korea (the Republic of),KOR,3,1,NA,1,NA,NA,1
-1990,Luxembourg,LUX,6,6,NA,NA,NA,NA,NA
-1990,Mexico,MEX,3,1,NA,1,NA,NA,1
-1990,Netherlands (the),NLD,6,6,NA,NA,NA,NA,NA
-1990,Norway,NOR,2,2,NA,NA,NA,NA,NA
-1990,Poland,POL,1,1,NA,NA,NA,NA,NA
-1990,Spain,ESP,3,2,NA,NA,1,NA,NA
-1990,Sweden,SWE,2,2,NA,NA,NA,NA,NA
-1990,Switzerland,CHE,4,4,NA,NA,NA,NA,NA
-1990,Turkey,TUR,2,NA,NA,2,NA,NA,NA
-1990,United Kingdom of Great Britain and Northern Ireland (the),GBR,7,7,NA,NA,NA,NA,NA
-1990,United States of America (the),USA,21,15,NA,4,NA,NA,2
-1991,Australia,AUS,3,2,NA,NA,1,NA,NA
-1991,Austria,AUT,2,1,NA,1,NA,NA,NA
-1991,Canada,CAN,1,1,NA,NA,NA,NA,NA
-1991,Chile,CHL,2,NA,NA,NA,1,1,NA
-1991,France,FRA,3,NA,NA,NA,1,NA,2
-1991,Germany,DEU,1,1,NA,NA,NA,NA,NA
-1991,Greece,GRC,1,NA,NA,NA,NA,NA,1
-1991,Ireland,IRL,1,1,NA,NA,NA,NA,NA
-1991,Israel,ISR,1,1,NA,NA,NA,NA,NA
-1991,Japan,JPN,5,5,NA,NA,NA,NA,NA
-1991,Korea (the Republic of),KOR,2,1,NA,1,NA,NA,NA
-1991,Mexico,MEX,3,1,NA,2,NA,NA,NA
-1991,New Zealand,NZL,3,NA,NA,3,NA,NA,NA
-1991,Portugal,PRT,1,NA,1,NA,NA,NA,NA
-1991,Spain,ESP,1,NA,1,NA,NA,NA,NA
-1991,Turkey,TUR,2,1,NA,1,NA,NA,NA
-1991,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,1,NA,NA,NA,NA,1
-1991,United States of America (the),USA,35,17,2,14,2,NA,NA
-1992,Australia,AUS,3,2,NA,NA,1,NA,NA
-1992,Canada,CAN,2,NA,1,NA,NA,NA,1
-1992,Chile,CHL,3,2,1,NA,NA,NA,NA
-1992,Denmark,DNK,1,NA,NA,NA,1,NA,NA
-1992,France,FRA,3,2,NA,1,NA,NA,NA
-1992,Germany,DEU,1,NA,NA,1,NA,NA,NA
-1992,Hungary,HUN,1,NA,NA,NA,1,NA,NA
-1992,Israel,ISR,1,NA,NA,NA,NA,NA,1
-1992,Italy,ITA,2,NA,NA,2,NA,NA,NA
-1992,Japan,JPN,2,2,NA,NA,NA,NA,NA
-1992,Korea (the Republic of),KOR,2,1,NA,1,NA,NA,NA
-1992,Lithuania,LTU,1,NA,NA,NA,1,NA,NA
-1992,Mexico,MEX,3,1,NA,NA,NA,NA,2
-1992,Netherlands (the),NLD,1,NA,NA,1,NA,NA,NA
-1992,New Zealand,NZL,3,2,NA,NA,1,NA,NA
-1992,Norway,NOR,1,1,NA,NA,NA,NA,NA
-1992,Poland,POL,1,NA,1,NA,NA,NA,NA
-1992,United States of America (the),USA,29,27,2,NA,NA,NA,NA
-1993,Australia,AUS,4,2,NA,1,NA,NA,1
-1993,Austria,AUT,1,1,NA,NA,NA,NA,NA
-1993,Belgium,BEL,2,NA,NA,2,NA,NA,NA
-1993,Canada,CAN,1,NA,NA,1,NA,NA,NA
-1993,Chile,CHL,2,NA,1,1,NA,NA,NA
-1993,France,FRA,3,2,NA,1,NA,NA,NA
-1993,Germany,DEU,3,2,NA,1,NA,NA,NA
-1993,Ireland,IRL,1,NA,NA,1,NA,NA,NA
-1993,Italy,ITA,1,1,NA,NA,NA,NA,NA
-1993,Japan,JPN,6,3,NA,1,NA,2,NA
-1993,Korea (the Republic of),KOR,2,1,NA,NA,NA,1,NA
-1993,Lithuania,LTU,1,1,NA,NA,NA,NA,NA
-1993,Luxembourg,LUX,1,NA,NA,1,NA,NA,NA
-1993,Mexico,MEX,7,5,NA,2,NA,NA,NA
-1993,Netherlands (the),NLD,1,NA,NA,1,NA,NA,NA
-1993,Norway,NOR,1,1,NA,NA,NA,NA,NA
-1993,Switzerland,CHE,3,3,NA,NA,NA,NA,NA
-1993,Turkey,TUR,1,NA,NA,NA,NA,1,NA
-1993,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,NA,NA,2,NA,NA,NA
-1993,United States of America (the),USA,28,20,1,6,NA,NA,1
-1994,Australia,AUS,8,4,2,NA,NA,NA,2
-1994,Austria,AUT,1,1,NA,NA,NA,NA,NA
-1994,Belgium,BEL,1,NA,NA,1,NA,NA,NA
-1994,Canada,CAN,3,2,1,NA,NA,NA,NA
-1994,France,FRA,3,NA,NA,3,NA,NA,NA
-1994,Germany,DEU,4,2,NA,2,NA,NA,NA
-1994,Greece,GRC,1,NA,NA,1,NA,NA,NA
-1994,Italy,ITA,3,1,1,1,NA,NA,NA
-1994,Japan,JPN,3,3,NA,NA,NA,NA,NA
-1994,Korea (the Republic of),KOR,1,1,NA,NA,NA,NA,NA
-1994,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
-1994,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
-1994,Poland,POL,1,1,NA,NA,NA,NA,NA
-1994,Spain,ESP,4,1,2,1,NA,NA,NA
-1994,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
-1994,Turkey,TUR,2,1,NA,NA,NA,NA,1
-1994,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,NA,NA,2,NA,NA,NA
-1994,United States of America (the),USA,14,9,3,1,NA,1,NA
-1995,Australia,AUS,5,4,NA,NA,NA,NA,1
-1995,Austria,AUT,1,NA,NA,1,NA,NA,NA
-1995,Belgium,BEL,1,1,NA,NA,NA,NA,NA
-1995,Canada,CAN,4,1,2,1,NA,NA,NA
-1995,Chile,CHL,2,NA,NA,1,NA,NA,1
-1995,France,FRA,1,1,NA,NA,NA,NA,NA
-1995,Germany,DEU,2,2,NA,NA,NA,NA,NA
-1995,Greece,GRC,1,NA,1,NA,NA,NA,NA
-1995,Iceland,ISL,2,NA,NA,NA,NA,2,NA
-1995,Israel,ISR,1,NA,1,NA,NA,NA,NA
-1995,Japan,JPN,2,1,NA,1,NA,NA,NA
-1995,Korea (the Republic of),KOR,2,2,NA,NA,NA,NA,NA
-1995,Luxembourg,LUX,1,1,NA,NA,NA,NA,NA
-1995,Mexico,MEX,7,5,NA,NA,1,NA,1
-1995,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
-1995,Norway,NOR,1,NA,NA,1,NA,NA,NA
-1995,Spain,ESP,2,NA,NA,NA,NA,NA,2
-1995,Turkey,TUR,3,NA,NA,2,NA,1,NA
-1995,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
-1995,United States of America (the),USA,18,10,NA,6,NA,NA,2
-1996,Australia,AUS,9,6,NA,2,NA,1,NA
-1996,Austria,AUT,1,NA,NA,1,NA,NA,NA
-1996,Canada,CAN,2,1,NA,1,NA,NA,NA
-1996,Czech Republic (the),CZE,1,NA,NA,1,NA,NA,NA
-1996,France,FRA,3,1,NA,2,NA,NA,NA
-1996,Germany,DEU,1,1,NA,NA,NA,NA,NA
-1996,Hungary,HUN,1,NA,NA,1,NA,NA,NA
-1996,Ireland,IRL,1,1,NA,NA,NA,NA,NA
-1996,Italy,ITA,3,NA,NA,2,NA,1,NA
-1996,Japan,JPN,2,1,NA,NA,NA,1,NA
-1996,Korea (the Republic of),KOR,2,NA,NA,1,NA,1,NA
-1996,Mexico,MEX,6,4,NA,1,1,NA,NA
-1996,New Zealand,NZL,1,1,NA,NA,NA,NA,NA
-1996,Portugal,PRT,2,NA,NA,2,NA,NA,NA
-1996,Spain,ESP,2,NA,NA,1,NA,1,NA
-1996,Turkey,TUR,1,NA,1,NA,NA,NA,NA
-1996,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
-1996,United States of America (the),USA,15,9,2,4,NA,NA,NA
-1997,Australia,AUS,4,NA,2,1,NA,1,NA
-1997,Austria,AUT,1,NA,NA,1,NA,NA,NA
-1997,Canada,CAN,3,1,1,1,NA,NA,NA
-1997,Chile,CHL,4,2,1,1,NA,NA,NA
-1997,Czech Republic (the),CZE,1,NA,NA,1,NA,NA,NA
-1997,France,FRA,3,NA,1,NA,1,NA,1
-1997,Germany,DEU,2,NA,NA,1,NA,NA,1
-1997,Greece,GRC,1,NA,NA,1,NA,NA,NA
-1997,Hungary,HUN,1,NA,NA,1,NA,NA,NA
-1997,Israel,ISR,1,NA,NA,1,NA,NA,NA
-1997,Italy,ITA,2,1,NA,NA,1,NA,NA
-1997,Japan,JPN,3,2,NA,NA,NA,1,NA
-1997,Korea (the Republic of),KOR,2,NA,NA,2,NA,NA,NA
-1997,Mexico,MEX,6,3,NA,NA,NA,1,2
-1997,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
-1997,New Zealand,NZL,2,1,NA,1,NA,NA,NA
-1997,Poland,POL,2,NA,NA,1,NA,NA,1
-1997,Portugal,PRT,2,1,NA,NA,1,NA,NA
-1997,Slovakia Republic,SVK,1,NA,NA,1,NA,NA,NA
-1997,Spain,ESP,2,1,NA,1,NA,NA,NA
-1997,Switzerland,CHE,1,NA,NA,1,NA,NA,NA
-1997,United Kingdom of Great Britain and Northern Ireland (the),GBR,3,NA,NA,2,NA,NA,1
-1997,United States of America (the),USA,33,23,2,8,NA,NA,NA
-1998,Australia,AUS,6,NA,NA,6,NA,NA,NA
-1998,Belgium,BEL,2,1,NA,1,NA,NA,NA
-1998,Canada,CAN,3,1,1,1,NA,NA,NA
-1998,Czech Republic (the),CZE,1,NA,NA,1,NA,NA,NA
-1998,France,FRA,2,1,NA,NA,NA,1,NA
-1998,Germany,DEU,1,1,NA,NA,NA,NA,NA
-1998,Greece,GRC,2,NA,1,1,NA,NA,NA
-1998,Ireland,IRL,1,1,NA,NA,NA,NA,NA
-1998,Israel,ISR,1,NA,NA,1,NA,NA,NA
-1998,Italy,ITA,2,NA,NA,NA,NA,1,1
-1998,Japan,JPN,7,5,NA,1,NA,1,NA
-1998,Korea (the Republic of),KOR,4,3,NA,1,NA,NA,NA
-1998,Mexico,MEX,9,4,1,2,NA,1,1
-1998,Netherlands (the),NLD,2,1,NA,1,NA,NA,NA
-1998,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
-1998,Poland,POL,2,NA,NA,1,NA,NA,1
-1998,Slovakia Republic,SVK,1,NA,NA,1,NA,NA,NA
-1998,Spain,ESP,2,1,1,NA,NA,NA,NA
-1998,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
-1998,Turkey,TUR,3,NA,NA,3,NA,NA,NA
-1998,United Kingdom of Great Britain and Northern Ireland (the),GBR,4,3,NA,1,NA,NA,NA
-1998,United States of America (the),USA,32,20,4,7,NA,NA,1
-1999,Australia,AUS,5,4,1,NA,NA,NA,NA
-1999,Austria,AUT,2,NA,NA,1,NA,1,NA
-1999,Belgium,BEL,2,2,NA,NA,NA,NA,NA
-1999,Canada,CAN,3,2,1,NA,NA,NA,NA
-1999,Chile,CHL,1,NA,1,NA,NA,NA,NA
-1999,Denmark,DNK,1,1,NA,NA,NA,NA,NA
-1999,France,FRA,8,3,1,3,NA,1,NA
-1999,Germany,DEU,4,2,NA,1,NA,1,NA
-1999,Hungary,HUN,3,1,NA,2,NA,NA,NA
-1999,Ireland,IRL,1,1,NA,NA,NA,NA,NA
-1999,Israel,ISR,1,NA,NA,NA,1,NA,NA
-1999,Italy,ITA,2,NA,1,NA,NA,1,NA
-1999,Japan,JPN,3,1,NA,2,NA,NA,NA
-1999,Korea (the Republic of),KOR,2,1,NA,1,NA,NA,NA
-1999,Latvia,LVA,1,1,NA,NA,NA,NA,NA
-1999,Lithuania,LTU,2,1,NA,NA,NA,NA,1
-1999,Mexico,MEX,7,1,NA,4,1,NA,1
-1999,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
-1999,Poland,POL,2,1,NA,NA,NA,NA,1
-1999,Slovakia Republic,SVK,1,NA,NA,1,NA,NA,NA
-1999,Spain,ESP,2,1,NA,NA,1,NA,NA
-1999,Sweden,SWE,1,1,NA,NA,NA,NA,NA
-1999,Switzerland,CHE,3,1,NA,1,NA,1,NA
-1999,United Kingdom of Great Britain and Northern Ireland (the),GBR,3,2,NA,1,NA,NA,NA
-1999,United States of America (the),USA,22,16,3,1,1,NA,1
-2000,Australia,AUS,5,3,1,1,NA,NA,NA
-2000,Austria,AUT,2,1,NA,NA,NA,1,NA
-2000,Canada,CAN,1,1,NA,NA,NA,NA,NA
-2000,Chile,CHL,3,NA,NA,2,NA,NA,1
-2000,Czech Republic (the),CZE,1,NA,NA,1,NA,NA,NA
-2000,France,FRA,7,1,NA,6,NA,NA,NA
-2000,Greece,GRC,5,NA,2,2,NA,NA,1
-2000,Hungary,HUN,1,NA,NA,1,NA,NA,NA
-2000,Ireland,IRL,1,1,NA,NA,NA,NA,NA
-2000,Israel,ISR,2,1,NA,NA,NA,NA,1
-2000,Italy,ITA,4,NA,NA,4,NA,NA,NA
-2000,Japan,JPN,4,3,NA,1,NA,NA,NA
-2000,Korea (the Republic of),KOR,5,2,1,2,NA,NA,NA
-2000,Mexico,MEX,6,2,NA,3,NA,NA,1
-2000,New Zealand,NZL,2,1,NA,1,NA,NA,NA
-2000,Norway,NOR,1,NA,NA,1,NA,NA,NA
-2000,Poland,POL,1,NA,NA,NA,NA,NA,1
-2000,Portugal,PRT,1,1,NA,NA,NA,NA,NA
-2000,Slovakia Republic,SVK,1,NA,1,NA,NA,NA,NA
-2000,Spain,ESP,5,2,1,2,NA,NA,NA
-2000,Switzerland,CHE,1,NA,NA,NA,NA,1,NA
-2000,Turkey,TUR,4,NA,2,1,NA,NA,1
-2000,United Kingdom of Great Britain and Northern Ireland (the),GBR,6,3,NA,3,NA,NA,NA
-2000,United States of America (the),USA,30,12,7,8,2,NA,1
-2001,Australia,AUS,9,3,2,4,NA,NA,NA
-2001,Canada,CAN,2,1,1,NA,NA,NA,NA
-2001,Chile,CHL,4,1,NA,3,NA,NA,NA
-2001,France,FRA,7,2,NA,5,NA,NA,NA
-2001,Germany,DEU,1,1,NA,NA,NA,NA,NA
-2001,Greece,GRC,2,NA,NA,2,NA,NA,NA
-2001,Hungary,HUN,2,NA,NA,1,NA,NA,1
-2001,Italy,ITA,3,1,NA,2,NA,NA,NA
-2001,Japan,JPN,5,4,NA,1,NA,NA,NA
-2001,Korea (the Republic of),KOR,4,1,NA,2,1,NA,NA
-2001,Latvia,LVA,1,NA,NA,NA,NA,NA,1
-2001,Lithuania,LTU,1,NA,NA,NA,NA,NA,1
-2001,Mexico,MEX,6,5,NA,1,NA,NA,NA
-2001,New Zealand,NZL,1,NA,NA,NA,NA,NA,1
-2001,Norway,NOR,1,NA,NA,1,NA,NA,NA
-2001,Poland,POL,2,NA,NA,1,NA,NA,1
-2001,Portugal,PRT,2,NA,1,1,NA,NA,NA
-2001,Slovakia Republic,SVK,1,NA,NA,1,NA,NA,NA
-2001,Spain,ESP,1,1,NA,NA,NA,NA,NA
-2001,Switzerland,CHE,1,NA,NA,NA,NA,NA,1
-2001,Turkey,TUR,5,NA,NA,3,NA,1,1
-2001,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,NA,NA,2,NA,NA,NA
-2001,United States of America (the),USA,26,17,3,5,NA,NA,1
-2002,Australia,AUS,5,3,1,NA,1,NA,NA
-2002,Austria,AUT,3,2,NA,1,NA,NA,NA
-2002,Belgium,BEL,5,1,NA,4,NA,NA,NA
-2002,Canada,CAN,2,NA,1,1,NA,NA,NA
-2002,Chile,CHL,5,NA,1,3,NA,NA,1
-2002,Czech Republic (the),CZE,3,2,NA,1,NA,NA,NA
-2002,Denmark,DNK,1,1,NA,NA,NA,NA,NA
-2002,France,FRA,5,2,NA,3,NA,NA,NA
-2002,Germany,DEU,4,3,NA,1,NA,NA,NA
-2002,Greece,GRC,5,1,NA,4,NA,NA,NA
-2002,Hungary,HUN,1,NA,NA,1,NA,NA,NA
-2002,Ireland,IRL,1,NA,NA,1,NA,NA,NA
-2002,Italy,ITA,4,NA,NA,3,1,NA,NA
-2002,Japan,JPN,6,5,1,NA,NA,NA,NA
-2002,Korea (the Republic of),KOR,4,3,NA,1,NA,NA,NA
-2002,Mexico,MEX,7,3,NA,2,1,NA,1
-2002,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
-2002,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
-2002,Poland,POL,3,2,NA,NA,NA,NA,1
-2002,Portugal,PRT,1,NA,NA,1,NA,NA,NA
-2002,Slovakia Republic,SVK,1,NA,NA,1,NA,NA,NA
-2002,Spain,ESP,1,NA,NA,1,NA,NA,NA
-2002,Sweden,SWE,1,1,NA,NA,NA,NA,NA
-2002,Switzerland,CHE,3,1,NA,NA,NA,2,NA
-2002,Turkey,TUR,2,1,NA,1,NA,NA,NA
-2002,United Kingdom of Great Britain and Northern Ireland (the),GBR,5,2,NA,3,NA,NA,NA
-2002,United States of America (the),USA,29,15,8,4,1,NA,1
-2003,Australia,AUS,10,5,1,4,NA,NA,NA
-2003,Austria,AUT,1,NA,NA,NA,NA,NA,1
-2003,Belgium,BEL,2,NA,NA,1,NA,NA,1
-2003,Canada,CAN,7,2,1,4,NA,NA,NA
-2003,Chile,CHL,1,NA,1,NA,NA,NA,NA
-2003,Czech Republic (the),CZE,1,NA,NA,NA,NA,NA,1
-2003,France,FRA,6,2,1,2,NA,NA,1
-2003,Germany,DEU,3,2,NA,NA,NA,NA,1
-2003,Greece,GRC,3,NA,NA,3,NA,NA,NA
-2003,Hungary,HUN,2,1,NA,NA,1,NA,NA
-2003,Italy,ITA,3,NA,NA,2,NA,NA,1
-2003,Japan,JPN,3,2,NA,1,NA,NA,NA
-2003,Korea (the Republic of),KOR,1,1,NA,NA,NA,NA,NA
-2003,Latvia,LVA,1,NA,NA,NA,NA,NA,1
-2003,Luxembourg,LUX,1,NA,NA,NA,NA,NA,1
-2003,Mexico,MEX,8,2,1,3,NA,1,1
-2003,Netherlands (the),NLD,1,NA,NA,NA,NA,NA,1
-2003,New Zealand,NZL,1,1,NA,NA,NA,NA,NA
-2003,Portugal,PRT,3,NA,1,1,NA,NA,1
-2003,Slovakia Republic,SVK,1,NA,NA,NA,NA,NA,1
-2003,Slovenia,SVN,1,NA,NA,NA,NA,NA,1
-2003,Spain,ESP,2,NA,1,NA,NA,NA,1
-2003,Switzerland,CHE,2,1,NA,NA,NA,NA,1
-2003,Turkey,TUR,1,NA,NA,1,NA,NA,NA
-2003,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,NA,NA,NA,NA,NA,1
-2003,United States of America (the),USA,22,14,3,4,NA,1,NA
-2004,Australia,AUS,6,3,NA,3,NA,NA,NA
-2004,Canada,CAN,4,2,NA,2,NA,NA,NA
-2004,Chile,CHL,2,NA,NA,1,NA,NA,1
-2004,France,FRA,1,1,NA,NA,NA,NA,NA
-2004,Germany,DEU,1,1,NA,NA,NA,NA,NA
-2004,Greece,GRC,2,2,NA,NA,NA,NA,NA
-2004,Hungary,HUN,1,NA,NA,1,NA,NA,NA
-2004,Ireland,IRL,1,1,NA,NA,NA,NA,NA
-2004,Italy,ITA,1,1,NA,NA,NA,NA,NA
-2004,Japan,JPN,11,8,NA,2,NA,NA,1
-2004,Korea (the Republic of),KOR,7,4,1,2,NA,NA,NA
-2004,Mexico,MEX,3,NA,NA,2,NA,NA,1
-2004,New Zealand,NZL,2,NA,NA,2,NA,NA,NA
-2004,Poland,POL,1,NA,NA,1,NA,NA,NA
-2004,Portugal,PRT,2,NA,1,NA,1,NA,NA
-2004,Slovakia Republic,SVK,2,1,NA,1,NA,NA,NA
-2004,Spain,ESP,3,NA,1,1,NA,NA,1
-2004,Turkey,TUR,7,3,NA,3,NA,NA,1
-2004,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,NA,NA,1,NA,NA,NA
-2004,United States of America (the),USA,20,12,3,4,NA,NA,1
-2005,Australia,AUS,4,2,1,1,NA,NA,NA
-2005,Austria,AUT,3,NA,NA,2,NA,NA,1
-2005,Belgium,BEL,3,NA,NA,1,NA,NA,2
-2005,Canada,CAN,5,1,2,2,NA,NA,NA
-2005,Chile,CHL,3,1,NA,2,NA,NA,NA
-2005,Czech Republic (the),CZE,3,1,NA,1,NA,NA,1
-2005,Denmark,DNK,1,1,NA,NA,NA,NA,NA
-2005,Estonia,EST,2,1,NA,NA,NA,NA,1
-2005,Finland,FIN,1,NA,NA,1,NA,NA,NA
-2005,France,FRA,5,NA,1,2,NA,NA,2
-2005,Germany,DEU,5,1,NA,2,NA,NA,2
-2005,Hungary,HUN,4,1,NA,2,NA,NA,1
-2005,Ireland,IRL,1,1,NA,NA,NA,NA,NA
-2005,Italy,ITA,1,NA,NA,NA,NA,NA,1
-2005,Japan,JPN,4,3,NA,1,NA,NA,NA
-2005,Korea (the Republic of),KOR,5,3,1,1,NA,NA,NA
-2005,Latvia,LVA,3,2,NA,NA,NA,NA,1
-2005,Lithuania,LTU,2,1,NA,1,NA,NA,NA
-2005,Mexico,MEX,7,4,NA,3,NA,NA,NA
-2005,Netherlands (the),NLD,3,1,NA,NA,NA,NA,2
-2005,New Zealand,NZL,2,1,NA,1,NA,NA,NA
-2005,Norway,NOR,1,1,NA,NA,NA,NA,NA
-2005,Poland,POL,4,2,NA,1,NA,NA,1
-2005,Portugal,PRT,2,NA,1,NA,NA,NA,1
-2005,Slovakia Republic,SVK,2,NA,NA,1,NA,NA,1
-2005,Slovenia,SVN,1,NA,NA,1,NA,NA,NA
-2005,Spain,ESP,2,NA,1,NA,NA,NA,1
-2005,Sweden,SWE,2,1,NA,NA,NA,NA,1
-2005,Switzerland,CHE,2,NA,NA,1,NA,NA,1
-2005,Turkey,TUR,5,1,NA,2,NA,1,1
-2005,United Kingdom of Great Britain and Northern Ireland (the),GBR,4,2,NA,NA,NA,NA,2
-2005,United States of America (the),USA,16,8,1,6,NA,NA,1
-2006,Australia,AUS,8,3,3,1,1,NA,NA
-2006,Austria,AUT,1,NA,NA,1,NA,NA,NA
-2006,Belgium,BEL,1,NA,NA,NA,NA,NA,1
-2006,Canada,CAN,5,NA,NA,5,NA,NA,NA
-2006,Chile,CHL,1,NA,NA,1,NA,NA,NA
-2006,Czech Republic (the),CZE,2,NA,NA,2,NA,NA,NA
-2006,France,FRA,3,2,NA,NA,NA,NA,1
-2006,Germany,DEU,5,3,NA,1,NA,NA,1
-2006,Greece,GRC,3,1,NA,2,NA,NA,NA
-2006,Hungary,HUN,2,1,NA,1,NA,NA,NA
-2006,Italy,ITA,2,1,NA,NA,NA,1,NA
-2006,Japan,JPN,5,3,NA,2,NA,NA,NA
-2006,Korea (the Republic of),KOR,1,NA,NA,1,NA,NA,NA
-2006,Lithuania,LTU,1,NA,NA,NA,1,NA,NA
-2006,Mexico,MEX,7,3,NA,1,NA,2,1
-2006,Netherlands (the),NLD,1,NA,NA,NA,NA,NA,1
-2006,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
-2006,Poland,POL,1,NA,NA,1,NA,NA,NA
-2006,Portugal,PRT,2,NA,NA,1,NA,NA,1
-2006,Slovakia Republic,SVK,2,NA,NA,2,NA,NA,NA
-2006,Spain,ESP,3,NA,1,1,NA,NA,1
-2006,Switzerland,CHE,2,1,NA,1,NA,NA,NA
-2006,Turkey,TUR,2,NA,NA,2,NA,NA,NA
-2006,United States of America (the),USA,28,12,3,11,NA,NA,2
-2007,Australia,AUS,2,1,NA,1,NA,NA,NA
-2007,Austria,AUT,2,1,NA,NA,NA,NA,1
-2007,Belgium,BEL,1,1,NA,NA,NA,NA,NA
-2007,Canada,CAN,3,2,NA,1,NA,NA,NA
-2007,Chile,CHL,1,NA,NA,NA,NA,NA,1
-2007,Czech Republic (the),CZE,1,1,NA,NA,NA,NA,NA
-2007,Denmark,DNK,1,1,NA,NA,NA,NA,NA
-2007,France,FRA,3,3,NA,NA,NA,NA,NA
-2007,Germany,DEU,3,2,NA,1,NA,NA,NA
-2007,Greece,GRC,4,NA,2,1,NA,NA,1
-2007,Hungary,HUN,1,NA,NA,NA,NA,NA,1
-2007,Italy,ITA,2,NA,1,NA,NA,NA,1
-2007,Japan,JPN,5,3,NA,1,NA,NA,1
-2007,Korea (the Republic of),KOR,2,1,NA,1,NA,NA,NA
-2007,Mexico,MEX,7,4,NA,2,NA,1,NA
-2007,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
-2007,New Zealand,NZL,1,1,NA,NA,NA,NA,NA
-2007,Poland,POL,2,2,NA,NA,NA,NA,NA
-2007,Slovakia Republic,SVK,1,NA,NA,NA,NA,NA,1
-2007,Slovenia,SVN,2,2,NA,NA,NA,NA,NA
-2007,Spain,ESP,4,1,NA,3,NA,NA,NA
-2007,Switzerland,CHE,3,2,NA,1,NA,NA,NA
-2007,Turkey,TUR,4,NA,NA,3,NA,NA,1
-2007,United Kingdom of Great Britain and Northern Ireland (the),GBR,4,1,NA,3,NA,NA,NA
-2007,United States of America (the),USA,23,13,3,6,1,NA,NA
-2008,Australia,AUS,5,1,NA,4,NA,NA,NA
-2008,Austria,AUT,1,1,NA,NA,NA,NA,NA
-2008,Belgium,BEL,2,1,NA,NA,NA,NA,1
-2008,Canada,CAN,2,NA,NA,2,NA,NA,NA
-2008,Chile,CHL,2,NA,NA,2,NA,NA,NA
-2008,Czech Republic (the),CZE,1,1,NA,NA,NA,NA,NA
-2008,France,FRA,4,3,NA,NA,NA,NA,1
-2008,Germany,DEU,3,2,NA,NA,NA,NA,1
-2008,Hungary,HUN,1,NA,NA,NA,NA,NA,1
-2008,Italy,ITA,3,NA,NA,3,NA,NA,NA
-2008,Japan,JPN,2,NA,NA,1,NA,NA,1
-2008,Korea (the Republic of),KOR,1,NA,NA,1,NA,NA,NA
-2008,Mexico,MEX,3,1,NA,1,NA,1,NA
-2008,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
-2008,Norway,NOR,1,1,NA,NA,NA,NA,NA
-2008,Poland,POL,2,1,NA,NA,NA,NA,1
-2008,Portugal,PRT,2,NA,NA,1,NA,NA,1
-2008,Turkey,TUR,1,NA,1,NA,NA,NA,NA
-2008,United Kingdom of Great Britain and Northern Ireland (the),GBR,3,1,NA,2,NA,NA,NA
-2008,United States of America (the),USA,21,14,2,4,NA,NA,1
-2009,Australia,AUS,6,2,1,2,NA,NA,1
-2009,Austria,AUT,4,1,NA,2,NA,NA,1
-2009,Canada,CAN,3,2,NA,1,NA,NA,NA
-2009,Czech Republic (the),CZE,2,1,NA,1,NA,NA,NA
-2009,France,FRA,4,1,1,NA,NA,NA,2
-2009,Germany,DEU,3,1,NA,1,NA,NA,1
-2009,Greece,GRC,2,NA,2,NA,NA,NA,NA
-2009,Ireland,IRL,1,NA,NA,1,NA,NA,NA
-2009,Italy,ITA,4,1,1,1,NA,NA,1
-2009,Japan,JPN,5,2,NA,NA,NA,2,1
-2009,Mexico,MEX,7,2,NA,5,NA,NA,NA
-2009,Poland,POL,3,1,NA,1,NA,NA,1
-2009,Spain,ESP,2,1,1,NA,NA,NA,NA
-2009,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
-2009,Turkey,TUR,4,NA,NA,2,NA,2,NA
-2009,United Kingdom of Great Britain and Northern Ireland (the),GBR,3,1,NA,1,NA,NA,1
-2009,United States of America (the),USA,17,10,2,4,NA,NA,1
-2010,Australia,AUS,8,3,NA,5,NA,NA,NA
-2010,Belgium,BEL,3,2,NA,1,NA,NA,NA
-2010,Canada,CAN,1,1,NA,NA,NA,NA,NA
-2010,Chile,CHL,1,NA,NA,NA,NA,NA,1
-2010,Czech Republic (the),CZE,4,NA,NA,3,NA,NA,1
-2010,Denmark,DNK,1,1,NA,NA,NA,NA,NA
-2010,France,FRA,4,2,NA,1,NA,NA,1
-2010,Germany,DEU,4,2,NA,1,NA,NA,1
-2010,Greece,GRC,1,NA,NA,1,NA,NA,NA
-2010,Hungary,HUN,1,NA,NA,1,NA,NA,NA
-2010,Israel,ISR,2,NA,1,1,NA,NA,NA
-2010,Italy,ITA,3,1,NA,1,NA,NA,1
-2010,Japan,JPN,2,NA,NA,1,NA,NA,1
-2010,Korea (the Republic of),KOR,1,1,NA,NA,NA,NA,NA
-2010,Lithuania,LTU,2,NA,NA,1,NA,NA,1
-2010,Luxembourg,LUX,1,1,NA,NA,NA,NA,NA
-2010,Mexico,MEX,8,4,NA,2,NA,2,NA
-2010,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
-2010,Poland,POL,3,NA,NA,2,NA,NA,1
-2010,Portugal,PRT,3,1,NA,1,NA,NA,1
-2010,Slovakia Republic,SVK,3,NA,NA,2,NA,NA,1
-2010,Spain,ESP,2,1,NA,1,NA,NA,NA
-2010,Switzerland,CHE,2,1,NA,NA,NA,NA,1
+year,country,isocode,All,Flood,Storm,Extreme temperature,Wildfire,Landslide,Drought
+2010,Australia,AUS,8,5,3,NA,NA,NA,NA
+2010,Belgium,BEL,3,1,2,NA,NA,NA,NA
+2010,Canada,CAN,1,NA,1,NA,NA,NA,NA
+2010,Chile,CHL,1,NA,NA,1,NA,NA,NA
+2010,Czech Republic (the),CZE,4,3,NA,1,NA,NA,NA
+2010,Denmark,DNK,1,NA,1,NA,NA,NA,NA
+2010,France,FRA,4,1,2,1,NA,NA,NA
+2010,Germany,DEU,4,1,2,1,NA,NA,NA
+2010,Greece,GRC,1,1,NA,NA,NA,NA,NA
+2010,Hungary,HUN,1,1,NA,NA,NA,NA,NA
+2010,Israel,ISR,2,1,NA,NA,1,NA,NA
+2010,Italy,ITA,3,1,1,1,NA,NA,NA
+2010,Japan,JPN,2,1,NA,1,NA,NA,NA
+2010,Korea (the Republic of),KOR,1,NA,1,NA,NA,NA,NA
+2010,Lithuania,LTU,2,1,NA,1,NA,NA,NA
+2010,Luxembourg,LUX,1,NA,1,NA,NA,NA,NA
+2010,Mexico,MEX,8,2,4,NA,NA,2,NA
+2010,Netherlands (the),NLD,1,NA,1,NA,NA,NA,NA
+2010,Poland,POL,3,2,NA,1,NA,NA,NA
+2010,Portugal,PRT,3,1,1,1,NA,NA,NA
+2010,Slovakia,SVK,3,2,NA,1,NA,NA,NA
+2010,Spain,ESP,2,1,1,NA,NA,NA,NA
+2010,Switzerland,CHE,2,NA,1,1,NA,NA,NA
 2010,Turkey,TUR,1,NA,NA,NA,NA,1,NA
-2010,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,1,NA,NA,NA,NA,1
-2010,United States of America (the),USA,15,12,NA,3,NA,NA,NA
-2011,Australia,AUS,3,1,1,1,NA,NA,NA
-2011,Belgium,BEL,2,1,NA,1,NA,NA,NA
-2011,Canada,CAN,4,2,1,1,NA,NA,NA
-2011,Chile,CHL,4,NA,2,NA,NA,NA,2
-2011,France,FRA,2,1,NA,1,NA,NA,NA
-2011,Germany,DEU,1,NA,NA,1,NA,NA,NA
-2011,Ireland,IRL,1,NA,NA,1,NA,NA,NA
-2011,Italy,ITA,4,NA,NA,2,NA,1,1
-2011,Japan,JPN,5,3,NA,1,NA,NA,1
-2011,Korea (the Republic of),KOR,3,NA,NA,2,NA,1,NA
-2011,Mexico,MEX,11,5,1,3,1,NA,1
-2011,Norway,NOR,1,1,NA,NA,NA,NA,NA
-2011,Poland,POL,1,NA,NA,NA,NA,NA,1
-2011,Spain,ESP,1,NA,NA,1,NA,NA,NA
-2011,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
-2011,Turkey,TUR,1,NA,NA,1,NA,NA,NA
-2011,United States of America (the),USA,23,14,3,4,1,NA,1
-2012,Australia,AUS,2,NA,NA,2,NA,NA,NA
-2012,Austria,AUT,1,NA,NA,NA,NA,NA,1
-2012,Belgium,BEL,1,NA,NA,NA,NA,NA,1
-2012,Canada,CAN,3,2,NA,1,NA,NA,NA
-2012,Chile,CHL,2,NA,1,1,NA,NA,NA
-2012,Czech Republic (the),CZE,2,NA,NA,NA,NA,NA,2
-2012,Estonia,EST,1,NA,NA,NA,NA,NA,1
-2012,France,FRA,1,NA,NA,NA,NA,NA,1
-2012,Germany,DEU,2,NA,NA,NA,NA,NA,2
-2012,Greece,GRC,2,NA,NA,1,NA,NA,1
-2012,Hungary,HUN,1,NA,NA,NA,NA,NA,1
-2012,Italy,ITA,3,NA,NA,1,1,NA,1
-2012,Japan,JPN,7,6,NA,1,NA,NA,NA
-2012,Korea (the Republic of),KOR,3,3,NA,NA,NA,NA,NA
-2012,Latvia,LVA,1,NA,NA,NA,NA,NA,1
-2012,Lithuania,LTU,2,NA,NA,NA,NA,NA,2
-2012,Mexico,MEX,2,2,NA,NA,NA,NA,NA
-2012,Netherlands (the),NLD,1,NA,NA,NA,NA,NA,1
-2012,New Zealand,NZL,1,1,NA,NA,NA,NA,NA
-2012,Poland,POL,4,1,NA,NA,NA,NA,3
-2012,Slovakia Republic,SVK,1,NA,NA,NA,NA,NA,1
-2012,Slovenia,SVN,1,NA,NA,1,NA,NA,NA
-2012,Spain,ESP,2,NA,1,1,NA,NA,NA
-2012,Switzerland,CHE,2,NA,NA,NA,NA,NA,2
-2012,Turkey,TUR,1,NA,NA,1,NA,NA,NA
-2012,United Kingdom of Great Britain and Northern Ireland (the),GBR,5,NA,NA,5,NA,NA,NA
-2012,United States of America (the),USA,25,19,2,1,2,NA,1
-2013,Australia,AUS,3,1,2,NA,NA,NA,NA
-2013,Austria,AUT,1,NA,NA,1,NA,NA,NA
-2013,Belgium,BEL,2,2,NA,NA,NA,NA,NA
-2013,Canada,CAN,3,1,NA,1,NA,NA,1
-2013,Chile,CHL,1,NA,NA,NA,NA,NA,1
-2013,Czech Republic (the),CZE,1,NA,NA,1,NA,NA,NA
-2013,Denmark,DNK,2,2,NA,NA,NA,NA,NA
-2013,France,FRA,3,2,NA,1,NA,NA,NA
-2013,Germany,DEU,4,3,NA,1,NA,NA,NA
-2013,Hungary,HUN,2,1,NA,1,NA,NA,NA
-2013,Israel,ISR,1,1,NA,NA,NA,NA,NA
-2013,Italy,ITA,1,NA,NA,1,NA,NA,NA
-2013,Japan,JPN,9,7,NA,1,NA,NA,1
-2013,Mexico,MEX,5,4,NA,1,NA,NA,NA
-2013,Netherlands (the),NLD,3,3,NA,NA,NA,NA,NA
-2013,New Zealand,NZL,2,1,NA,NA,1,NA,NA
-2013,Poland,POL,2,1,NA,NA,NA,NA,1
-2013,Portugal,PRT,3,2,1,NA,NA,NA,NA
-2013,Slovakia Republic,SVK,1,NA,NA,1,NA,NA,NA
-2013,Spain,ESP,2,1,NA,1,NA,NA,NA
-2013,Sweden,SWE,1,1,NA,NA,NA,NA,NA
-2013,Switzerland,CHE,2,2,NA,NA,NA,NA,NA
+2010,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,NA,1,1,NA,NA,NA
+2010,United States of America (the),USA,15,3,12,NA,NA,NA,NA
+2011,Australia,AUS,3,1,1,NA,1,NA,NA
+2011,Belgium,BEL,2,1,1,NA,NA,NA,NA
+2011,Canada,CAN,4,1,2,NA,1,NA,NA
+2011,Chile,CHL,4,NA,NA,2,2,NA,NA
+2011,France,FRA,2,1,1,NA,NA,NA,NA
+2011,Germany,DEU,1,1,NA,NA,NA,NA,NA
+2011,Ireland,IRL,1,1,NA,NA,NA,NA,NA
+2011,Italy,ITA,4,2,NA,1,NA,1,NA
+2011,Japan,JPN,5,1,3,1,NA,NA,NA
+2011,Korea (the Republic of),KOR,3,2,NA,NA,NA,1,NA
+2011,Mexico,MEX,11,3,5,1,1,NA,1
+2011,Norway,NOR,1,NA,1,NA,NA,NA,NA
+2011,Poland,POL,1,NA,NA,1,NA,NA,NA
+2011,Spain,ESP,1,1,NA,NA,NA,NA,NA
+2011,Switzerland,CHE,1,NA,1,NA,NA,NA,NA
+2011,Turkey,TUR,1,1,NA,NA,NA,NA,NA
+2011,United States of America (the),USA,23,4,14,1,3,NA,1
+2012,Australia,AUS,2,2,NA,NA,NA,NA,NA
+2012,Austria,AUT,1,NA,NA,1,NA,NA,NA
+2012,Belgium,BEL,1,NA,NA,1,NA,NA,NA
+2012,Canada,CAN,3,1,2,NA,NA,NA,NA
+2012,Chile,CHL,2,1,NA,NA,1,NA,NA
+2012,Czech Republic (the),CZE,2,NA,NA,2,NA,NA,NA
+2012,Estonia,EST,1,NA,NA,1,NA,NA,NA
+2012,France,FRA,1,NA,NA,1,NA,NA,NA
+2012,Germany,DEU,2,NA,NA,2,NA,NA,NA
+2012,Greece,GRC,2,1,NA,1,NA,NA,NA
+2012,Hungary,HUN,1,NA,NA,1,NA,NA,NA
+2012,Italy,ITA,3,1,NA,1,NA,NA,1
+2012,Japan,JPN,7,1,6,NA,NA,NA,NA
+2012,Korea (the Republic of),KOR,3,NA,3,NA,NA,NA,NA
+2012,Latvia,LVA,1,NA,NA,1,NA,NA,NA
+2012,Lithuania,LTU,2,NA,NA,2,NA,NA,NA
+2012,Mexico,MEX,2,NA,2,NA,NA,NA,NA
+2012,Netherlands (the),NLD,1,NA,NA,1,NA,NA,NA
+2012,New Zealand,NZL,1,NA,1,NA,NA,NA,NA
+2012,Poland,POL,4,NA,1,3,NA,NA,NA
+2012,Slovakia,SVK,1,NA,NA,1,NA,NA,NA
+2012,Slovenia,SVN,1,1,NA,NA,NA,NA,NA
+2012,Spain,ESP,2,1,NA,NA,1,NA,NA
+2012,Switzerland,CHE,2,NA,NA,2,NA,NA,NA
+2012,Turkey,TUR,1,1,NA,NA,NA,NA,NA
+2012,United Kingdom of Great Britain and Northern Ireland (the),GBR,5,5,NA,NA,NA,NA,NA
+2012,United States of America (the),USA,25,1,19,1,2,NA,2
+2013,Australia,AUS,3,NA,1,NA,2,NA,NA
+2013,Austria,AUT,1,1,NA,NA,NA,NA,NA
+2013,Belgium,BEL,2,NA,2,NA,NA,NA,NA
+2013,Canada,CAN,3,1,1,1,NA,NA,NA
+2013,Chile,CHL,1,NA,NA,1,NA,NA,NA
+2013,Czech Republic (the),CZE,1,1,NA,NA,NA,NA,NA
+2013,Denmark,DNK,2,NA,2,NA,NA,NA,NA
+2013,France,FRA,3,1,2,NA,NA,NA,NA
+2013,Germany,DEU,4,1,3,NA,NA,NA,NA
+2013,Hungary,HUN,2,1,1,NA,NA,NA,NA
+2013,Israel,ISR,1,NA,1,NA,NA,NA,NA
+2013,Italy,ITA,1,1,NA,NA,NA,NA,NA
+2013,Japan,JPN,9,1,7,1,NA,NA,NA
+2013,Mexico,MEX,5,1,4,NA,NA,NA,NA
+2013,Netherlands (the),NLD,3,NA,3,NA,NA,NA,NA
+2013,New Zealand,NZL,2,NA,1,NA,NA,NA,1
+2013,Poland,POL,2,NA,1,1,NA,NA,NA
+2013,Portugal,PRT,3,NA,2,NA,1,NA,NA
+2013,Slovakia,SVK,1,1,NA,NA,NA,NA,NA
+2013,Spain,ESP,2,1,1,NA,NA,NA,NA
+2013,Sweden,SWE,1,NA,1,NA,NA,NA,NA
+2013,Switzerland,CHE,2,NA,2,NA,NA,NA,NA
 2013,Turkey,TUR,1,NA,NA,NA,NA,1,NA
-2013,United Kingdom of Great Britain and Northern Ireland (the),GBR,5,3,NA,1,NA,NA,1
-2013,United States of America (the),USA,28,15,5,7,NA,NA,1
-2014,Australia,AUS,4,1,2,NA,NA,NA,1
-2014,Belgium,BEL,1,1,NA,NA,NA,NA,NA
-2014,Canada,CAN,2,NA,NA,1,NA,NA,1
-2014,Chile,CHL,2,NA,1,1,NA,NA,NA
-2014,France,FRA,7,4,NA,3,NA,NA,NA
-2014,Germany,DEU,2,2,NA,NA,NA,NA,NA
-2014,Greece,GRC,1,NA,NA,1,NA,NA,NA
-2014,Hungary,HUN,1,NA,NA,1,NA,NA,NA
-2014,Ireland,IRL,1,1,NA,NA,NA,NA,NA
-2014,Italy,ITA,5,1,NA,4,NA,NA,NA
-2014,Japan,JPN,11,9,NA,NA,NA,1,1
-2014,Korea (the Republic of),KOR,3,2,NA,1,NA,NA,NA
-2014,Mexico,MEX,6,6,NA,NA,NA,NA,NA
-2014,Poland,POL,1,NA,NA,NA,NA,NA,1
-2014,Portugal,PRT,2,2,NA,NA,NA,NA,NA
-2014,Slovenia,SVN,2,NA,NA,1,NA,NA,1
-2014,Spain,ESP,1,1,NA,NA,NA,NA,NA
-2014,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
-2014,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,1,NA,1,NA,NA,NA
-2014,United States of America (the),USA,19,13,1,2,1,1,1
-2015,Australia,AUS,8,4,3,1,NA,NA,NA
-2015,Belgium,BEL,1,NA,NA,NA,NA,NA,1
-2015,Canada,CAN,1,NA,1,NA,NA,NA,NA
-2015,Chile,CHL,4,1,1,2,NA,NA,NA
-2015,France,FRA,3,1,NA,1,NA,NA,1
-2015,Greece,GRC,2,NA,NA,2,NA,NA,NA
-2015,Ireland,IRL,1,1,NA,NA,NA,NA,NA
-2015,Israel,ISR,1,1,NA,NA,NA,NA,NA
-2015,Italy,ITA,4,1,NA,3,NA,NA,NA
-2015,Japan,JPN,10,6,NA,1,NA,NA,3
-2015,Mexico,MEX,4,3,NA,1,NA,NA,NA
-2015,New Zealand,NZL,2,NA,NA,2,NA,NA,NA
-2015,Poland,POL,2,1,NA,NA,NA,NA,1
-2015,Portugal,PRT,1,NA,NA,1,NA,NA,NA
-2015,Spain,ESP,2,NA,NA,2,NA,NA,NA
-2015,Turkey,TUR,2,NA,NA,2,NA,NA,NA
-2015,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,1,NA,1,NA,NA,NA
-2015,United States of America (the),USA,29,19,4,5,1,NA,NA
-2016,Australia,AUS,3,1,1,1,NA,NA,NA
-2016,Austria,AUT,1,NA,NA,1,NA,NA,NA
-2016,Belgium,BEL,2,1,NA,1,NA,NA,NA
-2016,Canada,CAN,2,NA,1,1,NA,NA,NA
-2016,Chile,CHL,1,NA,NA,1,NA,NA,NA
-2016,France,FRA,1,NA,NA,1,NA,NA,NA
-2016,Germany,DEU,1,NA,NA,1,NA,NA,NA
-2016,Greece,GRC,1,NA,NA,1,NA,NA,NA
-2016,Hungary,HUN,1,NA,NA,1,NA,NA,NA
-2016,Israel,ISR,1,NA,1,NA,NA,NA,NA
-2016,Italy,ITA,1,NA,NA,1,NA,NA,NA
-2016,Japan,JPN,7,4,NA,1,NA,NA,2
-2016,Korea (the Republic of),KOR,2,1,NA,NA,NA,NA,1
-2016,Mexico,MEX,7,2,NA,5,NA,NA,NA
-2016,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
-2016,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
-2016,Poland,POL,2,NA,NA,1,NA,NA,1
-2016,Portugal,PRT,1,NA,1,NA,NA,NA,NA
-2016,Spain,ESP,1,NA,NA,1,NA,NA,NA
-2016,United States of America (the),USA,26,16,4,6,NA,NA,NA
-2017,Australia,AUS,3,2,1,NA,NA,NA,NA
-2017,Austria,AUT,2,2,NA,NA,NA,NA,NA
-2017,Canada,CAN,3,NA,1,2,NA,NA,NA
-2017,Chile,CHL,5,NA,1,3,NA,1,NA
-2017,Czech Republic (the),CZE,1,1,NA,NA,NA,NA,NA
-2017,France,FRA,3,1,1,1,NA,NA,NA
-2017,Germany,DEU,3,2,NA,1,NA,NA,NA
-2017,Greece,GRC,2,NA,NA,1,NA,NA,1
-2017,Hungary,HUN,1,1,NA,NA,NA,NA,NA
-2017,Ireland,IRL,1,NA,NA,1,NA,NA,NA
-2017,Italy,ITA,4,2,NA,1,1,NA,NA
-2017,Japan,JPN,4,3,NA,1,NA,NA,NA
-2017,Mexico,MEX,5,4,NA,1,NA,NA,NA
-2017,New Zealand,NZL,2,1,NA,1,NA,NA,NA
-2017,Poland,POL,1,1,NA,NA,NA,NA,NA
-2017,Portugal,PRT,2,NA,2,NA,NA,NA,NA
-2017,Slovakia Republic,SVK,1,1,NA,NA,NA,NA,NA
-2017,Spain,ESP,2,NA,2,NA,NA,NA,NA
-2017,Turkey,TUR,1,1,NA,NA,NA,NA,NA
-2017,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,NA,NA,1,NA,NA,NA
-2017,United States of America (the),USA,24,17,3,3,1,NA,NA
-2018,Australia,AUS,3,NA,NA,1,1,NA,1
-2018,Belgium,BEL,2,1,NA,NA,NA,NA,1
-2018,Canada,CAN,4,1,1,1,NA,NA,1
-2018,Czech Republic (the),CZE,1,NA,NA,NA,NA,NA,1
-2018,Estonia,EST,1,NA,NA,NA,NA,NA,1
-2018,France,FRA,7,3,NA,2,NA,NA,2
-2018,Germany,DEU,2,1,NA,NA,NA,NA,1
-2018,Greece,GRC,1,NA,1,NA,NA,NA,NA
-2018,Hungary,HUN,1,NA,NA,NA,NA,NA,1
-2018,Ireland,IRL,1,1,NA,NA,NA,NA,NA
-2018,Israel,ISR,1,NA,NA,1,NA,NA,NA
-2018,Italy,ITA,4,1,NA,1,NA,NA,2
-2018,Japan,JPN,5,3,NA,1,NA,NA,1
-2018,Korea (the Republic of),KOR,1,NA,NA,NA,NA,NA,1
-2018,Latvia,LVA,1,NA,1,NA,NA,NA,NA
-2018,Lithuania,LTU,2,NA,NA,NA,1,NA,1
-2018,Mexico,MEX,3,2,NA,1,NA,NA,NA
-2018,Netherlands (the),NLD,2,1,NA,NA,NA,NA,1
-2018,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
-2018,Poland,POL,2,NA,NA,NA,1,NA,1
-2018,Portugal,PRT,3,1,1,NA,NA,NA,1
-2018,Spain,ESP,4,1,1,1,NA,NA,1
-2018,Sweden,SWE,1,NA,1,NA,NA,NA,NA
-2018,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
+2013,United Kingdom of Great Britain and Northern Ireland (the),GBR,5,1,3,1,NA,NA,NA
+2013,United States of America (the),USA,28,7,15,1,5,NA,NA
+2014,Australia,AUS,4,NA,1,1,2,NA,NA
+2014,Belgium,BEL,1,NA,1,NA,NA,NA,NA
+2014,Canada,CAN,2,1,NA,1,NA,NA,NA
+2014,Chile,CHL,2,1,NA,NA,1,NA,NA
+2014,France,FRA,7,3,4,NA,NA,NA,NA
+2014,Germany,DEU,2,NA,2,NA,NA,NA,NA
+2014,Greece,GRC,1,1,NA,NA,NA,NA,NA
+2014,Hungary,HUN,1,1,NA,NA,NA,NA,NA
+2014,Ireland,IRL,1,NA,1,NA,NA,NA,NA
+2014,Italy,ITA,5,4,1,NA,NA,NA,NA
+2014,Japan,JPN,11,NA,9,1,NA,1,NA
+2014,Korea (the Republic of),KOR,3,1,2,NA,NA,NA,NA
+2014,Mexico,MEX,6,NA,6,NA,NA,NA,NA
+2014,Poland,POL,1,NA,NA,1,NA,NA,NA
+2014,Portugal,PRT,2,NA,2,NA,NA,NA,NA
+2014,Slovenia,SVN,2,1,NA,1,NA,NA,NA
+2014,Spain,ESP,1,NA,1,NA,NA,NA,NA
+2014,Switzerland,CHE,1,NA,1,NA,NA,NA,NA
+2014,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,1,1,NA,NA,NA,NA
+2014,United States of America (the),USA,19,2,13,1,1,1,1
+2015,Australia,AUS,8,1,4,NA,3,NA,NA
+2015,Belgium,BEL,1,NA,NA,1,NA,NA,NA
+2015,Canada,CAN,1,NA,NA,NA,1,NA,NA
+2015,Chile,CHL,4,2,1,NA,1,NA,NA
+2015,France,FRA,3,1,1,1,NA,NA,NA
+2015,Greece,GRC,2,2,NA,NA,NA,NA,NA
+2015,Ireland,IRL,1,NA,1,NA,NA,NA,NA
+2015,Israel,ISR,1,NA,1,NA,NA,NA,NA
+2015,Italy,ITA,4,3,1,NA,NA,NA,NA
+2015,Japan,JPN,10,1,6,3,NA,NA,NA
+2015,Mexico,MEX,4,1,3,NA,NA,NA,NA
+2015,New Zealand,NZL,2,2,NA,NA,NA,NA,NA
+2015,Poland,POL,2,NA,1,1,NA,NA,NA
+2015,Portugal,PRT,1,1,NA,NA,NA,NA,NA
+2015,Spain,ESP,2,2,NA,NA,NA,NA,NA
+2015,Turkey,TUR,2,2,NA,NA,NA,NA,NA
+2015,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,1,1,NA,NA,NA,NA
+2015,United States of America (the),USA,29,5,19,NA,4,NA,1
+2016,Australia,AUS,3,1,1,NA,1,NA,NA
+2016,Austria,AUT,1,1,NA,NA,NA,NA,NA
+2016,Belgium,BEL,2,1,1,NA,NA,NA,NA
+2016,Canada,CAN,2,1,NA,NA,1,NA,NA
+2016,Chile,CHL,1,1,NA,NA,NA,NA,NA
+2016,France,FRA,1,1,NA,NA,NA,NA,NA
+2016,Germany,DEU,1,1,NA,NA,NA,NA,NA
+2016,Greece,GRC,1,1,NA,NA,NA,NA,NA
+2016,Hungary,HUN,1,1,NA,NA,NA,NA,NA
+2016,Israel,ISR,1,NA,NA,NA,1,NA,NA
+2016,Italy,ITA,1,1,NA,NA,NA,NA,NA
+2016,Japan,JPN,7,1,4,2,NA,NA,NA
+2016,Korea (the Republic of),KOR,2,NA,1,1,NA,NA,NA
+2016,Mexico,MEX,7,5,2,NA,NA,NA,NA
+2016,Netherlands (the),NLD,1,NA,1,NA,NA,NA,NA
+2016,New Zealand,NZL,1,1,NA,NA,NA,NA,NA
+2016,Poland,POL,2,1,NA,1,NA,NA,NA
+2016,Portugal,PRT,1,NA,NA,NA,1,NA,NA
+2016,Spain,ESP,1,1,NA,NA,NA,NA,NA
+2016,United States of America (the),USA,26,6,16,NA,4,NA,NA
+2017,Australia,AUS,3,NA,2,NA,1,NA,NA
+2017,Austria,AUT,2,NA,2,NA,NA,NA,NA
+2017,Canada,CAN,3,2,NA,NA,1,NA,NA
+2017,Chile,CHL,5,3,NA,NA,1,1,NA
+2017,Czech Republic (the),CZE,1,NA,1,NA,NA,NA,NA
+2017,France,FRA,3,1,1,NA,1,NA,NA
+2017,Germany,DEU,3,1,2,NA,NA,NA,NA
+2017,Greece,GRC,2,1,NA,1,NA,NA,NA
+2017,Hungary,HUN,1,NA,1,NA,NA,NA,NA
+2017,Ireland,IRL,1,1,NA,NA,NA,NA,NA
+2017,Italy,ITA,4,1,2,NA,NA,NA,1
+2017,Japan,JPN,4,1,3,NA,NA,NA,NA
+2017,Mexico,MEX,5,1,4,NA,NA,NA,NA
+2017,New Zealand,NZL,2,1,1,NA,NA,NA,NA
+2017,Poland,POL,1,NA,1,NA,NA,NA,NA
+2017,Portugal,PRT,2,NA,NA,NA,2,NA,NA
+2017,Slovakia,SVK,1,NA,1,NA,NA,NA,NA
+2017,Spain,ESP,2,NA,NA,NA,2,NA,NA
+2017,Turkey,TUR,1,NA,1,NA,NA,NA,NA
+2017,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
+2017,United States of America (the),USA,24,3,17,NA,3,NA,1
+2018,Australia,AUS,3,1,NA,1,NA,NA,1
+2018,Belgium,BEL,2,NA,1,1,NA,NA,NA
+2018,Canada,CAN,4,1,1,1,1,NA,NA
+2018,Czech Republic (the),CZE,1,NA,NA,1,NA,NA,NA
+2018,Estonia,EST,1,NA,NA,1,NA,NA,NA
+2018,France,FRA,7,2,3,2,NA,NA,NA
+2018,Germany,DEU,2,NA,1,1,NA,NA,NA
+2018,Greece,GRC,1,NA,NA,NA,1,NA,NA
+2018,Hungary,HUN,1,NA,NA,1,NA,NA,NA
+2018,Ireland,IRL,1,NA,1,NA,NA,NA,NA
+2018,Israel,ISR,1,1,NA,NA,NA,NA,NA
+2018,Italy,ITA,4,1,1,2,NA,NA,NA
+2018,Japan,JPN,5,1,3,1,NA,NA,NA
+2018,Korea (the Republic of),KOR,1,NA,NA,1,NA,NA,NA
+2018,Latvia,LVA,1,NA,NA,NA,1,NA,NA
+2018,Lithuania,LTU,2,NA,NA,1,NA,NA,1
+2018,Mexico,MEX,3,1,2,NA,NA,NA,NA
+2018,Netherlands (the),NLD,2,NA,1,1,NA,NA,NA
+2018,New Zealand,NZL,1,1,NA,NA,NA,NA,NA
+2018,Poland,POL,2,NA,NA,1,NA,NA,1
+2018,Portugal,PRT,3,NA,1,1,1,NA,NA
+2018,Spain,ESP,4,1,1,1,1,NA,NA
+2018,Sweden,SWE,1,NA,NA,NA,1,NA,NA
+2018,Switzerland,CHE,1,NA,1,NA,NA,NA,NA
 2018,Turkey,TUR,1,NA,NA,NA,NA,1,NA
-2018,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,1,NA,NA,NA,NA,1
-2018,United States of America (the),USA,17,9,3,3,1,1,NA
+2018,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,NA,1,1,NA,NA,NA
+2018,United States of America (the),USA,17,3,9,NA,3,1,1

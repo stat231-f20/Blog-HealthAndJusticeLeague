@@ -75,6 +75,7 @@ reducedclimatedis <- climatedis_fin %>%
               , values_from = occurrence)
 
 write_csv(reducedclimatedisaster_data, paste0(my_path,"/data/wrangled_climateq3.csv"))
+write_csv(mortality2, paste0(my_path,"/data/wrangled_infmatmortline.csv"))
 
 # I commented out your work so you can recover them whenever you want to
 ######

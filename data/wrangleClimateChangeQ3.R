@@ -14,7 +14,7 @@ library(countrycode)
 # (country codes, German country name, short English name, etc.)
 # help(countrycode)
 
-my_path <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague"
+my_path <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague"
 
 climatedisaster_data <- read_csv(paste0(my_path,"/data/wrangled_natdisasters_byyear.csv"))
 

@@ -36,6 +36,15 @@ list_countries <- iso3166 %>%
   select(a3, ISOname, mapname)
 
 # HTML Text: background info to display on the side
+text <- sprintf("<strong>%s</strong>%s<br/><br/>%s<br/>%s<br/>%s<br/>%s<br/>%s<br/>",
+                "Source: EM-DAT",
+                a(href="https://www.emdat.be/", " (The International Disaster Database)"),
+                "This app only shows the natural disasters that fulfill the following criteria:",
+                "a) 10 or more reported killed; or",
+                "b) 100 or more reported affected; or",
+                "c) A state of emergency declared; or",
+                "d) International assistance requested")%>% 
+  lapply(htmltools::HTML)
 
 
 ######
@@ -85,11 +94,12 @@ ui <- fluidPage(theme = shinytheme("cerulean"), #theme = "bootstrap.min.css",
                   width = "90%"))),
     fluidRow(
       column(width = 3,
-             paste0("Source: EM-DAT (The International Disaster Database)", "<br>",
-                    "https://www.emdat.be/")),
+             text),
       column(width = 9,
            leafletOutput("natdisplot"))
   )
+  
+  ######
   
   # sidebarLayout(
   #   sidebarPanel(
@@ -117,6 +127,8 @@ ui <- fluidPage(theme = shinytheme("cerulean"), #theme = "bootstrap.min.css",
   #   
   #   mainPanel(leafletOutput("natdisplot"))
   # )
+  
+  ######
 )
 
 

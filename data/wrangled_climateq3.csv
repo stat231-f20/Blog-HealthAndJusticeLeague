@@ -1,2206 +1,801 @@
-year,country,countrycode,disaster_type,occurrence
-1980,Australia,AUS,All,6
-1980,Austria,AUT,All,1
-1980,Canada,CAN,All,1
-1980,Denmark,DNK,All,1
-1980,France,FRA,All,1
-1980,Japan,JPN,All,2
-1980,Korea (the Republic of),KOR,All,2
-1980,Mexico,MEX,All,2
-1980,New Zealand,NZL,All,2
-1980,Poland,POL,All,1
-1980,Spain,ESP,All,1
-1980,Turkey,TUR,All,2
-1980,United States of America (the),USA,All,7
-1981,Australia,AUS,All,5
-1981,Austria,AUT,All,1
-1981,Canada,CAN,All,1
-1981,Denmark,DNK,All,1
-1981,France,FRA,All,1
-1981,Japan,JPN,All,5
-1981,Korea (the Republic of),KOR,All,2
-1981,Mexico,MEX,All,1
-1981,New Zealand,NZL,All,1
-1981,Portugal,PRT,All,1
-1981,Spain,ESP,All,1
-1981,Turkey,TUR,All,1
-1981,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,1
-1981,United States of America (the),USA,All,4
-1982,Australia,AUS,All,3
-1982,Austria,AUT,All,2
-1982,Belgium,BEL,All,1
-1982,Canada,CAN,All,1
-1982,Chile,CHL,All,1
-1982,France,FRA,All,6
-1982,Italy,ITA,All,1
-1982,Japan,JPN,All,5
-1982,Korea (the Republic of),KOR,All,2
-1982,Mexico,MEX,All,3
-1982,Poland,POL,All,1
-1982,Spain,ESP,All,2
-1982,Switzerland,CHE,All,1
-1982,United States of America (the),USA,All,13
-1983,Australia,AUS,All,4
-1983,Austria,AUT,All,1
-1983,Canada,CAN,All,1
-1983,Denmark,DNK,All,1
-1983,France,FRA,All,8
-1983,Greece,GRC,All,1
-1983,Iceland,ISL,All,1
-1983,Ireland,IRL,All,1
-1983,Israel,ISR,All,1
-1983,Italy,ITA,All,2
-1983,Japan,JPN,All,4
-1983,Luxembourg,LUX,All,1
-1983,Mexico,MEX,All,3
-1983,New Zealand,NZL,All,1
-1983,Poland,POL,All,2
-1983,Portugal,PRT,All,3
-1983,Spain,ESP,All,2
-1983,Switzerland,CHE,All,3
-1983,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,1
-1983,United States of America (the),USA,All,9
-1984,Australia,AUS,All,1
-1984,Austria,AUT,All,2
-1984,Belgium,BEL,All,2
-1984,Canada,CAN,All,1
-1984,Chile,CHL,All,2
-1984,France,FRA,All,5
-1984,Greece,GRC,All,2
-1984,Hungary,HUN,All,1
-1984,Japan,JPN,All,1
-1984,Korea (the Republic of),KOR,All,2
-1984,Mexico,MEX,All,2
-1984,Netherlands (the),NLD,All,1
-1984,New Zealand,NZL,All,1
-1984,Spain,ESP,All,3
-1984,Switzerland,CHE,All,1
-1984,Turkey,TUR,All,1
-1984,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,1
-1984,United States of America (the),USA,All,14
-1985,Australia,AUS,All,5
-1985,Austria,AUT,All,1
-1985,Belgium,BEL,All,2
-1985,Canada,CAN,All,2
-1985,Denmark,DNK,All,1
-1985,France,FRA,All,3
-1985,Greece,GRC,All,2
-1985,Italy,ITA,All,1
-1985,Japan,JPN,All,2
-1985,Korea (the Republic of),KOR,All,1
-1985,Netherlands (the),NLD,All,1
-1985,New Zealand,NZL,All,2
-1985,Portugal,PRT,All,1
-1985,Spain,ESP,All,3
-1985,Sweden,SWE,All,1
-1985,Switzerland,CHE,All,1
-1985,Turkey,TUR,All,1
-1985,United States of America (the),USA,All,15
-1986,Australia,AUS,All,6
-1986,Canada,CAN,All,4
-1986,Chile,CHL,All,2
-1986,France,FRA,All,1
-1986,Hungary,HUN,All,1
-1986,Ireland,IRL,All,1
-1986,Italy,ITA,All,1
-1986,Japan,JPN,All,5
-1986,Korea (the Republic of),KOR,All,1
-1986,Mexico,MEX,All,1
-1986,Netherlands (the),NLD,All,1
-1986,New Zealand,NZL,All,3
-1986,Portugal,PRT,All,1
-1986,Switzerland,CHE,All,2
-1986,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,1
-1986,United States of America (the),USA,All,6
-1987,Belgium,BEL,All,1
-1987,Canada,CAN,All,3
-1987,Chile,CHL,All,3
-1987,France,FRA,All,2
-1987,Greece,GRC,All,3
-1987,Ireland,IRL,All,1
-1987,Italy,ITA,All,6
-1987,Japan,JPN,All,1
-1987,Korea (the Republic of),KOR,All,3
-1987,Mexico,MEX,All,2
-1987,New Zealand,NZL,All,2
-1987,Poland,POL,All,1
-1987,Spain,ESP,All,2
-1987,Switzerland,CHE,All,2
-1987,Turkey,TUR,All,1
-1987,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,1
-1987,United States of America (the),USA,All,9
-1988,Australia,AUS,All,4
-1988,Canada,CAN,All,2
-1988,France,FRA,All,1
-1988,Greece,GRC,All,1
-1988,Iceland,ISL,All,1
-1988,Japan,JPN,All,1
-1988,Korea (the Republic of),KOR,All,1
-1988,Mexico,MEX,All,5
-1988,New Zealand,NZL,All,4
-1988,Switzerland,CHE,All,1
-1988,Turkey,TUR,All,2
-1988,United States of America (the),USA,All,22
-1989,Australia,AUS,All,3
-1989,Canada,CAN,All,2
-1989,Chile,CHL,All,1
-1989,France,FRA,All,2
-1989,Japan,JPN,All,4
-1989,Korea (the Republic of),KOR,All,1
-1989,Mexico,MEX,All,2
-1989,New Zealand,NZL,All,1
-1989,Portugal,PRT,All,1
-1989,Spain,ESP,All,3
-1989,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,1
-1989,United States of America (the),USA,All,17
-1990,Australia,AUS,All,5
-1990,Austria,AUT,All,5
-1990,Belgium,BEL,All,6
-1990,Canada,CAN,All,1
-1990,Chile,CHL,All,1
-1990,Denmark,DNK,All,3
-1990,Finland,FIN,All,2
-1990,France,FRA,All,10
-1990,Germany,DEU,All,6
-1990,Greece,GRC,All,2
-1990,Ireland,IRL,All,4
-1990,Italy,ITA,All,3
-1990,Japan,JPN,All,3
-1990,Korea (the Republic of),KOR,All,3
-1990,Luxembourg,LUX,All,6
-1990,Mexico,MEX,All,3
-1990,Netherlands (the),NLD,All,6
-1990,Norway,NOR,All,2
-1990,Poland,POL,All,1
-1990,Spain,ESP,All,3
-1990,Sweden,SWE,All,2
-1990,Switzerland,CHE,All,4
-1990,Turkey,TUR,All,2
-1990,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,7
-1990,United States of America (the),USA,All,21
-1991,Australia,AUS,All,3
-1991,Austria,AUT,All,2
-1991,Canada,CAN,All,1
-1991,Chile,CHL,All,2
-1991,France,FRA,All,3
-1991,Germany,DEU,All,1
-1991,Greece,GRC,All,1
-1991,Ireland,IRL,All,1
-1991,Israel,ISR,All,1
-1991,Japan,JPN,All,5
-1991,Korea (the Republic of),KOR,All,2
-1991,Mexico,MEX,All,3
-1991,New Zealand,NZL,All,3
-1991,Portugal,PRT,All,1
-1991,Spain,ESP,All,1
-1991,Turkey,TUR,All,2
-1991,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,2
-1991,United States of America (the),USA,All,35
-1992,Australia,AUS,All,3
-1992,Canada,CAN,All,2
-1992,Chile,CHL,All,3
-1992,Denmark,DNK,All,1
-1992,France,FRA,All,3
-1992,Germany,DEU,All,1
-1992,Hungary,HUN,All,1
-1992,Israel,ISR,All,1
-1992,Italy,ITA,All,2
-1992,Japan,JPN,All,2
-1992,Korea (the Republic of),KOR,All,2
-1992,Lithuania,LTU,All,1
-1992,Mexico,MEX,All,3
-1992,Netherlands (the),NLD,All,1
-1992,New Zealand,NZL,All,3
-1992,Norway,NOR,All,1
-1992,Poland,POL,All,1
-1992,United States of America (the),USA,All,29
-1993,Australia,AUS,All,4
-1993,Austria,AUT,All,1
-1993,Belgium,BEL,All,2
-1993,Canada,CAN,All,1
-1993,Chile,CHL,All,2
-1993,France,FRA,All,3
-1993,Germany,DEU,All,3
-1993,Ireland,IRL,All,1
-1993,Italy,ITA,All,1
-1993,Japan,JPN,All,6
-1993,Korea (the Republic of),KOR,All,2
-1993,Lithuania,LTU,All,1
-1993,Luxembourg,LUX,All,1
-1993,Mexico,MEX,All,7
-1993,Netherlands (the),NLD,All,1
-1993,Norway,NOR,All,1
-1993,Switzerland,CHE,All,3
-1993,Turkey,TUR,All,1
-1993,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,2
-1993,United States of America (the),USA,All,28
-1994,Australia,AUS,All,8
-1994,Austria,AUT,All,1
-1994,Belgium,BEL,All,1
-1994,Canada,CAN,All,3
-1994,France,FRA,All,3
-1994,Germany,DEU,All,4
-1994,Greece,GRC,All,1
-1994,Italy,ITA,All,3
-1994,Japan,JPN,All,3
-1994,Korea (the Republic of),KOR,All,1
-1994,Netherlands (the),NLD,All,1
-1994,New Zealand,NZL,All,1
-1994,Poland,POL,All,1
-1994,Spain,ESP,All,4
-1994,Switzerland,CHE,All,1
-1994,Turkey,TUR,All,2
-1994,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,2
-1994,United States of America (the),USA,All,14
-1995,Australia,AUS,All,5
-1995,Austria,AUT,All,1
-1995,Belgium,BEL,All,1
-1995,Canada,CAN,All,4
-1995,Chile,CHL,All,2
-1995,France,FRA,All,1
-1995,Germany,DEU,All,2
-1995,Greece,GRC,All,1
-1995,Iceland,ISL,All,2
-1995,Israel,ISR,All,1
-1995,Japan,JPN,All,2
-1995,Korea (the Republic of),KOR,All,2
-1995,Luxembourg,LUX,All,1
-1995,Mexico,MEX,All,7
-1995,Netherlands (the),NLD,All,1
-1995,Norway,NOR,All,1
-1995,Spain,ESP,All,2
-1995,Turkey,TUR,All,3
-1995,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,1
-1995,United States of America (the),USA,All,18
-1996,Australia,AUS,All,9
-1996,Austria,AUT,All,1
-1996,Canada,CAN,All,2
-1996,Czech Republic (the),CZE,All,1
-1996,France,FRA,All,3
-1996,Germany,DEU,All,1
-1996,Hungary,HUN,All,1
-1996,Ireland,IRL,All,1
-1996,Italy,ITA,All,3
-1996,Japan,JPN,All,2
-1996,Korea (the Republic of),KOR,All,2
-1996,Mexico,MEX,All,6
-1996,New Zealand,NZL,All,1
-1996,Portugal,PRT,All,2
-1996,Spain,ESP,All,2
-1996,Turkey,TUR,All,1
-1996,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,1
-1996,United States of America (the),USA,All,15
-1997,Australia,AUS,All,4
-1997,Austria,AUT,All,1
-1997,Canada,CAN,All,3
-1997,Chile,CHL,All,4
-1997,Czech Republic (the),CZE,All,1
-1997,France,FRA,All,3
-1997,Germany,DEU,All,2
-1997,Greece,GRC,All,1
-1997,Hungary,HUN,All,1
-1997,Israel,ISR,All,1
-1997,Italy,ITA,All,2
-1997,Japan,JPN,All,3
-1997,Korea (the Republic of),KOR,All,2
-1997,Mexico,MEX,All,6
-1997,Netherlands (the),NLD,All,1
-1997,New Zealand,NZL,All,2
-1997,Poland,POL,All,2
-1997,Portugal,PRT,All,2
-1997,Slovakia,SVK,All,1
-1997,Spain,ESP,All,2
-1997,Switzerland,CHE,All,1
-1997,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,3
-1997,United States of America (the),USA,All,33
-1998,Australia,AUS,All,6
-1998,Belgium,BEL,All,2
-1998,Canada,CAN,All,3
-1998,Czech Republic (the),CZE,All,1
-1998,France,FRA,All,2
-1998,Germany,DEU,All,1
-1998,Greece,GRC,All,2
-1998,Ireland,IRL,All,1
-1998,Israel,ISR,All,1
-1998,Italy,ITA,All,2
-1998,Japan,JPN,All,7
-1998,Korea (the Republic of),KOR,All,4
-1998,Mexico,MEX,All,9
-1998,Netherlands (the),NLD,All,2
-1998,New Zealand,NZL,All,1
-1998,Poland,POL,All,2
-1998,Slovakia,SVK,All,1
-1998,Spain,ESP,All,2
-1998,Switzerland,CHE,All,1
-1998,Turkey,TUR,All,3
-1998,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,4
-1998,United States of America (the),USA,All,32
-1999,Australia,AUS,All,5
-1999,Austria,AUT,All,2
-1999,Belgium,BEL,All,2
-1999,Canada,CAN,All,3
-1999,Chile,CHL,All,1
-1999,Denmark,DNK,All,1
-1999,France,FRA,All,8
-1999,Germany,DEU,All,4
-1999,Hungary,HUN,All,3
-1999,Ireland,IRL,All,1
-1999,Israel,ISR,All,1
-1999,Italy,ITA,All,2
-1999,Japan,JPN,All,3
-1999,Korea (the Republic of),KOR,All,2
-1999,Latvia,LVA,All,1
-1999,Lithuania,LTU,All,2
-1999,Mexico,MEX,All,7
-1999,New Zealand,NZL,All,1
-1999,Poland,POL,All,2
-1999,Slovakia,SVK,All,1
-1999,Spain,ESP,All,2
-1999,Sweden,SWE,All,1
-1999,Switzerland,CHE,All,3
-1999,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,3
-1999,United States of America (the),USA,All,22
-2000,Australia,AUS,All,5
-2000,Austria,AUT,All,2
-2000,Canada,CAN,All,1
-2000,Chile,CHL,All,3
-2000,Czech Republic (the),CZE,All,1
-2000,France,FRA,All,7
-2000,Greece,GRC,All,5
-2000,Hungary,HUN,All,1
-2000,Ireland,IRL,All,1
-2000,Israel,ISR,All,2
-2000,Italy,ITA,All,4
-2000,Japan,JPN,All,4
-2000,Korea (the Republic of),KOR,All,5
-2000,Mexico,MEX,All,6
-2000,New Zealand,NZL,All,2
-2000,Norway,NOR,All,1
-2000,Poland,POL,All,1
-2000,Portugal,PRT,All,1
-2000,Slovakia,SVK,All,1
-2000,Spain,ESP,All,5
-2000,Switzerland,CHE,All,1
-2000,Turkey,TUR,All,4
-2000,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,6
-2000,United States of America (the),USA,All,30
-2001,Australia,AUS,All,9
-2001,Canada,CAN,All,2
-2001,Chile,CHL,All,4
-2001,France,FRA,All,7
-2001,Germany,DEU,All,1
-2001,Greece,GRC,All,2
-2001,Hungary,HUN,All,2
-2001,Italy,ITA,All,3
-2001,Japan,JPN,All,5
-2001,Korea (the Republic of),KOR,All,4
-2001,Latvia,LVA,All,1
-2001,Lithuania,LTU,All,1
-2001,Mexico,MEX,All,6
-2001,New Zealand,NZL,All,1
-2001,Norway,NOR,All,1
-2001,Poland,POL,All,2
-2001,Portugal,PRT,All,2
-2001,Slovakia,SVK,All,1
-2001,Spain,ESP,All,1
-2001,Switzerland,CHE,All,1
-2001,Turkey,TUR,All,5
-2001,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,2
-2001,United States of America (the),USA,All,26
-2002,Australia,AUS,All,5
-2002,Austria,AUT,All,3
-2002,Belgium,BEL,All,5
-2002,Canada,CAN,All,2
-2002,Chile,CHL,All,5
-2002,Czech Republic (the),CZE,All,3
-2002,Denmark,DNK,All,1
-2002,France,FRA,All,5
-2002,Germany,DEU,All,4
-2002,Greece,GRC,All,5
-2002,Hungary,HUN,All,1
-2002,Ireland,IRL,All,1
-2002,Italy,ITA,All,4
-2002,Japan,JPN,All,6
-2002,Korea (the Republic of),KOR,All,4
-2002,Mexico,MEX,All,7
-2002,Netherlands (the),NLD,All,1
-2002,New Zealand,NZL,All,1
-2002,Poland,POL,All,3
-2002,Portugal,PRT,All,1
-2002,Slovakia,SVK,All,1
-2002,Spain,ESP,All,1
-2002,Sweden,SWE,All,1
-2002,Switzerland,CHE,All,3
-2002,Turkey,TUR,All,2
-2002,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,5
-2002,United States of America (the),USA,All,29
-2003,Australia,AUS,All,10
-2003,Austria,AUT,All,1
-2003,Belgium,BEL,All,2
-2003,Canada,CAN,All,7
-2003,Chile,CHL,All,1
-2003,Czech Republic (the),CZE,All,1
-2003,France,FRA,All,6
-2003,Germany,DEU,All,3
-2003,Greece,GRC,All,3
-2003,Hungary,HUN,All,2
-2003,Italy,ITA,All,3
-2003,Japan,JPN,All,3
-2003,Korea (the Republic of),KOR,All,1
-2003,Latvia,LVA,All,1
-2003,Luxembourg,LUX,All,1
-2003,Mexico,MEX,All,8
-2003,Netherlands (the),NLD,All,1
-2003,New Zealand,NZL,All,1
-2003,Portugal,PRT,All,3
-2003,Slovakia,SVK,All,1
-2003,Slovenia,SVN,All,1
-2003,Spain,ESP,All,2
-2003,Switzerland,CHE,All,2
-2003,Turkey,TUR,All,1
-2003,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,1
-2003,United States of America (the),USA,All,22
-2004,Australia,AUS,All,6
-2004,Canada,CAN,All,4
-2004,Chile,CHL,All,2
-2004,France,FRA,All,1
-2004,Germany,DEU,All,1
-2004,Greece,GRC,All,2
-2004,Hungary,HUN,All,1
-2004,Ireland,IRL,All,1
-2004,Italy,ITA,All,1
-2004,Japan,JPN,All,11
-2004,Korea (the Republic of),KOR,All,7
-2004,Mexico,MEX,All,3
-2004,New Zealand,NZL,All,2
-2004,Poland,POL,All,1
-2004,Portugal,PRT,All,2
-2004,Slovakia,SVK,All,2
-2004,Spain,ESP,All,3
-2004,Turkey,TUR,All,7
-2004,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,1
-2004,United States of America (the),USA,All,20
-2005,Australia,AUS,All,4
-2005,Austria,AUT,All,3
-2005,Belgium,BEL,All,3
-2005,Canada,CAN,All,5
-2005,Chile,CHL,All,3
-2005,Czech Republic (the),CZE,All,3
-2005,Denmark,DNK,All,1
-2005,Estonia,EST,All,2
-2005,Finland,FIN,All,1
-2005,France,FRA,All,5
-2005,Germany,DEU,All,5
-2005,Hungary,HUN,All,4
-2005,Ireland,IRL,All,1
-2005,Italy,ITA,All,1
-2005,Japan,JPN,All,4
-2005,Korea (the Republic of),KOR,All,5
-2005,Latvia,LVA,All,3
-2005,Lithuania,LTU,All,2
-2005,Mexico,MEX,All,7
-2005,Netherlands (the),NLD,All,3
-2005,New Zealand,NZL,All,2
-2005,Norway,NOR,All,1
-2005,Poland,POL,All,4
-2005,Portugal,PRT,All,2
-2005,Slovakia,SVK,All,2
-2005,Slovenia,SVN,All,1
-2005,Spain,ESP,All,2
-2005,Sweden,SWE,All,2
-2005,Switzerland,CHE,All,2
-2005,Turkey,TUR,All,5
-2005,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,4
-2005,United States of America (the),USA,All,16
-2006,Australia,AUS,All,8
-2006,Austria,AUT,All,1
-2006,Belgium,BEL,All,1
-2006,Canada,CAN,All,5
-2006,Chile,CHL,All,1
-2006,Czech Republic (the),CZE,All,2
-2006,France,FRA,All,3
-2006,Germany,DEU,All,5
-2006,Greece,GRC,All,3
-2006,Hungary,HUN,All,2
-2006,Italy,ITA,All,2
-2006,Japan,JPN,All,5
-2006,Korea (the Republic of),KOR,All,1
-2006,Lithuania,LTU,All,1
-2006,Mexico,MEX,All,7
-2006,Netherlands (the),NLD,All,1
-2006,New Zealand,NZL,All,1
-2006,Poland,POL,All,1
-2006,Portugal,PRT,All,2
-2006,Slovakia,SVK,All,2
-2006,Spain,ESP,All,3
-2006,Switzerland,CHE,All,2
-2006,Turkey,TUR,All,2
-2006,United States of America (the),USA,All,28
-2007,Australia,AUS,All,2
-2007,Austria,AUT,All,2
-2007,Belgium,BEL,All,1
-2007,Canada,CAN,All,3
-2007,Chile,CHL,All,1
-2007,Czech Republic (the),CZE,All,1
-2007,Denmark,DNK,All,1
-2007,France,FRA,All,3
-2007,Germany,DEU,All,3
-2007,Greece,GRC,All,4
-2007,Hungary,HUN,All,1
-2007,Italy,ITA,All,2
-2007,Japan,JPN,All,5
-2007,Korea (the Republic of),KOR,All,2
-2007,Mexico,MEX,All,7
-2007,Netherlands (the),NLD,All,1
-2007,New Zealand,NZL,All,1
-2007,Poland,POL,All,2
-2007,Slovakia,SVK,All,1
-2007,Slovenia,SVN,All,2
-2007,Spain,ESP,All,4
-2007,Switzerland,CHE,All,3
-2007,Turkey,TUR,All,4
-2007,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,4
-2007,United States of America (the),USA,All,23
-2008,Australia,AUS,All,5
-2008,Austria,AUT,All,1
-2008,Belgium,BEL,All,2
-2008,Canada,CAN,All,2
-2008,Chile,CHL,All,2
-2008,Czech Republic (the),CZE,All,1
-2008,France,FRA,All,4
-2008,Germany,DEU,All,3
-2008,Hungary,HUN,All,1
-2008,Italy,ITA,All,3
-2008,Japan,JPN,All,2
-2008,Korea (the Republic of),KOR,All,1
-2008,Mexico,MEX,All,3
-2008,Netherlands (the),NLD,All,1
-2008,Norway,NOR,All,1
-2008,Poland,POL,All,2
-2008,Portugal,PRT,All,2
-2008,Turkey,TUR,All,1
-2008,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,3
-2008,United States of America (the),USA,All,21
-2009,Australia,AUS,All,6
-2009,Austria,AUT,All,4
-2009,Canada,CAN,All,3
-2009,Czech Republic (the),CZE,All,2
-2009,France,FRA,All,4
-2009,Germany,DEU,All,3
-2009,Greece,GRC,All,2
-2009,Ireland,IRL,All,1
-2009,Italy,ITA,All,4
-2009,Japan,JPN,All,5
-2009,Mexico,MEX,All,7
-2009,Poland,POL,All,3
-2009,Spain,ESP,All,2
-2009,Switzerland,CHE,All,1
-2009,Turkey,TUR,All,4
-2009,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,3
-2009,United States of America (the),USA,All,17
-2010,Australia,AUS,All,8
-2010,Belgium,BEL,All,3
-2010,Canada,CAN,All,1
-2010,Chile,CHL,All,1
-2010,Czech Republic (the),CZE,All,4
-2010,Denmark,DNK,All,1
-2010,France,FRA,All,4
-2010,Germany,DEU,All,4
-2010,Greece,GRC,All,1
-2010,Hungary,HUN,All,1
-2010,Israel,ISR,All,2
-2010,Italy,ITA,All,3
-2010,Japan,JPN,All,2
-2010,Korea (the Republic of),KOR,All,1
-2010,Lithuania,LTU,All,2
-2010,Luxembourg,LUX,All,1
-2010,Mexico,MEX,All,8
-2010,Netherlands (the),NLD,All,1
-2010,Poland,POL,All,3
-2010,Portugal,PRT,All,3
-2010,Slovakia,SVK,All,3
-2010,Spain,ESP,All,2
-2010,Switzerland,CHE,All,2
-2010,Turkey,TUR,All,1
-2010,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,2
-2010,United States of America (the),USA,All,15
-2011,Australia,AUS,All,3
-2011,Belgium,BEL,All,2
-2011,Canada,CAN,All,4
-2011,Chile,CHL,All,4
-2011,France,FRA,All,2
-2011,Germany,DEU,All,1
-2011,Ireland,IRL,All,1
-2011,Italy,ITA,All,4
-2011,Japan,JPN,All,5
-2011,Korea (the Republic of),KOR,All,3
-2011,Mexico,MEX,All,11
-2011,Norway,NOR,All,1
-2011,Poland,POL,All,1
-2011,Spain,ESP,All,1
-2011,Switzerland,CHE,All,1
-2011,Turkey,TUR,All,1
-2011,United States of America (the),USA,All,23
-2012,Australia,AUS,All,2
-2012,Austria,AUT,All,1
-2012,Belgium,BEL,All,1
-2012,Canada,CAN,All,3
-2012,Chile,CHL,All,2
-2012,Czech Republic (the),CZE,All,2
-2012,Estonia,EST,All,1
-2012,France,FRA,All,1
-2012,Germany,DEU,All,2
-2012,Greece,GRC,All,2
-2012,Hungary,HUN,All,1
-2012,Italy,ITA,All,3
-2012,Japan,JPN,All,7
-2012,Korea (the Republic of),KOR,All,3
-2012,Latvia,LVA,All,1
-2012,Lithuania,LTU,All,2
-2012,Mexico,MEX,All,2
-2012,Netherlands (the),NLD,All,1
-2012,New Zealand,NZL,All,1
-2012,Poland,POL,All,4
-2012,Slovakia,SVK,All,1
-2012,Slovenia,SVN,All,1
-2012,Spain,ESP,All,2
-2012,Switzerland,CHE,All,2
-2012,Turkey,TUR,All,1
-2012,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,5
-2012,United States of America (the),USA,All,25
-2013,Australia,AUS,All,3
-2013,Austria,AUT,All,1
-2013,Belgium,BEL,All,2
-2013,Canada,CAN,All,3
-2013,Chile,CHL,All,1
-2013,Czech Republic (the),CZE,All,1
-2013,Denmark,DNK,All,2
-2013,France,FRA,All,3
-2013,Germany,DEU,All,4
-2013,Hungary,HUN,All,2
-2013,Israel,ISR,All,1
-2013,Italy,ITA,All,1
-2013,Japan,JPN,All,9
-2013,Mexico,MEX,All,5
-2013,Netherlands (the),NLD,All,3
-2013,New Zealand,NZL,All,2
-2013,Poland,POL,All,2
-2013,Portugal,PRT,All,3
-2013,Slovakia,SVK,All,1
-2013,Spain,ESP,All,2
-2013,Sweden,SWE,All,1
-2013,Switzerland,CHE,All,2
-2013,Turkey,TUR,All,1
-2013,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,5
-2013,United States of America (the),USA,All,28
-2014,Australia,AUS,All,4
-2014,Belgium,BEL,All,1
-2014,Canada,CAN,All,2
-2014,Chile,CHL,All,2
-2014,France,FRA,All,7
-2014,Germany,DEU,All,2
-2014,Greece,GRC,All,1
-2014,Hungary,HUN,All,1
-2014,Ireland,IRL,All,1
-2014,Italy,ITA,All,5
-2014,Japan,JPN,All,11
-2014,Korea (the Republic of),KOR,All,3
-2014,Mexico,MEX,All,6
-2014,Poland,POL,All,1
-2014,Portugal,PRT,All,2
-2014,Slovenia,SVN,All,2
-2014,Spain,ESP,All,1
-2014,Switzerland,CHE,All,1
-2014,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,2
-2014,United States of America (the),USA,All,19
-2015,Australia,AUS,All,8
-2015,Belgium,BEL,All,1
-2015,Canada,CAN,All,1
-2015,Chile,CHL,All,4
-2015,France,FRA,All,3
-2015,Greece,GRC,All,2
-2015,Ireland,IRL,All,1
-2015,Israel,ISR,All,1
-2015,Italy,ITA,All,4
-2015,Japan,JPN,All,10
-2015,Mexico,MEX,All,4
-2015,New Zealand,NZL,All,2
-2015,Poland,POL,All,2
-2015,Portugal,PRT,All,1
-2015,Spain,ESP,All,2
-2015,Turkey,TUR,All,2
-2015,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,2
-2015,United States of America (the),USA,All,29
-2016,Australia,AUS,All,3
-2016,Austria,AUT,All,1
-2016,Belgium,BEL,All,2
-2016,Canada,CAN,All,2
-2016,Chile,CHL,All,1
-2016,France,FRA,All,1
-2016,Germany,DEU,All,1
-2016,Greece,GRC,All,1
-2016,Hungary,HUN,All,1
-2016,Israel,ISR,All,1
-2016,Italy,ITA,All,1
-2016,Japan,JPN,All,7
-2016,Korea (the Republic of),KOR,All,2
-2016,Mexico,MEX,All,7
-2016,Netherlands (the),NLD,All,1
-2016,New Zealand,NZL,All,1
-2016,Poland,POL,All,2
-2016,Portugal,PRT,All,1
-2016,Spain,ESP,All,1
-2016,United States of America (the),USA,All,26
-2017,Australia,AUS,All,3
-2017,Austria,AUT,All,2
-2017,Canada,CAN,All,3
-2017,Chile,CHL,All,5
-2017,Czech Republic (the),CZE,All,1
-2017,France,FRA,All,3
-2017,Germany,DEU,All,3
-2017,Greece,GRC,All,2
-2017,Hungary,HUN,All,1
-2017,Ireland,IRL,All,1
-2017,Italy,ITA,All,4
-2017,Japan,JPN,All,4
-2017,Mexico,MEX,All,5
-2017,New Zealand,NZL,All,2
-2017,Poland,POL,All,1
-2017,Portugal,PRT,All,2
-2017,Slovakia,SVK,All,1
-2017,Spain,ESP,All,2
-2017,Turkey,TUR,All,1
-2017,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,1
-2017,United States of America (the),USA,All,24
-2018,Australia,AUS,All,3
-2018,Belgium,BEL,All,2
-2018,Canada,CAN,All,4
-2018,Czech Republic (the),CZE,All,1
-2018,Estonia,EST,All,1
-2018,France,FRA,All,7
-2018,Germany,DEU,All,2
-2018,Greece,GRC,All,1
-2018,Hungary,HUN,All,1
-2018,Ireland,IRL,All,1
-2018,Israel,ISR,All,1
-2018,Italy,ITA,All,4
-2018,Japan,JPN,All,5
-2018,Korea (the Republic of),KOR,All,1
-2018,Latvia,LVA,All,1
-2018,Lithuania,LTU,All,2
-2018,Mexico,MEX,All,3
-2018,Netherlands (the),NLD,All,2
-2018,New Zealand,NZL,All,1
-2018,Poland,POL,All,2
-2018,Portugal,PRT,All,3
-2018,Spain,ESP,All,4
-2018,Sweden,SWE,All,1
-2018,Switzerland,CHE,All,1
-2018,Turkey,TUR,All,1
-2018,United Kingdom of Great Britain and Northern Ireland (the),GBR,All,2
-2018,United States of America (the),USA,All,17
-1980,Australia,AUS,Storm,5
-1980,Australia,AUS,Wildfire,1
-1980,Austria,AUT,Flood,1
-1980,Canada,CAN,Wildfire,1
-1980,Denmark,DNK,Storm,1
-1980,France,FRA,Flood,1
-1980,Japan,JPN,Flood,1
-1980,Japan,JPN,Storm,1
-1980,Korea (the Republic of),KOR,Storm,2
-1980,Mexico,MEX,Flood,2
-1980,New Zealand,NZL,Flood,2
-1980,Poland,POL,Flood,1
-1980,Spain,ESP,Drought,1
-1980,Turkey,TUR,Flood,1
-1980,Turkey,TUR,Landslide,1
-1980,United States of America (the),USA,Extreme temperature,1
-1980,United States of America (the),USA,Flood,3
-1980,United States of America (the),USA,Storm,3
-1981,Australia,AUS,Drought,1
-1981,Australia,AUS,Flood,3
-1981,Australia,AUS,Storm,1
-1981,Austria,AUT,Storm,1
-1981,Canada,CAN,Storm,1
-1981,Denmark,DNK,Storm,1
-1981,France,FRA,Flood,1
-1981,Japan,JPN,Landslide,1
-1981,Japan,JPN,Storm,4
-1981,Korea (the Republic of),KOR,Landslide,1
-1981,Korea (the Republic of),KOR,Storm,1
-1981,Mexico,MEX,Storm,1
-1981,New Zealand,NZL,Flood,1
-1981,Portugal,PRT,Flood,1
-1981,Spain,ESP,Drought,1
-1981,Turkey,TUR,Flood,1
-1981,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,1
-1981,United States of America (the),USA,Flood,1
-1981,United States of America (the),USA,Storm,3
-1982,Australia,AUS,Storm,3
-1982,Austria,AUT,Flood,1
-1982,Austria,AUT,Landslide,1
-1982,Belgium,BEL,Storm,1
-1982,Canada,CAN,Extreme temperature,1
-1982,Chile,CHL,Flood,1
-1982,France,FRA,Drought,1
-1982,France,FRA,Landslide,2
-1982,France,FRA,Storm,2
-1982,France,FRA,Wildfire,1
-1982,Italy,ITA,Landslide,1
-1982,Japan,JPN,Flood,1
-1982,Japan,JPN,Storm,4
-1982,Korea (the Republic of),KOR,Storm,2
-1982,Mexico,MEX,Flood,2
-1982,Mexico,MEX,Storm,1
-1982,Poland,POL,Flood,1
-1982,Spain,ESP,Flood,2
-1982,Switzerland,CHE,Storm,1
-1982,United States of America (the),USA,Flood,2
-1982,United States of America (the),USA,Storm,11
-1983,Australia,AUS,Storm,3
-1983,Australia,AUS,Wildfire,1
-1983,Austria,AUT,Flood,1
-1983,Canada,CAN,Flood,1
-1983,Denmark,DNK,Storm,1
-1983,France,FRA,Flood,3
-1983,France,FRA,Landslide,2
-1983,France,FRA,Storm,2
-1983,France,FRA,Wildfire,1
-1983,Greece,GRC,Wildfire,1
-1983,Iceland,ISL,Landslide,1
-1983,Ireland,IRL,Storm,1
-1983,Israel,ISR,Wildfire,1
-1983,Italy,ITA,Landslide,1
-1983,Italy,ITA,Wildfire,1
-1983,Japan,JPN,Landslide,2
-1983,Japan,JPN,Storm,2
-1983,Luxembourg,LUX,Flood,1
-1983,Mexico,MEX,Landslide,1
-1983,Mexico,MEX,Storm,2
-1983,New Zealand,NZL,Flood,1
-1983,Poland,POL,Storm,1
-1983,Poland,POL,Wildfire,1
-1983,Portugal,PRT,Drought,1
-1983,Portugal,PRT,Flood,1
-1983,Portugal,PRT,Wildfire,1
-1983,Spain,ESP,Flood,2
-1983,Switzerland,CHE,Flood,1
-1983,Switzerland,CHE,Storm,2
-1983,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,1
-1983,United States of America (the),USA,Extreme temperature,1
-1983,United States of America (the),USA,Flood,2
-1983,United States of America (the),USA,Storm,6
-1984,Australia,AUS,Flood,1
-1984,Austria,AUT,Landslide,1
-1984,Austria,AUT,Storm,1
-1984,Belgium,BEL,Flood,1
-1984,Belgium,BEL,Storm,1
-1984,Canada,CAN,Drought,1
-1984,Chile,CHL,Storm,2
-1984,France,FRA,Storm,3
-1984,France,FRA,Wildfire,2
-1984,Greece,GRC,Wildfire,2
-1984,Hungary,HUN,Storm,1
-1984,Japan,JPN,Landslide,1
-1984,Korea (the Republic of),KOR,Flood,1
-1984,Korea (the Republic of),KOR,Landslide,1
-1984,Mexico,MEX,Flood,1
-1984,Mexico,MEX,Storm,1
-1984,Netherlands (the),NLD,Storm,1
-1984,New Zealand,NZL,Flood,1
-1984,Spain,ESP,Storm,2
-1984,Spain,ESP,Wildfire,1
-1984,Switzerland,CHE,Storm,1
-1984,Turkey,TUR,Flood,1
-1984,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,1
-1984,United States of America (the),USA,Flood,3
-1984,United States of America (the),USA,Storm,11
-1985,Australia,AUS,Flood,1
-1985,Australia,AUS,Storm,2
-1985,Australia,AUS,Wildfire,2
-1985,Austria,AUT,Flood,1
-1985,Belgium,BEL,Extreme temperature,1
-1985,Belgium,BEL,Storm,1
-1985,Canada,CAN,Storm,1
-1985,Canada,CAN,Wildfire,1
-1985,Denmark,DNK,Storm,1
-1985,France,FRA,Extreme temperature,1
-1985,France,FRA,Storm,1
-1985,France,FRA,Wildfire,1
-1985,Greece,GRC,Extreme temperature,1
-1985,Greece,GRC,Wildfire,1
-1985,Italy,ITA,Flood,1
-1985,Japan,JPN,Storm,2
-1985,Korea (the Republic of),KOR,Storm,1
-1985,Netherlands (the),NLD,Storm,1
-1985,New Zealand,NZL,Flood,2
-1985,Portugal,PRT,Wildfire,1
-1985,Spain,ESP,Extreme temperature,1
-1985,Spain,ESP,Wildfire,2
-1985,Sweden,SWE,Flood,1
-1985,Switzerland,CHE,Storm,1
-1985,Turkey,TUR,Wildfire,1
-1985,United States of America (the),USA,Flood,5
-1985,United States of America (the),USA,Storm,10
-1986,Australia,AUS,Flood,1
-1986,Australia,AUS,Storm,5
-1986,Canada,CAN,Flood,1
-1986,Canada,CAN,Storm,1
-1986,Canada,CAN,Wildfire,2
-1986,Chile,CHL,Flood,1
-1986,Chile,CHL,Storm,1
-1986,France,FRA,Wildfire,1
-1986,Hungary,HUN,Drought,1
-1986,Ireland,IRL,Storm,1
-1986,Italy,ITA,Flood,1
-1986,Japan,JPN,Flood,1
-1986,Japan,JPN,Landslide,2
-1986,Japan,JPN,Storm,2
-1986,Korea (the Republic of),KOR,Storm,1
-1986,Mexico,MEX,Flood,1
-1986,Netherlands (the),NLD,Storm,1
-1986,New Zealand,NZL,Flood,3
-1986,Portugal,PRT,Wildfire,1
-1986,Switzerland,CHE,Storm,2
-1986,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,1
-1986,United States of America (the),USA,Extreme temperature,1
-1986,United States of America (the),USA,Flood,3
-1986,United States of America (the),USA,Storm,2
-1987,Belgium,BEL,Flood,1
-1987,Canada,CAN,Flood,2
-1987,Canada,CAN,Storm,1
-1987,Chile,CHL,Flood,2
-1987,Chile,CHL,Landslide,1
-1987,France,FRA,Flood,1
-1987,France,FRA,Storm,1
-1987,Greece,GRC,Extreme temperature,1
-1987,Greece,GRC,Storm,1
-1987,Greece,GRC,Wildfire,1
-1987,Ireland,IRL,Flood,1
-1987,Italy,ITA,Flood,1
-1987,Italy,ITA,Landslide,2
-1987,Italy,ITA,Storm,3
-1987,Japan,JPN,Storm,1
-1987,Korea (the Republic of),KOR,Flood,1
-1987,Korea (the Republic of),KOR,Storm,2
-1987,Mexico,MEX,Flood,2
-1987,New Zealand,NZL,Flood,1
-1987,New Zealand,NZL,Wildfire,1
-1987,Poland,POL,Flood,1
-1987,Spain,ESP,Flood,1
-1987,Spain,ESP,Storm,1
-1987,Switzerland,CHE,Flood,1
-1987,Switzerland,CHE,Storm,1
-1987,Turkey,TUR,Extreme temperature,1
-1987,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,1
-1987,United States of America (the),USA,Extreme temperature,1
-1987,United States of America (the),USA,Storm,8
-1988,Australia,AUS,Flood,3
-1988,Australia,AUS,Storm,1
-1988,Canada,CAN,Drought,1
-1988,Canada,CAN,Flood,1
-1988,France,FRA,Flood,1
-1988,Greece,GRC,Extreme temperature,1
-1988,Iceland,ISL,Flood,1
-1988,Japan,JPN,Flood,1
-1988,Korea (the Republic of),KOR,Landslide,1
-1988,Mexico,MEX,Drought,1
-1988,Mexico,MEX,Extreme temperature,1
-1988,Mexico,MEX,Storm,3
-1988,New Zealand,NZL,Flood,3
-1988,New Zealand,NZL,Storm,1
-1988,Switzerland,CHE,Landslide,1
-1988,Turkey,TUR,Flood,1
-1988,Turkey,TUR,Landslide,1
-1988,United States of America (the),USA,Drought,1
-1988,United States of America (the),USA,Flood,3
-1988,United States of America (the),USA,Storm,18
-1989,Australia,AUS,Flood,1
-1989,Australia,AUS,Storm,2
-1989,Canada,CAN,Storm,1
-1989,Canada,CAN,Wildfire,1
-1989,Chile,CHL,Flood,1
-1989,France,FRA,Drought,1
-1989,France,FRA,Storm,1
-1989,Japan,JPN,Flood,1
-1989,Japan,JPN,Landslide,1
-1989,Japan,JPN,Storm,2
-1989,Korea (the Republic of),KOR,Storm,1
-1989,Mexico,MEX,Flood,1
-1989,Mexico,MEX,Wildfire,1
-1989,New Zealand,NZL,Flood,1
-1989,Portugal,PRT,Storm,1
-1989,Spain,ESP,Flood,1
-1989,Spain,ESP,Storm,2
-1989,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,1
-1989,United States of America (the),USA,Extreme temperature,1
-1989,United States of America (the),USA,Storm,16
-1990,Australia,AUS,Flood,2
-1990,Australia,AUS,Storm,2
-1990,Australia,AUS,Wildfire,1
-1990,Austria,AUT,Storm,5
-1990,Belgium,BEL,Storm,6
-1990,Canada,CAN,Flood,1
-1990,Chile,CHL,Flood,1
-1990,Denmark,DNK,Storm,3
-1990,Finland,FIN,Storm,2
-1990,France,FRA,Extreme temperature,1
-1990,France,FRA,Landslide,1
-1990,France,FRA,Storm,8
-1990,Germany,DEU,Storm,6
-1990,Greece,GRC,Drought,1
-1990,Greece,GRC,Storm,1
-1990,Ireland,IRL,Storm,4
-1990,Italy,ITA,Storm,1
-1990,Italy,ITA,Wildfire,2
-1990,Japan,JPN,Flood,1
-1990,Japan,JPN,Storm,2
-1990,Korea (the Republic of),KOR,Extreme temperature,1
-1990,Korea (the Republic of),KOR,Flood,1
-1990,Korea (the Republic of),KOR,Storm,1
-1990,Luxembourg,LUX,Storm,6
-1990,Mexico,MEX,Extreme temperature,1
-1990,Mexico,MEX,Flood,1
-1990,Mexico,MEX,Storm,1
-1990,Netherlands (the),NLD,Storm,6
-1990,Norway,NOR,Storm,2
-1990,Poland,POL,Storm,1
-1990,Spain,ESP,Drought,1
-1990,Spain,ESP,Storm,2
-1990,Sweden,SWE,Storm,2
-1990,Switzerland,CHE,Storm,4
-1990,Turkey,TUR,Flood,2
-1990,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,7
-1990,United States of America (the),USA,Extreme temperature,2
-1990,United States of America (the),USA,Flood,4
-1990,United States of America (the),USA,Storm,15
-1991,Australia,AUS,Drought,1
-1991,Australia,AUS,Storm,2
-1991,Austria,AUT,Flood,1
-1991,Austria,AUT,Storm,1
-1991,Canada,CAN,Storm,1
-1991,Chile,CHL,Drought,1
-1991,Chile,CHL,Landslide,1
-1991,France,FRA,Drought,1
-1991,France,FRA,Extreme temperature,2
-1991,Germany,DEU,Storm,1
-1991,Greece,GRC,Extreme temperature,1
-1991,Ireland,IRL,Storm,1
-1991,Israel,ISR,Storm,1
-1991,Japan,JPN,Storm,5
-1991,Korea (the Republic of),KOR,Flood,1
-1991,Korea (the Republic of),KOR,Storm,1
-1991,Mexico,MEX,Flood,2
-1991,Mexico,MEX,Storm,1
-1991,New Zealand,NZL,Flood,3
-1991,Portugal,PRT,Wildfire,1
-1991,Spain,ESP,Wildfire,1
-1991,Turkey,TUR,Flood,1
-1991,Turkey,TUR,Storm,1
-1991,United Kingdom of Great Britain and Northern Ireland (the),GBR,Extreme temperature,1
-1991,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,1
-1991,United States of America (the),USA,Drought,2
-1991,United States of America (the),USA,Flood,14
-1991,United States of America (the),USA,Storm,17
-1991,United States of America (the),USA,Wildfire,2
-1992,Australia,AUS,Drought,1
-1992,Australia,AUS,Storm,2
-1992,Canada,CAN,Extreme temperature,1
-1992,Canada,CAN,Wildfire,1
-1992,Chile,CHL,Storm,2
-1992,Chile,CHL,Wildfire,1
-1992,Denmark,DNK,Drought,1
-1992,France,FRA,Flood,1
-1992,France,FRA,Storm,2
-1992,Germany,DEU,Flood,1
-1992,Hungary,HUN,Drought,1
-1992,Israel,ISR,Extreme temperature,1
-1992,Italy,ITA,Flood,2
-1992,Japan,JPN,Storm,2
-1992,Korea (the Republic of),KOR,Flood,1
-1992,Korea (the Republic of),KOR,Storm,1
-1992,Lithuania,LTU,Drought,1
-1992,Mexico,MEX,Extreme temperature,2
-1992,Mexico,MEX,Storm,1
-1992,Netherlands (the),NLD,Flood,1
-1992,New Zealand,NZL,Drought,1
-1992,New Zealand,NZL,Storm,2
-1992,Norway,NOR,Storm,1
-1992,Poland,POL,Wildfire,1
-1992,United States of America (the),USA,Storm,27
-1992,United States of America (the),USA,Wildfire,2
-1993,Australia,AUS,Extreme temperature,1
-1993,Australia,AUS,Flood,1
-1993,Australia,AUS,Storm,2
-1993,Austria,AUT,Storm,1
-1993,Belgium,BEL,Flood,2
-1993,Canada,CAN,Flood,1
-1993,Chile,CHL,Flood,1
-1993,Chile,CHL,Wildfire,1
-1993,France,FRA,Flood,1
-1993,France,FRA,Storm,2
-1993,Germany,DEU,Flood,1
-1993,Germany,DEU,Storm,2
-1993,Ireland,IRL,Flood,1
-1993,Italy,ITA,Storm,1
-1993,Japan,JPN,Flood,1
-1993,Japan,JPN,Landslide,2
-1993,Japan,JPN,Storm,3
-1993,Korea (the Republic of),KOR,Landslide,1
-1993,Korea (the Republic of),KOR,Storm,1
-1993,Lithuania,LTU,Storm,1
-1993,Luxembourg,LUX,Flood,1
-1993,Mexico,MEX,Flood,2
-1993,Mexico,MEX,Storm,5
-1993,Netherlands (the),NLD,Flood,1
-1993,Norway,NOR,Storm,1
-1993,Switzerland,CHE,Storm,3
-1993,Turkey,TUR,Landslide,1
-1993,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,2
-1993,United States of America (the),USA,Extreme temperature,1
-1993,United States of America (the),USA,Flood,6
-1993,United States of America (the),USA,Storm,20
-1993,United States of America (the),USA,Wildfire,1
-1994,Australia,AUS,Extreme temperature,2
-1994,Australia,AUS,Storm,4
-1994,Australia,AUS,Wildfire,2
-1994,Austria,AUT,Storm,1
-1994,Belgium,BEL,Flood,1
-1994,Canada,CAN,Storm,2
-1994,Canada,CAN,Wildfire,1
-1994,France,FRA,Flood,3
-1994,Germany,DEU,Flood,2
-1994,Germany,DEU,Storm,2
-1994,Greece,GRC,Flood,1
-1994,Italy,ITA,Flood,1
-1994,Italy,ITA,Storm,1
-1994,Italy,ITA,Wildfire,1
-1994,Japan,JPN,Storm,3
-1994,Korea (the Republic of),KOR,Storm,1
-1994,Netherlands (the),NLD,Storm,1
-1994,New Zealand,NZL,Flood,1
-1994,Poland,POL,Storm,1
-1994,Spain,ESP,Flood,1
-1994,Spain,ESP,Storm,1
-1994,Spain,ESP,Wildfire,2
-1994,Switzerland,CHE,Storm,1
-1994,Turkey,TUR,Extreme temperature,1
-1994,Turkey,TUR,Storm,1
-1994,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,2
-1994,United States of America (the),USA,Flood,1
-1994,United States of America (the),USA,Landslide,1
-1994,United States of America (the),USA,Storm,9
-1994,United States of America (the),USA,Wildfire,3
-1995,Australia,AUS,Extreme temperature,1
-1995,Australia,AUS,Storm,4
-1995,Austria,AUT,Flood,1
-1995,Belgium,BEL,Storm,1
-1995,Canada,CAN,Flood,1
-1995,Canada,CAN,Storm,1
-1995,Canada,CAN,Wildfire,2
-1995,Chile,CHL,Extreme temperature,1
-1995,Chile,CHL,Flood,1
-1995,France,FRA,Storm,1
-1995,Germany,DEU,Storm,2
-1995,Greece,GRC,Wildfire,1
-1995,Iceland,ISL,Landslide,2
-1995,Israel,ISR,Wildfire,1
-1995,Japan,JPN,Flood,1
-1995,Japan,JPN,Storm,1
-1995,Korea (the Republic of),KOR,Storm,2
-1995,Luxembourg,LUX,Storm,1
-1995,Mexico,MEX,Drought,1
-1995,Mexico,MEX,Extreme temperature,1
-1995,Mexico,MEX,Storm,5
-1995,Netherlands (the),NLD,Storm,1
-1995,Norway,NOR,Flood,1
-1995,Spain,ESP,Extreme temperature,2
-1995,Turkey,TUR,Flood,2
-1995,Turkey,TUR,Landslide,1
-1995,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,1
-1995,United States of America (the),USA,Extreme temperature,2
-1995,United States of America (the),USA,Flood,6
-1995,United States of America (the),USA,Storm,10
-1996,Australia,AUS,Flood,2
-1996,Australia,AUS,Landslide,1
-1996,Australia,AUS,Storm,6
-1996,Austria,AUT,Flood,1
-1996,Canada,CAN,Flood,1
-1996,Canada,CAN,Storm,1
-1996,Czech Republic (the),CZE,Flood,1
-1996,France,FRA,Flood,2
-1996,France,FRA,Storm,1
-1996,Germany,DEU,Storm,1
-1996,Hungary,HUN,Flood,1
-1996,Ireland,IRL,Storm,1
-1996,Italy,ITA,Flood,2
-1996,Italy,ITA,Landslide,1
-1996,Japan,JPN,Landslide,1
-1996,Japan,JPN,Storm,1
-1996,Korea (the Republic of),KOR,Flood,1
-1996,Korea (the Republic of),KOR,Landslide,1
-1996,Mexico,MEX,Drought,1
-1996,Mexico,MEX,Flood,1
-1996,Mexico,MEX,Storm,4
-1996,New Zealand,NZL,Storm,1
-1996,Portugal,PRT,Flood,2
-1996,Spain,ESP,Flood,1
-1996,Spain,ESP,Landslide,1
-1996,Turkey,TUR,Wildfire,1
-1996,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,1
-1996,United States of America (the),USA,Flood,4
-1996,United States of America (the),USA,Storm,9
-1996,United States of America (the),USA,Wildfire,2
-1997,Australia,AUS,Flood,1
-1997,Australia,AUS,Landslide,1
-1997,Australia,AUS,Wildfire,2
-1997,Austria,AUT,Flood,1
-1997,Canada,CAN,Flood,1
-1997,Canada,CAN,Storm,1
-1997,Canada,CAN,Wildfire,1
-1997,Chile,CHL,Flood,1
-1997,Chile,CHL,Storm,2
-1997,Chile,CHL,Wildfire,1
-1997,Czech Republic (the),CZE,Flood,1
-1997,France,FRA,Drought,1
-1997,France,FRA,Extreme temperature,1
-1997,France,FRA,Wildfire,1
-1997,Germany,DEU,Extreme temperature,1
-1997,Germany,DEU,Flood,1
-1997,Greece,GRC,Flood,1
-1997,Hungary,HUN,Flood,1
-1997,Israel,ISR,Flood,1
-1997,Italy,ITA,Drought,1
-1997,Italy,ITA,Storm,1
-1997,Japan,JPN,Landslide,1
-1997,Japan,JPN,Storm,2
-1997,Korea (the Republic of),KOR,Flood,2
-1997,Mexico,MEX,Extreme temperature,2
-1997,Mexico,MEX,Landslide,1
-1997,Mexico,MEX,Storm,3
-1997,Netherlands (the),NLD,Storm,1
-1997,New Zealand,NZL,Flood,1
-1997,New Zealand,NZL,Storm,1
-1997,Poland,POL,Extreme temperature,1
-1997,Poland,POL,Flood,1
-1997,Portugal,PRT,Drought,1
-1997,Portugal,PRT,Storm,1
-1997,Slovakia,SVK,Flood,1
-1997,Spain,ESP,Flood,1
-1997,Spain,ESP,Storm,1
-1997,Switzerland,CHE,Flood,1
-1997,United Kingdom of Great Britain and Northern Ireland (the),GBR,Extreme temperature,1
-1997,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,2
-1997,United States of America (the),USA,Flood,8
-1997,United States of America (the),USA,Storm,23
-1997,United States of America (the),USA,Wildfire,2
-1998,Australia,AUS,Flood,6
-1998,Belgium,BEL,Flood,1
-1998,Belgium,BEL,Storm,1
-1998,Canada,CAN,Flood,1
-1998,Canada,CAN,Storm,1
-1998,Canada,CAN,Wildfire,1
-1998,Czech Republic (the),CZE,Flood,1
-1998,France,FRA,Landslide,1
-1998,France,FRA,Storm,1
-1998,Germany,DEU,Storm,1
-1998,Greece,GRC,Flood,1
-1998,Greece,GRC,Wildfire,1
-1998,Ireland,IRL,Storm,1
-1998,Israel,ISR,Flood,1
-1998,Italy,ITA,Extreme temperature,1
-1998,Italy,ITA,Landslide,1
-1998,Japan,JPN,Flood,1
-1998,Japan,JPN,Landslide,1
-1998,Japan,JPN,Storm,5
-1998,Korea (the Republic of),KOR,Flood,1
-1998,Korea (the Republic of),KOR,Storm,3
-1998,Mexico,MEX,Extreme temperature,1
-1998,Mexico,MEX,Flood,2
-1998,Mexico,MEX,Landslide,1
-1998,Mexico,MEX,Storm,4
-1998,Mexico,MEX,Wildfire,1
-1998,Netherlands (the),NLD,Flood,1
-1998,Netherlands (the),NLD,Storm,1
-1998,New Zealand,NZL,Flood,1
-1998,Poland,POL,Extreme temperature,1
-1998,Poland,POL,Flood,1
-1998,Slovakia,SVK,Flood,1
-1998,Spain,ESP,Storm,1
-1998,Spain,ESP,Wildfire,1
-1998,Switzerland,CHE,Storm,1
-1998,Turkey,TUR,Flood,3
-1998,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,1
-1998,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,3
-1998,United States of America (the),USA,Extreme temperature,1
-1998,United States of America (the),USA,Flood,7
-1998,United States of America (the),USA,Storm,20
-1998,United States of America (the),USA,Wildfire,4
-1999,Australia,AUS,Storm,4
-1999,Australia,AUS,Wildfire,1
-1999,Austria,AUT,Flood,1
-1999,Austria,AUT,Landslide,1
-1999,Belgium,BEL,Storm,2
-1999,Canada,CAN,Storm,2
-1999,Canada,CAN,Wildfire,1
-1999,Chile,CHL,Wildfire,1
-1999,Denmark,DNK,Storm,1
-1999,France,FRA,Flood,3
-1999,France,FRA,Landslide,1
-1999,France,FRA,Storm,3
-1999,France,FRA,Wildfire,1
-1999,Germany,DEU,Flood,1
-1999,Germany,DEU,Landslide,1
-1999,Germany,DEU,Storm,2
-1999,Hungary,HUN,Flood,2
-1999,Hungary,HUN,Storm,1
-1999,Ireland,IRL,Storm,1
-1999,Israel,ISR,Drought,1
-1999,Italy,ITA,Landslide,1
-1999,Italy,ITA,Wildfire,1
-1999,Japan,JPN,Flood,2
-1999,Japan,JPN,Storm,1
-1999,Korea (the Republic of),KOR,Flood,1
-1999,Korea (the Republic of),KOR,Storm,1
-1999,Latvia,LVA,Storm,1
-1999,Lithuania,LTU,Extreme temperature,1
-1999,Lithuania,LTU,Storm,1
-1999,Mexico,MEX,Drought,1
-1999,Mexico,MEX,Extreme temperature,1
-1999,Mexico,MEX,Flood,4
-1999,Mexico,MEX,Storm,1
-1999,New Zealand,NZL,Flood,1
-1999,Poland,POL,Extreme temperature,1
-1999,Poland,POL,Storm,1
-1999,Slovakia,SVK,Flood,1
-1999,Spain,ESP,Drought,1
-1999,Spain,ESP,Storm,1
-1999,Sweden,SWE,Storm,1
-1999,Switzerland,CHE,Flood,1
-1999,Switzerland,CHE,Landslide,1
-1999,Switzerland,CHE,Storm,1
-1999,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,1
-1999,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,2
-1999,United States of America (the),USA,Drought,1
-1999,United States of America (the),USA,Extreme temperature,1
-1999,United States of America (the),USA,Flood,1
-1999,United States of America (the),USA,Storm,16
-1999,United States of America (the),USA,Wildfire,3
-2000,Australia,AUS,Flood,1
-2000,Australia,AUS,Storm,3
-2000,Australia,AUS,Wildfire,1
-2000,Austria,AUT,Landslide,1
-2000,Austria,AUT,Storm,1
-2000,Canada,CAN,Storm,1
-2000,Chile,CHL,Extreme temperature,1
-2000,Chile,CHL,Flood,2
-2000,Czech Republic (the),CZE,Flood,1
-2000,France,FRA,Flood,6
-2000,France,FRA,Storm,1
-2000,Greece,GRC,Extreme temperature,1
-2000,Greece,GRC,Flood,2
-2000,Greece,GRC,Wildfire,2
-2000,Hungary,HUN,Flood,1
-2000,Ireland,IRL,Storm,1
-2000,Israel,ISR,Extreme temperature,1
-2000,Israel,ISR,Storm,1
-2000,Italy,ITA,Flood,4
-2000,Japan,JPN,Flood,1
-2000,Japan,JPN,Storm,3
-2000,Korea (the Republic of),KOR,Flood,2
-2000,Korea (the Republic of),KOR,Storm,2
-2000,Korea (the Republic of),KOR,Wildfire,1
-2000,Mexico,MEX,Extreme temperature,1
-2000,Mexico,MEX,Flood,3
-2000,Mexico,MEX,Storm,2
-2000,New Zealand,NZL,Flood,1
-2000,New Zealand,NZL,Storm,1
-2000,Norway,NOR,Flood,1
-2000,Poland,POL,Extreme temperature,1
-2000,Portugal,PRT,Storm,1
-2000,Slovakia,SVK,Wildfire,1
-2000,Spain,ESP,Flood,2
-2000,Spain,ESP,Storm,2
-2000,Spain,ESP,Wildfire,1
-2000,Switzerland,CHE,Landslide,1
-2000,Turkey,TUR,Extreme temperature,1
-2000,Turkey,TUR,Flood,1
-2000,Turkey,TUR,Wildfire,2
-2000,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,3
-2000,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,3
-2000,United States of America (the),USA,Drought,2
-2000,United States of America (the),USA,Extreme temperature,1
-2000,United States of America (the),USA,Flood,8
-2000,United States of America (the),USA,Storm,12
-2000,United States of America (the),USA,Wildfire,7
-2001,Australia,AUS,Flood,4
-2001,Australia,AUS,Storm,3
-2001,Australia,AUS,Wildfire,2
-2001,Canada,CAN,Storm,1
-2001,Canada,CAN,Wildfire,1
-2001,Chile,CHL,Flood,3
-2001,Chile,CHL,Storm,1
-2001,France,FRA,Flood,5
-2001,France,FRA,Storm,2
-2001,Germany,DEU,Storm,1
-2001,Greece,GRC,Flood,2
-2001,Hungary,HUN,Extreme temperature,1
-2001,Hungary,HUN,Flood,1
-2001,Italy,ITA,Flood,2
-2001,Italy,ITA,Storm,1
-2001,Japan,JPN,Flood,1
-2001,Japan,JPN,Storm,4
-2001,Korea (the Republic of),KOR,Drought,1
-2001,Korea (the Republic of),KOR,Flood,2
-2001,Korea (the Republic of),KOR,Storm,1
-2001,Latvia,LVA,Extreme temperature,1
-2001,Lithuania,LTU,Extreme temperature,1
-2001,Mexico,MEX,Flood,1
-2001,Mexico,MEX,Storm,5
-2001,New Zealand,NZL,Extreme temperature,1
-2001,Norway,NOR,Flood,1
-2001,Poland,POL,Extreme temperature,1
-2001,Poland,POL,Flood,1
-2001,Portugal,PRT,Flood,1
-2001,Portugal,PRT,Wildfire,1
-2001,Slovakia,SVK,Flood,1
-2001,Spain,ESP,Storm,1
-2001,Switzerland,CHE,Extreme temperature,1
-2001,Turkey,TUR,Extreme temperature,1
-2001,Turkey,TUR,Flood,3
-2001,Turkey,TUR,Landslide,1
-2001,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,2
-2001,United States of America (the),USA,Extreme temperature,1
-2001,United States of America (the),USA,Flood,5
-2001,United States of America (the),USA,Storm,17
-2001,United States of America (the),USA,Wildfire,3
-2002,Australia,AUS,Drought,1
-2002,Australia,AUS,Storm,3
-2002,Australia,AUS,Wildfire,1
-2002,Austria,AUT,Flood,1
-2002,Austria,AUT,Storm,2
-2002,Belgium,BEL,Flood,4
-2002,Belgium,BEL,Storm,1
-2002,Canada,CAN,Flood,1
-2002,Canada,CAN,Wildfire,1
-2002,Chile,CHL,Extreme temperature,1
-2002,Chile,CHL,Flood,3
-2002,Chile,CHL,Wildfire,1
-2002,Czech Republic (the),CZE,Flood,1
-2002,Czech Republic (the),CZE,Storm,2
-2002,Denmark,DNK,Storm,1
-2002,France,FRA,Flood,3
-2002,France,FRA,Storm,2
-2002,Germany,DEU,Flood,1
-2002,Germany,DEU,Storm,3
-2002,Greece,GRC,Flood,4
-2002,Greece,GRC,Storm,1
-2002,Hungary,HUN,Flood,1
-2002,Ireland,IRL,Flood,1
-2002,Italy,ITA,Drought,1
-2002,Italy,ITA,Flood,3
-2002,Japan,JPN,Storm,5
-2002,Japan,JPN,Wildfire,1
-2002,Korea (the Republic of),KOR,Flood,1
-2002,Korea (the Republic of),KOR,Storm,3
-2002,Mexico,MEX,Drought,1
-2002,Mexico,MEX,Extreme temperature,1
-2002,Mexico,MEX,Flood,2
-2002,Mexico,MEX,Storm,3
-2002,Netherlands (the),NLD,Storm,1
-2002,New Zealand,NZL,Flood,1
-2002,Poland,POL,Extreme temperature,1
-2002,Poland,POL,Storm,2
-2002,Portugal,PRT,Flood,1
-2002,Slovakia,SVK,Flood,1
-2002,Spain,ESP,Flood,1
-2002,Sweden,SWE,Storm,1
-2002,Switzerland,CHE,Landslide,2
-2002,Switzerland,CHE,Storm,1
-2002,Turkey,TUR,Flood,1
-2002,Turkey,TUR,Storm,1
-2002,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,3
-2002,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,2
-2002,United States of America (the),USA,Drought,1
-2002,United States of America (the),USA,Extreme temperature,1
-2002,United States of America (the),USA,Flood,4
-2002,United States of America (the),USA,Storm,15
-2002,United States of America (the),USA,Wildfire,8
-2003,Australia,AUS,Flood,4
-2003,Australia,AUS,Storm,5
-2003,Australia,AUS,Wildfire,1
-2003,Austria,AUT,Extreme temperature,1
-2003,Belgium,BEL,Extreme temperature,1
-2003,Belgium,BEL,Flood,1
-2003,Canada,CAN,Flood,4
-2003,Canada,CAN,Storm,2
-2003,Canada,CAN,Wildfire,1
-2003,Chile,CHL,Wildfire,1
-2003,Czech Republic (the),CZE,Extreme temperature,1
-2003,France,FRA,Extreme temperature,1
-2003,France,FRA,Flood,2
-2003,France,FRA,Storm,2
-2003,France,FRA,Wildfire,1
-2003,Germany,DEU,Extreme temperature,1
-2003,Germany,DEU,Storm,2
-2003,Greece,GRC,Flood,3
-2003,Hungary,HUN,Drought,1
-2003,Hungary,HUN,Storm,1
-2003,Italy,ITA,Extreme temperature,1
-2003,Italy,ITA,Flood,2
-2003,Japan,JPN,Flood,1
-2003,Japan,JPN,Storm,2
-2003,Korea (the Republic of),KOR,Storm,1
-2003,Latvia,LVA,Extreme temperature,1
-2003,Luxembourg,LUX,Extreme temperature,1
-2003,Mexico,MEX,Extreme temperature,1
-2003,Mexico,MEX,Flood,3
-2003,Mexico,MEX,Landslide,1
-2003,Mexico,MEX,Storm,2
-2003,Mexico,MEX,Wildfire,1
-2003,Netherlands (the),NLD,Extreme temperature,1
-2003,New Zealand,NZL,Storm,1
-2003,Portugal,PRT,Extreme temperature,1
-2003,Portugal,PRT,Flood,1
-2003,Portugal,PRT,Wildfire,1
-2003,Slovakia,SVK,Extreme temperature,1
-2003,Slovenia,SVN,Extreme temperature,1
-2003,Spain,ESP,Extreme temperature,1
-2003,Spain,ESP,Wildfire,1
-2003,Switzerland,CHE,Extreme temperature,1
-2003,Switzerland,CHE,Storm,1
-2003,Turkey,TUR,Flood,1
-2003,United Kingdom of Great Britain and Northern Ireland (the),GBR,Extreme temperature,1
-2003,United States of America (the),USA,Flood,4
-2003,United States of America (the),USA,Landslide,1
-2003,United States of America (the),USA,Storm,14
-2003,United States of America (the),USA,Wildfire,3
-2004,Australia,AUS,Flood,3
-2004,Australia,AUS,Storm,3
-2004,Canada,CAN,Flood,2
-2004,Canada,CAN,Storm,2
-2004,Chile,CHL,Extreme temperature,1
-2004,Chile,CHL,Flood,1
-2004,France,FRA,Storm,1
-2004,Germany,DEU,Storm,1
-2004,Greece,GRC,Storm,2
-2004,Hungary,HUN,Flood,1
-2004,Ireland,IRL,Storm,1
-2004,Italy,ITA,Storm,1
-2004,Japan,JPN,Extreme temperature,1
-2004,Japan,JPN,Flood,2
-2004,Japan,JPN,Storm,8
-2004,Korea (the Republic of),KOR,Flood,2
-2004,Korea (the Republic of),KOR,Storm,4
-2004,Korea (the Republic of),KOR,Wildfire,1
-2004,Mexico,MEX,Extreme temperature,1
-2004,Mexico,MEX,Flood,2
-2004,New Zealand,NZL,Flood,2
-2004,Poland,POL,Flood,1
-2004,Portugal,PRT,Drought,1
-2004,Portugal,PRT,Wildfire,1
-2004,Slovakia,SVK,Flood,1
-2004,Slovakia,SVK,Storm,1
-2004,Spain,ESP,Extreme temperature,1
-2004,Spain,ESP,Flood,1
-2004,Spain,ESP,Wildfire,1
-2004,Turkey,TUR,Extreme temperature,1
-2004,Turkey,TUR,Flood,3
-2004,Turkey,TUR,Storm,3
-2004,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,1
-2004,United States of America (the),USA,Extreme temperature,1
-2004,United States of America (the),USA,Flood,4
-2004,United States of America (the),USA,Storm,12
-2004,United States of America (the),USA,Wildfire,3
-2005,Australia,AUS,Flood,1
-2005,Australia,AUS,Storm,2
-2005,Australia,AUS,Wildfire,1
-2005,Austria,AUT,Extreme temperature,1
-2005,Austria,AUT,Flood,2
-2005,Belgium,BEL,Extreme temperature,2
-2005,Belgium,BEL,Flood,1
-2005,Canada,CAN,Flood,2
-2005,Canada,CAN,Storm,1
-2005,Canada,CAN,Wildfire,2
-2005,Chile,CHL,Flood,2
-2005,Chile,CHL,Storm,1
-2005,Czech Republic (the),CZE,Extreme temperature,1
-2005,Czech Republic (the),CZE,Flood,1
-2005,Czech Republic (the),CZE,Storm,1
-2005,Denmark,DNK,Storm,1
-2005,Estonia,EST,Extreme temperature,1
-2005,Estonia,EST,Storm,1
-2005,Finland,FIN,Flood,1
-2005,France,FRA,Extreme temperature,2
-2005,France,FRA,Flood,2
-2005,France,FRA,Wildfire,1
-2005,Germany,DEU,Extreme temperature,2
-2005,Germany,DEU,Flood,2
-2005,Germany,DEU,Storm,1
-2005,Hungary,HUN,Extreme temperature,1
-2005,Hungary,HUN,Flood,2
-2005,Hungary,HUN,Storm,1
-2005,Ireland,IRL,Storm,1
-2005,Italy,ITA,Extreme temperature,1
-2005,Japan,JPN,Flood,1
-2005,Japan,JPN,Storm,3
-2005,Korea (the Republic of),KOR,Flood,1
-2005,Korea (the Republic of),KOR,Storm,3
-2005,Korea (the Republic of),KOR,Wildfire,1
-2005,Latvia,LVA,Extreme temperature,1
-2005,Latvia,LVA,Storm,2
-2005,Lithuania,LTU,Flood,1
-2005,Lithuania,LTU,Storm,1
-2005,Mexico,MEX,Flood,3
-2005,Mexico,MEX,Storm,4
-2005,Netherlands (the),NLD,Extreme temperature,2
-2005,Netherlands (the),NLD,Storm,1
-2005,New Zealand,NZL,Flood,1
-2005,New Zealand,NZL,Storm,1
-2005,Norway,NOR,Storm,1
-2005,Poland,POL,Extreme temperature,1
-2005,Poland,POL,Flood,1
-2005,Poland,POL,Storm,2
-2005,Portugal,PRT,Extreme temperature,1
-2005,Portugal,PRT,Wildfire,1
-2005,Slovakia,SVK,Extreme temperature,1
-2005,Slovakia,SVK,Flood,1
-2005,Slovenia,SVN,Flood,1
-2005,Spain,ESP,Extreme temperature,1
-2005,Spain,ESP,Wildfire,1
-2005,Sweden,SWE,Extreme temperature,1
-2005,Sweden,SWE,Storm,1
-2005,Switzerland,CHE,Extreme temperature,1
-2005,Switzerland,CHE,Flood,1
-2005,Turkey,TUR,Extreme temperature,1
-2005,Turkey,TUR,Flood,2
-2005,Turkey,TUR,Landslide,1
-2005,Turkey,TUR,Storm,1
-2005,United Kingdom of Great Britain and Northern Ireland (the),GBR,Extreme temperature,2
-2005,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,2
-2005,United States of America (the),USA,Extreme temperature,1
-2005,United States of America (the),USA,Flood,6
-2005,United States of America (the),USA,Storm,8
-2005,United States of America (the),USA,Wildfire,1
-2006,Australia,AUS,Drought,1
-2006,Australia,AUS,Flood,1
-2006,Australia,AUS,Storm,3
-2006,Australia,AUS,Wildfire,3
-2006,Austria,AUT,Flood,1
-2006,Belgium,BEL,Extreme temperature,1
-2006,Canada,CAN,Flood,5
-2006,Chile,CHL,Flood,1
-2006,Czech Republic (the),CZE,Flood,2
-2006,France,FRA,Extreme temperature,1
-2006,France,FRA,Storm,2
-2006,Germany,DEU,Extreme temperature,1
-2006,Germany,DEU,Flood,1
-2006,Germany,DEU,Storm,3
-2006,Greece,GRC,Flood,2
-2006,Greece,GRC,Storm,1
-2006,Hungary,HUN,Flood,1
-2006,Hungary,HUN,Storm,1
-2006,Italy,ITA,Landslide,1
-2006,Italy,ITA,Storm,1
-2006,Japan,JPN,Flood,2
-2006,Japan,JPN,Storm,3
-2006,Korea (the Republic of),KOR,Flood,1
-2006,Lithuania,LTU,Drought,1
-2006,Mexico,MEX,Extreme temperature,1
-2006,Mexico,MEX,Flood,1
-2006,Mexico,MEX,Landslide,2
-2006,Mexico,MEX,Storm,3
-2006,Netherlands (the),NLD,Extreme temperature,1
-2006,New Zealand,NZL,Flood,1
-2006,Poland,POL,Flood,1
-2006,Portugal,PRT,Extreme temperature,1
-2006,Portugal,PRT,Flood,1
-2006,Slovakia,SVK,Flood,2
-2006,Spain,ESP,Extreme temperature,1
-2006,Spain,ESP,Flood,1
-2006,Spain,ESP,Wildfire,1
-2006,Switzerland,CHE,Flood,1
-2006,Switzerland,CHE,Storm,1
-2006,Turkey,TUR,Flood,2
-2006,United States of America (the),USA,Extreme temperature,2
-2006,United States of America (the),USA,Flood,11
-2006,United States of America (the),USA,Storm,12
-2006,United States of America (the),USA,Wildfire,3
-2007,Australia,AUS,Flood,1
-2007,Australia,AUS,Storm,1
-2007,Austria,AUT,Extreme temperature,1
-2007,Austria,AUT,Storm,1
-2007,Belgium,BEL,Storm,1
-2007,Canada,CAN,Flood,1
-2007,Canada,CAN,Storm,2
-2007,Chile,CHL,Extreme temperature,1
-2007,Czech Republic (the),CZE,Storm,1
-2007,Denmark,DNK,Storm,1
-2007,France,FRA,Storm,3
-2007,Germany,DEU,Flood,1
-2007,Germany,DEU,Storm,2
-2007,Greece,GRC,Extreme temperature,1
-2007,Greece,GRC,Flood,1
-2007,Greece,GRC,Wildfire,2
-2007,Hungary,HUN,Extreme temperature,1
-2007,Italy,ITA,Extreme temperature,1
-2007,Italy,ITA,Wildfire,1
-2007,Japan,JPN,Extreme temperature,1
-2007,Japan,JPN,Flood,1
-2007,Japan,JPN,Storm,3
-2007,Korea (the Republic of),KOR,Flood,1
-2007,Korea (the Republic of),KOR,Storm,1
-2007,Mexico,MEX,Flood,2
-2007,Mexico,MEX,Landslide,1
-2007,Mexico,MEX,Storm,4
-2007,Netherlands (the),NLD,Storm,1
-2007,New Zealand,NZL,Storm,1
-2007,Poland,POL,Storm,2
-2007,Slovakia,SVK,Extreme temperature,1
-2007,Slovenia,SVN,Storm,2
-2007,Spain,ESP,Flood,3
-2007,Spain,ESP,Storm,1
-2007,Switzerland,CHE,Flood,1
-2007,Switzerland,CHE,Storm,2
-2007,Turkey,TUR,Extreme temperature,1
-2007,Turkey,TUR,Flood,3
-2007,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,3
-2007,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,1
-2007,United States of America (the),USA,Drought,1
-2007,United States of America (the),USA,Flood,6
-2007,United States of America (the),USA,Storm,13
-2007,United States of America (the),USA,Wildfire,3
-2008,Australia,AUS,Flood,4
-2008,Australia,AUS,Storm,1
-2008,Austria,AUT,Storm,1
-2008,Belgium,BEL,Extreme temperature,1
-2008,Belgium,BEL,Storm,1
-2008,Canada,CAN,Flood,2
-2008,Chile,CHL,Flood,2
-2008,Czech Republic (the),CZE,Storm,1
-2008,France,FRA,Extreme temperature,1
-2008,France,FRA,Storm,3
-2008,Germany,DEU,Extreme temperature,1
-2008,Germany,DEU,Storm,2
-2008,Hungary,HUN,Extreme temperature,1
-2008,Italy,ITA,Flood,3
-2008,Japan,JPN,Extreme temperature,1
-2008,Japan,JPN,Flood,1
-2008,Korea (the Republic of),KOR,Flood,1
-2008,Mexico,MEX,Flood,1
-2008,Mexico,MEX,Landslide,1
-2008,Mexico,MEX,Storm,1
-2008,Netherlands (the),NLD,Storm,1
-2008,Norway,NOR,Storm,1
-2008,Poland,POL,Extreme temperature,1
-2008,Poland,POL,Storm,1
-2008,Portugal,PRT,Extreme temperature,1
-2008,Portugal,PRT,Flood,1
-2008,Turkey,TUR,Wildfire,1
-2008,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,2
-2008,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,1
-2008,United States of America (the),USA,Extreme temperature,1
-2008,United States of America (the),USA,Flood,4
-2008,United States of America (the),USA,Storm,14
-2008,United States of America (the),USA,Wildfire,2
-2009,Australia,AUS,Extreme temperature,1
-2009,Australia,AUS,Flood,2
-2009,Australia,AUS,Storm,2
-2009,Australia,AUS,Wildfire,1
-2009,Austria,AUT,Extreme temperature,1
-2009,Austria,AUT,Flood,2
-2009,Austria,AUT,Storm,1
-2009,Canada,CAN,Flood,1
-2009,Canada,CAN,Storm,2
-2009,Czech Republic (the),CZE,Flood,1
-2009,Czech Republic (the),CZE,Storm,1
-2009,France,FRA,Extreme temperature,2
-2009,France,FRA,Storm,1
-2009,France,FRA,Wildfire,1
-2009,Germany,DEU,Extreme temperature,1
-2009,Germany,DEU,Flood,1
-2009,Germany,DEU,Storm,1
-2009,Greece,GRC,Wildfire,2
-2009,Ireland,IRL,Flood,1
-2009,Italy,ITA,Extreme temperature,1
-2009,Italy,ITA,Flood,1
-2009,Italy,ITA,Storm,1
-2009,Italy,ITA,Wildfire,1
-2009,Japan,JPN,Extreme temperature,1
-2009,Japan,JPN,Landslide,2
-2009,Japan,JPN,Storm,2
-2009,Mexico,MEX,Flood,5
-2009,Mexico,MEX,Storm,2
-2009,Poland,POL,Extreme temperature,1
-2009,Poland,POL,Flood,1
-2009,Poland,POL,Storm,1
-2009,Spain,ESP,Storm,1
-2009,Spain,ESP,Wildfire,1
-2009,Switzerland,CHE,Storm,1
-2009,Turkey,TUR,Flood,2
-2009,Turkey,TUR,Landslide,2
-2009,United Kingdom of Great Britain and Northern Ireland (the),GBR,Extreme temperature,1
-2009,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,1
-2009,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,1
-2009,United States of America (the),USA,Extreme temperature,1
-2009,United States of America (the),USA,Flood,4
-2009,United States of America (the),USA,Storm,10
-2009,United States of America (the),USA,Wildfire,2
-2010,Australia,AUS,Flood,5
-2010,Australia,AUS,Storm,3
-2010,Belgium,BEL,Flood,1
-2010,Belgium,BEL,Storm,2
-2010,Canada,CAN,Storm,1
-2010,Chile,CHL,Extreme temperature,1
-2010,Czech Republic (the),CZE,Extreme temperature,1
-2010,Czech Republic (the),CZE,Flood,3
-2010,Denmark,DNK,Storm,1
-2010,France,FRA,Extreme temperature,1
-2010,France,FRA,Flood,1
-2010,France,FRA,Storm,2
-2010,Germany,DEU,Extreme temperature,1
-2010,Germany,DEU,Flood,1
-2010,Germany,DEU,Storm,2
-2010,Greece,GRC,Flood,1
-2010,Hungary,HUN,Flood,1
-2010,Israel,ISR,Flood,1
-2010,Israel,ISR,Wildfire,1
-2010,Italy,ITA,Extreme temperature,1
-2010,Italy,ITA,Flood,1
-2010,Italy,ITA,Storm,1
-2010,Japan,JPN,Extreme temperature,1
-2010,Japan,JPN,Flood,1
-2010,Korea (the Republic of),KOR,Storm,1
-2010,Lithuania,LTU,Extreme temperature,1
-2010,Lithuania,LTU,Flood,1
-2010,Luxembourg,LUX,Storm,1
-2010,Mexico,MEX,Flood,2
-2010,Mexico,MEX,Landslide,2
-2010,Mexico,MEX,Storm,4
-2010,Netherlands (the),NLD,Storm,1
-2010,Poland,POL,Extreme temperature,1
-2010,Poland,POL,Flood,2
-2010,Portugal,PRT,Extreme temperature,1
-2010,Portugal,PRT,Flood,1
-2010,Portugal,PRT,Storm,1
-2010,Slovakia,SVK,Extreme temperature,1
-2010,Slovakia,SVK,Flood,2
-2010,Spain,ESP,Flood,1
-2010,Spain,ESP,Storm,1
-2010,Switzerland,CHE,Extreme temperature,1
-2010,Switzerland,CHE,Storm,1
-2010,Turkey,TUR,Landslide,1
-2010,United Kingdom of Great Britain and Northern Ireland (the),GBR,Extreme temperature,1
-2010,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,1
-2010,United States of America (the),USA,Flood,3
-2010,United States of America (the),USA,Storm,12
-2011,Australia,AUS,Flood,1
-2011,Australia,AUS,Storm,1
-2011,Australia,AUS,Wildfire,1
-2011,Belgium,BEL,Flood,1
-2011,Belgium,BEL,Storm,1
-2011,Canada,CAN,Flood,1
-2011,Canada,CAN,Storm,2
-2011,Canada,CAN,Wildfire,1
-2011,Chile,CHL,Extreme temperature,2
-2011,Chile,CHL,Wildfire,2
-2011,France,FRA,Flood,1
-2011,France,FRA,Storm,1
-2011,Germany,DEU,Flood,1
-2011,Ireland,IRL,Flood,1
-2011,Italy,ITA,Extreme temperature,1
-2011,Italy,ITA,Flood,2
-2011,Italy,ITA,Landslide,1
-2011,Japan,JPN,Extreme temperature,1
-2011,Japan,JPN,Flood,1
-2011,Japan,JPN,Storm,3
-2011,Korea (the Republic of),KOR,Flood,2
-2011,Korea (the Republic of),KOR,Landslide,1
-2011,Mexico,MEX,Drought,1
-2011,Mexico,MEX,Extreme temperature,1
-2011,Mexico,MEX,Flood,3
-2011,Mexico,MEX,Storm,5
-2011,Mexico,MEX,Wildfire,1
-2011,Norway,NOR,Storm,1
-2011,Poland,POL,Extreme temperature,1
-2011,Spain,ESP,Flood,1
-2011,Switzerland,CHE,Storm,1
-2011,Turkey,TUR,Flood,1
-2011,United States of America (the),USA,Drought,1
-2011,United States of America (the),USA,Extreme temperature,1
-2011,United States of America (the),USA,Flood,4
-2011,United States of America (the),USA,Storm,14
-2011,United States of America (the),USA,Wildfire,3
-2012,Australia,AUS,Flood,2
-2012,Austria,AUT,Extreme temperature,1
-2012,Belgium,BEL,Extreme temperature,1
-2012,Canada,CAN,Flood,1
-2012,Canada,CAN,Storm,2
-2012,Chile,CHL,Flood,1
-2012,Chile,CHL,Wildfire,1
-2012,Czech Republic (the),CZE,Extreme temperature,2
-2012,Estonia,EST,Extreme temperature,1
-2012,France,FRA,Extreme temperature,1
-2012,Germany,DEU,Extreme temperature,2
-2012,Greece,GRC,Extreme temperature,1
-2012,Greece,GRC,Flood,1
-2012,Hungary,HUN,Extreme temperature,1
-2012,Italy,ITA,Drought,1
-2012,Italy,ITA,Extreme temperature,1
-2012,Italy,ITA,Flood,1
-2012,Japan,JPN,Flood,1
-2012,Japan,JPN,Storm,6
-2012,Korea (the Republic of),KOR,Storm,3
-2012,Latvia,LVA,Extreme temperature,1
-2012,Lithuania,LTU,Extreme temperature,2
-2012,Mexico,MEX,Storm,2
-2012,Netherlands (the),NLD,Extreme temperature,1
-2012,New Zealand,NZL,Storm,1
-2012,Poland,POL,Extreme temperature,3
-2012,Poland,POL,Storm,1
-2012,Slovakia,SVK,Extreme temperature,1
-2012,Slovenia,SVN,Flood,1
-2012,Spain,ESP,Flood,1
-2012,Spain,ESP,Wildfire,1
-2012,Switzerland,CHE,Extreme temperature,2
-2012,Turkey,TUR,Flood,1
-2012,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,5
-2012,United States of America (the),USA,Drought,2
-2012,United States of America (the),USA,Extreme temperature,1
-2012,United States of America (the),USA,Flood,1
-2012,United States of America (the),USA,Storm,19
-2012,United States of America (the),USA,Wildfire,2
-2013,Australia,AUS,Storm,1
-2013,Australia,AUS,Wildfire,2
-2013,Austria,AUT,Flood,1
-2013,Belgium,BEL,Storm,2
-2013,Canada,CAN,Extreme temperature,1
-2013,Canada,CAN,Flood,1
-2013,Canada,CAN,Storm,1
-2013,Chile,CHL,Extreme temperature,1
-2013,Czech Republic (the),CZE,Flood,1
-2013,Denmark,DNK,Storm,2
-2013,France,FRA,Flood,1
-2013,France,FRA,Storm,2
-2013,Germany,DEU,Flood,1
-2013,Germany,DEU,Storm,3
-2013,Hungary,HUN,Flood,1
-2013,Hungary,HUN,Storm,1
-2013,Israel,ISR,Storm,1
-2013,Italy,ITA,Flood,1
-2013,Japan,JPN,Extreme temperature,1
-2013,Japan,JPN,Flood,1
-2013,Japan,JPN,Storm,7
-2013,Mexico,MEX,Flood,1
-2013,Mexico,MEX,Storm,4
-2013,Netherlands (the),NLD,Storm,3
-2013,New Zealand,NZL,Drought,1
-2013,New Zealand,NZL,Storm,1
-2013,Poland,POL,Extreme temperature,1
-2013,Poland,POL,Storm,1
-2013,Portugal,PRT,Storm,2
-2013,Portugal,PRT,Wildfire,1
-2013,Slovakia,SVK,Flood,1
-2013,Spain,ESP,Flood,1
-2013,Spain,ESP,Storm,1
-2013,Sweden,SWE,Storm,1
-2013,Switzerland,CHE,Storm,2
-2013,Turkey,TUR,Landslide,1
-2013,United Kingdom of Great Britain and Northern Ireland (the),GBR,Extreme temperature,1
-2013,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,1
-2013,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,3
-2013,United States of America (the),USA,Extreme temperature,1
-2013,United States of America (the),USA,Flood,7
-2013,United States of America (the),USA,Storm,15
-2013,United States of America (the),USA,Wildfire,5
-2014,Australia,AUS,Extreme temperature,1
-2014,Australia,AUS,Storm,1
-2014,Australia,AUS,Wildfire,2
-2014,Belgium,BEL,Storm,1
-2014,Canada,CAN,Extreme temperature,1
-2014,Canada,CAN,Flood,1
-2014,Chile,CHL,Flood,1
-2014,Chile,CHL,Wildfire,1
-2014,France,FRA,Flood,3
-2014,France,FRA,Storm,4
-2014,Germany,DEU,Storm,2
-2014,Greece,GRC,Flood,1
-2014,Hungary,HUN,Flood,1
-2014,Ireland,IRL,Storm,1
-2014,Italy,ITA,Flood,4
-2014,Italy,ITA,Storm,1
-2014,Japan,JPN,Extreme temperature,1
-2014,Japan,JPN,Landslide,1
-2014,Japan,JPN,Storm,9
-2014,Korea (the Republic of),KOR,Flood,1
-2014,Korea (the Republic of),KOR,Storm,2
-2014,Mexico,MEX,Storm,6
-2014,Poland,POL,Extreme temperature,1
-2014,Portugal,PRT,Storm,2
-2014,Slovenia,SVN,Extreme temperature,1
-2014,Slovenia,SVN,Flood,1
-2014,Spain,ESP,Storm,1
-2014,Switzerland,CHE,Storm,1
-2014,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,1
-2014,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,1
-2014,United States of America (the),USA,Drought,1
-2014,United States of America (the),USA,Extreme temperature,1
-2014,United States of America (the),USA,Flood,2
-2014,United States of America (the),USA,Landslide,1
-2014,United States of America (the),USA,Storm,13
-2014,United States of America (the),USA,Wildfire,1
-2015,Australia,AUS,Flood,1
-2015,Australia,AUS,Storm,4
-2015,Australia,AUS,Wildfire,3
-2015,Belgium,BEL,Extreme temperature,1
-2015,Canada,CAN,Wildfire,1
-2015,Chile,CHL,Flood,2
-2015,Chile,CHL,Storm,1
-2015,Chile,CHL,Wildfire,1
-2015,France,FRA,Extreme temperature,1
-2015,France,FRA,Flood,1
-2015,France,FRA,Storm,1
-2015,Greece,GRC,Flood,2
-2015,Ireland,IRL,Storm,1
-2015,Israel,ISR,Storm,1
-2015,Italy,ITA,Flood,3
-2015,Italy,ITA,Storm,1
-2015,Japan,JPN,Extreme temperature,3
-2015,Japan,JPN,Flood,1
-2015,Japan,JPN,Storm,6
-2015,Mexico,MEX,Flood,1
-2015,Mexico,MEX,Storm,3
-2015,New Zealand,NZL,Flood,2
-2015,Poland,POL,Extreme temperature,1
-2015,Poland,POL,Storm,1
-2015,Portugal,PRT,Flood,1
-2015,Spain,ESP,Flood,2
-2015,Turkey,TUR,Flood,2
-2015,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,1
-2015,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,1
-2015,United States of America (the),USA,Drought,1
-2015,United States of America (the),USA,Flood,5
-2015,United States of America (the),USA,Storm,19
-2015,United States of America (the),USA,Wildfire,4
-2016,Australia,AUS,Flood,1
-2016,Australia,AUS,Storm,1
-2016,Australia,AUS,Wildfire,1
-2016,Austria,AUT,Flood,1
-2016,Belgium,BEL,Flood,1
-2016,Belgium,BEL,Storm,1
-2016,Canada,CAN,Flood,1
-2016,Canada,CAN,Wildfire,1
-2016,Chile,CHL,Flood,1
-2016,France,FRA,Flood,1
-2016,Germany,DEU,Flood,1
-2016,Greece,GRC,Flood,1
-2016,Hungary,HUN,Flood,1
-2016,Israel,ISR,Wildfire,1
-2016,Italy,ITA,Flood,1
-2016,Japan,JPN,Extreme temperature,2
-2016,Japan,JPN,Flood,1
-2016,Japan,JPN,Storm,4
-2016,Korea (the Republic of),KOR,Extreme temperature,1
-2016,Korea (the Republic of),KOR,Storm,1
-2016,Mexico,MEX,Flood,5
-2016,Mexico,MEX,Storm,2
-2016,Netherlands (the),NLD,Storm,1
-2016,New Zealand,NZL,Flood,1
-2016,Poland,POL,Extreme temperature,1
-2016,Poland,POL,Flood,1
-2016,Portugal,PRT,Wildfire,1
-2016,Spain,ESP,Flood,1
-2016,United States of America (the),USA,Flood,6
-2016,United States of America (the),USA,Storm,16
-2016,United States of America (the),USA,Wildfire,4
-2017,Australia,AUS,Storm,2
-2017,Australia,AUS,Wildfire,1
-2017,Austria,AUT,Storm,2
-2017,Canada,CAN,Flood,2
-2017,Canada,CAN,Wildfire,1
-2017,Chile,CHL,Flood,3
-2017,Chile,CHL,Landslide,1
-2017,Chile,CHL,Wildfire,1
-2017,Czech Republic (the),CZE,Storm,1
-2017,France,FRA,Flood,1
-2017,France,FRA,Storm,1
-2017,France,FRA,Wildfire,1
-2017,Germany,DEU,Flood,1
-2017,Germany,DEU,Storm,2
-2017,Greece,GRC,Extreme temperature,1
-2017,Greece,GRC,Flood,1
-2017,Hungary,HUN,Storm,1
-2017,Ireland,IRL,Flood,1
-2017,Italy,ITA,Drought,1
-2017,Italy,ITA,Flood,1
-2017,Italy,ITA,Storm,2
-2017,Japan,JPN,Flood,1
-2017,Japan,JPN,Storm,3
-2017,Mexico,MEX,Flood,1
-2017,Mexico,MEX,Storm,4
-2017,New Zealand,NZL,Flood,1
-2017,New Zealand,NZL,Storm,1
-2017,Poland,POL,Storm,1
-2017,Portugal,PRT,Wildfire,2
-2017,Slovakia,SVK,Storm,1
-2017,Spain,ESP,Wildfire,2
-2017,Turkey,TUR,Storm,1
-2017,United Kingdom of Great Britain and Northern Ireland (the),GBR,Flood,1
-2017,United States of America (the),USA,Drought,1
-2017,United States of America (the),USA,Flood,3
-2017,United States of America (the),USA,Storm,17
-2017,United States of America (the),USA,Wildfire,3
-2018,Australia,AUS,Drought,1
-2018,Australia,AUS,Extreme temperature,1
-2018,Australia,AUS,Flood,1
-2018,Belgium,BEL,Extreme temperature,1
-2018,Belgium,BEL,Storm,1
-2018,Canada,CAN,Extreme temperature,1
-2018,Canada,CAN,Flood,1
-2018,Canada,CAN,Storm,1
-2018,Canada,CAN,Wildfire,1
-2018,Czech Republic (the),CZE,Extreme temperature,1
-2018,Estonia,EST,Extreme temperature,1
-2018,France,FRA,Extreme temperature,2
-2018,France,FRA,Flood,2
-2018,France,FRA,Storm,3
-2018,Germany,DEU,Extreme temperature,1
-2018,Germany,DEU,Storm,1
-2018,Greece,GRC,Wildfire,1
-2018,Hungary,HUN,Extreme temperature,1
-2018,Ireland,IRL,Storm,1
-2018,Israel,ISR,Flood,1
-2018,Italy,ITA,Extreme temperature,2
-2018,Italy,ITA,Flood,1
-2018,Italy,ITA,Storm,1
-2018,Japan,JPN,Extreme temperature,1
-2018,Japan,JPN,Flood,1
-2018,Japan,JPN,Storm,3
-2018,Korea (the Republic of),KOR,Extreme temperature,1
-2018,Latvia,LVA,Wildfire,1
-2018,Lithuania,LTU,Drought,1
-2018,Lithuania,LTU,Extreme temperature,1
-2018,Mexico,MEX,Flood,1
-2018,Mexico,MEX,Storm,2
-2018,Netherlands (the),NLD,Extreme temperature,1
-2018,Netherlands (the),NLD,Storm,1
-2018,New Zealand,NZL,Flood,1
-2018,Poland,POL,Drought,1
-2018,Poland,POL,Extreme temperature,1
-2018,Portugal,PRT,Extreme temperature,1
-2018,Portugal,PRT,Storm,1
-2018,Portugal,PRT,Wildfire,1
-2018,Spain,ESP,Extreme temperature,1
-2018,Spain,ESP,Flood,1
-2018,Spain,ESP,Storm,1
-2018,Spain,ESP,Wildfire,1
-2018,Sweden,SWE,Wildfire,1
-2018,Switzerland,CHE,Storm,1
-2018,Turkey,TUR,Landslide,1
-2018,United Kingdom of Great Britain and Northern Ireland (the),GBR,Extreme temperature,1
-2018,United Kingdom of Great Britain and Northern Ireland (the),GBR,Storm,1
-2018,United States of America (the),USA,Drought,1
-2018,United States of America (the),USA,Flood,3
-2018,United States of America (the),USA,Landslide,1
-2018,United States of America (the),USA,Storm,9
-2018,United States of America (the),USA,Wildfire,3
+year,country,countrycode,All,Storm,Wildfire,Flood,Drought,Landslide,Extreme temperature
+1980,Australia,AUS,6,5,1,NA,NA,NA,NA
+1980,Austria,AUT,1,NA,NA,1,NA,NA,NA
+1980,Canada,CAN,1,NA,1,NA,NA,NA,NA
+1980,Denmark,DNK,1,1,NA,NA,NA,NA,NA
+1980,France,FRA,1,NA,NA,1,NA,NA,NA
+1980,Japan,JPN,2,1,NA,1,NA,NA,NA
+1980,Korea (the Republic of),KOR,2,2,NA,NA,NA,NA,NA
+1980,Mexico,MEX,2,NA,NA,2,NA,NA,NA
+1980,New Zealand,NZL,2,NA,NA,2,NA,NA,NA
+1980,Poland,POL,1,NA,NA,1,NA,NA,NA
+1980,Spain,ESP,1,NA,NA,NA,1,NA,NA
+1980,Turkey,TUR,2,NA,NA,1,NA,1,NA
+1980,United States of America (the),USA,7,3,NA,3,NA,NA,1
+1981,Australia,AUS,5,1,NA,3,1,NA,NA
+1981,Austria,AUT,1,1,NA,NA,NA,NA,NA
+1981,Canada,CAN,1,1,NA,NA,NA,NA,NA
+1981,Denmark,DNK,1,1,NA,NA,NA,NA,NA
+1981,France,FRA,1,NA,NA,1,NA,NA,NA
+1981,Japan,JPN,5,4,NA,NA,NA,1,NA
+1981,Korea (the Republic of),KOR,2,1,NA,NA,NA,1,NA
+1981,Mexico,MEX,1,1,NA,NA,NA,NA,NA
+1981,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
+1981,Portugal,PRT,1,NA,NA,1,NA,NA,NA
+1981,Spain,ESP,1,NA,NA,NA,1,NA,NA
+1981,Turkey,TUR,1,NA,NA,1,NA,NA,NA
+1981,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
+1981,United States of America (the),USA,4,3,NA,1,NA,NA,NA
+1982,Australia,AUS,3,3,NA,NA,NA,NA,NA
+1982,Austria,AUT,2,NA,NA,1,NA,1,NA
+1982,Belgium,BEL,1,1,NA,NA,NA,NA,NA
+1982,Canada,CAN,1,NA,NA,NA,NA,NA,1
+1982,Chile,CHL,1,NA,NA,1,NA,NA,NA
+1982,France,FRA,6,2,1,NA,1,2,NA
+1982,Italy,ITA,1,NA,NA,NA,NA,1,NA
+1982,Japan,JPN,5,4,NA,1,NA,NA,NA
+1982,Korea (the Republic of),KOR,2,2,NA,NA,NA,NA,NA
+1982,Mexico,MEX,3,1,NA,2,NA,NA,NA
+1982,Poland,POL,1,NA,NA,1,NA,NA,NA
+1982,Spain,ESP,2,NA,NA,2,NA,NA,NA
+1982,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
+1982,United States of America (the),USA,13,11,NA,2,NA,NA,NA
+1983,Australia,AUS,4,3,1,NA,NA,NA,NA
+1983,Austria,AUT,1,NA,NA,1,NA,NA,NA
+1983,Canada,CAN,1,NA,NA,1,NA,NA,NA
+1983,Denmark,DNK,1,1,NA,NA,NA,NA,NA
+1983,France,FRA,8,2,1,3,NA,2,NA
+1983,Greece,GRC,1,NA,1,NA,NA,NA,NA
+1983,Iceland,ISL,1,NA,NA,NA,NA,1,NA
+1983,Ireland,IRL,1,1,NA,NA,NA,NA,NA
+1983,Israel,ISR,1,NA,1,NA,NA,NA,NA
+1983,Italy,ITA,2,NA,1,NA,NA,1,NA
+1983,Japan,JPN,4,2,NA,NA,NA,2,NA
+1983,Luxembourg,LUX,1,NA,NA,1,NA,NA,NA
+1983,Mexico,MEX,3,2,NA,NA,NA,1,NA
+1983,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
+1983,Poland,POL,2,1,1,NA,NA,NA,NA
+1983,Portugal,PRT,3,NA,1,1,1,NA,NA
+1983,Spain,ESP,2,NA,NA,2,NA,NA,NA
+1983,Switzerland,CHE,3,2,NA,1,NA,NA,NA
+1983,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
+1983,United States of America (the),USA,9,6,NA,2,NA,NA,1
+1984,Australia,AUS,1,NA,NA,1,NA,NA,NA
+1984,Austria,AUT,2,1,NA,NA,NA,1,NA
+1984,Belgium,BEL,2,1,NA,1,NA,NA,NA
+1984,Canada,CAN,1,NA,NA,NA,1,NA,NA
+1984,Chile,CHL,2,2,NA,NA,NA,NA,NA
+1984,France,FRA,5,3,2,NA,NA,NA,NA
+1984,Greece,GRC,2,NA,2,NA,NA,NA,NA
+1984,Hungary,HUN,1,1,NA,NA,NA,NA,NA
+1984,Japan,JPN,1,NA,NA,NA,NA,1,NA
+1984,Korea (the Republic of),KOR,2,NA,NA,1,NA,1,NA
+1984,Mexico,MEX,2,1,NA,1,NA,NA,NA
+1984,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
+1984,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
+1984,Spain,ESP,3,2,1,NA,NA,NA,NA
+1984,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
+1984,Turkey,TUR,1,NA,NA,1,NA,NA,NA
+1984,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
+1984,United States of America (the),USA,14,11,NA,3,NA,NA,NA
+1985,Australia,AUS,5,2,2,1,NA,NA,NA
+1985,Austria,AUT,1,NA,NA,1,NA,NA,NA
+1985,Belgium,BEL,2,1,NA,NA,NA,NA,1
+1985,Canada,CAN,2,1,1,NA,NA,NA,NA
+1985,Denmark,DNK,1,1,NA,NA,NA,NA,NA
+1985,France,FRA,3,1,1,NA,NA,NA,1
+1985,Greece,GRC,2,NA,1,NA,NA,NA,1
+1985,Italy,ITA,1,NA,NA,1,NA,NA,NA
+1985,Japan,JPN,2,2,NA,NA,NA,NA,NA
+1985,Korea (the Republic of),KOR,1,1,NA,NA,NA,NA,NA
+1985,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
+1985,New Zealand,NZL,2,NA,NA,2,NA,NA,NA
+1985,Portugal,PRT,1,NA,1,NA,NA,NA,NA
+1985,Spain,ESP,3,NA,2,NA,NA,NA,1
+1985,Sweden,SWE,1,NA,NA,1,NA,NA,NA
+1985,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
+1985,Turkey,TUR,1,NA,1,NA,NA,NA,NA
+1985,United States of America (the),USA,15,10,NA,5,NA,NA,NA
+1986,Australia,AUS,6,5,NA,1,NA,NA,NA
+1986,Canada,CAN,4,1,2,1,NA,NA,NA
+1986,Chile,CHL,2,1,NA,1,NA,NA,NA
+1986,France,FRA,1,NA,1,NA,NA,NA,NA
+1986,Hungary,HUN,1,NA,NA,NA,1,NA,NA
+1986,Ireland,IRL,1,1,NA,NA,NA,NA,NA
+1986,Italy,ITA,1,NA,NA,1,NA,NA,NA
+1986,Japan,JPN,5,2,NA,1,NA,2,NA
+1986,Korea (the Republic of),KOR,1,1,NA,NA,NA,NA,NA
+1986,Mexico,MEX,1,NA,NA,1,NA,NA,NA
+1986,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
+1986,New Zealand,NZL,3,NA,NA,3,NA,NA,NA
+1986,Portugal,PRT,1,NA,1,NA,NA,NA,NA
+1986,Switzerland,CHE,2,2,NA,NA,NA,NA,NA
+1986,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
+1986,United States of America (the),USA,6,2,NA,3,NA,NA,1
+1987,Belgium,BEL,1,NA,NA,1,NA,NA,NA
+1987,Canada,CAN,3,1,NA,2,NA,NA,NA
+1987,Chile,CHL,3,NA,NA,2,NA,1,NA
+1987,France,FRA,2,1,NA,1,NA,NA,NA
+1987,Greece,GRC,3,1,1,NA,NA,NA,1
+1987,Ireland,IRL,1,NA,NA,1,NA,NA,NA
+1987,Italy,ITA,6,3,NA,1,NA,2,NA
+1987,Japan,JPN,1,1,NA,NA,NA,NA,NA
+1987,Korea (the Republic of),KOR,3,2,NA,1,NA,NA,NA
+1987,Mexico,MEX,2,NA,NA,2,NA,NA,NA
+1987,New Zealand,NZL,2,NA,1,1,NA,NA,NA
+1987,Poland,POL,1,NA,NA,1,NA,NA,NA
+1987,Spain,ESP,2,1,NA,1,NA,NA,NA
+1987,Switzerland,CHE,2,1,NA,1,NA,NA,NA
+1987,Turkey,TUR,1,NA,NA,NA,NA,NA,1
+1987,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
+1987,United States of America (the),USA,9,8,NA,NA,NA,NA,1
+1988,Australia,AUS,4,1,NA,3,NA,NA,NA
+1988,Canada,CAN,2,NA,NA,1,1,NA,NA
+1988,France,FRA,1,NA,NA,1,NA,NA,NA
+1988,Greece,GRC,1,NA,NA,NA,NA,NA,1
+1988,Iceland,ISL,1,NA,NA,1,NA,NA,NA
+1988,Japan,JPN,1,NA,NA,1,NA,NA,NA
+1988,Korea (the Republic of),KOR,1,NA,NA,NA,NA,1,NA
+1988,Mexico,MEX,5,3,NA,NA,1,NA,1
+1988,New Zealand,NZL,4,1,NA,3,NA,NA,NA
+1988,Switzerland,CHE,1,NA,NA,NA,NA,1,NA
+1988,Turkey,TUR,2,NA,NA,1,NA,1,NA
+1988,United States of America (the),USA,22,18,NA,3,1,NA,NA
+1989,Australia,AUS,3,2,NA,1,NA,NA,NA
+1989,Canada,CAN,2,1,1,NA,NA,NA,NA
+1989,Chile,CHL,1,NA,NA,1,NA,NA,NA
+1989,France,FRA,2,1,NA,NA,1,NA,NA
+1989,Japan,JPN,4,2,NA,1,NA,1,NA
+1989,Korea (the Republic of),KOR,1,1,NA,NA,NA,NA,NA
+1989,Mexico,MEX,2,NA,1,1,NA,NA,NA
+1989,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
+1989,Portugal,PRT,1,1,NA,NA,NA,NA,NA
+1989,Spain,ESP,3,2,NA,1,NA,NA,NA
+1989,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
+1989,United States of America (the),USA,17,16,NA,NA,NA,NA,1
+1990,Australia,AUS,5,2,1,2,NA,NA,NA
+1990,Austria,AUT,5,5,NA,NA,NA,NA,NA
+1990,Belgium,BEL,6,6,NA,NA,NA,NA,NA
+1990,Canada,CAN,1,NA,NA,1,NA,NA,NA
+1990,Chile,CHL,1,NA,NA,1,NA,NA,NA
+1990,Denmark,DNK,3,3,NA,NA,NA,NA,NA
+1990,Finland,FIN,2,2,NA,NA,NA,NA,NA
+1990,France,FRA,10,8,NA,NA,NA,1,1
+1990,Germany,DEU,6,6,NA,NA,NA,NA,NA
+1990,Greece,GRC,2,1,NA,NA,1,NA,NA
+1990,Ireland,IRL,4,4,NA,NA,NA,NA,NA
+1990,Italy,ITA,3,1,2,NA,NA,NA,NA
+1990,Japan,JPN,3,2,NA,1,NA,NA,NA
+1990,Korea (the Republic of),KOR,3,1,NA,1,NA,NA,1
+1990,Luxembourg,LUX,6,6,NA,NA,NA,NA,NA
+1990,Mexico,MEX,3,1,NA,1,NA,NA,1
+1990,Netherlands (the),NLD,6,6,NA,NA,NA,NA,NA
+1990,Norway,NOR,2,2,NA,NA,NA,NA,NA
+1990,Poland,POL,1,1,NA,NA,NA,NA,NA
+1990,Spain,ESP,3,2,NA,NA,1,NA,NA
+1990,Sweden,SWE,2,2,NA,NA,NA,NA,NA
+1990,Switzerland,CHE,4,4,NA,NA,NA,NA,NA
+1990,Turkey,TUR,2,NA,NA,2,NA,NA,NA
+1990,United Kingdom of Great Britain and Northern Ireland (the),GBR,7,7,NA,NA,NA,NA,NA
+1990,United States of America (the),USA,21,15,NA,4,NA,NA,2
+1991,Australia,AUS,3,2,NA,NA,1,NA,NA
+1991,Austria,AUT,2,1,NA,1,NA,NA,NA
+1991,Canada,CAN,1,1,NA,NA,NA,NA,NA
+1991,Chile,CHL,2,NA,NA,NA,1,1,NA
+1991,France,FRA,3,NA,NA,NA,1,NA,2
+1991,Germany,DEU,1,1,NA,NA,NA,NA,NA
+1991,Greece,GRC,1,NA,NA,NA,NA,NA,1
+1991,Ireland,IRL,1,1,NA,NA,NA,NA,NA
+1991,Israel,ISR,1,1,NA,NA,NA,NA,NA
+1991,Japan,JPN,5,5,NA,NA,NA,NA,NA
+1991,Korea (the Republic of),KOR,2,1,NA,1,NA,NA,NA
+1991,Mexico,MEX,3,1,NA,2,NA,NA,NA
+1991,New Zealand,NZL,3,NA,NA,3,NA,NA,NA
+1991,Portugal,PRT,1,NA,1,NA,NA,NA,NA
+1991,Spain,ESP,1,NA,1,NA,NA,NA,NA
+1991,Turkey,TUR,2,1,NA,1,NA,NA,NA
+1991,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,1,NA,NA,NA,NA,1
+1991,United States of America (the),USA,35,17,2,14,2,NA,NA
+1992,Australia,AUS,3,2,NA,NA,1,NA,NA
+1992,Canada,CAN,2,NA,1,NA,NA,NA,1
+1992,Chile,CHL,3,2,1,NA,NA,NA,NA
+1992,Denmark,DNK,1,NA,NA,NA,1,NA,NA
+1992,France,FRA,3,2,NA,1,NA,NA,NA
+1992,Germany,DEU,1,NA,NA,1,NA,NA,NA
+1992,Hungary,HUN,1,NA,NA,NA,1,NA,NA
+1992,Israel,ISR,1,NA,NA,NA,NA,NA,1
+1992,Italy,ITA,2,NA,NA,2,NA,NA,NA
+1992,Japan,JPN,2,2,NA,NA,NA,NA,NA
+1992,Korea (the Republic of),KOR,2,1,NA,1,NA,NA,NA
+1992,Lithuania,LTU,1,NA,NA,NA,1,NA,NA
+1992,Mexico,MEX,3,1,NA,NA,NA,NA,2
+1992,Netherlands (the),NLD,1,NA,NA,1,NA,NA,NA
+1992,New Zealand,NZL,3,2,NA,NA,1,NA,NA
+1992,Norway,NOR,1,1,NA,NA,NA,NA,NA
+1992,Poland,POL,1,NA,1,NA,NA,NA,NA
+1992,United States of America (the),USA,29,27,2,NA,NA,NA,NA
+1993,Australia,AUS,4,2,NA,1,NA,NA,1
+1993,Austria,AUT,1,1,NA,NA,NA,NA,NA
+1993,Belgium,BEL,2,NA,NA,2,NA,NA,NA
+1993,Canada,CAN,1,NA,NA,1,NA,NA,NA
+1993,Chile,CHL,2,NA,1,1,NA,NA,NA
+1993,France,FRA,3,2,NA,1,NA,NA,NA
+1993,Germany,DEU,3,2,NA,1,NA,NA,NA
+1993,Ireland,IRL,1,NA,NA,1,NA,NA,NA
+1993,Italy,ITA,1,1,NA,NA,NA,NA,NA
+1993,Japan,JPN,6,3,NA,1,NA,2,NA
+1993,Korea (the Republic of),KOR,2,1,NA,NA,NA,1,NA
+1993,Lithuania,LTU,1,1,NA,NA,NA,NA,NA
+1993,Luxembourg,LUX,1,NA,NA,1,NA,NA,NA
+1993,Mexico,MEX,7,5,NA,2,NA,NA,NA
+1993,Netherlands (the),NLD,1,NA,NA,1,NA,NA,NA
+1993,Norway,NOR,1,1,NA,NA,NA,NA,NA
+1993,Switzerland,CHE,3,3,NA,NA,NA,NA,NA
+1993,Turkey,TUR,1,NA,NA,NA,NA,1,NA
+1993,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,NA,NA,2,NA,NA,NA
+1993,United States of America (the),USA,28,20,1,6,NA,NA,1
+1994,Australia,AUS,8,4,2,NA,NA,NA,2
+1994,Austria,AUT,1,1,NA,NA,NA,NA,NA
+1994,Belgium,BEL,1,NA,NA,1,NA,NA,NA
+1994,Canada,CAN,3,2,1,NA,NA,NA,NA
+1994,France,FRA,3,NA,NA,3,NA,NA,NA
+1994,Germany,DEU,4,2,NA,2,NA,NA,NA
+1994,Greece,GRC,1,NA,NA,1,NA,NA,NA
+1994,Italy,ITA,3,1,1,1,NA,NA,NA
+1994,Japan,JPN,3,3,NA,NA,NA,NA,NA
+1994,Korea (the Republic of),KOR,1,1,NA,NA,NA,NA,NA
+1994,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
+1994,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
+1994,Poland,POL,1,1,NA,NA,NA,NA,NA
+1994,Spain,ESP,4,1,2,1,NA,NA,NA
+1994,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
+1994,Turkey,TUR,2,1,NA,NA,NA,NA,1
+1994,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,NA,NA,2,NA,NA,NA
+1994,United States of America (the),USA,14,9,3,1,NA,1,NA
+1995,Australia,AUS,5,4,NA,NA,NA,NA,1
+1995,Austria,AUT,1,NA,NA,1,NA,NA,NA
+1995,Belgium,BEL,1,1,NA,NA,NA,NA,NA
+1995,Canada,CAN,4,1,2,1,NA,NA,NA
+1995,Chile,CHL,2,NA,NA,1,NA,NA,1
+1995,France,FRA,1,1,NA,NA,NA,NA,NA
+1995,Germany,DEU,2,2,NA,NA,NA,NA,NA
+1995,Greece,GRC,1,NA,1,NA,NA,NA,NA
+1995,Iceland,ISL,2,NA,NA,NA,NA,2,NA
+1995,Israel,ISR,1,NA,1,NA,NA,NA,NA
+1995,Japan,JPN,2,1,NA,1,NA,NA,NA
+1995,Korea (the Republic of),KOR,2,2,NA,NA,NA,NA,NA
+1995,Luxembourg,LUX,1,1,NA,NA,NA,NA,NA
+1995,Mexico,MEX,7,5,NA,NA,1,NA,1
+1995,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
+1995,Norway,NOR,1,NA,NA,1,NA,NA,NA
+1995,Spain,ESP,2,NA,NA,NA,NA,NA,2
+1995,Turkey,TUR,3,NA,NA,2,NA,1,NA
+1995,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
+1995,United States of America (the),USA,18,10,NA,6,NA,NA,2
+1996,Australia,AUS,9,6,NA,2,NA,1,NA
+1996,Austria,AUT,1,NA,NA,1,NA,NA,NA
+1996,Canada,CAN,2,1,NA,1,NA,NA,NA
+1996,Czech Republic (the),CZE,1,NA,NA,1,NA,NA,NA
+1996,France,FRA,3,1,NA,2,NA,NA,NA
+1996,Germany,DEU,1,1,NA,NA,NA,NA,NA
+1996,Hungary,HUN,1,NA,NA,1,NA,NA,NA
+1996,Ireland,IRL,1,1,NA,NA,NA,NA,NA
+1996,Italy,ITA,3,NA,NA,2,NA,1,NA
+1996,Japan,JPN,2,1,NA,NA,NA,1,NA
+1996,Korea (the Republic of),KOR,2,NA,NA,1,NA,1,NA
+1996,Mexico,MEX,6,4,NA,1,1,NA,NA
+1996,New Zealand,NZL,1,1,NA,NA,NA,NA,NA
+1996,Portugal,PRT,2,NA,NA,2,NA,NA,NA
+1996,Spain,ESP,2,NA,NA,1,NA,1,NA
+1996,Turkey,TUR,1,NA,1,NA,NA,NA,NA
+1996,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,1,NA,NA,NA,NA,NA
+1996,United States of America (the),USA,15,9,2,4,NA,NA,NA
+1997,Australia,AUS,4,NA,2,1,NA,1,NA
+1997,Austria,AUT,1,NA,NA,1,NA,NA,NA
+1997,Canada,CAN,3,1,1,1,NA,NA,NA
+1997,Chile,CHL,4,2,1,1,NA,NA,NA
+1997,Czech Republic (the),CZE,1,NA,NA,1,NA,NA,NA
+1997,France,FRA,3,NA,1,NA,1,NA,1
+1997,Germany,DEU,2,NA,NA,1,NA,NA,1
+1997,Greece,GRC,1,NA,NA,1,NA,NA,NA
+1997,Hungary,HUN,1,NA,NA,1,NA,NA,NA
+1997,Israel,ISR,1,NA,NA,1,NA,NA,NA
+1997,Italy,ITA,2,1,NA,NA,1,NA,NA
+1997,Japan,JPN,3,2,NA,NA,NA,1,NA
+1997,Korea (the Republic of),KOR,2,NA,NA,2,NA,NA,NA
+1997,Mexico,MEX,6,3,NA,NA,NA,1,2
+1997,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
+1997,New Zealand,NZL,2,1,NA,1,NA,NA,NA
+1997,Poland,POL,2,NA,NA,1,NA,NA,1
+1997,Portugal,PRT,2,1,NA,NA,1,NA,NA
+1997,Slovakia,SVK,1,NA,NA,1,NA,NA,NA
+1997,Spain,ESP,2,1,NA,1,NA,NA,NA
+1997,Switzerland,CHE,1,NA,NA,1,NA,NA,NA
+1997,United Kingdom of Great Britain and Northern Ireland (the),GBR,3,NA,NA,2,NA,NA,1
+1997,United States of America (the),USA,33,23,2,8,NA,NA,NA
+1998,Australia,AUS,6,NA,NA,6,NA,NA,NA
+1998,Belgium,BEL,2,1,NA,1,NA,NA,NA
+1998,Canada,CAN,3,1,1,1,NA,NA,NA
+1998,Czech Republic (the),CZE,1,NA,NA,1,NA,NA,NA
+1998,France,FRA,2,1,NA,NA,NA,1,NA
+1998,Germany,DEU,1,1,NA,NA,NA,NA,NA
+1998,Greece,GRC,2,NA,1,1,NA,NA,NA
+1998,Ireland,IRL,1,1,NA,NA,NA,NA,NA
+1998,Israel,ISR,1,NA,NA,1,NA,NA,NA
+1998,Italy,ITA,2,NA,NA,NA,NA,1,1
+1998,Japan,JPN,7,5,NA,1,NA,1,NA
+1998,Korea (the Republic of),KOR,4,3,NA,1,NA,NA,NA
+1998,Mexico,MEX,9,4,1,2,NA,1,1
+1998,Netherlands (the),NLD,2,1,NA,1,NA,NA,NA
+1998,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
+1998,Poland,POL,2,NA,NA,1,NA,NA,1
+1998,Slovakia,SVK,1,NA,NA,1,NA,NA,NA
+1998,Spain,ESP,2,1,1,NA,NA,NA,NA
+1998,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
+1998,Turkey,TUR,3,NA,NA,3,NA,NA,NA
+1998,United Kingdom of Great Britain and Northern Ireland (the),GBR,4,3,NA,1,NA,NA,NA
+1998,United States of America (the),USA,32,20,4,7,NA,NA,1
+1999,Australia,AUS,5,4,1,NA,NA,NA,NA
+1999,Austria,AUT,2,NA,NA,1,NA,1,NA
+1999,Belgium,BEL,2,2,NA,NA,NA,NA,NA
+1999,Canada,CAN,3,2,1,NA,NA,NA,NA
+1999,Chile,CHL,1,NA,1,NA,NA,NA,NA
+1999,Denmark,DNK,1,1,NA,NA,NA,NA,NA
+1999,France,FRA,8,3,1,3,NA,1,NA
+1999,Germany,DEU,4,2,NA,1,NA,1,NA
+1999,Hungary,HUN,3,1,NA,2,NA,NA,NA
+1999,Ireland,IRL,1,1,NA,NA,NA,NA,NA
+1999,Israel,ISR,1,NA,NA,NA,1,NA,NA
+1999,Italy,ITA,2,NA,1,NA,NA,1,NA
+1999,Japan,JPN,3,1,NA,2,NA,NA,NA
+1999,Korea (the Republic of),KOR,2,1,NA,1,NA,NA,NA
+1999,Latvia,LVA,1,1,NA,NA,NA,NA,NA
+1999,Lithuania,LTU,2,1,NA,NA,NA,NA,1
+1999,Mexico,MEX,7,1,NA,4,1,NA,1
+1999,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
+1999,Poland,POL,2,1,NA,NA,NA,NA,1
+1999,Slovakia,SVK,1,NA,NA,1,NA,NA,NA
+1999,Spain,ESP,2,1,NA,NA,1,NA,NA
+1999,Sweden,SWE,1,1,NA,NA,NA,NA,NA
+1999,Switzerland,CHE,3,1,NA,1,NA,1,NA
+1999,United Kingdom of Great Britain and Northern Ireland (the),GBR,3,2,NA,1,NA,NA,NA
+1999,United States of America (the),USA,22,16,3,1,1,NA,1
+2000,Australia,AUS,5,3,1,1,NA,NA,NA
+2000,Austria,AUT,2,1,NA,NA,NA,1,NA
+2000,Canada,CAN,1,1,NA,NA,NA,NA,NA
+2000,Chile,CHL,3,NA,NA,2,NA,NA,1
+2000,Czech Republic (the),CZE,1,NA,NA,1,NA,NA,NA
+2000,France,FRA,7,1,NA,6,NA,NA,NA
+2000,Greece,GRC,5,NA,2,2,NA,NA,1
+2000,Hungary,HUN,1,NA,NA,1,NA,NA,NA
+2000,Ireland,IRL,1,1,NA,NA,NA,NA,NA
+2000,Israel,ISR,2,1,NA,NA,NA,NA,1
+2000,Italy,ITA,4,NA,NA,4,NA,NA,NA
+2000,Japan,JPN,4,3,NA,1,NA,NA,NA
+2000,Korea (the Republic of),KOR,5,2,1,2,NA,NA,NA
+2000,Mexico,MEX,6,2,NA,3,NA,NA,1
+2000,New Zealand,NZL,2,1,NA,1,NA,NA,NA
+2000,Norway,NOR,1,NA,NA,1,NA,NA,NA
+2000,Poland,POL,1,NA,NA,NA,NA,NA,1
+2000,Portugal,PRT,1,1,NA,NA,NA,NA,NA
+2000,Slovakia,SVK,1,NA,1,NA,NA,NA,NA
+2000,Spain,ESP,5,2,1,2,NA,NA,NA
+2000,Switzerland,CHE,1,NA,NA,NA,NA,1,NA
+2000,Turkey,TUR,4,NA,2,1,NA,NA,1
+2000,United Kingdom of Great Britain and Northern Ireland (the),GBR,6,3,NA,3,NA,NA,NA
+2000,United States of America (the),USA,30,12,7,8,2,NA,1
+2001,Australia,AUS,9,3,2,4,NA,NA,NA
+2001,Canada,CAN,2,1,1,NA,NA,NA,NA
+2001,Chile,CHL,4,1,NA,3,NA,NA,NA
+2001,France,FRA,7,2,NA,5,NA,NA,NA
+2001,Germany,DEU,1,1,NA,NA,NA,NA,NA
+2001,Greece,GRC,2,NA,NA,2,NA,NA,NA
+2001,Hungary,HUN,2,NA,NA,1,NA,NA,1
+2001,Italy,ITA,3,1,NA,2,NA,NA,NA
+2001,Japan,JPN,5,4,NA,1,NA,NA,NA
+2001,Korea (the Republic of),KOR,4,1,NA,2,1,NA,NA
+2001,Latvia,LVA,1,NA,NA,NA,NA,NA,1
+2001,Lithuania,LTU,1,NA,NA,NA,NA,NA,1
+2001,Mexico,MEX,6,5,NA,1,NA,NA,NA
+2001,New Zealand,NZL,1,NA,NA,NA,NA,NA,1
+2001,Norway,NOR,1,NA,NA,1,NA,NA,NA
+2001,Poland,POL,2,NA,NA,1,NA,NA,1
+2001,Portugal,PRT,2,NA,1,1,NA,NA,NA
+2001,Slovakia,SVK,1,NA,NA,1,NA,NA,NA
+2001,Spain,ESP,1,1,NA,NA,NA,NA,NA
+2001,Switzerland,CHE,1,NA,NA,NA,NA,NA,1
+2001,Turkey,TUR,5,NA,NA,3,NA,1,1
+2001,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,NA,NA,2,NA,NA,NA
+2001,United States of America (the),USA,26,17,3,5,NA,NA,1
+2002,Australia,AUS,5,3,1,NA,1,NA,NA
+2002,Austria,AUT,3,2,NA,1,NA,NA,NA
+2002,Belgium,BEL,5,1,NA,4,NA,NA,NA
+2002,Canada,CAN,2,NA,1,1,NA,NA,NA
+2002,Chile,CHL,5,NA,1,3,NA,NA,1
+2002,Czech Republic (the),CZE,3,2,NA,1,NA,NA,NA
+2002,Denmark,DNK,1,1,NA,NA,NA,NA,NA
+2002,France,FRA,5,2,NA,3,NA,NA,NA
+2002,Germany,DEU,4,3,NA,1,NA,NA,NA
+2002,Greece,GRC,5,1,NA,4,NA,NA,NA
+2002,Hungary,HUN,1,NA,NA,1,NA,NA,NA
+2002,Ireland,IRL,1,NA,NA,1,NA,NA,NA
+2002,Italy,ITA,4,NA,NA,3,1,NA,NA
+2002,Japan,JPN,6,5,1,NA,NA,NA,NA
+2002,Korea (the Republic of),KOR,4,3,NA,1,NA,NA,NA
+2002,Mexico,MEX,7,3,NA,2,1,NA,1
+2002,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
+2002,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
+2002,Poland,POL,3,2,NA,NA,NA,NA,1
+2002,Portugal,PRT,1,NA,NA,1,NA,NA,NA
+2002,Slovakia,SVK,1,NA,NA,1,NA,NA,NA
+2002,Spain,ESP,1,NA,NA,1,NA,NA,NA
+2002,Sweden,SWE,1,1,NA,NA,NA,NA,NA
+2002,Switzerland,CHE,3,1,NA,NA,NA,2,NA
+2002,Turkey,TUR,2,1,NA,1,NA,NA,NA
+2002,United Kingdom of Great Britain and Northern Ireland (the),GBR,5,2,NA,3,NA,NA,NA
+2002,United States of America (the),USA,29,15,8,4,1,NA,1
+2003,Australia,AUS,10,5,1,4,NA,NA,NA
+2003,Austria,AUT,1,NA,NA,NA,NA,NA,1
+2003,Belgium,BEL,2,NA,NA,1,NA,NA,1
+2003,Canada,CAN,7,2,1,4,NA,NA,NA
+2003,Chile,CHL,1,NA,1,NA,NA,NA,NA
+2003,Czech Republic (the),CZE,1,NA,NA,NA,NA,NA,1
+2003,France,FRA,6,2,1,2,NA,NA,1
+2003,Germany,DEU,3,2,NA,NA,NA,NA,1
+2003,Greece,GRC,3,NA,NA,3,NA,NA,NA
+2003,Hungary,HUN,2,1,NA,NA,1,NA,NA
+2003,Italy,ITA,3,NA,NA,2,NA,NA,1
+2003,Japan,JPN,3,2,NA,1,NA,NA,NA
+2003,Korea (the Republic of),KOR,1,1,NA,NA,NA,NA,NA
+2003,Latvia,LVA,1,NA,NA,NA,NA,NA,1
+2003,Luxembourg,LUX,1,NA,NA,NA,NA,NA,1
+2003,Mexico,MEX,8,2,1,3,NA,1,1
+2003,Netherlands (the),NLD,1,NA,NA,NA,NA,NA,1
+2003,New Zealand,NZL,1,1,NA,NA,NA,NA,NA
+2003,Portugal,PRT,3,NA,1,1,NA,NA,1
+2003,Slovakia,SVK,1,NA,NA,NA,NA,NA,1
+2003,Slovenia,SVN,1,NA,NA,NA,NA,NA,1
+2003,Spain,ESP,2,NA,1,NA,NA,NA,1
+2003,Switzerland,CHE,2,1,NA,NA,NA,NA,1
+2003,Turkey,TUR,1,NA,NA,1,NA,NA,NA
+2003,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,NA,NA,NA,NA,NA,1
+2003,United States of America (the),USA,22,14,3,4,NA,1,NA
+2004,Australia,AUS,6,3,NA,3,NA,NA,NA
+2004,Canada,CAN,4,2,NA,2,NA,NA,NA
+2004,Chile,CHL,2,NA,NA,1,NA,NA,1
+2004,France,FRA,1,1,NA,NA,NA,NA,NA
+2004,Germany,DEU,1,1,NA,NA,NA,NA,NA
+2004,Greece,GRC,2,2,NA,NA,NA,NA,NA
+2004,Hungary,HUN,1,NA,NA,1,NA,NA,NA
+2004,Ireland,IRL,1,1,NA,NA,NA,NA,NA
+2004,Italy,ITA,1,1,NA,NA,NA,NA,NA
+2004,Japan,JPN,11,8,NA,2,NA,NA,1
+2004,Korea (the Republic of),KOR,7,4,1,2,NA,NA,NA
+2004,Mexico,MEX,3,NA,NA,2,NA,NA,1
+2004,New Zealand,NZL,2,NA,NA,2,NA,NA,NA
+2004,Poland,POL,1,NA,NA,1,NA,NA,NA
+2004,Portugal,PRT,2,NA,1,NA,1,NA,NA
+2004,Slovakia,SVK,2,1,NA,1,NA,NA,NA
+2004,Spain,ESP,3,NA,1,1,NA,NA,1
+2004,Turkey,TUR,7,3,NA,3,NA,NA,1
+2004,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,NA,NA,1,NA,NA,NA
+2004,United States of America (the),USA,20,12,3,4,NA,NA,1
+2005,Australia,AUS,4,2,1,1,NA,NA,NA
+2005,Austria,AUT,3,NA,NA,2,NA,NA,1
+2005,Belgium,BEL,3,NA,NA,1,NA,NA,2
+2005,Canada,CAN,5,1,2,2,NA,NA,NA
+2005,Chile,CHL,3,1,NA,2,NA,NA,NA
+2005,Czech Republic (the),CZE,3,1,NA,1,NA,NA,1
+2005,Denmark,DNK,1,1,NA,NA,NA,NA,NA
+2005,Estonia,EST,2,1,NA,NA,NA,NA,1
+2005,Finland,FIN,1,NA,NA,1,NA,NA,NA
+2005,France,FRA,5,NA,1,2,NA,NA,2
+2005,Germany,DEU,5,1,NA,2,NA,NA,2
+2005,Hungary,HUN,4,1,NA,2,NA,NA,1
+2005,Ireland,IRL,1,1,NA,NA,NA,NA,NA
+2005,Italy,ITA,1,NA,NA,NA,NA,NA,1
+2005,Japan,JPN,4,3,NA,1,NA,NA,NA
+2005,Korea (the Republic of),KOR,5,3,1,1,NA,NA,NA
+2005,Latvia,LVA,3,2,NA,NA,NA,NA,1
+2005,Lithuania,LTU,2,1,NA,1,NA,NA,NA
+2005,Mexico,MEX,7,4,NA,3,NA,NA,NA
+2005,Netherlands (the),NLD,3,1,NA,NA,NA,NA,2
+2005,New Zealand,NZL,2,1,NA,1,NA,NA,NA
+2005,Norway,NOR,1,1,NA,NA,NA,NA,NA
+2005,Poland,POL,4,2,NA,1,NA,NA,1
+2005,Portugal,PRT,2,NA,1,NA,NA,NA,1
+2005,Slovakia,SVK,2,NA,NA,1,NA,NA,1
+2005,Slovenia,SVN,1,NA,NA,1,NA,NA,NA
+2005,Spain,ESP,2,NA,1,NA,NA,NA,1
+2005,Sweden,SWE,2,1,NA,NA,NA,NA,1
+2005,Switzerland,CHE,2,NA,NA,1,NA,NA,1
+2005,Turkey,TUR,5,1,NA,2,NA,1,1
+2005,United Kingdom of Great Britain and Northern Ireland (the),GBR,4,2,NA,NA,NA,NA,2
+2005,United States of America (the),USA,16,8,1,6,NA,NA,1
+2006,Australia,AUS,8,3,3,1,1,NA,NA
+2006,Austria,AUT,1,NA,NA,1,NA,NA,NA
+2006,Belgium,BEL,1,NA,NA,NA,NA,NA,1
+2006,Canada,CAN,5,NA,NA,5,NA,NA,NA
+2006,Chile,CHL,1,NA,NA,1,NA,NA,NA
+2006,Czech Republic (the),CZE,2,NA,NA,2,NA,NA,NA
+2006,France,FRA,3,2,NA,NA,NA,NA,1
+2006,Germany,DEU,5,3,NA,1,NA,NA,1
+2006,Greece,GRC,3,1,NA,2,NA,NA,NA
+2006,Hungary,HUN,2,1,NA,1,NA,NA,NA
+2006,Italy,ITA,2,1,NA,NA,NA,1,NA
+2006,Japan,JPN,5,3,NA,2,NA,NA,NA
+2006,Korea (the Republic of),KOR,1,NA,NA,1,NA,NA,NA
+2006,Lithuania,LTU,1,NA,NA,NA,1,NA,NA
+2006,Mexico,MEX,7,3,NA,1,NA,2,1
+2006,Netherlands (the),NLD,1,NA,NA,NA,NA,NA,1
+2006,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
+2006,Poland,POL,1,NA,NA,1,NA,NA,NA
+2006,Portugal,PRT,2,NA,NA,1,NA,NA,1
+2006,Slovakia,SVK,2,NA,NA,2,NA,NA,NA
+2006,Spain,ESP,3,NA,1,1,NA,NA,1
+2006,Switzerland,CHE,2,1,NA,1,NA,NA,NA
+2006,Turkey,TUR,2,NA,NA,2,NA,NA,NA
+2006,United States of America (the),USA,28,12,3,11,NA,NA,2
+2007,Australia,AUS,2,1,NA,1,NA,NA,NA
+2007,Austria,AUT,2,1,NA,NA,NA,NA,1
+2007,Belgium,BEL,1,1,NA,NA,NA,NA,NA
+2007,Canada,CAN,3,2,NA,1,NA,NA,NA
+2007,Chile,CHL,1,NA,NA,NA,NA,NA,1
+2007,Czech Republic (the),CZE,1,1,NA,NA,NA,NA,NA
+2007,Denmark,DNK,1,1,NA,NA,NA,NA,NA
+2007,France,FRA,3,3,NA,NA,NA,NA,NA
+2007,Germany,DEU,3,2,NA,1,NA,NA,NA
+2007,Greece,GRC,4,NA,2,1,NA,NA,1
+2007,Hungary,HUN,1,NA,NA,NA,NA,NA,1
+2007,Italy,ITA,2,NA,1,NA,NA,NA,1
+2007,Japan,JPN,5,3,NA,1,NA,NA,1
+2007,Korea (the Republic of),KOR,2,1,NA,1,NA,NA,NA
+2007,Mexico,MEX,7,4,NA,2,NA,1,NA
+2007,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
+2007,New Zealand,NZL,1,1,NA,NA,NA,NA,NA
+2007,Poland,POL,2,2,NA,NA,NA,NA,NA
+2007,Slovakia,SVK,1,NA,NA,NA,NA,NA,1
+2007,Slovenia,SVN,2,2,NA,NA,NA,NA,NA
+2007,Spain,ESP,4,1,NA,3,NA,NA,NA
+2007,Switzerland,CHE,3,2,NA,1,NA,NA,NA
+2007,Turkey,TUR,4,NA,NA,3,NA,NA,1
+2007,United Kingdom of Great Britain and Northern Ireland (the),GBR,4,1,NA,3,NA,NA,NA
+2007,United States of America (the),USA,23,13,3,6,1,NA,NA
+2008,Australia,AUS,5,1,NA,4,NA,NA,NA
+2008,Austria,AUT,1,1,NA,NA,NA,NA,NA
+2008,Belgium,BEL,2,1,NA,NA,NA,NA,1
+2008,Canada,CAN,2,NA,NA,2,NA,NA,NA
+2008,Chile,CHL,2,NA,NA,2,NA,NA,NA
+2008,Czech Republic (the),CZE,1,1,NA,NA,NA,NA,NA
+2008,France,FRA,4,3,NA,NA,NA,NA,1
+2008,Germany,DEU,3,2,NA,NA,NA,NA,1
+2008,Hungary,HUN,1,NA,NA,NA,NA,NA,1
+2008,Italy,ITA,3,NA,NA,3,NA,NA,NA
+2008,Japan,JPN,2,NA,NA,1,NA,NA,1
+2008,Korea (the Republic of),KOR,1,NA,NA,1,NA,NA,NA
+2008,Mexico,MEX,3,1,NA,1,NA,1,NA
+2008,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
+2008,Norway,NOR,1,1,NA,NA,NA,NA,NA
+2008,Poland,POL,2,1,NA,NA,NA,NA,1
+2008,Portugal,PRT,2,NA,NA,1,NA,NA,1
+2008,Turkey,TUR,1,NA,1,NA,NA,NA,NA
+2008,United Kingdom of Great Britain and Northern Ireland (the),GBR,3,1,NA,2,NA,NA,NA
+2008,United States of America (the),USA,21,14,2,4,NA,NA,1
+2009,Australia,AUS,6,2,1,2,NA,NA,1
+2009,Austria,AUT,4,1,NA,2,NA,NA,1
+2009,Canada,CAN,3,2,NA,1,NA,NA,NA
+2009,Czech Republic (the),CZE,2,1,NA,1,NA,NA,NA
+2009,France,FRA,4,1,1,NA,NA,NA,2
+2009,Germany,DEU,3,1,NA,1,NA,NA,1
+2009,Greece,GRC,2,NA,2,NA,NA,NA,NA
+2009,Ireland,IRL,1,NA,NA,1,NA,NA,NA
+2009,Italy,ITA,4,1,1,1,NA,NA,1
+2009,Japan,JPN,5,2,NA,NA,NA,2,1
+2009,Mexico,MEX,7,2,NA,5,NA,NA,NA
+2009,Poland,POL,3,1,NA,1,NA,NA,1
+2009,Spain,ESP,2,1,1,NA,NA,NA,NA
+2009,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
+2009,Turkey,TUR,4,NA,NA,2,NA,2,NA
+2009,United Kingdom of Great Britain and Northern Ireland (the),GBR,3,1,NA,1,NA,NA,1
+2009,United States of America (the),USA,17,10,2,4,NA,NA,1
+2010,Australia,AUS,8,3,NA,5,NA,NA,NA
+2010,Belgium,BEL,3,2,NA,1,NA,NA,NA
+2010,Canada,CAN,1,1,NA,NA,NA,NA,NA
+2010,Chile,CHL,1,NA,NA,NA,NA,NA,1
+2010,Czech Republic (the),CZE,4,NA,NA,3,NA,NA,1
+2010,Denmark,DNK,1,1,NA,NA,NA,NA,NA
+2010,France,FRA,4,2,NA,1,NA,NA,1
+2010,Germany,DEU,4,2,NA,1,NA,NA,1
+2010,Greece,GRC,1,NA,NA,1,NA,NA,NA
+2010,Hungary,HUN,1,NA,NA,1,NA,NA,NA
+2010,Israel,ISR,2,NA,1,1,NA,NA,NA
+2010,Italy,ITA,3,1,NA,1,NA,NA,1
+2010,Japan,JPN,2,NA,NA,1,NA,NA,1
+2010,Korea (the Republic of),KOR,1,1,NA,NA,NA,NA,NA
+2010,Lithuania,LTU,2,NA,NA,1,NA,NA,1
+2010,Luxembourg,LUX,1,1,NA,NA,NA,NA,NA
+2010,Mexico,MEX,8,4,NA,2,NA,2,NA
+2010,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
+2010,Poland,POL,3,NA,NA,2,NA,NA,1
+2010,Portugal,PRT,3,1,NA,1,NA,NA,1
+2010,Slovakia,SVK,3,NA,NA,2,NA,NA,1
+2010,Spain,ESP,2,1,NA,1,NA,NA,NA
+2010,Switzerland,CHE,2,1,NA,NA,NA,NA,1
+2010,Turkey,TUR,1,NA,NA,NA,NA,1,NA
+2010,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,1,NA,NA,NA,NA,1
+2010,United States of America (the),USA,15,12,NA,3,NA,NA,NA
+2011,Australia,AUS,3,1,1,1,NA,NA,NA
+2011,Belgium,BEL,2,1,NA,1,NA,NA,NA
+2011,Canada,CAN,4,2,1,1,NA,NA,NA
+2011,Chile,CHL,4,NA,2,NA,NA,NA,2
+2011,France,FRA,2,1,NA,1,NA,NA,NA
+2011,Germany,DEU,1,NA,NA,1,NA,NA,NA
+2011,Ireland,IRL,1,NA,NA,1,NA,NA,NA
+2011,Italy,ITA,4,NA,NA,2,NA,1,1
+2011,Japan,JPN,5,3,NA,1,NA,NA,1
+2011,Korea (the Republic of),KOR,3,NA,NA,2,NA,1,NA
+2011,Mexico,MEX,11,5,1,3,1,NA,1
+2011,Norway,NOR,1,1,NA,NA,NA,NA,NA
+2011,Poland,POL,1,NA,NA,NA,NA,NA,1
+2011,Spain,ESP,1,NA,NA,1,NA,NA,NA
+2011,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
+2011,Turkey,TUR,1,NA,NA,1,NA,NA,NA
+2011,United States of America (the),USA,23,14,3,4,1,NA,1
+2012,Australia,AUS,2,NA,NA,2,NA,NA,NA
+2012,Austria,AUT,1,NA,NA,NA,NA,NA,1
+2012,Belgium,BEL,1,NA,NA,NA,NA,NA,1
+2012,Canada,CAN,3,2,NA,1,NA,NA,NA
+2012,Chile,CHL,2,NA,1,1,NA,NA,NA
+2012,Czech Republic (the),CZE,2,NA,NA,NA,NA,NA,2
+2012,Estonia,EST,1,NA,NA,NA,NA,NA,1
+2012,France,FRA,1,NA,NA,NA,NA,NA,1
+2012,Germany,DEU,2,NA,NA,NA,NA,NA,2
+2012,Greece,GRC,2,NA,NA,1,NA,NA,1
+2012,Hungary,HUN,1,NA,NA,NA,NA,NA,1
+2012,Italy,ITA,3,NA,NA,1,1,NA,1
+2012,Japan,JPN,7,6,NA,1,NA,NA,NA
+2012,Korea (the Republic of),KOR,3,3,NA,NA,NA,NA,NA
+2012,Latvia,LVA,1,NA,NA,NA,NA,NA,1
+2012,Lithuania,LTU,2,NA,NA,NA,NA,NA,2
+2012,Mexico,MEX,2,2,NA,NA,NA,NA,NA
+2012,Netherlands (the),NLD,1,NA,NA,NA,NA,NA,1
+2012,New Zealand,NZL,1,1,NA,NA,NA,NA,NA
+2012,Poland,POL,4,1,NA,NA,NA,NA,3
+2012,Slovakia,SVK,1,NA,NA,NA,NA,NA,1
+2012,Slovenia,SVN,1,NA,NA,1,NA,NA,NA
+2012,Spain,ESP,2,NA,1,1,NA,NA,NA
+2012,Switzerland,CHE,2,NA,NA,NA,NA,NA,2
+2012,Turkey,TUR,1,NA,NA,1,NA,NA,NA
+2012,United Kingdom of Great Britain and Northern Ireland (the),GBR,5,NA,NA,5,NA,NA,NA
+2012,United States of America (the),USA,25,19,2,1,2,NA,1
+2013,Australia,AUS,3,1,2,NA,NA,NA,NA
+2013,Austria,AUT,1,NA,NA,1,NA,NA,NA
+2013,Belgium,BEL,2,2,NA,NA,NA,NA,NA
+2013,Canada,CAN,3,1,NA,1,NA,NA,1
+2013,Chile,CHL,1,NA,NA,NA,NA,NA,1
+2013,Czech Republic (the),CZE,1,NA,NA,1,NA,NA,NA
+2013,Denmark,DNK,2,2,NA,NA,NA,NA,NA
+2013,France,FRA,3,2,NA,1,NA,NA,NA
+2013,Germany,DEU,4,3,NA,1,NA,NA,NA
+2013,Hungary,HUN,2,1,NA,1,NA,NA,NA
+2013,Israel,ISR,1,1,NA,NA,NA,NA,NA
+2013,Italy,ITA,1,NA,NA,1,NA,NA,NA
+2013,Japan,JPN,9,7,NA,1,NA,NA,1
+2013,Mexico,MEX,5,4,NA,1,NA,NA,NA
+2013,Netherlands (the),NLD,3,3,NA,NA,NA,NA,NA
+2013,New Zealand,NZL,2,1,NA,NA,1,NA,NA
+2013,Poland,POL,2,1,NA,NA,NA,NA,1
+2013,Portugal,PRT,3,2,1,NA,NA,NA,NA
+2013,Slovakia,SVK,1,NA,NA,1,NA,NA,NA
+2013,Spain,ESP,2,1,NA,1,NA,NA,NA
+2013,Sweden,SWE,1,1,NA,NA,NA,NA,NA
+2013,Switzerland,CHE,2,2,NA,NA,NA,NA,NA
+2013,Turkey,TUR,1,NA,NA,NA,NA,1,NA
+2013,United Kingdom of Great Britain and Northern Ireland (the),GBR,5,3,NA,1,NA,NA,1
+2013,United States of America (the),USA,28,15,5,7,NA,NA,1
+2014,Australia,AUS,4,1,2,NA,NA,NA,1
+2014,Belgium,BEL,1,1,NA,NA,NA,NA,NA
+2014,Canada,CAN,2,NA,NA,1,NA,NA,1
+2014,Chile,CHL,2,NA,1,1,NA,NA,NA
+2014,France,FRA,7,4,NA,3,NA,NA,NA
+2014,Germany,DEU,2,2,NA,NA,NA,NA,NA
+2014,Greece,GRC,1,NA,NA,1,NA,NA,NA
+2014,Hungary,HUN,1,NA,NA,1,NA,NA,NA
+2014,Ireland,IRL,1,1,NA,NA,NA,NA,NA
+2014,Italy,ITA,5,1,NA,4,NA,NA,NA
+2014,Japan,JPN,11,9,NA,NA,NA,1,1
+2014,Korea (the Republic of),KOR,3,2,NA,1,NA,NA,NA
+2014,Mexico,MEX,6,6,NA,NA,NA,NA,NA
+2014,Poland,POL,1,NA,NA,NA,NA,NA,1
+2014,Portugal,PRT,2,2,NA,NA,NA,NA,NA
+2014,Slovenia,SVN,2,NA,NA,1,NA,NA,1
+2014,Spain,ESP,1,1,NA,NA,NA,NA,NA
+2014,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
+2014,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,1,NA,1,NA,NA,NA
+2014,United States of America (the),USA,19,13,1,2,1,1,1
+2015,Australia,AUS,8,4,3,1,NA,NA,NA
+2015,Belgium,BEL,1,NA,NA,NA,NA,NA,1
+2015,Canada,CAN,1,NA,1,NA,NA,NA,NA
+2015,Chile,CHL,4,1,1,2,NA,NA,NA
+2015,France,FRA,3,1,NA,1,NA,NA,1
+2015,Greece,GRC,2,NA,NA,2,NA,NA,NA
+2015,Ireland,IRL,1,1,NA,NA,NA,NA,NA
+2015,Israel,ISR,1,1,NA,NA,NA,NA,NA
+2015,Italy,ITA,4,1,NA,3,NA,NA,NA
+2015,Japan,JPN,10,6,NA,1,NA,NA,3
+2015,Mexico,MEX,4,3,NA,1,NA,NA,NA
+2015,New Zealand,NZL,2,NA,NA,2,NA,NA,NA
+2015,Poland,POL,2,1,NA,NA,NA,NA,1
+2015,Portugal,PRT,1,NA,NA,1,NA,NA,NA
+2015,Spain,ESP,2,NA,NA,2,NA,NA,NA
+2015,Turkey,TUR,2,NA,NA,2,NA,NA,NA
+2015,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,1,NA,1,NA,NA,NA
+2015,United States of America (the),USA,29,19,4,5,1,NA,NA
+2016,Australia,AUS,3,1,1,1,NA,NA,NA
+2016,Austria,AUT,1,NA,NA,1,NA,NA,NA
+2016,Belgium,BEL,2,1,NA,1,NA,NA,NA
+2016,Canada,CAN,2,NA,1,1,NA,NA,NA
+2016,Chile,CHL,1,NA,NA,1,NA,NA,NA
+2016,France,FRA,1,NA,NA,1,NA,NA,NA
+2016,Germany,DEU,1,NA,NA,1,NA,NA,NA
+2016,Greece,GRC,1,NA,NA,1,NA,NA,NA
+2016,Hungary,HUN,1,NA,NA,1,NA,NA,NA
+2016,Israel,ISR,1,NA,1,NA,NA,NA,NA
+2016,Italy,ITA,1,NA,NA,1,NA,NA,NA
+2016,Japan,JPN,7,4,NA,1,NA,NA,2
+2016,Korea (the Republic of),KOR,2,1,NA,NA,NA,NA,1
+2016,Mexico,MEX,7,2,NA,5,NA,NA,NA
+2016,Netherlands (the),NLD,1,1,NA,NA,NA,NA,NA
+2016,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
+2016,Poland,POL,2,NA,NA,1,NA,NA,1
+2016,Portugal,PRT,1,NA,1,NA,NA,NA,NA
+2016,Spain,ESP,1,NA,NA,1,NA,NA,NA
+2016,United States of America (the),USA,26,16,4,6,NA,NA,NA
+2017,Australia,AUS,3,2,1,NA,NA,NA,NA
+2017,Austria,AUT,2,2,NA,NA,NA,NA,NA
+2017,Canada,CAN,3,NA,1,2,NA,NA,NA
+2017,Chile,CHL,5,NA,1,3,NA,1,NA
+2017,Czech Republic (the),CZE,1,1,NA,NA,NA,NA,NA
+2017,France,FRA,3,1,1,1,NA,NA,NA
+2017,Germany,DEU,3,2,NA,1,NA,NA,NA
+2017,Greece,GRC,2,NA,NA,1,NA,NA,1
+2017,Hungary,HUN,1,1,NA,NA,NA,NA,NA
+2017,Ireland,IRL,1,NA,NA,1,NA,NA,NA
+2017,Italy,ITA,4,2,NA,1,1,NA,NA
+2017,Japan,JPN,4,3,NA,1,NA,NA,NA
+2017,Mexico,MEX,5,4,NA,1,NA,NA,NA
+2017,New Zealand,NZL,2,1,NA,1,NA,NA,NA
+2017,Poland,POL,1,1,NA,NA,NA,NA,NA
+2017,Portugal,PRT,2,NA,2,NA,NA,NA,NA
+2017,Slovakia,SVK,1,1,NA,NA,NA,NA,NA
+2017,Spain,ESP,2,NA,2,NA,NA,NA,NA
+2017,Turkey,TUR,1,1,NA,NA,NA,NA,NA
+2017,United Kingdom of Great Britain and Northern Ireland (the),GBR,1,NA,NA,1,NA,NA,NA
+2017,United States of America (the),USA,24,17,3,3,1,NA,NA
+2018,Australia,AUS,3,NA,NA,1,1,NA,1
+2018,Belgium,BEL,2,1,NA,NA,NA,NA,1
+2018,Canada,CAN,4,1,1,1,NA,NA,1
+2018,Czech Republic (the),CZE,1,NA,NA,NA,NA,NA,1
+2018,Estonia,EST,1,NA,NA,NA,NA,NA,1
+2018,France,FRA,7,3,NA,2,NA,NA,2
+2018,Germany,DEU,2,1,NA,NA,NA,NA,1
+2018,Greece,GRC,1,NA,1,NA,NA,NA,NA
+2018,Hungary,HUN,1,NA,NA,NA,NA,NA,1
+2018,Ireland,IRL,1,1,NA,NA,NA,NA,NA
+2018,Israel,ISR,1,NA,NA,1,NA,NA,NA
+2018,Italy,ITA,4,1,NA,1,NA,NA,2
+2018,Japan,JPN,5,3,NA,1,NA,NA,1
+2018,Korea (the Republic of),KOR,1,NA,NA,NA,NA,NA,1
+2018,Latvia,LVA,1,NA,1,NA,NA,NA,NA
+2018,Lithuania,LTU,2,NA,NA,NA,1,NA,1
+2018,Mexico,MEX,3,2,NA,1,NA,NA,NA
+2018,Netherlands (the),NLD,2,1,NA,NA,NA,NA,1
+2018,New Zealand,NZL,1,NA,NA,1,NA,NA,NA
+2018,Poland,POL,2,NA,NA,NA,1,NA,1
+2018,Portugal,PRT,3,1,1,NA,NA,NA,1
+2018,Spain,ESP,4,1,1,1,NA,NA,1
+2018,Sweden,SWE,1,NA,1,NA,NA,NA,NA
+2018,Switzerland,CHE,1,1,NA,NA,NA,NA,NA
+2018,Turkey,TUR,1,NA,NA,NA,NA,1,NA
+2018,United Kingdom of Great Britain and Northern Ireland (the),GBR,2,1,NA,NA,NA,NA,1
+2018,United States of America (the),USA,17,9,3,3,1,1,NA

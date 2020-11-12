@@ -17,7 +17,10 @@ distinctcountrycode <- unique(countrymort_data$COU)
 reducedclimatedisaster_data <- climatedisaster_data %>% 
   select(c(1:4, 9)) %>%
   filter(c(countrycode %in% distinctcountrycode)
-         , year %in% c(1980:2018))
+         , year %in% c(1980:2018)) %>%
+  pivot_wider(id_cols = c(year, country, countrycode)
+              , names_from = disaster_type
+              , values_from = occurrence)
 
 write_csv(reducedclimatedisaster_data, paste0(my_path,"/data/wrangled_climateq3.csv"))
           

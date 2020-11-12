@@ -11,6 +11,7 @@ library(lubridate)
 path_in <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/data"
 
 infmatmortdata <- read_csv(paste0(path_in,"/wrangled_infmatmortline.csv"))
+natdisastdata <- read_csv(paste0(path_in,"/wrangled_climateq3.csv"))
 
 country_choices <- (infmatmortdata %>%
                       count(Country))$Country
@@ -51,6 +52,7 @@ ui <- fluidPage(
     mainPanel(
       
       plotOutput(outputId = "bar1")
+      , plotOutput(OutputId = "bar2")
       
     )
   )
@@ -64,7 +66,7 @@ server <- function(input,output){
     data1 <- filter(infmatmortdata, Country %in% input$Countries)
   })
   
-#maybe add line sayin
+
   output$bar1 <- renderPlot({
     ggplot(data = use_data1_q3(), aes_string(x = "Year", y = input$y)) +
       geom_bar(position = "dodge", stat = "identity", aes_string(fill = "Country")) +
@@ -73,6 +75,16 @@ server <- function(input,output){
       theme(legend.position="bottom", plot.title = element_text(hjust = 0.5)) + 
       facet_wrap(~ Country, ncol = 1)
 
+  })
+  
+  output$bar2 <- renderPlot({
+    ggplot(data = use_data1_q3(), aes_string(x = "Year", y = input$y)) +
+      geom_bar(position = "dodge", stat = "identity", aes_string(fill = "Country")) +
+      labs(x = "Year", y = "Net Change in Mortality Per Month"
+           , title = "Infant and Maternal Mortality Worldwide from 1980-2018") +
+      theme(legend.position="bottom", plot.title = element_text(hjust = 0.5)) + 
+      facet_wrap(~ Country, ncol = 1)
+    
   })
   
 }

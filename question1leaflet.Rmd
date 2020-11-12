@@ -25,8 +25,6 @@ path_PM25_guide <- 'https://apps.who.int/iris/bitstream/handle/10665/69477/WHO_S
 #PM25_guide <- ext_PM25_guide[[1]]
 data_healthimp <- read_csv(paste0(path_bella,"/wrangled_HEimpacts.csv"))
 data_air <- read_csv(paste0(path_bella, "/wrangled_PM25popexp.csv"))
-data_HDI <- read_csv(paste0(path_bella,
-                             "/HDI.csv"))
 
 #more wrangling smH
 ##renaming column variable name to convert to string
@@ -112,29 +110,10 @@ data_DALY[103, 2] <- "Laos"
 data_DALY[104, 2] <- "Macedonia"
 data_DALY[170, 2] <- "Syria"
 
-#HDI wrangling
 
-for (i in 1:nrow(data_HDI)){
-  if(data_HDI$Y1990[i] == "..")
-    data_HDI$Y1990[i] <- 0
-}
-
-count
-data_HDI$status1990 <- "developed"
-data_HDI$status2017 <- "developed"
-for(i in 1:nrow(data_HDI)){
-  if(data_HDI$Y1990[i] < 0.8)
-    data_HDI$status1990[i] <- "developing"
-  if(data_HDI$Y2017[i] < 0.8)
-    data_HDI$status2017[i] <- "developing"
-  if(data_HDI$Y1990[i] == 0)
-    data_HDI$status1990[i] <- "no data"
-  if(data_HDI$Y2017[i] == 0)
-    data_HDI$status2017[i] <- "no data"
-}
 ```
 
-```{r, message = FALSE, include = FALSE}
+```{r, message = FALSE, include = FALSE, warning = FALSE}
 #leaflet for PM2.5
 #world_leaflet$names
 world_leaflet <- map("world", unique(data_air$Country), fill = TRUE, plot = FALSE)
@@ -226,7 +205,7 @@ PM25_2017_leaflet
 ```
 
 
-```{r, include = FALSE}
+```{r, include = FALSE, warning = FALSE}
 #leaflet for pdeaths
 world_leaflet_DALY <- map("world", unique(data_DALY$country), 
                             fill = TRUE, plot = FALSE)
@@ -348,7 +327,7 @@ DALY_change_leaflet
 ```
 
 
-```{r, message = FALSE, }
+```{r, message = FALSE, include = FALSE, warning = FALSE}
 tempdata <- data_healthimp_wide[, c(1, 2, 3, 4, 5)]
 tempdata <- tempdata%>%
   pivot_wider(values_from = `ambientpm2.5.dalyper1k`,
@@ -376,20 +355,45 @@ data_PM25_wide <- data_PM25%>%
               names_from = Variable,
               names_glue = "{Variable}")
 tempdata2 <- left_join(tempdata, data_PM25_wide, by = c("country", "year"), copy = TRUE)%>%
-  select(-c(COU, cou))
+  select(-c(COU, cou))%>%
+  rename(PM25exposure = `Mean population exposure to PM2.5`)
 
 tempdata3 <- tempdata2[, -c(5, 6, 7, 8)]
 
+#tempdata3 <- tempdata3%>%
+#  pivot_longer(-c(year, country),
+#               names_to = "measure_type", values_to = "value")
 tempdata3 <- tempdata3%>%
-  pivot_longer(-c(year, country),
-               names_to = "measure_type", values_to = "value")
+  filter(is.na(DALY) == FALSE)%>%
+  filter(is.na(PM25exposure) == FALSE)
 
-ggplot(data = tempdata3, mapping = aes(x = year, y = value, color = as.factor(measure_type))) +
-    geom_point() +
+
+countrylist_index <- floor(runif(10, min = 0, max = nrow(tempdata3)))
+countrylist <- rep(c("country"), 10)
+
+for (i in 1:length(countrylist_index)){
+  countrylist[i] <- tempdata3$country[countrylist_index[i]]
+}
+
+tempdata3 <- subset(tempdata3, country %in% countrylist)
+
+tempdata3 <- tempdata3%>%
+  filter(tempdata3$country == countrylist)
+
+ggplot(data = tempdata3, mapping = aes(x = year, y = DALY, color = country)) +
+    geom_line() +
     labs(
       title = "TITLE",
       subtitle = "1990 to 2017",
-      y = "Value",
+      y = "DALY",
+      x = "Year")
+
+ggplot(data = tempdata3, mapping = aes(x = year, y = PM25exposure, color = country)) +
+    geom_line() +
+    labs(
+      title = "TITLE",
+      subtitle = "1990 to 2017",
+      y = "DALY",
       x = "Year")
 ```
 

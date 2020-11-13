@@ -18,7 +18,8 @@ library(plotly)
 
 ```{r, message = FALSE, warning = FALSE, include = FALSE}
 #use an appropriate path
-path_bella <- "C:/Users/Bella/Desktop/git/Blog-HealthAndJusticeLeague/data"
+path_bella <- "data"
+#path_bella <- "C:/Users/Bella/Desktop/git/Blog-HealthAndJusticeLeague/data"
 path_PM25_guide <- 'https://apps.who.int/iris/bitstream/handle/10665/69477/WHO_SDE_PHE_OEH_06.02_eng.pdf;jsessionid=5F6D84FB5F54C304E800DCDDBC13E116?sequence=1'
 
 #loading data
@@ -220,8 +221,8 @@ world_leaflet_DALY$change <- data_DALY$change[match(world_leaflet_DALY$country, 
 
 bins3 <- c(-900, -15, -10, -5, 0, 5, 900)
 bins4 <- c(0, 5, 10, 15, 20, Inf)
-pal1990_3 <- colorBin("YlGnBu", domain = world_leaflet$Y1990, bins = bins4)
-pal2017_3 <- colorBin("YlGnBu", domain = world_leaflet$Y2017, bins = bins4)
+pal1990_3 <- colorBin("YlGnBu", domain = world_leaflet_DALY$Y1990, bins = bins4)
+pal2017_3 <- colorBin("YlGnBu", domain = world_leaflet_DALY$Y2017, bins = bins4)
 palchange3 <- colorNumeric("YlGnBu", domain = world_leaflet_DALY$change)
 
 #for 1990
@@ -311,11 +312,11 @@ DALY_change_leaflet <- leaflet(data = world_leaflet_DALY)%>%
               popup = paste0("Country: ", world_leaflet_DALY$country, "<br>",
                              "DALY Score: ",
                              round(world_leaflet_DALY$change, 3), 
-                             " per 1K <br>"))
-  # addLegend(pal = palchange3, values = ~change, 
-  #           opacity = 0.7, 
-  #           title = "Change in DALY scores",
-  #           position = "bottomright")
+                             " per 1K <br>")) %>%
+   addLegend(pal = palchange3, values = ~change, 
+            opacity = 0.7, 
+             title = "Change in DALY scores",
+             position = "bottomright")
 
 
 ```

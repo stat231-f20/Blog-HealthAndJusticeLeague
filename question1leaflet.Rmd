@@ -290,7 +290,7 @@ DALY_2017_leaflet <- leaflet(data = world_leaflet_DALY)%>%
 DALY_change_leaflet <- leaflet(data = world_leaflet_DALY)%>%
   addTiles()%>%
   setView(0, 0, zoom = 1.5)%>%
-  addPolygons(fillColor = ~pal2017_3(change),
+  addPolygons(fillColor = ~palchange3(change),
               weight = 1,
               opacity = 1,
               color = "white",

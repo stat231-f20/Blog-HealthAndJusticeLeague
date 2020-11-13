@@ -70,8 +70,7 @@ text <- sprintf("<strong>%s</strong>%s<br/><br/>%s<br/>%s<br/>%s<br/>%s<br/>%s<b
 # for checkboxGroupInput choices
 relevant <- unique(natdis$disaster_type)
 
-ui <- fluidPage(theme = shinytheme("cerulean"), #theme = "bootstrap.min.css", 
-  #tags$style("#state_select {border-color: #52B097;}"),
+ui <- fluidPage(theme = shinytheme("cerulean"), 
   titlePanel("Impacts of Natural Disasters"),
   # Instead of sidebar, change the layout?
   fluidRow(

@@ -18,8 +18,8 @@ natdisastdata <- read_csv(paste0(path_in,"/wrangled_climateq3.csv")) %>%
 
 country_choices <- (infmatmortdata %>%
                       count(isocode))$isocode
-country_choice_names <- unique(infmatmortdata$isocode)
-names(country_choices) <- country_choice_names
+# country_choice_names <- unique(infmatmortdata$isocode)
+# names(country_choices) <- country_choice_names
 
 mort_choices_values = names(infmatmortdata)[4:5]
 mort_choices_names <- c("Net Change in Infant Mortality", "Net Change in Maternal Mortality")

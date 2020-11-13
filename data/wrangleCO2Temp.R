@@ -28,7 +28,17 @@ temp1980 <- gtemp %>%
   filter(Year >= 1980) %>%
   select(c((1:13)))
 
-temp1980
+temp_fin <- temp1980 %>%
+  mutate_if(is.character, funs(as.numeric(.)))
+
+temp_finlong <- temp_fin %>%
+  pivot_longer(cols = c(2:13),
+               names_to = "Month",
+               values_to = "temp") %>%
+  janitor::clean_names() %>%
+  mutate(per = paste0(year, month)) %>%
+  mutate(period = lubridate::ymd(per, truncated = 2)) %>%
+  select(period, temp)
 
 co2 <- read_csv(paste0(my_path, "/data/fossil-fuel-co2-emissions-by-nation.csv"))
 
@@ -49,7 +59,8 @@ co2_fin <- co2_1980 %>%
                                destination = "iso3c"))
 
 write_csv(co2_fin, paste0(my_path, "/data/co2_bycountry.csv"))
-write_csv(temp1980, paste0(my_path, "/data/globaltemperature.csv"))
+write_csv(temp_fin, paste0(my_path, "/data/globaltemperature.csv"))
+write_csv(temp_finlong, paste0(my_path, "/data/globaltemperature_long.csv"))
 
 
 

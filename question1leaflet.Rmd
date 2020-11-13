@@ -218,11 +218,11 @@ world_leaflet_DALY$Y2017 <- data_DALY$Y2017[match(world_leaflet_DALY$country, da
 world_leaflet_DALY$change <- data_DALY$change[match(world_leaflet_DALY$country, data_DALY$country)]
 
 
-bins3 <- c(-Inf, -15, -10, -5, 0, 5, Inf)
+bins3 <- c(-900, -15, -10, -5, 0, 5, 900)
 bins4 <- c(0, 5, 10, 15, 20, Inf)
 pal1990_3 <- colorBin("YlGnBu", domain = world_leaflet$Y1990, bins = bins4)
 pal2017_3 <- colorBin("YlGnBu", domain = world_leaflet$Y2017, bins = bins4)
-palchange3 <- colorBin("YlGnBu", domain = world_leaflet$change, bins = bins3)
+palchange3 <- colorNumeric("YlGnBu", domain = world_leaflet_DALY$change)
 
 #for 1990
 DALY_1990_leaflet <- leaflet(data = world_leaflet_DALY)%>%
@@ -311,11 +311,11 @@ DALY_change_leaflet <- leaflet(data = world_leaflet_DALY)%>%
               popup = paste0("Country: ", world_leaflet_DALY$country, "<br>",
                              "DALY Score: ",
                              round(world_leaflet_DALY$change, 3), 
-                             " per 1K <br>"))%>%
-  addLegend(pal = palchange3, values = ~change, 
-            opacity = 0.7, 
-            title = "Change in DALY scores",
-            position = "bottomright")
+                             " per 1K <br>"))
+  # addLegend(pal = palchange3, values = ~change, 
+  #           opacity = 0.7, 
+  #           title = "Change in DALY scores",
+  #           position = "bottomright")
 
 
 ```

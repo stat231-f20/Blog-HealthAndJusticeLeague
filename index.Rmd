@@ -11,11 +11,26 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, fig.align="center")
 library(tidyverse)
+library(leaflet)
+library(maps)
+library(readr)
+library(dplyr)
+library(janitor)
+library(countrycode)
+
 ```
 
 # Ripple Effects of Climate Change
 
-## Header 2
+## Header 2: some background and context 
+
+## Research Questions
+
+The questions we plan to investigate are the following:
+
+1. Bella's question
+2. Mythili's question
+3. Lillian's question
 
 ### Header 3
 
@@ -70,8 +85,6 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 You can include [Links](https://www.datadreaming.org/post/r-markdown-theme-gallery/) and images ![team logo](https://raw.githubusercontent.com/stat231-f20/Blog-HealthAndJusticeLeague/main/images/ph_sj1-7.png)
 
 
-# You can even create tabs if you want! {.tabset .tabset-fade .tabset-pills}
-
 ## Bulleted list
 
 You can make a bulleted list like this:
@@ -88,4 +101,16 @@ You can make a numbered list like this
 1. First thing I want to say
 2. Second thing I want to say
 3. Third thing I want to say
+
+
+# Tab 1: Bella's part
+
+
+
+# Tab 2: Mythili's part
+
+# Tab 3: Lillian's part
+
+Here, I am investigating how the impacts of natural disasters have changed over time since 1980 until 2020. Specifically, how has the frequency of natural disasters changed? How has the number of people killed, injured, affected, and displaced due to these disasters changed?  
+To investigate this problem, take a look at the shiny app below.
 

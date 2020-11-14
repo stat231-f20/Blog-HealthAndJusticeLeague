@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = TRUE, fig.align="center")
 library(tidyverse)
 library(leaflet)
 library(maps)
+library(mdsr)
 library(readr)
 library(dplyr)
 library(janitor)
@@ -24,6 +25,7 @@ library(gganimate)
 library(gifski)
 library(shiny)
 library(shinythemes)
+
 ```
 
 # Ripple Effects of Climate Change
@@ -478,7 +480,9 @@ gexposure
 
 # Tab 2: Mythili's part
 
-```{r, warning = FALSE}
+```{r, warning = FALSE, echo = FALSE}
+
+## 1980s Cluster
 
 path_mythili <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/data"
 
@@ -486,13 +490,25 @@ path_mythili <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJus
 data_cluster1980s <- read_csv(paste0(path_mythili,"/wrangled_infmatmortcluster1980s.csv")) %>%
   mutate_at(c("avginfmort", "avmatmort"), funs(`std`=scale(.) %>% as.vector()))
 
+fig <- matrix(NA, nrow=10, ncol=2)
+
+set.seed(75)
+for (i in 1:10){
+  fig[i,1] <- i
+  fig[i,2] <- kmeans(data_cluster1980s[,6:7]
+                    , centers=i
+                    , nstart=20)$tot.withinss
+}
+
+ggplot(data = as.data.frame(fig[2:10,]), aes(x = V1, y = V2)) +
+  geom_point() + 
+  geom_line() +
+  scale_x_continuous(breaks=c(1:10)) +
+  labs(x = "K", y = expression("Total W"[k]))
+
 #making cluster reproducible, setting number of clusters
 set.seed(23)
-km_out <- kmeans(data_cluster1980s[,c("avginfmort_std", "avmatmort_std")], centers=4, nstart=20)
-
-```
-
-```{r, warning = FALSE, echo = FALSE}
+km_out <- kmeans(data_cluster1980s[,c("avginfmort_std", "avmatmort_std")], centers = 3, nstart=20)
 
 #vector of cluster assignments
 km_out$cluster
@@ -501,22 +517,70 @@ km_out$cluster
 cluster1980s <- data_cluster1980s %>%
   mutate(clust = as.character(km_out$cluster))
 
-```
-
-```{r, warning = FALSE}
-
 # visualize the cluster assignments and centroids
 ggplot(data = cluster1980s, aes(x = avginfmort_std, y = avmatmort_std)) + 
   geom_point(aes(color = clust)) +
-  #geom_text_repel(aes(label= `Country`, color = clust), size = 3) +
   coord_fixed() +
   geom_point(data = as.data.frame(km_out$centers)
              , aes(x = avginfmort_std, y = avmatmort_std)
              , pch = "X"
              , size = 4) +
-  labs(x = "Average Infant Mortality in 1980s"
-       , y = "Average Maternal Mortality in 1980s" 
+  labs(x = "Standardized Average Infant Mortality in 1980s"
+       , y = "Standardized Average Maternal Mortality in 1980s" 
        , color = "Cluster Assignment")
+
+```
+
+```{r, warning = FALSE, echo = FALSE}
+
+## 2010s Cluster
+
+#loading data
+data_cluster2010s <- read_csv(paste0(path_mythili, "/wrangled_infmatmortcluster2010s.csv")) %>%
+  mutate_at(c("avginfmort", "avmatmort"), funs(`std`=scale(.) %>% as.vector()))
+
+fig <- matrix(NA, nrow=10, ncol=2)
+
+set.seed(75)
+for (i in 1:10){
+  fig[i,1] <- i
+  fig[i,2] <- kmeans(data_cluster1980s[,6:7]
+                    , centers=i
+                    , nstart=20)$tot.withinss
+}
+
+ggplot(data = as.data.frame(fig[2:10,]), aes(x = V1, y = V2)) +
+  geom_point() + 
+  geom_line() +
+  scale_x_continuous(breaks=c(1:10)) +
+  labs(x = "K", y = expression("Total W"[k]))
+
+#making cluster reproducible, setting number of clusters
+set.seed(23)
+km_out <- kmeans(data_cluster2010s[,c("avginfmort_std", "avmatmort_std")], centers = 3, nstart=20)
+
+#vector of cluster assignments
+km_out$cluster
+
+# add cluster assignment to the data frame
+cluster2010s <- data_cluster2010s %>%
+  mutate(clust2 = as.character(km_out$cluster))
+
+# visualize the cluster assignments and centroids
+ggplot(data = cluster2010s, aes(x = avginfmort_std, y = avmatmort_std)) + 
+  geom_point(aes(color = clust2)) +
+  coord_fixed() +
+  geom_point(data = as.data.frame(km_out$centers)
+             , aes(x = avginfmort_std, y = avmatmort_std)
+             , pch = "X"
+             , size = 4) +
+  labs(x = "Standardized Average Infant Mortality in 2010s"
+       , y = "Standardized Average Maternal Mortality in 2010s" 
+       , color = "Cluster Assignment")
+
+```
+
+```{r, warning = FALSE}
 
 ```
 

@@ -7,21 +7,25 @@ library(shiny)
 library(tidyverse)
 library(janitor)
 library(lubridate)
+library(shinyWidgets)
 
 path_in <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/data"
 
-infmatmortdata <- read_csv(paste0(path_in,"/wrangled_finalinfmatmortline.csv")) %>%
+infmatmortdata <- read_csv(paste0(path_in,"/wrangled_finalinfmatmortline.csv"))
+
+
+infmatmortdata2 <- infmatmortdata %>%
   filter(Year %in% c(2010:2018))
 
 natdisastdata <- read_csv(paste0(path_in,"/wrangled_climateq3.csv")) %>%
   rename("Extreme_temperature" = "Extreme temperature")
 
-country_choices <- (infmatmortdata %>%
+country_choices <- (infmatmortdata2 %>%
                       count(isocode))$isocode
 # country_choice_names <- unique(infmatmortdata$isocode)
 # names(country_choices) <- country_choice_names
 
-mort_choices_values = names(infmatmortdata)[4:5]
+mort_choices_values = names(infmatmortdata2)[4:5]
 mort_choices_names <- c("Net Change in Infant Mortality", "Net Change in Maternal Mortality")
 names(mort_choices_values) <- mort_choices_names
 
@@ -31,49 +35,74 @@ disastfreq_choices_names <- c("All Disasters", "Storms", "Wildfires"
                               , "Extreme Temperature Events")
 names(disastfreq_choices_values) <- disastfreq_choices_names
 
+# # HTML Text: background info to display on the side
+# text <- sprintf("<strong>%s</strong>%s<br/><br/>%s<br/>%s<br/>%s<br/>%s<br/>%s<br/><br/>",
+#                 "Source: EM-DAT",
+#                 a(href="https://www.emdat.be/", " (The International Disaster Database)"),
+#                 "This app only shows the natural disasters that fulfill the following criteria:",
+#                 "a) 10 or more reported killed; or",
+#                 "b) 100 or more reported affected; or",
+#                 "c) A state of emergency declared; or",
+#                 "d) International assistance requested")%>% 
+#   lapply(htmltools::HTML)
+
 # ui 
 ui <- fluidPage(
   
   h1("Climate Disaster Effects on Infant and Maternal Mortality"),
   
-  sidebarLayout(
+  tabsetPanel(
     
-    sidebarPanel(
-      
-      h4("Explore different variables to view how the frequency of 
+    tabPanel("Covid Cases by State and Race", 
+             sidebarLayout(
+               sidebarPanel(
+                 
+                 h4("Explore different variables to view how the frequency of 
          climate disasters and infant/maternal mortality are related!"),
-      
-      selectizeInput(inputId = "Countries"
-                     , label = "Choose two countries to display data for: "
-                     , choices = country_choices
-                     , selected = NULL
-                     , multiple = TRUE
-                     , options = list(maxItems = 2)
-
-      ),
-      
-      selectInput(inputId = "mort"
-                  , label = "Choose a predictor variable of interest:"
-                  , choices = mort_choices_values
-                  , selected = "NetChange_Infant"
-      ),
-      
-      selectInput(inputId = "disastfreq"
-                  , label = "Choose a predictor variable of interest:"
-                  , choices = disastfreq_choices_values
-                  , selected = "All")
-      
-    ),
+                 
+                 selectizeInput(inputId = "Countries"
+                                , label = "Choose two countries to display data for: "
+                                , choices = country_choices
+                                , selected = c("MEX", "CAN")
+                                , multiple = TRUE
+                                , options = list(maxItems = 2)
+                                
+                 ),
+                 
+                 selectInput(inputId = "mort"
+                             , label = "Choose a predictor variable of interest:"
+                             , choices = mort_choices_values
+                             , selected = "NetChange_Infant"
+                 ),
+                 
+                 selectInput(inputId = "disastfreq"
+                             , label = "Choose a predictor variable of interest:"
+                             , choices = disastfreq_choices_values
+                             , selected = "All")
+                 
+               ),
+               
+               mainPanel(
+                 
+                 plotOutput(outputId = "bar1")
+                 , plotOutput(outputId = "bar2")
+                 
+               )
+             )
+    ), 
     
-    
-    
-    mainPanel(
-      
-      plotOutput(outputId = "bar1")
-      , plotOutput(outputId = "bar2")
-      
+    tabPanel("Country Reference Codes",
+             
+             mainPanel(
+               fluidRow(
+                 column(width = 12, offset = 1, style = "padding: 10px",
+                        dataTableOutput(output = "countryrefs"))
+                 
+               )
+             )
     )
   )
+           
 )
 
 
@@ -81,7 +110,7 @@ ui <- fluidPage(
 server <- function(input,output){
   
   use_data1_q3 <- reactive({
-    data1 <- filter(infmatmortdata, isocode %in% input$Countries)
+    data1 <- filter(infmatmortdata2, isocode %in% input$Countries)
   })
   
   use_data2_q3 <- reactive({
@@ -108,6 +137,8 @@ server <- function(input,output){
       facet_wrap(~ isocode, ncol = 1)
     
   })
+  
+  output$countryrefs <- renderDataTable(unique(infmatmortdata[, c(6, 2)]))
   
 }
 

@@ -1,7 +1,7 @@
 ---
 title: "Testing AGAIN"
-author: "Your Names Here"
-date: "Add a date"
+author: "Bella Han, Lillian Kim, Mythili Subbanna"
+date: "November 15, 2020"
 output:
   rmdformats::readthedown:
     thumbnails: false
@@ -22,11 +22,83 @@ library(plotly)
 library(ggplot2)
 library(gganimate)
 library(gifski)
+library(shiny)
+library(shinythemes)
 ```
 
 # Ripple Effects of Climate Change
 
-## Header 2: some background and context 
+## Beyond Global Warming
+
+A plot showing global temp increase over time (1880-2020). Add some ~explanation~ and use it as a hook.
+
+```{r, echo = FALSE}
+
+path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
+
+gtemp <- read_csv(paste0(my_path, "/globaltemperature_all.csv")) %>%
+  mutate(year = as.numeric(substr(period, 1,4)))
+
+
+h <- ggplot(data = gtemp,
+            aes(x = as.POSIXct(period, origin = "1970-01-01"), y = temp)) +
+  geom_line(size = 0.2) +
+  geom_hline(aes(yintercept = 0), color = "red", size = 0.2) +
+  geom_smooth(alpha = 0.5, size = 1, linetype = 2) +
+  theme(text = element_text(size = 15)) +
+  labs(title = "Compared to 20th century average temperature") +
+  scale_x_datetime(name = "Time") +
+  scale_y_continuous(name = "Global temperature (celsius)")
+
+shinyApp(
+
+  ui = fluidPage(theme = shinytheme("cerulean"), 
+                titlePanel("Change in Global Temperature"),
+                fluidRow(
+                  column(offset = 1, width = 11,
+                         sliderInput(inputId = "tempYear",
+                                     label = "Select the year",
+                                     min = 1880,
+                                     max = 2020,
+                                     value = 2000,
+                                     sep = "",
+                                     ticks = TRUE,
+                                     width = "90%"))
+                ),
+                fluidRow(
+                  column(offset = 1, width = 11,
+                         plotOutput("tempPlot", width = "90%")))
+                ),
+
+ server = function(input, output) {
+    gtemp_react <- reactive({
+    
+    sample <- gtemp %>%
+      filter(year == input$tempYear) %>%
+      arrange(period)
+    
+    ## to highlight region data
+    data.frame(start=sample[1,1],
+               end=sample[nrow(sample), 1])
+    
+  })
+  
+  output$tempPlot <- renderPlot({
+    
+    h +
+      geom_rect(inherit.aes = FALSE,
+                aes(xmin=as.POSIXct(gtemp_react()[1,1]), 
+                    xmax=as.POSIXct(gtemp_react()[1,2]), 
+                    ymin=-1.0, ymax=1.5), 
+                fill="yellow", alpha=0.01)
+    
+  })
+  },
+
+  options = list(height = 500)
+)
+
+```
 
 ## Research Questions
 
@@ -411,7 +483,7 @@ gexposure
 path_mythili <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/data"
 
 #loading data
-data_cluster1980s <- read_csv(paste0(path_bella,"/wrangled_infmatmortcluster1980s.csv")) %>%
+data_cluster1980s <- read_csv(paste0(path_mythili,"/wrangled_infmatmortcluster1980s.csv")) %>%
   mutate_at(c("avginfmort", "avmatmort"), funs(`std`=scale(.) %>% as.vector()))
 
 #making cluster reproducible, setting number of clusters
@@ -451,5 +523,169 @@ ggplot(data = cluster1980s, aes(x = avginfmort_std, y = avmatmort_std)) +
 # Tab 3: Lillian's part
 
 Here, I am investigating how the impacts of natural disasters have changed over time since 1980 until 2020. Specifically, how has the frequency of natural disasters changed? How has the number of people killed, injured, affected, and displaced due to these disasters changed?  
-To investigate this problem, take a look at the shiny app below.
+To investigate this problem, we obtained a dataset that recorded "impactful" natural disasters for the past 40 years. By "impactful" we mean that these disasters killed, injured, displaced, or affected humans in various ways. Take a look at the shiny app below.
+
+```{r, message = FALSE, warning = FALSE, include = FALSE, echo = FALSE}
+# calling in the datasets
+path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
+# natural disaster dataset
+natdis <- read_csv(paste0(path_lillian, "/wrangled_natdisasters_byyear.csv")) %>%
+  filter(disaster_type != "All")
+#explicitly call maps:: because map() is masked by purrr packagef
+natdis_leaflet <- maps::map("world", fill = TRUE, plot = FALSE, wrap=c(-180,180)) 
+# This is the dataset containing 
+# the official country code, official country name, 
+# and country name used in maps package
+data(iso3166)
+
+# a3 is iso3c country code
+list_countries <- iso3166 %>%
+  select(a3, ISOname, mapname)
+
+# HTML Text: background info to display on the side
+text <- sprintf("<strong>%s</strong>%s<br/><br/>%s<br/>%s<br/>%s<br/>%s<br/>%s<br/><br/>",
+                "Source: EM-DAT",
+                a(href="https://www.emdat.be/", " (The International Disaster Database)"),
+                "This app only shows the natural disasters that fulfill the following criteria:",
+                "a) 10 or more reported killed; or",
+                "b) 100 or more reported affected; or",
+                "c) A state of emergency declared; or",
+                "d) International assistance requested")%>% 
+  lapply(htmltools::HTML)
+
+# for checkboxGroupInput choices
+relevant <- unique(natdis$disaster_type)
+```
+
+
+```{r, echo=FALSE}
+shinyApp(
+
+  ui = fluidPage(theme = shinytheme("cerulean"), 
+  titlePanel("Impacts of Natural Disasters"),
+  # Instead of sidebar, change the layout?
+  fluidRow(
+    column(width = 6, style = "padding: 20px",
+      # disaster type
+      checkboxGroupInput(inputId = "disaster",
+                         label = "Select disaster(s)",
+                         choices = relevant,
+                         selected = relevant,
+                         inline = TRUE)),
+    column(width = 6,
+      # year
+      sliderInput(inputId = "year",
+                  label = "Select the year",
+                  min = 1980,
+                  max = 2020,
+                  value = 2000,
+                  sep = "",
+                  ticks = TRUE,
+                  width = "90%"))),
+    fluidRow(
+      column(width = 5,
+            text
+            ),
+      column(width = 7,
+           leafletOutput("natdisplot"))
+  )
+),
+
+  server = function(input, output) {
+    # natural disasters of a given type in a given year
+  natdis_react <- reactive({
+    natdis %>%
+      filter(disaster_type %in% input$disaster) %>%
+      filter(year == input$year) %>%
+      # Below operation is because the country names used in maps package and 
+      # the country names in natdis data differ
+      right_join(list_countries, by = c("countrycode" = "a3"))
+    
+  })
+  
+  
+  a <- reactive({
+    # country name
+    natdis_leaflet$country <- str_extract(natdis_leaflet$names, "[^:]+")
+    
+    # how many disasters occurred in a given year?
+    # Use mapname to fill in the corresponding values in the freq vector
+    natdis_leaflet$freq <- natdis_react()$occurrence[match(natdis_leaflet$country,
+                                                           natdis_react()$mapname)]
+    
+    natdis_leaflet$deaths <- natdis_react()$deaths[match(natdis_leaflet$country,
+                                                         natdis_react()$mapname)]
+    
+    
+    natdis_leaflet$injured <- natdis_react()$injured[match(natdis_leaflet$country,
+                                                           natdis_react()$mapname)]
+    
+    
+    natdis_leaflet$homeless <- natdis_react()$homeless[match(natdis_leaflet$country,
+                                                             natdis_react()$mapname)]
+    
+    
+    natdis_leaflet$affected <- natdis_react()$affected[match(natdis_leaflet$country,
+                                                             natdis_react()$mapname)]
+    
+    # deaths + injured + homeless + affected
+    natdis_leaflet$total <- natdis_react()$total[match(natdis_leaflet$country,
+                                                       natdis_react()$mapname)]
+    
+    natdis_leaflet
+  })
+  
+  bins <- c(0, 1000, 5000, 10000, 50000, 100000, 500000, 1000000, 5000000, Inf)
+  pal_natdis <- reactive({
+    colorBin("YlOrRd", domain = a()$total, bins = bins)
+  })
+  
+  
+  
+  output$natdisplot <- renderLeaflet({
+    # Use leaflet() here, and only include aspects of the map that
+    # won't need to change dynamically (at least, not unless the
+    # entire map is being torn down and recreated).
+    leaflet(data = a()) %>%
+      addTiles() %>%
+      setView(80, 0, zoom = 1)
+      
+  })
+  
+  # separating it into observe section reduces the delay/lag 
+  # when variable selection changes because the background map is not being
+  # drawn all over again!
+  observe({
+    
+    leafletProxy("natdisplot", data = a()) %>%
+      # reference: https://stackoverflow.com/questions/48953149/dynamic-color-fill-for-polygon-using-leaflet-in-shiny-not-working
+      addPolygons(fillColor = ~pal_natdis()(total),
+                  weight = 2,
+                  opacity = 1,
+                  color = "white",
+                  dashArray = "3",
+                  fillOpacity = 0.5,
+                  popup = paste0("region: ", a()$country, "<br>",
+                                 "occurred: ", a()$freq, " time(s)", "<br>",
+                                 "deaths: ", a()$deaths, "<br>", 
+                                 "injured: ", a()$injured, "<br>",
+                                 "affected: ", a()$affected, "<br>",
+                                 "homeless: ", a()$homeless, "<br>"),
+                  highlight = highlightOptions(
+                    weight = 5,
+                    color = "#666",
+                    dashArray = "",
+                    fillOpacity = 0.7,
+                    bringToFront = TRUE)) %>%
+    addLegend(pal = pal_natdis(), values = ~total, opacity = 0.7, title = NULL,
+              position = "bottomright")
+    
+    
+  })
+  },
+
+  options = list(height = 500)
+)
+```
+
 

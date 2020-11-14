@@ -14,105 +14,22 @@ library(tabulizer)
 library(maps)
 library(leaflet)
 library(plotly)
+library(ggplot2)
+library(gganimate)
+library(gifski)
 ```
 
 ```{r, message = FALSE, warning = FALSE, include = FALSE}
 #use an appropriate path
-path_bella <- "data"
-#path_bella <- "C:/Users/Bella/Desktop/git/Blog-HealthAndJusticeLeague/data"
+path_bella <- "C:/Users/Bella/Desktop/git/Blog-HealthAndJusticeLeague/data"
 path_PM25_guide <- 'https://apps.who.int/iris/bitstream/handle/10665/69477/WHO_SDE_PHE_OEH_06.02_eng.pdf;jsessionid=5F6D84FB5F54C304E800DCDDBC13E116?sequence=1'
 
 #loading data
 #ext_PM25_guide <- extract_tables(path_PM25_guide, output = "data.frame", row.names = NULL)
 #PM25_guide <- ext_PM25_guide[[1]]
-data_healthimp <- read_csv(paste0(path_bella,"/wrangled_HEimpacts.csv"))
-data_air <- read_csv(paste0(path_bella, "/wrangled_PM25popexp.csv"))
-
-#more wrangling smH
-##renaming column variable name to convert to string
-data_air <- data_air%>%
-  rename(Y1990 = "1990",
-         Y2005 = "2005",
-         Y2017 = "2017")
-
-##need to match the country name
-data_air[16, 2] <- "South Korea"
-data_air[24, 2] <- "Slovakia"
-data_air[28, 2] <- "UK"
-data_air[29, 2] <- "USA"
-data_air[61, 2] <- "China"
-data_air[64, 2] <- "Republic of Congo"
-data_air[66, 2] <- "Ivory Coast"
-data_air[69, 2] <- "North Korea"
-data_air[103, 2] <- "Laos"
-data_air[111, 2] <- "Macedonia"
-data_air[162, 2] <- "Syria"
-
-##further wrangling the health impact data
-data_healthimp_wide <- data_healthimp%>%
-  pivot_wider(values_from = value,
-              names_from = c(risk, measure),
-              names_glue = "{risk}.{measure}")
-data_healthimp_wide <- data_healthimp_wide[(data_healthimp_wide$age == "all"), ]
-data_healthimp_wide <- data_healthimp_wide[, -5]
-
-###ambient PM2.5 pdeathsper1M only
-data_pdeaths_amb <- data_healthimp_wide[, c(1, 2, 3, 4, 6)]
-data_pdeaths_amb <- data_pdeaths_amb%>%
-  pivot_wider(values_from = `ambientpm2.5.pdeathsper1m`,
-              names_from = sex, 
-              names_glue = "{sex}")
-data_pdeaths_amb$pdeathsper1m <- data_pdeaths_amb$`F` + data_pdeaths_amb$M
-
-data_pdeaths_amb <- data_pdeaths_amb%>%
-  select(-c(`F`, M))%>%
-  pivot_wider(values_from = `pdeathsper1m`,
-              names_from = year,
-              names_glue = "Y{year}")
-
-###need to match the data AGAIN SMHHHHHHHHHHHHH
-data_pdeaths_amb[163, 2] <- "South Korea"
-data_pdeaths_amb[164, 2] <- "Slovakia"
-data_pdeaths_amb[181, 2] <- "UK"
-data_pdeaths_amb[195, 2] <- "USA"
-data_pdeaths_amb[41, 2] <- "China"
-data_pdeaths_amb[21, 2] <- "Republic of Congo"
-data_pdeaths_amb[45, 2] <- "Ivory Coast"
-data_pdeaths_amb[48, 2] <- "North Korea"
-data_pdeaths_amb[103, 2] <- "Laos"
-data_pdeaths_amb[104, 2] <- "Macedonia"
-data_pdeaths_amb[170, 2] <- "Syria"
-
-###DALY only
-data_DALY <- data_healthimp_wide[, c(1, 2, 3, 4, 5)]
-data_DALY <- data_DALY%>%
-  pivot_wider(values_from = `ambientpm2.5.dalyper1k`,
-              names_from = sex, 
-              names_glue = "{sex}")
-data_DALY$DALY <- data_DALY$`F` + data_DALY$M
-
-data_DALY <- data_DALY%>%
-  select(-c(`F`, M))%>%
-  pivot_wider(values_from = `DALY`,
-              names_from = year,
-              names_glue = "Y{year}")
-
-data_DALY$change <- data_DALY$Y2017 - data_DALY$Y1990
-
-###need to match the data AGAIN SMHHHHHHHHHHHHH
-data_DALY[163, 2] <- "South Korea"
-data_DALY[164, 2] <- "Slovakia"
-data_DALY[181, 2] <- "UK"
-data_DALY[195, 2] <- "USA"
-data_DALY[41, 2] <- "China"
-data_DALY[21, 2] <- "Republic of Congo"
-data_DALY[45, 2] <- "Ivory Coast"
-data_DALY[48, 2] <- "North Korea"
-data_DALY[103, 2] <- "Laos"
-data_DALY[104, 2] <- "Macedonia"
-data_DALY[170, 2] <- "Syria"
-
-
+data_air <- read_csv(paste0(path_bella, "/wrangled_air_final.csv."))
+data_DALY <- read_csv(paste0(path_bella, "/wrangled_DALY_final.csv."))
+data_joined <- read_csv(paste0(path_bella, "/joined_air_DALY_final.csv"))
 ```
 
 ```{r, message = FALSE, include = FALSE, warning = FALSE}
@@ -122,21 +39,14 @@ world_leaflet <- map("world", unique(data_air$Country), fill = TRUE, plot = FALS
 world_leaflet$country <- vapply(strsplit(world_leaflet$names, ":"), function(x) x[1],
                                 FUN.VALUE = "a")
 world_leaflet$Y1990 <- data_air$Y1990[match(world_leaflet$country, data_air$Country)]
-world_leaflet$Y2005 <- data_air$Y2005[match(world_leaflet$country, data_air$Country)]
 world_leaflet$Y2017 <- data_air$Y2017[match(world_leaflet$country, data_air$Country)]
-
-#index <- grep(":", world_leaflet$names)
-# for (i in 1:length(index)){
-#   for(j in 1:length(world_leaflet$names)){
-#     if (index[i]==j)
-#       world_leaflet$names[j] <- unlist(strsplit(world_leaflet$name[j], split=':', fixed=TRUE))[1]
-#   }
-# }
+world_leaflet$change <- data_air$change[match(world_leaflet$country, data_air$Country)]
 
 bins <- c(0, 10, 15, 25, 35, Inf)
+binschange <- c(-Inf, -5, 0, 5, Inf)
 pal1990 <- colorBin("YlOrRd", domain = world_leaflet$Y1990, bins = bins)
-pal2005 <- colorBin("YlOrRd", domain = world_leaflet$Y2005, bins = bins)
 pal2017 <- colorBin("YlOrRd", domain = world_leaflet$Y2017, bins = bins)
+palchange <- colorBin("PiYG", domain = world_leaflet$change, bins = binschange)
 
 #for 1990
 PM25_1990_leaflet <- leaflet(data = world_leaflet)%>%
@@ -197,13 +107,40 @@ PM25_2017_leaflet <- leaflet(data = world_leaflet)%>%
             title = "PM 2.5 Measure in 2017",
             position = "bottomright")
 
-
+PM25_change_leaflet <- leaflet(data = world_leaflet)%>%
+  addTiles()%>%
+  setView(0, 0, zoom = 1.5)%>%
+  addPolygons(fillColor = ~palchange(change),
+              weight = 1,
+              opacity = 1,
+              color = "white",
+              dashArray = "3",
+              fillOpacity = 0.7,
+              highlight = highlightOptions(weight = 2,
+                                           color = "#666",
+                                           dashArray = "",
+                                           fillOpacity = 0.7,
+                                            bringToFront = TRUE),
+              label = sprintf("<strong>%s</strong><br/>%g µg / m<sup>3</sup>",
+                              world_leaflet$country, world_leaflet$change)%>% 
+                lapply(htmltools::HTML),
+              labelOptions = labelOptions(style = list("font-weight" = "normal", padding = "3px 8px"),
+                                          textsize = "12px",
+                                          direction = "auto"),
+              popup = paste0("Country: ", world_leaflet$country, "<br>",
+                             "PM2.5 Value: ", round(world_leaflet$change, 3), 
+                             " µg / m<sup>3</sup><br>"))%>%
+  addLegend(pal = palchange, values = ~change, 
+            opacity = 0.7, 
+            title = "Chagne in PM 2.5 Meausre from 1990 to 2017",
+            position = "bottomright")
 ```
 
 ```{r}
 #PM2.5 leaflets
 PM25_1990_leaflet
 PM25_2017_leaflet
+PM25_change_leaflet
 ```
 
 
@@ -218,18 +155,17 @@ world_leaflet_DALY$Y1990 <- data_DALY$Y1990[match(world_leaflet_DALY$country, da
 world_leaflet_DALY$Y2017 <- data_DALY$Y2017[match(world_leaflet_DALY$country, data_DALY$country)]
 world_leaflet_DALY$change <- data_DALY$change[match(world_leaflet_DALY$country, data_DALY$country)]
 
-
-bins3 <- c(-900, -15, -10, -5, 0, 5, 900)
-bins4 <- c(0, 5, 10, 15, 20, Inf)
-pal1990_3 <- colorBin("YlGnBu", domain = world_leaflet_DALY$Y1990, bins = bins4)
-pal2017_3 <- colorBin("YlGnBu", domain = world_leaflet_DALY$Y2017, bins = bins4)
-palchange3 <- colorNumeric("YlGnBu", domain = world_leaflet_DALY$change)
+binschange2 <- c(-Inf, -5, 0, 5, Inf)
+bins2 <- c(0, 5, 10, 15, 20, Inf)
+pal1990_2 <- colorBin("YlGnBu", domain = world_leaflet_DALY$Y1990, bins = bins2)
+pal2017_2 <- colorBin("YlGnBu", domain = world_leaflet_DALY$Y2017, bins = bins2)
+palchange2 <- colorBin("PiYG", domain = world_leaflet_DALY$change, bins = binschange2)
 
 #for 1990
 DALY_1990_leaflet <- leaflet(data = world_leaflet_DALY)%>%
   addTiles()%>%
   setView(0, 0, zoom = 1.5)%>%
-  addPolygons(fillColor = ~pal1990_3(Y1990),
+  addPolygons(fillColor = ~pal1990_2(Y1990),
               weight = 1,
               opacity = 1,
               color = "white",
@@ -251,7 +187,7 @@ DALY_1990_leaflet <- leaflet(data = world_leaflet_DALY)%>%
                              "DALY",
                              round(world_leaflet_DALY$Y1990, 2), 
                              " per 1k <br>"))%>%
-  addLegend(pal = pal1990_3, values = ~Y1990, 
+  addLegend(pal = pal1990_2, values = ~Y1990, 
             opacity = 0.7, 
             title = "DALY in 1990",
             position = "bottomright")
@@ -260,7 +196,7 @@ DALY_1990_leaflet <- leaflet(data = world_leaflet_DALY)%>%
 DALY_2017_leaflet <- leaflet(data = world_leaflet_DALY)%>%
   addTiles()%>%
   setView(0, 0, zoom = 1.5)%>%
-  addPolygons(fillColor = ~pal2017_3(Y2017),
+  addPolygons(fillColor = ~pal2017_2(Y2017),
               weight = 1,
               opacity = 1,
               color = "white",
@@ -282,7 +218,7 @@ DALY_2017_leaflet <- leaflet(data = world_leaflet_DALY)%>%
                              "DALY Score: ",
                              round(world_leaflet_DALY$Y2017, 3), 
                              " per 1K <br>"))%>%
-  addLegend(pal = pal2017_3, values = ~Y2017, 
+  addLegend(pal = pal2017_2, values = ~Y2017, 
             opacity = 0.7, 
             title = "DALY scores in 2017",
             position = "bottomright")
@@ -291,7 +227,7 @@ DALY_2017_leaflet <- leaflet(data = world_leaflet_DALY)%>%
 DALY_change_leaflet <- leaflet(data = world_leaflet_DALY)%>%
   addTiles()%>%
   setView(0, 0, zoom = 1.5)%>%
-  addPolygons(fillColor = ~palchange3(change),
+  addPolygons(fillColor = ~palchange2(change),
               weight = 1,
               opacity = 1,
               color = "white",
@@ -313,7 +249,7 @@ DALY_change_leaflet <- leaflet(data = world_leaflet_DALY)%>%
                              "DALY Score: ",
                              round(world_leaflet_DALY$change, 3), 
                              " per 1K <br>")) %>%
-   addLegend(pal = palchange3, values = ~change, 
+   addLegend(pal = palchange2, values = ~change, 
             opacity = 0.7, 
              title = "Change in DALY scores",
              position = "bottomright")
@@ -324,123 +260,14 @@ DALY_change_leaflet <- leaflet(data = world_leaflet_DALY)%>%
 ```{r}
 DALY_1990_leaflet
 DALY_2017_leaflet
-
 DALY_change_leaflet
 ```
 
-
 ```{r, message = FALSE, warning = FALSE}
-tempdata <- data_healthimp_wide[, c(1, 2, 3, 4, 5)]
-tempdata <- tempdata%>%
-  pivot_wider(values_from = `ambientpm2.5.dalyper1k`,
-              names_from = sex,
-              names_glue = "{sex}")
-tempdata$DALY <- tempdata$`F` + tempdata$M
+#is there a way to look at how both variables change in relation to one another over time,
+#in a more broader term and in a single visualization?
 
-tempdata <- tempdata%>%
-  select(-c(`F`, M))
-tempdata <- tempdata[tempdata$year == 1990 | tempdata$year == 1995 | tempdata$year == 2000| tempdata$year == 2005| tempdata$year == 2010| tempdata$year == 2011| tempdata$year == 2012| tempdata$year == 2013| tempdata$year == 2014| tempdata$year == 2015| tempdata$year == 2016| tempdata$year == 2017, ]
-
-path_bella <- "C:/Users/Bella/Desktop/git/Blog-HealthAndJusticeLeague/data"
-data_PM25 <- read_csv(paste0(path_bella,
-                             "/Exposure_PM25_air.csv"))
-
-#taking out unnecessary column varaibles
-data_PM25 <- data_PM25%>%
-  select(COU, Country, Variable, Year, Value)%>%
-  rename(country = Country,
-         year = Year)
-
-#separate out the variables
-data_PM25_wide <- data_PM25%>%
-  pivot_wider(values_from = Value,
-              names_from = Variable,
-              names_glue = "{Variable}")
-tempdata2 <- left_join(tempdata, data_PM25_wide, by = c("country", "year"), copy = TRUE)%>%
-  select(-c(COU, cou))%>%
-  rename(PM25exposure = `Mean population exposure to PM2.5`)
-
-tempdata3 <- tempdata2[, -c(5, 6, 7, 8)]
-
-#tempdata3 <- tempdata3%>%
-#  pivot_longer(-c(year, country),
-#               names_to = "measure_type", values_to = "value")
-tempdata3 <- tempdata3%>%
-  filter(is.na(DALY) == FALSE)%>%
-  filter(is.na(PM25exposure) == FALSE)
-
-
-countrylist_index <- floor(runif(10, min = 0, max = nrow(tempdata3)))
-countrylist <- rep(c("country"), 10)
-
-for (i in 1:length(countrylist_index)){
-  countrylist[i] <- tempdata3$country[countrylist_index[i]]
-}
-
-tempdata3 <- subset(tempdata3, country %in% countrylist)
-
-
-gdaly <- ggplotly(ggplot(data = tempdata3, mapping = aes(x = year, y = DALY, color = country)) +
-    geom_line() +
-  scale_y_continuous(trans = "log10")+
-    labs(
-      title = "TITLE",
-      subtitle = "1990 to 2017",
-      y = "log(DALY)",
-      x = "Year")+
-    theme_classic())
-gdaly
-
-gexposure <- ggplotly(ggplot(data = tempdata3, mapping = aes(x = year, y = PM25exposure, color = country)) +
-     geom_line() +
-     scale_y_continuous(trans = "log10")+
-     labs(
-       title = "TITLE",
-       subtitle = "1990 to 2017",
-       y = "log(population exposure)",
-       x = "Year")+
-    theme_classic())
- gexposure
- 
-```
-
-```{r, message = FALSE, warning = FALSE}
-#trying out sth different in the meantime
-library(ggplot2)
-library(gganimate)
-library(gifski)
-
-
-tempdata <- data_healthimp_wide[, c(1, 2, 3, 4, 5)]
-tempdata <- tempdata%>%
-  pivot_wider(values_from = `ambientpm2.5.dalyper1k`,
-              names_from = sex,
-              names_glue = "{sex}")
-tempdata$DALY <- tempdata$`F` + tempdata$M
-
-tempdata <- tempdata%>%
-  select(-c(`F`, M))
-tempdata <- tempdata[tempdata$year == 1990 | tempdata$year == 1995 | tempdata$year == 2000| tempdata$year == 2005| tempdata$year == 2010| tempdata$year == 2011| tempdata$year == 2012| tempdata$year == 2013| tempdata$year == 2014| tempdata$year == 2015| tempdata$year == 2016| tempdata$year == 2017, ]
-
-path_bella <- "C:/Users/Bella/Desktop/git/Blog-HealthAndJusticeLeague/data"
-data_PM25 <- read_csv(paste0(path_bella,
-                             "/Exposure_PM25_air.csv"))
-
-#taking out unnecessary column varaibles
-data_PM25 <- data_PM25%>%
-  select(COU, Country, Variable, Year, Value)%>%
-  rename(country = Country,
-         year = Year)
-
-#separate out the variables
-data_PM25_wide <- data_PM25%>%
-  pivot_wider(values_from = Value,
-              names_from = Variable,
-              names_glue = "{Variable}")
-tempdata2 <- left_join(tempdata, data_PM25_wide, by = c("country", "year"), copy = TRUE)%>%
-  select(-c(COU, cou))
-
-g <- ggplot(tempdata2, aes(`Mean population exposure to PM2.5`, DALY, color = country))+
+g <- ggplot(data_joined, aes(PM25exposure , DALY, color = country))+
   geom_point(alpha = 0.7, show.legend = FALSE)+
   scale_size(range = c(2, 12))+
   theme_classic()+
@@ -449,6 +276,43 @@ g <- ggplot(tempdata2, aes(`Mean population exposure to PM2.5`, DALY, color = co
   ease_aes('linear')
 
 animate(g, duration = 20, fps = 20, width = 400, height = 400, renderer = gifski_renderer())
-#anim_save("tempdata2.gif")
+anim_save("PM2.5 vs. DALY.gif")
+```
+
+```{r, message = FALSE, warning = FALSE}
+countrylist_index <- floor(runif(10, min = 0, max = nrow(data_joined)))
+countrylist <- rep(c("country"), 10)
+
+for (i in 1:length(countrylist_index)){
+  countrylist[i] <- data_joined$country[countrylist_index[i]]
+}
+
+data_joined <- subset(data_joined, country %in% countrylist)
+
+
+gdaly <- ggplotly(ggplot(data = data_joined, mapping = aes(x = year, y = DALY, color = country)) +
+    geom_line() +
+  scale_y_continuous(trans = "log10")+
+    labs(
+      title = "TITLE",
+      subtitle = "1990 to 2017",
+      y = "log(DALY)",
+      x = "Year")+
+    theme_classic())
+
+gexposure <- ggplotly(ggplot(data = data_joined, mapping = aes(x = year, y = PM25exposure, color = country)) +
+     geom_line() +
+     scale_y_continuous(trans = "log10")+
+     labs(
+       title = "TITLE",
+       subtitle = "1990 to 2017",
+       y = "log(population exposure)",
+       x = "Year")+
+    theme_classic())
+```
+
+```{r}
+gdaly
+gexposure
 ```
 

@@ -35,33 +35,6 @@ data_healthimp_wide <- data_healthimp%>%
 data_healthimp_wide <- data_healthimp_wide[(data_healthimp_wide$age == "all"), ]
 data_healthimp_wide <- data_healthimp_wide[, -5]
 
-# ###ambient PM2.5 pdeathsper1M only
-# data_pdeaths_amb <- data_healthimp_wide[, c(1, 2, 3, 4, 6)]
-# data_pdeaths_amb <- data_pdeaths_amb%>%
-#   pivot_wider(values_from = `ambientpm2.5.pdeathsper1m`,
-#               names_from = sex, 
-#               names_glue = "{sex}")
-# data_pdeaths_amb$pdeathsper1m <- data_pdeaths_amb$`F` + data_pdeaths_amb$M
-# 
-# data_pdeaths_amb <- data_pdeaths_amb%>%
-#   select(-c(`F`, M))%>%
-#   pivot_wider(values_from = `pdeathsper1m`,
-#               names_from = year,
-#               names_glue = "Y{year}")
-
-# ###need to match the data AGAIN SMHHHHHHHHHHHHH
-# data_pdeaths_amb[163, 2] <- "South Korea"
-# data_pdeaths_amb[164, 2] <- "Slovakia"
-# data_pdeaths_amb[181, 2] <- "UK"
-# data_pdeaths_amb[195, 2] <- "USA"
-# data_pdeaths_amb[41, 2] <- "China"
-# data_pdeaths_amb[21, 2] <- "Republic of Congo"
-# data_pdeaths_amb[45, 2] <- "Ivory Coast"
-# data_pdeaths_amb[48, 2] <- "North Korea"
-# data_pdeaths_amb[103, 2] <- "Laos"
-# data_pdeaths_amb[104, 2] <- "Macedonia"
-# data_pdeaths_amb[170, 2] <- "Syria"
-
 ###DALY only
 data_DALY <- data_healthimp_wide[, c(1, 2, 3, 4, 5)]
 data_DALY <- data_DALY%>%

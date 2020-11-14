@@ -294,19 +294,18 @@ gdaly <- ggplotly(ggplot(data = data_joined, mapping = aes(x = year, y = DALY, c
     geom_line() +
   scale_y_continuous(trans = "log10")+
     labs(
-      title = "TITLE",
+      title = "Disability-Adjusted Life (DALY) Year per 1K",
       subtitle = "1990 to 2017",
-      y = "log(DALY)",
+      y = "DALY",
       x = "Year")+
     theme_classic())
 
 gexposure <- ggplotly(ggplot(data = data_joined, mapping = aes(x = year, y = PM25exposure, color = country)) +
      geom_line() +
-     scale_y_continuous(trans = "log10")+
      labs(
-       title = "TITLE",
+       title = "Population exposure to PM 2.5",
        subtitle = "1990 to 2017",
-       y = "log(population exposure)",
+       y = "Population exposure ",
        x = "Year")+
     theme_classic())
 ```

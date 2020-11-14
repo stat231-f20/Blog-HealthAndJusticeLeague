@@ -1,4 +1,1862 @@
 year,country,total,per_capita,isocode
+1970,afghanistan,456,0.04,AFG
+1970,albania,1021,0.48,ALB
+1970,algeria,4111,0.3,DZA
+1970,angola,977,0.16,AGO
+1970,antigua & barbuda,126,1.91,ATG
+1970,argentina,22562,0.94,ARG
+1970,australia,40256,3.16,AUS
+1970,austria,13824,1.85,AUT
+1970,bahamas,702,4.15,BHS
+1970,bahrain,707,3.34,BHR
+1970,barbados,117,0.49,BRB
+1970,belgium,34257,3.56,BEL
+1970,belize,33,0.27,BLZ
+1970,benin,77,0.03,BEN
+1970,bermuda,62,1.2,BMU
+1970,bhutan,1,0,BTN
+1970,brazil,25569,0.27,BRA
+1970,british virgin islands,5,0.51,VGB
+1970,brunei (darussalam),2239,17.9,BRN
+1970,bulgaria,16700,1.97,BGR
+1970,burkina faso,39,0.01,BFA
+1970,burundi,17,0,BDI
+1970,cambodia,320,0.05,KHM
+1970,canada,93124,4.29,CAN
+1970,cape verde,10,0.03,CPV
+1970,cayman islands,10,1.05,CYM
+1970,central african republic,57,0.03,CAF
+1970,chad,34,0.01,TCD
+1970,chile,6726,0.7,CHL
+1970,china (mainland),210422,0.26,CHN
+1970,christmas island,19,6.42,CXR
+1970,colombia,7746,0.36,COL
+1970,comoros,8,0.03,COM
+1970,congo,156,0.12,COG
+1970,cook islands,3,0.12,COK
+1970,costa rica,341,0.19,CRI
+1970,cote d ivoire,666,0.12,CIV
+1970,cuba,5092,0.59,CUB
+1970,cyprus,465,0.76,CYP
+1970,czechoslovakia,55632,3.88,NA
+1970,democratic people s republic of korea,20058,1.41,PRK
+1970,democratic republic of the congo (formerly zaire),740,0.04,COD
+1970,denmark,16935,3.44,DNK
+1970,djibouti,38,0.23,DJI
+1970,dominica,7,0.09,DMA
+1970,dominican republic,848,0.19,DOM
+1970,east & west pakistan,6637,0.05,BGD
+1970,ecuador,1168,0.2,ECU
+1970,egypt,5914,0.16,EGY
+1970,el salvador,390,0.1,SLV
+1970,equatorial guinea,10,0.03,GNQ
+1970,ethiopia,451,0.01,ETH
+1970,faeroe islands,70,1.82,FRO
+1970,falkland islands (malvinas),3,1.65,FLK
+1970,federal republic of germany,203756,3.36,DEU
+1970,fiji,142,0.27,FJI
+1970,finland,11016,2.39,FIN
+1970,former democratic yemen,639,0.43,NA
+1970,former german democratic republic,76323,4.47,NA
+1970,former panama canal zone,130,0,PAN
+1970,former yemen,46,0.01,YEM
+1970,france,119720,2.36,FRA
+1970,french guiana,28,0.57,GUF
+1970,french polynesia,53,0.48,PYF
+1970,gabon,568,1.07,GAB
+1970,gambia,13,0.03,GMB
+1970,ghana,716,0.08,GHA
+1970,gibraltar,19,0.78,GIB
+1970,greece,6590,0.75,GRC
+1970,greenland,104,2.24,GRL
+1970,grenada,12,0.12,GRD
+1970,guadeloupe,83,0.26,GLP
+1970,guatemala,627,0.12,GTM
+1970,guinea,216,0.05,GIN
+1970,guinea bissau,19,0.03,GNB
+1970,guyana,431,0.6,GUY
+1970,haiti,105,0.02,HTI
+1970,honduras,379,0.14,HND
+1970,hong kong special adminstrative region of china,2291,0.58,HKG
+1970,hungary,19090,1.85,HUN
+1970,iceland,379,1.86,ISL
+1970,india,53216,0.1,IND
+1970,indonesia,9769,0.08,IDN
+1970,iraq,6520,0.65,IRQ
+1970,ireland,5294,1.79,IRL
+1970,islamic republic of iran,25054,0.87,IRN
+1970,israel,4521,1.59,ISR
+1970,italy,80922,1.52,ITA
+1970,jamaica,1362,0.73,JAM
+1970,japan,209660,2.02,JPN
+1970,jordan,425,0.26,JOR
+1970,kenya,841,0.07,KEN
+1970,kiribati,6,0.13,KIR
+1970,kuwait,6829,9.07,KWT
+1970,lao people s democratic republic,156,0.06,LAO
+1970,lebanon,1077,0.44,LBN
+1970,liberia,396,0.28,LBR
+1970,libyan arab jamahiriyah,8817,4.42,LBY
+1970,luxembourg,3749,11.05,LUX
+1970,macau special adminstrative region of china,56,0.22,MAC
+1970,madagascar,265,0.04,MDG
+1970,malawi,124,0.03,MWI
+1970,malaysia,3982,0.37,MYS
+1970,mali,55,0.01,MLI
+1970,malta,181,0.6,MLT
+1970,martinique,99,0.3,MTQ
+1970,mauritania,117,0.1,MRT
+1970,mauritius,136,0.17,MUS
+1970,mexico,31108,0.6,MEX
+1970,mongolia,777,0.61,MNG
+1970,montserrat,4,0.36,MSR
+1970,morocco,1989,0.13,MAR
+1970,mozambique,814,0.09,MOZ
+1970,myanmar (formerly burma),1259,0.05,MMR
+1970,nauru,18,2.84,NRU
+1970,nepal,62,0.01,NPL
+1970,netherland antilles and aruba,4542,28.57,ABW
+1970,netherlands,38706,2.99,NLD
+1970,new caledonia,653,6.21,NCL
+1970,new zealand,3871,1.37,NZL
+1970,nicaragua,383,0.16,NIC
+1970,niger,59,0.01,NER
+1970,nigeria,5874,0.1,NGA
+1970,niue,1,0.16,NIU
+1970,norway,7639,1.97,NOR
+1970,oman,64,0.09,OMN
+1970,pacific islands (palau),37,1.1,PLW
+1970,panama,601,0.4,PAN
+1970,papua new guinea,189,0.08,PNG
+1970,paraguay,203,0.08,PRY
+1970,peru,4850,0.37,PER
+1970,philippines,6758,0.19,PHL
+1970,plurinational state of bolivia,678,0.16,BOL
+1970,poland,83022,2.55,POL
+1970,portugal,4161,0.48,PRT
+1970,qatar,2064,19.04,QAT
+1970,republic of cameroon,174,0.03,CMR
+1970,republic of korea,14667,0.47,KOR
+1970,reunion,87,0.19,REU
+1970,romania,32755,1.62,ROU
+1970,rwanda,16,0,RWA
+1970,ryukyu islands,520,0,NA
+1970,saint lucia,18,0.18,LCA
+1970,samoa,8,0.06,WSM
+1970,sao tome & principe,4,0.06,STP
+1970,saudi arabia,12351,2.14,SAU
+1970,senegal,357,0.09,SEN
+1970,seychelles,8,0.16,SYC
+1970,sierra leone,238,0.09,SLE
+1970,singapore,4966,2.39,SGP
+1970,solomon islands,11,0.07,SLB
+1970,somalia,59,0.02,SOM
+1970,south africa,40841,1.81,ZAF
+1970,spain,31887,0.94,ESP
+1970,sri lanka,981,0.08,LKA
+1970,st. kitts-nevis,7,0.14,KNA
+1970,st. pierre & miquelon,10,1.78,SPM
+1970,st. vincent & the grenadines,8,0.08,VCT
+1970,sudan,1324,0.09,SDN
+1970,suriname,439,1.18,SUR
+1970,swaziland,100,0.22,SWZ
+1970,sweden,25192,3.13,SWE
+1970,switzerland,10989,1.77,CHE
+1970,syrian arab republic,1816,0.29,SYR
+1970,taiwan,7847,0.54,TWN
+1970,thailand,4193,0.11,THA
+1970,togo,75,0.04,TGO
+1970,tonga,7,0.08,TON
+1970,trinidad and tobago,2454,2.54,TTO
+1970,tunisia,1021,0.2,TUN
+1970,turkey,11628,0.33,TUR
+1970,uganda,394,0.04,UGA
+1970,united arab emirates,4158,17.94,ARE
+1970,united kingdom,178092,3.19,GBR
+1970,united republic of tanzania,482,0.04,TZA
+1970,united states of america,1180503,5.56,USA
+1970,uruguay,1566,0.56,URY
+1970,ussr,643344,2.65,RUS
+1970,vanuatu,11,0.13,VUT
+1970,venezuela,20333,1.9,VEN
+1970,viet nam,7690,0.17,VNM
+1970,yugoslavia (former socialist federal republic),19317,0.95,NA
+1970,zambia,1028,0.25,ZMB
+1970,zimbabwe,2226,0.43,ZWE
+1971,afghanistan,517,0.04,AFG
+1971,albania,1187,0.54,ALB
+1971,algeria,5091,0.36,DZA
+1971,angola,930,0.15,AGO
+1971,antigua & barbuda,116,1.75,ATG
+1971,argentina,24254,1,ARG
+1971,australia,41662,3.21,AUS
+1971,austria,14223,1.9,AUT
+1971,bahamas,1836,10.56,BHS
+1971,bahrain,829,3.77,BHR
+1971,barbados,132,0.55,BRB
+1971,belgium,33141,3.43,BEL
+1971,belize,39,0.31,BLZ
+1971,benin,80,0.03,BEN
+1971,bermuda,63,1.2,BMU
+1971,bhutan,1,0,BTN
+1971,brazil,27989,0.28,BRA
+1971,british virgin islands,6,0.59,VGB
+1971,brunei (darussalam),2050,15.65,BRN
+1971,bulgaria,17535,2.05,BGR
+1971,burkina faso,41,0.01,BFA
+1971,burundi,20,0.01,BDI
+1971,cambodia,68,0.01,KHM
+1971,canada,96157,4.36,CAN
+1971,cape verde,10,0.04,CPV
+1971,cayman islands,12,1.17,CYM
+1971,central african republic,50,0.03,CAF
+1971,chad,41,0.01,TCD
+1971,chile,7389,0.76,CHL
+1971,china (mainland),239060,0.29,CHN
+1971,christmas island,23,7.81,CXR
+1971,colombia,8270,0.38,COL
+1971,comoros,8,0.03,COM
+1971,congo,187,0.14,COG
+1971,cook islands,3,0.12,COK
+1971,costa rica,417,0.22,CRI
+1971,cote d ivoire,738,0.13,CIV
+1971,cuba,5347,0.6,CUB
+1971,cyprus,514,0.83,CYP
+1971,czechoslovakia,58367,4.05,NA
+1971,democratic people s republic of korea,29332,2,PRK
+1971,democratic republic of the congo (formerly zaire),808,0.04,COD
+1971,denmark,15561,3.14,DNK
+1971,djibouti,44,0.25,DJI
+1971,dominica,7,0.09,DMA
+1971,dominican republic,961,0.21,DOM
+1971,east & west pakistan,6293,0.05,BGD
+1971,ecuador,1152,0.19,ECU
+1971,egypt,6285,0.17,EGY
+1971,el salvador,412,0.11,SLV
+1971,equatorial guinea,18,0.06,GNQ
+1971,ethiopia,505,0.02,ETH
+1971,faeroe islands,71,1.83,FRO
+1971,falkland islands (malvinas),3,1.67,FLK
+1971,federal republic of germany,205511,3.37,DEU
+1971,fiji,150,0.28,FJI
+1971,finland,11067,2.39,FIN
+1971,former democratic yemen,479,0.31,NA
+1971,former german democratic republic,77692,4.56,NA
+1971,former panama canal zone,131,0,PAN
+1971,former yemen,59,0.01,YEM
+1971,france,126107,2.46,FRA
+1971,french guiana,28,0.57,GUF
+1971,french polynesia,62,0.54,PYF
+1971,gabon,776,1.44,GAB
+1971,gambia,15,0.03,GMB
+1971,ghana,626,0.07,GHA
+1971,gibraltar,22,0.88,GIB
+1971,greece,7585,0.86,GRC
+1971,greenland,128,2.71,GRL
+1971,grenada,13,0.13,GRD
+1971,guadeloupe,93,0.29,GLP
+1971,guatemala,666,0.12,GTM
+1971,guinea,222,0.05,GIN
+1971,guinea bissau,20,0.03,GNB
+1971,guyana,409,0.56,GUY
+1971,haiti,110,0.02,HTI
+1971,honduras,363,0.13,HND
+1971,hong kong special adminstrative region of china,2498,0.62,HKG
+1971,hungary,18893,1.82,HUN
+1971,iceland,402,1.94,ISL
+1971,india,56141,0.1,IND
+1971,indonesia,10632,0.09,IDN
+1971,iraq,7871,0.76,IRQ
+1971,ireland,6135,2.05,IRL
+1971,islamic republic of iran,27740,0.94,IRN
+1971,israel,4431,1.51,ISR
+1971,italy,84971,1.58,ITA
+1971,jamaica,1569,0.83,JAM
+1971,japan,217492,2.07,JPN
+1971,jordan,452,0.26,JOR
+1971,kenya,1005,0.09,KEN
+1971,kiribati,8,0.19,KIR
+1971,kuwait,7401,9.12,KWT
+1971,lao people s democratic republic,115,0.04,LAO
+1971,lebanon,1456,0.58,LBN
+1971,liberia,416,0.28,LBR
+1971,libyan arab jamahiriyah,5903,2.84,LBY
+1971,luxembourg,3600,10.51,LUX
+1971,macau special adminstrative region of china,62,0.24,MAC
+1971,madagascar,280,0.04,MDG
+1971,malawi,137,0.03,MWI
+1971,malaysia,4548,0.41,MYS
+1971,maldives,1,0.01,MDV
+1971,mali,62,0.01,MLI
+1971,malta,180,0.59,MLT
+1971,martinique,146,0.45,MTQ
+1971,mauritania,109,0.09,MRT
+1971,mauritius,108,0.13,MUS
+1971,mexico,34453,0.64,MEX
+1971,mongolia,828,0.63,MNG
+1971,montserrat,4,0.36,MSR
+1971,morocco,2237,0.14,MAR
+1971,mozambique,986,0.1,MOZ
+1971,myanmar (formerly burma),1392,0.05,MMR
+1971,nauru,24,3.67,NRU
+1971,nepal,54,0,NPL
+1971,netherland antilles and aruba,3953,24.55,ABW
+1971,netherlands,38417,2.93,NLD
+1971,new caledonia,660,6.03,NCL
+1971,new zealand,4107,1.43,NZL
+1971,nicaragua,411,0.17,NIC
+1971,niger,63,0.01,NER
+1971,nigeria,8803,0.15,NGA
+1971,niue,1,0.17,NIU
+1971,norway,7417,1.9,NOR
+1971,oman,571,0.75,OMN
+1971,pacific islands (palau),45,1.29,PLW
+1971,panama,710,0.46,PAN
+1971,papua new guinea,225,0.09,PNG
+1971,paraguay,173,0.07,PRY
+1971,peru,5076,0.37,PER
+1971,philippines,7523,0.21,PHL
+1971,plurinational state of bolivia,835,0.19,BOL
+1971,poland,85423,2.6,POL
+1971,portugal,4474,0.51,PRT
+1971,qatar,2496,21.11,QAT
+1971,republic of cameroon,221,0.03,CMR
+1971,republic of korea,15985,0.5,KOR
+1971,reunion,90,0.19,REU
+1971,romania,34314,1.68,ROU
+1971,rwanda,17,0,RWA
+1971,ryukyu islands,881,0,NA
+1971,saint lucia,19,0.18,LCA
+1971,samoa,10,0.07,WSM
+1971,sao tome & principe,3,0.03,STP
+1971,saudi arabia,16310,2.71,SAU
+1971,senegal,369,0.09,SEN
+1971,seychelles,9,0.17,SYC
+1971,sierra leone,219,0.08,SLE
+1971,singapore,4525,2.14,SGP
+1971,solomon islands,13,0.08,SLB
+1971,somalia,51,0.01,SOM
+1971,south africa,45969,1.99,ZAF
+1971,spain,35092,1.03,ESP
+1971,sri lanka,872,0.07,LKA
+1971,st. kitts-nevis,8,0.16,KNA
+1971,st. pierre & miquelon,13,2.33,SPM
+1971,st. vincent & the grenadines,8,0.09,VCT
+1971,sudan,1359,0.09,SDN
+1971,suriname,468,1.25,SUR
+1971,swaziland,109,0.24,SWZ
+1971,sweden,23068,2.85,SWE
+1971,switzerland,11438,1.83,CHE
+1971,syrian arab republic,2423,0.37,SYR
+1971,taiwan,8596,0.58,TWN
+1971,thailand,5249,0.14,THA
+1971,togo,86,0.04,TGO
+1971,tonga,5,0.06,TON
+1971,trinidad and tobago,2210,2.26,TTO
+1971,tunisia,1149,0.22,TUN
+1971,turkey,13017,0.36,TUR
+1971,uganda,393,0.04,UGA
+1971,united arab emirates,5777,21.2,ARE
+1971,united kingdom,180219,3.22,GBR
+1971,united republic of tanzania,672,0.05,TZA
+1971,united states of america,1188102,5.54,USA
+1971,uruguay,1584,0.56,URY
+1971,ussr,682832,2.79,RUS
+1971,vanuatu,16,0.18,VUT
+1971,venezuela,17061,1.54,VEN
+1971,viet nam,6689,0.15,VNM
+1971,yugoslavia (former socialist federal republic),20819,1.01,NA
+1971,zambia,1034,0.24,ZMB
+1971,zimbabwe,2384,0.44,ZWE
+1972,afghanistan,418,0.03,AFG
+1972,albania,1539,0.69,ALB
+1972,algeria,7731,0.53,DZA
+1972,angola,1229,0.2,AGO
+1972,antigua & barbuda,102,1.52,ATG
+1972,argentina,24586,0.99,ARG
+1972,australia,42947,3.24,AUS
+1972,austria,15324,2.04,AUT
+1972,bahamas,1770,9.95,BHS
+1972,bahrain,1004,4.4,BHR
+1972,bangladesh,957,0.01,BGD
+1972,barbados,137,0.57,BRB
+1972,belgium,35679,3.68,BEL
+1972,belize,43,0.34,BLZ
+1972,benin,106,0.04,BEN
+1972,bermuda,69,1.32,BMU
+1972,bhutan,1,0,BTN
+1972,botswana,6,0.01,BWA
+1972,brazil,31187,0.31,BRA
+1972,british virgin islands,6,0.58,VGB
+1972,brunei (darussalam),2580,18.81,BRN
+1972,bulgaria,18045,2.1,BGR
+1972,burkina faso,44,0.01,BFA
+1972,burundi,20,0.01,BDI
+1972,cambodia,32,0,KHM
+1972,canada,103937,4.65,CAN
+1972,cape verde,14,0.05,CPV
+1972,cayman islands,15,1.42,CYM
+1972,central african republic,46,0.02,CAF
+1972,chad,33,0.01,TCD
+1972,chile,7688,0.77,CHL
+1972,china (mainland),254043,0.3,CHN
+1972,christmas island,23,7.54,CXR
+1972,colombia,8585,0.38,COL
+1972,comoros,8,0.03,COM
+1972,congo,181,0.13,COG
+1972,cook islands,3,0.16,COK
+1972,costa rica,481,0.25,CRI
+1972,cote d ivoire,822,0.14,CIV
+1972,cuba,5672,0.63,CUB
+1972,cyprus,656,1.04,CYP
+1972,czechoslovakia,58912,4.07,NA
+1972,democratic people s republic of korea,24434,1.63,PRK
+1972,democratic republic of the congo (formerly zaire),824,0.04,COD
+1972,denmark,16265,3.26,DNK
+1972,djibouti,52,0.29,DJI
+1972,dominica,7,0.09,DMA
+1972,dominican republic,1275,0.27,DOM
+1972,ecuador,1253,0.2,ECU
+1972,egypt,6957,0.19,EGY
+1972,el salvador,458,0.12,SLV
+1972,equatorial guinea,24,0.09,GNQ
+1972,ethiopia,384,0.01,ETH
+1972,faeroe islands,64,1.64,FRO
+1972,falkland islands (malvinas),3,1.68,FLK
+1972,federal republic of germany,207402,3.39,DEU
+1972,fiji,158,0.29,FJI
+1972,finland,12043,2.59,FIN
+1972,former democratic yemen,339,0.22,NA
+1972,former german democratic republic,77028,4.53,NA
+1972,former panama canal zone,193,0,PAN
+1972,former yemen,69,0.01,YEM
+1972,france,131096,2.54,FRA
+1972,french guiana,28,0.55,GUF
+1972,french polynesia,59,0.5,PYF
+1972,gabon,747,1.35,GAB
+1972,gambia,18,0.04,GMB
+1972,ghana,661,0.07,GHA
+1972,gibraltar,20,0.8,GIB
+1972,greece,8610,0.97,GRC
+1972,greenland,151,3.13,GRL
+1972,grenada,13,0.14,GRD
+1972,guadeloupe,103,0.32,GLP
+1972,guatemala,739,0.13,GTM
+1972,guinea,227,0.05,GIN
+1972,guinea bissau,18,0.03,GNB
+1972,guyana,426,0.58,GUY
+1972,haiti,107,0.02,HTI
+1972,honduras,419,0.15,HND
+1972,hong kong special adminstrative region of china,2532,0.62,HKG
+1972,hungary,18934,1.82,HUN
+1972,iceland,405,1.93,ISL
+1972,india,59408,0.1,IND
+1972,indonesia,11819,0.09,IDN
+1972,iraq,8059,0.75,IRQ
+1972,ireland,6014,1.98,IRL
+1972,islamic republic of iran,28938,0.96,IRN
+1972,israel,4618,1.52,ISR
+1972,italy,89711,1.66,ITA
+1972,jamaica,1715,0.89,JAM
+1972,japan,232717,2.18,JPN
+1972,jordan,523,0.29,JOR
+1972,kenya,1056,0.09,KEN
+1972,kiribati,7,0.15,KIR
+1972,kuwait,7536,8.66,KWT
+1972,lao people s democratic republic,133,0.05,LAO
+1972,lebanon,1562,0.6,LBN
+1972,liberia,411,0.27,LBR
+1972,libyan arab jamahiriyah,4154,1.91,LBY
+1972,luxembourg,3680,10.61,LUX
+1972,macau special adminstrative region of china,63,0.25,MAC
+1972,madagascar,351,0.05,MDG
+1972,malawi,149,0.03,MWI
+1972,malaysia,4885,0.43,MYS
+1972,maldives,1,0.01,MDV
+1972,mali,67,0.01,MLI
+1972,malta,229,0.75,MLT
+1972,martinique,214,0.65,MTQ
+1972,mauritania,122,0.1,MRT
+1972,mauritius,188,0.22,MUS
+1972,mexico,36122,0.66,MEX
+1972,mongolia,895,0.66,MNG
+1972,montserrat,4,0.36,MSR
+1972,morocco,2195,0.14,MAR
+1972,mozambique,900,0.09,MOZ
+1972,myanmar (formerly burma),1336,0.05,MMR
+1972,nauru,21,3.1,NRU
+1972,nepal,73,0.01,NPL
+1972,netherland antilles and aruba,3833,23.66,ABW
+1972,netherlands,43031,3.25,NLD
+1972,new caledonia,465,4.07,NCL
+1972,new zealand,4417,1.51,NZL
+1972,nicaragua,438,0.17,NIC
+1972,niger,69,0.01,NER
+1972,nigeria,11297,0.19,NGA
+1972,niue,1,0.18,NIU
+1972,norway,8025,2.04,NOR
+1972,oman,570,0.72,OMN
+1972,pacific islands (palau),47,1.29,PLW
+1972,pakistan,5162,0.08,PAK
+1972,panama,764,0.48,PAN
+1972,papua new guinea,346,0.13,PNG
+1972,paraguay,195,0.07,PRY
+1972,peru,4956,0.36,PER
+1972,philippines,7211,0.19,PHL
+1972,plurinational state of bolivia,974,0.22,BOL
+1972,poland,89979,2.72,POL
+1972,portugal,5004,0.57,PRT
+1972,qatar,2941,22.76,QAT
+1972,republic of cameroon,235,0.03,CMR
+1972,republic of korea,16454,0.5,KOR
+1972,reunion,95,0.2,REU
+1972,romania,36112,1.75,ROU
+1972,rwanda,18,0,RWA
+1972,ryukyu islands,2458,0,NA
+1972,saint lucia,21,0.2,LCA
+1972,samoa,10,0.07,WSM
+1972,sao tome & principe,3,0.04,STP
+1972,saudi arabia,19183,3.04,SAU
+1972,senegal,397,0.09,SEN
+1972,seychelles,12,0.22,SYC
+1972,sierra leone,185,0.07,SLE
+1972,singapore,6065,2.82,SGP
+1972,solomon islands,15,0.09,SLB
+1972,somalia,64,0.02,SOM
+1972,south africa,46830,1.97,ZAF
+1972,spain,39549,1.14,ESP
+1972,sri lanka,966,0.07,LKA
+1972,st. kitts-nevis,8,0.16,KNA
+1972,st. pierre & miquelon,19,3.39,SPM
+1972,st. vincent & the grenadines,10,0.11,VCT
+1972,sudan,1467,0.09,SDN
+1972,suriname,476,1.28,SUR
+1972,swaziland,104,0.22,SWZ
+1972,sweden,23120,2.85,SWE
+1972,switzerland,11719,1.86,CHE
+1972,syrian arab republic,2118,0.31,SYR
+1972,taiwan,9797,0.65,TWN
+1972,thailand,5955,0.15,THA
+1972,togo,109,0.05,TGO
+1972,tonga,6,0.07,TON
+1972,trinidad and tobago,2248,2.28,TTO
+1972,tunisia,1292,0.24,TUN
+1972,turkey,14687,0.4,TUR
+1972,uganda,377,0.04,UGA
+1972,united arab emirates,6396,19.81,ARE
+1972,united kingdom,176844,3.15,GBR
+1972,united republic of tanzania,591,0.04,TZA
+1972,united states of america,1244874,5.76,USA
+1972,uruguay,1657,0.59,URY
+1972,ussr,718559,2.91,RUS
+1972,vanuatu,17,0.18,VUT
+1972,venezuela,17065,1.49,VEN
+1972,viet nam,6288,0.13,VNM
+1972,yugoslavia (former socialist federal republic),19513,0.94,NA
+1972,zambia,1109,0.25,ZMB
+1972,zimbabwe,2243,0.4,ZWE
+1973,afghanistan,447,0.03,AFG
+1973,albania,1443,0.63,ALB
+1973,algeria,10448,0.69,DZA
+1973,angola,1331,0.21,AGO
+1973,antigua & barbuda,90,1.33,ATG
+1973,argentina,25652,1.02,ARG
+1973,australia,46630,3.46,AUS
+1973,austria,16407,2.17,AUT
+1973,bahamas,2147,11.83,BHS
+1973,bahrain,1506,6.32,BHR
+1973,bangladesh,1242,0.02,BGD
+1973,barbados,131,0.54,BRB
+1973,belgium,37871,3.89,BEL
+1973,belize,40,0.31,BLZ
+1973,benin,104,0.03,BEN
+1973,bermuda,116,2.18,BMU
+1973,bhutan,1,0,BTN
+1973,botswana,14,0.02,BWA
+1973,brazil,36123,0.35,BRA
+1973,british virgin islands,7,0.65,VGB
+1973,brunei (darussalam),2722,18.96,BRN
+1973,bulgaria,18769,2.17,BGR
+1973,burkina faso,46,0.01,BFA
+1973,burundi,20,0.01,BDI
+1973,cambodia,35,0,KHM
+1973,canada,104069,4.6,CAN
+1973,cape verde,17,0.06,CPV
+1973,cayman islands,16,1.41,CYM
+1973,central african republic,44,0.02,CAF
+1973,chad,44,0.01,TCD
+1973,chile,7541,0.75,CHL
+1973,china (mainland),264124,0.3,CHN
+1973,christmas island,19,6.42,CXR
+1973,colombia,9190,0.4,COL
+1973,comoros,8,0.03,COM
+1973,congo,333,0.23,COG
+1973,cook islands,3,0.12,COK
+1973,costa rica,558,0.29,CRI
+1973,cote d ivoire,875,0.14,CIV
+1973,cuba,6108,0.67,CUB
+1973,cyprus,682,1.07,CYP
+1973,czechoslovakia,59162,4.06,NA
+1973,democratic people s republic of korea,26569,1.72,PRK
+1973,democratic republic of the congo (formerly zaire),871,0.04,COD
+1973,denmark,16162,3.22,DNK
+1973,djibouti,49,0.26,DJI
+1973,dominica,7,0.09,DMA
+1973,dominican republic,1627,0.33,DOM
+1973,ecuador,1435,0.22,ECU
+1973,egypt,6489,0.17,EGY
+1973,el salvador,537,0.13,SLV
+1973,equatorial guinea,8,0.03,GNQ
+1973,ethiopia,478,0.01,ETH
+1973,faeroe islands,69,1.73,FRO
+1973,falkland islands (malvinas),4,1.82,FLK
+1973,federal republic of germany,218416,3.55,DEU
+1973,fiji,172,0.31,FJI
+1973,finland,13468,2.88,FIN
+1973,former democratic yemen,656,0.41,NA
+1973,former german democratic republic,78149,4.61,NA
+1973,former panama canal zone,199,0,PAN
+1973,former yemen,89,0.02,YEM
+1973,france,140878,2.71,FRA
+1973,french guiana,32,0.59,GUF
+1973,french polynesia,57,0.47,PYF
+1973,gabon,1449,2.56,GAB
+1973,gambia,17,0.03,GMB
+1973,ghana,675,0.07,GHA
+1973,gibraltar,23,0.9,GIB
+1973,greece,10160,1.14,GRC
+1973,greenland,152,3.12,GRL
+1973,grenada,15,0.16,GRD
+1973,guadeloupe,111,0.34,GLP
+1973,guatemala,801,0.14,GTM
+1973,guinea,219,0.05,GIN
+1973,guinea bissau,30,0.05,GNB
+1973,guyana,492,0.67,GUY
+1973,haiti,115,0.02,HTI
+1973,honduras,412,0.14,HND
+1973,hong kong special adminstrative region of china,2535,0.61,HKG
+1973,hungary,19926,1.91,HUN
+1973,iceland,478,2.25,ISL
+1973,india,61179,0.1,IND
+1973,indonesia,13399,0.1,IDN
+1973,iraq,8357,0.76,IRQ
+1973,ireland,6234,2.02,IRL
+1973,islamic republic of iran,35341,1.14,IRN
+1973,israel,5266,1.68,ISR
+1973,italy,96624,1.77,ITA
+1973,jamaica,2263,1.16,JAM
+1973,japan,249727,2.31,JPN
+1973,jordan,601,0.32,JOR
+1973,kenya,1069,0.09,KEN
+1973,kiribati,10,0.22,KIR
+1973,kuwait,6611,7.1,KWT
+1973,lao people s democratic republic,141,0.05,LAO
+1973,lebanon,1956,0.73,LBN
+1973,liberia,404,0.26,LBR
+1973,libyan arab jamahiriyah,3978,1.76,LBY
+1973,luxembourg,3864,11,LUX
+1973,macau special adminstrative region of china,61,0.24,MAC
+1973,madagascar,293,0.04,MDG
+1973,malawi,156,0.03,MWI
+1973,malaysia,4776,0.41,MYS
+1973,maldives,1,0.01,MDV
+1973,mali,73,0.01,MLI
+1973,malta,220,0.73,MLT
+1973,martinique,259,0.79,MTQ
+1973,mauritania,128,0.1,MRT
+1973,mauritius,185,0.21,MUS
+1973,mexico,39349,0.69,MEX
+1973,mongolia,949,0.68,MNG
+1973,montserrat,4,0.36,MSR
+1973,morocco,2629,0.16,MAR
+1973,mozambique,972,0.1,MOZ
+1973,myanmar (formerly burma),1121,0.04,MMR
+1973,nauru,23,3.29,NRU
+1973,nepal,115,0.01,NPL
+1973,netherland antilles and aruba,4252,25.93,ABW
+1973,netherlands,45172,3.38,NLD
+1973,new caledonia,709,5.93,NCL
+1973,new zealand,4964,1.66,NZL
+1973,nicaragua,499,0.19,NIC
+1973,niger,90,0.02,NER
+1973,nigeria,13520,0.22,NGA
+1973,niue,1,0.19,NIU
+1973,norway,8324,2.1,NOR
+1973,oman,576,0.7,OMN
+1973,pacific islands (palau),48,1.25,PLW
+1973,pakistan,5464,0.08,PAK
+1973,panama,884,0.54,PAN
+1973,papua new guinea,367,0.14,PNG
+1973,paraguay,237,0.09,PRY
+1973,peru,5388,0.38,PER
+1973,philippines,8602,0.22,PHL
+1973,plurinational state of bolivia,943,0.21,BOL
+1973,poland,91663,2.75,POL
+1973,portugal,5455,0.61,PRT
+1973,qatar,3400,24.14,QAT
+1973,republic of cameroon,245,0.03,CMR
+1973,republic of korea,19933,0.6,KOR
+1973,reunion,105,0.22,REU
+1973,romania,39531,1.89,ROU
+1973,rwanda,19,0,RWA
+1973,saint lucia,22,0.2,LCA
+1973,samoa,10,0.07,WSM
+1973,sao tome & principe,4,0.05,STP
+1973,saudi arabia,25944,3.92,SAU
+1973,senegal,423,0.09,SEN
+1973,seychelles,13,0.24,SYC
+1973,sierra leone,147,0.05,SLE
+1973,singapore,5787,2.64,SGP
+1973,solomon islands,18,0.1,SLB
+1973,somalia,72,0.02,SOM
+1973,south africa,47323,1.94,ZAF
+1973,spain,42369,1.21,ESP
+1973,sri lanka,1006,0.08,LKA
+1973,st. kitts-nevis,8,0.16,KNA
+1973,st. pierre & miquelon,11,1.88,SPM
+1973,st. vincent & the grenadines,11,0.12,VCT
+1973,sudan,1480,0.09,SDN
+1973,suriname,575,1.55,SUR
+1973,swaziland,101,0.21,SWZ
+1973,sweden,23825,2.93,SWE
+1973,switzerland,12616,1.98,CHE
+1973,syrian arab republic,2153,0.31,SYR
+1973,taiwan,10991,0.71,TWN
+1973,thailand,6669,0.17,THA
+1973,togo,110,0.05,TGO
+1973,tonga,7,0.08,TON
+1973,trinidad and tobago,2563,2.58,TTO
+1973,tunisia,1317,0.24,TUN
+1973,turkey,16222,0.43,TUR
+1973,uganda,322,0.03,UGA
+1973,united arab emirates,8353,21.8,ARE
+1973,united kingdom,179993,3.2,GBR
+1973,united republic of tanzania,869,0.06,TZA
+1973,united states of america,1300844,5.96,USA
+1973,uruguay,1575,0.56,URY
+1973,ussr,749046,3,RUS
+1973,vanuatu,15,0.16,VUT
+1973,venezuela,18135,1.53,VEN
+1973,viet nam,6844,0.14,VNM
+1973,yugoslavia (former socialist federal republic),23310,1.11,NA
+1973,zambia,1252,0.27,ZMB
+1973,zimbabwe,2531,0.44,ZWE
+1974,afghanistan,523,0.04,AFG
+1974,albania,1185,0.5,ALB
+1974,algeria,8701,0.56,DZA
+1974,angola,1329,0.21,AGO
+1974,antigua & barbuda,117,1.7,ATG
+1974,argentina,26062,1.02,ARG
+1974,australia,47002,3.43,AUS
+1974,austria,15672,2.07,AUT
+1974,bahamas,2015,10.88,BHS
+1974,bahrain,1474,5.88,BHR
+1974,bangladesh,1271,0.02,BGD
+1974,barbados,134,0.55,BRB
+1974,belgium,36875,3.78,BEL
+1974,belize,42,0.32,BLZ
+1974,benin,111,0.04,BEN
+1974,bermuda,121,2.26,BMU
+1974,bhutan,1,0,BTN
+1974,botswana,24,0.03,BWA
+1974,brazil,39121,0.37,BRA
+1974,british virgin islands,7,0.64,VGB
+1974,brunei (darussalam),2232,14.88,BRN
+1974,bulgaria,19433,2.24,BGR
+1974,burkina faso,56,0.01,BFA
+1974,burundi,25,0.01,BDI
+1974,cambodia,20,0,KHM
+1974,canada,106346,4.65,CAN
+1974,cape verde,18,0.06,CPV
+1974,cayman islands,15,1.26,CYM
+1974,central african republic,31,0.02,CAF
+1974,chad,41,0.01,TCD
+1974,chile,7078,0.69,CHL
+1974,china (mainland),269434,0.3,CHN
+1974,christmas island,34,11.44,CXR
+1974,colombia,9948,0.42,COL
+1974,comoros,8,0.03,COM
+1974,congo,443,0.29,COG
+1974,cook islands,3,0.16,COK
+1974,costa rica,520,0.26,CRI
+1974,cote d ivoire,971,0.15,CIV
+1974,cuba,6248,0.67,CUB
+1974,cyprus,525,0.82,CYP
+1974,czechoslovakia,59858,4.07,NA
+1974,democratic people s republic of korea,27739,1.76,PRK
+1974,democratic republic of the congo (formerly zaire),919,0.04,COD
+1974,denmark,15020,2.98,DNK
+1974,djibouti,53,0.26,DJI
+1974,dominica,8,0.1,DMA
+1974,dominican republic,1750,0.35,DOM
+1974,ecuador,1661,0.25,ECU
+1974,egypt,7124,0.18,EGY
+1974,el salvador,538,0.13,SLV
+1974,equatorial guinea,14,0.06,GNQ
+1974,ethiopia,474,0.01,ETH
+1974,faeroe islands,82,2.05,FRO
+1974,falkland islands (malvinas),4,1.83,FLK
+1974,federal republic of germany,212052,3.44,DEU
+1974,fiji,183,0.32,FJI
+1974,finland,12730,2.71,FIN
+1974,former democratic yemen,512,0.32,NA
+1974,former german democratic republic,78267,4.63,NA
+1974,former panama canal zone,227,0,PAN
+1974,former yemen,101,0.02,YEM
+1974,france,136098,2.6,FRA
+1974,french guiana,28,0.52,GUF
+1974,french polynesia,59,0.47,PYF
+1974,gabon,1487,2.56,GAB
+1974,gambia,17,0.03,GMB
+1974,ghana,801,0.08,GHA
+1974,gibraltar,21,0.83,GIB
+1974,greece,9877,1.1,GRC
+1974,greenland,152,3.09,GRL
+1974,grenada,10,0.11,GRD
+1974,guadeloupe,105,0.32,GLP
+1974,guatemala,837,0.14,GTM
+1974,guinea,229,0.05,GIN
+1974,guinea bissau,28,0.04,GNB
+1974,guyana,424,0.57,GUY
+1974,haiti,129,0.03,HTI
+1974,honduras,425,0.14,HND
+1974,hong kong special adminstrative region of china,2912,0.69,HKG
+1974,hungary,20208,1.93,HUN
+1974,iceland,475,2.2,ISL
+1974,india,63265,0.1,IND
+1974,indonesia,13979,0.11,IDN
+1974,iraq,8438,0.74,IRQ
+1974,ireland,6355,2.03,IRL
+1974,islamic republic of iran,39245,1.23,IRN
+1974,israel,5303,1.64,ISR
+1974,italy,98011,1.79,ITA
+1974,jamaica,2073,1.04,JAM
+1974,japan,249761,2.28,JPN
+1974,jordan,608,0.31,JOR
+1974,kenya,1350,0.1,KEN
+1974,kiribati,9,0.19,KIR
+1974,kuwait,5271,5.31,KWT
+1974,lao people s democratic republic,80,0.03,LAO
+1974,lebanon,1972,0.72,LBN
+1974,liberia,470,0.29,LBR
+1974,libyan arab jamahiriyah,2549,1.08,LBY
+1974,luxembourg,3930,11.05,LUX
+1974,macau special adminstrative region of china,73,0.29,MAC
+1974,madagascar,324,0.04,MDG
+1974,malawi,150,0.03,MWI
+1974,malaysia,5195,0.43,MYS
+1974,maldives,1,0.01,MDV
+1974,mali,83,0.01,MLI
+1974,malta,203,0.67,MLT
+1974,martinique,284,0.86,MTQ
+1974,mauritania,132,0.1,MRT
+1974,mauritius,189,0.22,MUS
+1974,mexico,42271,0.72,MEX
+1974,mongolia,1023,0.71,MNG
+1974,montserrat,4,0.36,MSR
+1974,morocco,3037,0.18,MAR
+1974,mozambique,859,0.08,MOZ
+1974,myanmar (formerly burma),1275,0.04,MMR
+1974,nauru,27,3.84,NRU
+1974,nepal,116,0.01,NPL
+1974,netherland antilles and aruba,3854,23.36,ABW
+1974,netherlands,43754,3.24,NLD
+1974,new caledonia,759,6.11,NCL
+1974,new zealand,5115,1.68,NZL
+1974,nicaragua,532,0.2,NIC
+1974,niger,79,0.02,NER
+1974,nigeria,16987,0.27,NGA
+1974,niue,1,0.2,NIU
+1974,norway,7553,1.9,NOR
+1974,oman,637,0.74,OMN
+1974,pacific islands (palau),53,1.33,PLW
+1974,pakistan,5841,0.09,PAK
+1974,panama,824,0.49,PAN
+1974,papua new guinea,433,0.16,PNG
+1974,paraguay,260,0.1,PRY
+1974,peru,5825,0.4,PER
+1974,philippines,8326,0.21,PHL
+1974,plurinational state of bolivia,959,0.21,BOL
+1974,poland,94594,2.81,POL
+1974,portugal,5649,0.62,PRT
+1974,qatar,2860,18.79,QAT
+1974,republic of cameroon,266,0.03,CMR
+1974,republic of korea,20640,0.61,KOR
+1974,reunion,116,0.24,REU
+1974,romania,41163,1.96,ROU
+1974,rwanda,20,0,RWA
+1974,saint lucia,20,0.19,LCA
+1974,samoa,9,0.06,WSM
+1974,sao tome & principe,5,0.06,STP
+1974,saudi arabia,26940,3.87,SAU
+1974,senegal,505,0.11,SEN
+1974,seychelles,15,0.27,SYC
+1974,sierra leone,142,0.05,SLE
+1974,singapore,5991,2.69,SGP
+1974,solomon islands,18,0.09,SLB
+1974,somalia,90,0.02,SOM
+1974,south africa,48196,1.92,ZAF
+1974,spain,47219,1.34,ESP
+1974,sri lanka,800,0.06,LKA
+1974,st. kitts-nevis,10,0.22,KNA
+1974,st. pierre & miquelon,12,2,SPM
+1974,st. vincent & the grenadines,9,0.1,VCT
+1974,sudan,1550,0.09,SDN
+1974,suriname,437,1.19,SUR
+1974,swaziland,85,0.17,SWZ
+1974,sweden,21786,2.67,SWE
+1974,switzerland,11312,1.77,CHE
+1974,syrian arab republic,2636,0.36,SYR
+1974,taiwan,10736,0.68,TWN
+1974,thailand,6612,0.16,THA
+1974,togo,103,0.04,TGO
+1974,tonga,6,0.07,TON
+1974,trinidad and tobago,2741,2.74,TTO
+1974,tunisia,1472,0.27,TUN
+1974,turkey,16672,0.43,TUR
+1974,uganda,326,0.03,UGA
+1974,united arab emirates,8543,18.84,ARE
+1974,united kingdom,168423,2.99,GBR
+1974,united republic of tanzania,629,0.04,TZA
+1974,united states of america,1254019,5.69,USA
+1974,uruguay,1550,0.55,URY
+1974,ussr,777718,3.09,RUS
+1974,vanuatu,17,0.17,VUT
+1974,venezuela,20489,1.67,VEN
+1974,viet nam,5204,0.11,VNM
+1974,yugoslavia (former socialist federal republic),23412,1.11,NA
+1974,zambia,1146,0.24,ZMB
+1974,zimbabwe,2470,0.41,ZWE
+1975,afghanistan,580,0.04,AFG
+1975,albania,1253,0.52,ALB
+1975,algeria,8735,0.55,DZA
+1975,angola,1204,0.18,AGO
+1975,antigua & barbuda,193,2.77,ATG
+1975,argentina,25888,0.99,ARG
+1975,australia,47964,3.45,AUS
+1975,austria,14833,1.96,AUT
+1975,bahamas,2251,11.92,BHS
+1975,bahrain,1569,5.92,BHR
+1975,bangladesh,1328,0.02,BGD
+1975,barbados,155,0.63,BRB
+1975,belgium,33297,3.4,BEL
+1975,belize,48,0.36,BLZ
+1975,benin,121,0.04,BEN
+1975,bermuda,125,2.31,BMU
+1975,bhutan,1,0,BTN
+1975,botswana,51,0.06,BWA
+1975,brazil,41223,0.38,BRA
+1975,british virgin islands,7,0.64,VGB
+1975,brunei (darussalam),1931,12.33,BRN
+1975,bulgaria,19924,2.28,BGR
+1975,burkina faso,60,0.01,BFA
+1975,burundi,21,0.01,BDI
+1975,cambodia,20,0,KHM
+1975,canada,108302,4.68,CAN
+1975,cape verde,21,0.07,CPV
+1975,cayman islands,15,1.18,CYM
+1975,central african republic,28,0.01,CAF
+1975,chad,50,0.01,TCD
+1975,chile,6276,0.6,CHL
+1975,china (mainland),312410,0.34,CHN
+1975,christmas island,37,12.28,CXR
+1975,colombia,9789,0.41,COL
+1975,comoros,9,0.03,COM
+1975,congo,300,0.19,COG
+1975,cook islands,4,0.21,COK
+1975,costa rica,556,0.27,CRI
+1975,cote d ivoire,1088,0.16,CIV
+1975,cuba,7381,0.78,CUB
+1975,cyprus,540,0.83,CYP
+1975,czechoslovakia,62640,4.23,NA
+1975,democratic people s republic of korea,29381,1.83,PRK
+1975,democratic republic of the congo (formerly zaire),883,0.04,COD
+1975,denmark,15211,3.01,DNK
+1975,djibouti,54,0.24,DJI
+1975,dominica,8,0.1,DMA
+1975,dominican republic,1729,0.34,DOM
+1975,ecuador,2008,0.29,ECU
+1975,egypt,8481,0.21,EGY
+1975,el salvador,575,0.14,SLV
+1975,equatorial guinea,17,0.07,GNQ
+1975,ethiopia,330,0.01,ETH
+1975,faeroe islands,95,2.36,FRO
+1975,falkland islands (malvinas),4,1.84,FLK
+1975,federal republic of germany,195164,3.16,DEU
+1975,fiji,170,0.29,FJI
+1975,finland,12572,2.67,FIN
+1975,former democratic yemen,427,0.26,NA
+1975,former german democratic republic,78745,4.67,NA
+1975,former panama canal zone,304,0,PAN
+1975,former yemen,165,0.03,YEM
+1975,france,121876,2.31,FRA
+1975,french guiana,32,0.56,GUF
+1975,french polynesia,58,0.45,PYF
+1975,gabon,1464,2.46,GAB
+1975,gambia,27,0.05,GMB
+1975,ghana,749,0.08,GHA
+1975,gibraltar,24,0.95,GIB
+1975,greece,10601,1.17,GRC
+1975,greenland,138,2.79,GRL
+1975,grenada,13,0.14,GRD
+1975,guadeloupe,110,0.33,GLP
+1975,guatemala,961,0.15,GTM
+1975,guinea,230,0.05,GIN
+1975,guinea bissau,31,0.04,GNB
+1975,guyana,498,0.67,GUY
+1975,haiti,132,0.03,HTI
+1975,honduras,455,0.15,HND
+1975,hong kong special adminstrative region of china,3005,0.69,HKG
+1975,hungary,20559,1.95,HUN
+1975,iceland,441,2.02,ISL
+1975,india,68776,0.11,IND
+1975,indonesia,14716,0.11,IDN
+1975,iraq,9042,0.77,IRQ
+1975,ireland,6014,1.89,IRL
+1975,islamic republic of iran,38001,1.16,IRN
+1975,israel,5358,1.61,ISR
+1975,italy,93349,1.69,ITA
+1975,jamaica,2233,1.11,JAM
+1975,japan,237271,2.14,JPN
+1975,jordan,680,0.34,JOR
+1975,kenya,1357,0.1,KEN
+1975,kiribati,9,0.19,KIR
+1975,kuwait,4589,4.35,KWT
+1975,lao people s democratic republic,69,0.02,LAO
+1975,lebanon,1754,0.63,LBN
+1975,liberia,405,0.24,LBR
+1975,libyan arab jamahiriyah,3158,1.28,LBY
+1975,luxembourg,3230,9,LUX
+1975,macau special adminstrative region of china,81,0.33,MAC
+1975,madagascar,462,0.06,MDG
+1975,malawi,158,0.03,MWI
+1975,malaysia,5303,0.43,MYS
+1975,maldives,2,0.01,MDV
+1975,mali,93,0.01,MLI
+1975,malta,182,0.59,MLT
+1975,martinique,246,0.75,MTQ
+1975,mauritania,139,0.11,MRT
+1975,mauritius,161,0.18,MUS
+1975,mexico,44852,0.74,MEX
+1975,mongolia,1109,0.75,MNG
+1975,montserrat,3,0.28,MSR
+1975,morocco,3030,0.18,MAR
+1975,mozambique,787,0.07,MOZ
+1975,myanmar (formerly burma),1251,0.04,MMR
+1975,nauru,28,4.03,NRU
+1975,nepal,96,0.01,NPL
+1975,netherland antilles and aruba,2791,16.82,ABW
+1975,netherlands,41729,3.07,NLD
+1975,new caledonia,690,5.36,NCL
+1975,new zealand,4980,1.62,NZL
+1975,nicaragua,526,0.19,NIC
+1975,niger,91,0.02,NER
+1975,nigeria,12925,0.2,NGA
+1975,niue,1,0.21,NIU
+1975,norway,8092,2.02,NOR
+1975,oman,1979,2.2,OMN
+1975,pacific islands (palau),53,1.29,PLW
+1975,pakistan,6332,0.09,PAK
+1975,panama,999,0.58,PAN
+1975,papua new guinea,418,0.15,PNG
+1975,paraguay,229,0.08,PRY
+1975,peru,5990,0.4,PER
+1975,philippines,8870,0.22,PHL
+1975,plurinational state of bolivia,1107,0.23,BOL
+1975,poland,102416,3.01,POL
+1975,portugal,5824,0.63,PRT
+1975,qatar,2988,18.35,QAT
+1975,republic of cameroon,317,0.04,CMR
+1975,republic of korea,22315,0.64,KOR
+1975,reunion,132,0.27,REU
+1975,romania,44248,2.08,ROU
+1975,rwanda,48,0.01,RWA
+1975,saint lucia,21,0.19,LCA
+1975,samoa,16,0.11,WSM
+1975,sao tome & principe,5,0.06,STP
+1975,saudi arabia,22726,3.09,SAU
+1975,senegal,704,0.15,SEN
+1975,seychelles,16,0.28,SYC
+1975,sierra leone,143,0.05,SLE
+1975,singapore,6693,2.96,SGP
+1975,solomon islands,16,0.08,SLB
+1975,somalia,137,0.03,SOM
+1975,south africa,50505,1.97,ZAF
+1975,spain,49535,1.39,ESP
+1975,sri lanka,790,0.06,LKA
+1975,st. kitts-nevis,9,0.2,KNA
+1975,st. pierre & miquelon,9,1.55,SPM
+1975,st. vincent & the grenadines,9,0.1,VCT
+1975,sudan,1156,0.07,SDN
+1975,suriname,551,1.51,SUR
+1975,swaziland,92,0.18,SWZ
+1975,sweden,22041,2.69,SWE
+1975,switzerland,10662,1.67,CHE
+1975,syrian arab republic,3050,0.4,SYR
+1975,taiwan,11868,0.74,TWN
+1975,thailand,6656,0.16,THA
+1975,togo,85,0.04,TGO
+1975,tonga,9,0.1,TON
+1975,trinidad and tobago,2624,2.6,TTO
+1975,tunisia,1513,0.27,TUN
+1975,turkey,17916,0.45,TUR
+1975,uganda,309,0.03,UGA
+1975,united arab emirates,8473,15.88,ARE
+1975,united kingdom,164615,2.92,GBR
+1975,united republic of tanzania,623,0.04,TZA
+1975,united states of america,1201617,5.41,USA
+1975,uruguay,1628,0.58,URY
+1975,ussr,817647,3.22,RUS
+1975,vanuatu,15,0.15,VUT
+1975,venezuela,17403,1.37,VEN
+1975,viet nam,5945,0.12,VNM
+1975,yugoslavia (former socialist federal republic),24429,1.14,NA
+1975,zambia,1113,0.23,ZMB
+1975,zimbabwe,2269,0.37,ZWE
+1976,afghanistan,542,0.04,AFG
+1976,albania,1350,0.55,ALB
+1976,algeria,10682,0.65,DZA
+1976,angola,896,0.13,AGO
+1976,antigua & barbuda,110,1.57,ATG
+1976,argentina,27212,1.03,ARG
+1976,australia,47517,3.38,AUS
+1976,austria,15930,2.1,AUT
+1976,bahamas,1763,9.14,BHS
+1976,bahrain,1793,6.35,BHR
+1976,bangladesh,1519,0.02,BGD
+1976,barbados,145,0.59,BRB
+1976,belgium,35454,3.61,BEL
+1976,belize,48,0.35,BLZ
+1976,benin,71,0.02,BEN
+1976,bermuda,128,2.34,BMU
+1976,bhutan,1,0,BTN
+1976,botswana,162,0.19,BWA
+1976,brazil,42311,0.38,BRA
+1976,british virgin islands,7,0.63,VGB
+1976,brunei (darussalam),1643,10.07,BRN
+1976,bulgaria,19939,2.28,BGR
+1976,burkina faso,57,0.01,BFA
+1976,burundi,24,0.01,BDI
+1976,cambodia,20,0,KHM
+1976,canada,108895,4.65,CAN
+1976,cape verde,20,0.06,CPV
+1976,cayman islands,18,1.36,CYM
+1976,central african republic,35,0.02,CAF
+1976,chad,50,0.01,TCD
+1976,chile,6573,0.62,CHL
+1976,china (mainland),326205,0.35,CHN
+1976,christmas island,34,11.44,CXR
+1976,colombia,10387,0.42,COL
+1976,comoros,11,0.04,COM
+1976,congo,337,0.21,COG
+1976,cook islands,4,0.21,COK
+1976,costa rica,569,0.27,CRI
+1976,cote d ivoire,1081,0.15,CIV
+1976,cuba,7424,0.78,CUB
+1976,cyprus,672,1.02,CYP
+1976,czechoslovakia,65089,4.36,NA
+1976,democratic people s republic of korea,30049,1.84,PRK
+1976,democratic republic of the congo (formerly zaire),931,0.04,COD
+1976,denmark,16399,3.23,DNK
+1976,djibouti,54,0.22,DJI
+1976,dominica,8,0.1,DMA
+1976,dominican republic,1727,0.33,DOM
+1976,ecuador,2212,0.31,ECU
+1976,egypt,9407,0.23,EGY
+1976,el salvador,603,0.14,SLV
+1976,equatorial guinea,17,0.07,GNQ
+1976,ethiopia,321,0.01,ETH
+1976,faeroe islands,90,2.21,FRO
+1976,falkland islands (malvinas),4,1.99,FLK
+1976,federal republic of germany,217385,3.51,DEU
+1976,fiji,132,0.22,FJI
+1976,finland,13984,2.96,FIN
+1976,former democratic yemen,501,0.3,NA
+1976,former german democratic republic,80724,4.8,NA
+1976,former panama canal zone,278,0,PAN
+1976,former yemen,199,0.04,YEM
+1976,france,137879,2.6,FRA
+1976,french guiana,75,1.27,GUF
+1976,french polynesia,72,0.54,PYF
+1976,gabon,1557,2.55,GAB
+1976,gambia,27,0.05,GMB
+1976,ghana,664,0.07,GHA
+1976,gibraltar,21,0.82,GIB
+1976,greece,11702,1.28,GRC
+1976,greenland,60,1.2,GRL
+1976,grenada,13,0.15,GRD
+1976,guadeloupe,135,0.41,GLP
+1976,guatemala,903,0.14,GTM
+1976,guinea,242,0.06,GIN
+1976,guinea bissau,26,0.04,GNB
+1976,guyana,478,0.63,GUY
+1976,haiti,184,0.04,HTI
+1976,honduras,485,0.15,HND
+1976,hong kong special adminstrative region of china,3411,0.76,HKG
+1976,hungary,21820,2.06,HUN
+1976,iceland,465,2.11,ISL
+1976,india,71935,0.11,IND
+1976,indonesia,16856,0.12,IDN
+1976,iraq,13308,1.09,IRQ
+1976,ireland,6080,1.88,IRL
+1976,islamic republic of iran,42717,1.26,IRN
+1976,israel,5348,1.56,ISR
+1976,italy,100167,1.81,ITA
+1976,jamaica,1986,0.98,JAM
+1976,japan,247860,2.21,JPN
+1976,jordan,805,0.39,JOR
+1976,kenya,1257,0.09,KEN
+1976,kiribati,9,0.19,KIR
+1976,kuwait,5038,4.51,KWT
+1976,lao people s democratic republic,61,0.02,LAO
+1976,lebanon,1671,0.6,LBN
+1976,liberia,403,0.24,LBR
+1976,libyan arab jamahiriyah,4886,1.9,LBY
+1976,luxembourg,3229,8.94,LUX
+1976,macau special adminstrative region of china,69,0.28,MAC
+1976,madagascar,271,0.04,MDG
+1976,malawi,159,0.03,MWI
+1976,malaysia,6516,0.52,MYS
+1976,maldives,3,0.02,MDV
+1976,mali,93,0.01,MLI
+1976,malta,208,0.67,MLT
+1976,martinique,232,0.71,MTQ
+1976,mauritania,141,0.1,MRT
+1976,mauritius,169,0.19,MUS
+1976,mexico,50215,0.81,MEX
+1976,mongolia,1201,0.79,MNG
+1976,montserrat,3,0.21,MSR
+1976,morocco,3149,0.18,MAR
+1976,mozambique,698,0.06,MOZ
+1976,myanmar (formerly burma),1336,0.04,MMR
+1976,nauru,28,3.86,NRU
+1976,nepal,77,0.01,NPL
+1976,netherland antilles and aruba,5962,35.49,ABW
+1976,netherlands,46273,3.37,NLD
+1976,new caledonia,652,4.93,NCL
+1976,new zealand,5246,1.69,NZL
+1976,nicaragua,607,0.21,NIC
+1976,niger,91,0.02,NER
+1976,nigeria,15066,0.22,NGA
+1976,niue,1,0.22,NIU
+1976,norway,7995,1.99,NOR
+1976,oman,2271,2.4,OMN
+1976,pacific islands (palau),31,0.74,PLW
+1976,pakistan,6228,0.09,PAK
+1976,panama,985,0.56,PAN
+1976,papua new guinea,429,0.15,PNG
+1976,paraguay,282,0.1,PRY
+1976,peru,6120,0.39,PER
+1976,philippines,9580,0.23,PHL
+1976,plurinational state of bolivia,1249,0.26,BOL
+1976,poland,108818,3.17,POL
+1976,portugal,6115,0.66,PRT
+1976,qatar,2832,16.45,QAT
+1976,republic of cameroon,298,0.04,CMR
+1976,republic of korea,25445,0.72,KOR
+1976,reunion,172,0.35,REU
+1976,romania,47659,2.22,ROU
+1976,rwanda,73,0.02,RWA
+1976,saint lucia,23,0.2,LCA
+1976,samoa,13,0.09,WSM
+1976,sao tome & principe,8,0.09,STP
+1976,saudi arabia,27693,3.57,SAU
+1976,senegal,484,0.1,SEN
+1976,seychelles,22,0.37,SYC
+1976,sierra leone,123,0.04,SLE
+1976,singapore,8191,3.57,SGP
+1976,solomon islands,17,0.08,SLB
+1976,somalia,131,0.03,SOM
+1976,south africa,52663,2,ZAF
+1976,spain,54116,1.5,ESP
+1976,sri lanka,765,0.05,LKA
+1976,st. kitts-nevis,10,0.22,KNA
+1976,st. pierre & miquelon,13,2.24,SPM
+1976,st. vincent & the grenadines,9,0.1,VCT
+1976,sudan,1024,0.06,SDN
+1976,suriname,545,1.5,SUR
+1976,swaziland,91,0.17,SWZ
+1976,sweden,24082,2.93,SWE
+1976,switzerland,11040,1.72,CHE
+1976,syrian arab republic,3752,0.48,SYR
+1976,taiwan,15322,0.94,TWN
+1976,thailand,7848,0.18,THA
+1976,togo,88,0.04,TGO
+1976,tonga,8,0.09,TON
+1976,trinidad and tobago,4343,4.26,TTO
+1976,tunisia,1595,0.27,TUN
+1976,turkey,20104,0.5,TUR
+1976,uganda,270,0.02,UGA
+1976,united arab emirates,10813,17.32,ARE
+1976,united kingdom,163325,2.89,GBR
+1976,united republic of tanzania,761,0.05,TZA
+1976,united states of america,1258004,5.61,USA
+1976,uruguay,1608,0.57,URY
+1976,ussr,849190,3.3,RUS
+1976,vanuatu,12,0.11,VUT
+1976,venezuela,15638,1.19,VEN
+1976,viet nam,3797,0.07,VNM
+1976,yugoslavia (former socialist federal republic),25214,1.17,NA
+1976,zambia,1098,0.22,ZMB
+1976,zimbabwe,2964,0.47,ZWE
+1977,afghanistan,652,0.05,AFG
+1977,albania,1560,0.62,ALB
+1977,algeria,11424,0.67,DZA
+1977,angola,964,0.14,AGO
+1977,antigua & barbuda,127,1.81,ATG
+1977,argentina,27486,1.02,ARG
+1977,australia,51210,3.6,AUS
+1977,austria,15331,2.02,AUT
+1977,bahamas,2650,13.44,BHS
+1977,bahrain,2037,6.75,BHR
+1977,bangladesh,1585,0.02,BGD
+1977,barbados,161,0.65,BRB
+1977,belgium,34516,3.51,BEL
+1977,belize,54,0.39,BLZ
+1977,benin,81,0.02,BEN
+1977,bermuda,124,2.25,BMU
+1977,bhutan,2,0,BTN
+1977,botswana,213,0.24,BWA
+1977,brazil,44440,0.39,BRA
+1977,british virgin islands,8,0.71,VGB
+1977,brunei (darussalam),1744,10.27,BRN
+1977,bulgaria,20717,2.36,BGR
+1977,burkina faso,68,0.01,BFA
+1977,burundi,27,0.01,BDI
+1977,cambodia,20,0,KHM
+1977,canada,111304,4.7,CAN
+1977,cape verde,22,0.07,CPV
+1977,cayman islands,19,1.33,CYM
+1977,central african republic,35,0.02,CAF
+1977,chad,54,0.01,TCD
+1977,chile,6302,0.59,CHL
+1977,china (mainland),357325,0.38,CHN
+1977,christmas island,25,8.37,CXR
+1977,colombia,10732,0.43,COL
+1977,comoros,11,0.04,COM
+1977,congo,131,0.08,COG
+1977,cook islands,8,0.39,COK
+1977,costa rica,713,0.33,CRI
+1977,cote d ivoire,1106,0.15,CIV
+1977,cuba,8018,0.83,CUB
+1977,cyprus,728,1.09,CYP
+1977,czechoslovakia,67048,4.46,NA
+1977,democratic people s republic of korea,31052,1.87,PRK
+1977,democratic republic of the congo (formerly zaire),951,0.04,COD
+1977,denmark,16866,3.31,DNK
+1977,djibouti,54,0.2,DJI
+1977,dominica,7,0.09,DMA
+1977,dominican republic,1531,0.28,DOM
+1977,ecuador,2041,0.28,ECU
+1977,egypt,10326,0.25,EGY
+1977,el salvador,624,0.14,SLV
+1977,equatorial guinea,17,0.08,GNQ
+1977,ethiopia,286,0.01,ETH
+1977,faeroe islands,111,2.7,FRO
+1977,falkland islands (malvinas),4,2,FLK
+1977,federal republic of germany,204846,3.31,DEU
+1977,fiji,209,0.35,FJI
+1977,finland,13695,2.89,FIN
+1977,former democratic yemen,577,0.33,NA
+1977,former german democratic republic,82873,4.94,NA
+1977,former panama canal zone,309,0,PAN
+1977,former yemen,236,0.04,YEM
+1977,france,131131,2.46,FRA
+1977,french guiana,93,1.53,GUF
+1977,french polynesia,75,0.54,PYF
+1977,gabon,1722,2.74,GAB
+1977,gambia,31,0.05,GMB
+1977,ghana,819,0.08,GHA
+1977,gibraltar,21,0.81,GIB
+1977,greece,12817,1.38,GRC
+1977,greenland,197,3.95,GRL
+1977,grenada,13,0.15,GRD
+1977,guadeloupe,143,0.44,GLP
+1977,guatemala,1040,0.16,GTM
+1977,guinea,246,0.06,GIN
+1977,guinea bissau,28,0.04,GNB
+1977,guyana,518,0.68,GUY
+1977,haiti,193,0.04,HTI
+1977,honduras,546,0.17,HND
+1977,hong kong special adminstrative region of china,3881,0.84,HKG
+1977,hungary,22690,2.14,HUN
+1977,iceland,520,2.34,ISL
+1977,india,76098,0.12,IND
+1977,indonesia,22480,0.16,IDN
+1977,iraq,11920,0.95,IRQ
+1977,ireland,6427,1.96,IRL
+1977,islamic republic of iran,44715,1.28,IRN
+1977,israel,5425,1.54,ISR
+1977,italy,97130,1.75,ITA
+1977,jamaica,2031,0.99,JAM
+1977,japan,255035,2.26,JPN
+1977,jordan,863,0.41,JOR
+1977,kenya,1379,0.09,KEN
+1977,kiribati,6,0.12,KIR
+1977,kuwait,4696,3.98,KWT
+1977,lao people s democratic republic,63,0.02,LAO
+1977,lebanon,1520,0.54,LBN
+1977,liberia,402,0.23,LBR
+1977,libyan arab jamahiriyah,5483,2.04,LBY
+1977,luxembourg,2980,8.22,LUX
+1977,macau special adminstrative region of china,84,0.35,MAC
+1977,madagascar,231,0.03,MDG
+1977,malawi,174,0.03,MWI
+1977,malaysia,6166,0.48,MYS
+1977,maldives,4,0.03,MDV
+1977,mali,113,0.02,MLI
+1977,malta,219,0.7,MLT
+1977,martinique,233,0.71,MTQ
+1977,mauritania,152,0.11,MRT
+1977,mauritius,175,0.19,MUS
+1977,mexico,52590,0.83,MEX
+1977,mongolia,1356,0.87,MNG
+1977,montserrat,7,0.56,MSR
+1977,morocco,3464,0.19,MAR
+1977,mozambique,740,0.07,MOZ
+1977,myanmar (formerly burma),1411,0.05,MMR
+1977,nauru,31,4.28,NRU
+1977,nepal,92,0.01,NPL
+1977,netherland antilles and aruba,3114,18.42,ABW
+1977,netherlands,44799,3.24,NLD
+1977,new caledonia,584,4.32,NCL
+1977,new zealand,5536,1.77,NZL
+1977,nicaragua,774,0.26,NIC
+1977,niger,100,0.02,NER
+1977,nigeria,13790,0.2,NGA
+1977,niue,1,0.23,NIU
+1977,norway,8473,2.1,NOR
+1977,oman,2320,2.32,OMN
+1977,pacific islands (palau),50,1.17,PLW
+1977,pakistan,6651,0.09,PAK
+1977,panama,944,0.52,PAN
+1977,papua new guinea,431,0.15,PNG
+1977,paraguay,316,0.11,PRY
+1977,peru,6365,0.4,PER
+1977,philippines,10023,0.23,PHL
+1977,plurinational state of bolivia,1222,0.24,BOL
+1977,poland,114269,3.3,POL
+1977,portugal,6198,0.65,PRT
+1977,qatar,2707,14.99,QAT
+1977,republic of cameroon,427,0.05,CMR
+1977,republic of korea,28828,0.8,KOR
+1977,reunion,177,0.36,REU
+1977,romania,48650,2.25,ROU
+1977,rwanda,73,0.02,RWA
+1977,saint lucia,19,0.17,LCA
+1977,samoa,22,0.14,WSM
+1977,sao tome & principe,8,0.09,STP
+1977,saudi arabia,32227,3.93,SAU
+1977,senegal,612,0.12,SEN
+1977,seychelles,23,0.38,SYC
+1977,sierra leone,140,0.05,SLE
+1977,singapore,7720,3.33,SGP
+1977,solomon islands,22,0.11,SLB
+1977,somalia,218,0.04,SOM
+1977,south africa,54527,2.02,ZAF
+1977,spain,53358,1.46,ESP
+1977,sri lanka,796,0.06,LKA
+1977,st. kitts-nevis,10,0.22,KNA
+1977,st. pierre & miquelon,10,1.69,SPM
+1977,st. vincent & the grenadines,9,0.09,VCT
+1977,sudan,1038,0.06,SDN
+1977,suriname,518,1.43,SUR
+1977,swaziland,93,0.17,SWZ
+1977,sweden,23399,2.84,SWE
+1977,switzerland,11204,1.75,CHE
+1977,syrian arab republic,3999,0.5,SYR
+1977,taiwan,16697,1,TWN
+1977,thailand,8770,0.2,THA
+1977,togo,126,0.05,TGO
+1977,tonga,8,0.09,TON
+1977,trinidad and tobago,4411,4.28,TTO
+1977,tunisia,1843,0.31,TUN
+1977,turkey,22245,0.54,TUR
+1977,uganda,220,0.02,UGA
+1977,united arab emirates,10577,14.59,ARE
+1977,united kingdom,164916,2.92,GBR
+1977,united republic of tanzania,549,0.03,TZA
+1977,united states of america,1293235,5.71,USA
+1977,uruguay,1541,0.54,URY
+1977,ussr,878142,3.39,RUS
+1977,vanuatu,14,0.13,VUT
+1977,venezuela,17380,1.28,VEN
+1977,viet nam,4166,0.08,VNM
+1977,yugoslavia (former socialist federal republic),24520,1.13,NA
+1977,zambia,1021,0.2,ZMB
+1977,zimbabwe,2536,0.39,ZWE
+1978,afghanistan,589,0.04,AFG
+1978,albania,1771,0.69,ALB
+1978,algeria,17052,0.97,DZA
+1978,angola,1476,0.21,AGO
+1978,antigua & barbuda,134,1.9,ATG
+1978,argentina,27990,1.03,ARG
+1978,australia,55090,3.83,AUS
+1978,austria,15676,2.07,AUT
+1978,bahamas,1802,8.95,BHS
+1978,bahrain,2118,6.58,BHR
+1978,bangladesh,1641,0.02,BGD
+1978,barbados,172,0.69,BRB
+1978,belgium,37048,3.77,BEL
+1978,belize,59,0.43,BLZ
+1978,benin,99,0.03,BEN
+1978,bermuda,116,2.1,BMU
+1978,bhutan,3,0.01,BTN
+1978,botswana,227,0.25,BWA
+1978,brazil,48248,0.42,BRA
+1978,british virgin islands,8,0.71,VGB
+1978,brunei (darussalam),2602,14.74,BRN
+1978,bulgaria,22201,2.52,BGR
+1978,burkina faso,95,0.01,BFA
+1978,burundi,28,0.01,BDI
+1978,cambodia,14,0,KHM
+1978,canada,113416,4.73,CAN
+1978,cape verde,57,0.19,CPV
+1978,cayman islands,25,1.64,CYM
+1978,central african republic,40,0.02,CAF
+1978,chad,53,0.01,TCD
+1978,chile,6258,0.58,CHL
+1978,china (mainland),398737,0.42,CHN
+1978,christmas island,25,8.37,CXR
+1978,colombia,11367,0.44,COL
+1978,comoros,8,0.03,COM
+1978,congo,88,0.05,COG
+1978,cook islands,8,0.41,COK
+1978,costa rica,797,0.36,CRI
+1978,cote d ivoire,1314,0.17,CIV
+1978,cuba,8369,0.86,CUB
+1978,cyprus,766,1.14,CYP
+1978,czechoslovakia,67671,4.47,NA
+1978,democratic people s republic of korea,29575,1.76,PRK
+1978,democratic republic of the congo (formerly zaire),965,0.04,COD
+1978,denmark,16667,3.26,DNK
+1978,djibouti,55,0.19,DJI
+1978,dominica,7,0.09,DMA
+1978,dominican republic,1486,0.27,DOM
+1978,ecuador,2843,0.38,ECU
+1978,egypt,10721,0.25,EGY
+1978,el salvador,652,0.15,SLV
+1978,equatorial guinea,19,0.09,GNQ
+1978,ethiopia,374,0.01,ETH
+1978,faeroe islands,109,2.61,FRO
+1978,falkland islands (malvinas),4,2.01,FLK
+1978,federal republic of germany,211348,3.42,DEU
+1978,fiji,194,0.32,FJI
+1978,finland,14157,2.98,FIN
+1978,former democratic yemen,588,0.33,NA
+1978,former german democratic republic,83690,4.99,NA
+1978,former panama canal zone,297,0,PAN
+1978,former yemen,259,0.04,YEM
+1978,france,137949,2.58,FRA
+1978,french guiana,90,1.44,GUF
+1978,french polynesia,85,0.6,PYF
+1978,gabon,2062,3.2,GAB
+1978,gambia,38,0.06,GMB
+1978,ghana,810,0.08,GHA
+1978,gibraltar,19,0.74,GIB
+1978,greece,13112,1.39,GRC
+1978,greenland,107,2.14,GRL
+1978,grenada,14,0.16,GRD
+1978,guadeloupe,144,0.44,GLP
+1978,guatemala,1126,0.17,GTM
+1978,guinea,246,0.06,GIN
+1978,guinea bissau,28,0.04,GNB
+1978,guyana,561,0.73,GUY
+1978,haiti,206,0.04,HTI
+1978,honduras,559,0.16,HND
+1978,hong kong special adminstrative region of china,4296,0.9,HKG
+1978,hungary,24049,2.26,HUN
+1978,iceland,525,2.34,ISL
+1978,india,77201,0.12,IND
+1978,indonesia,25616,0.18,IDN
+1978,iraq,11540,0.89,IRQ
+1978,ireland,6428,1.93,IRL
+1978,islamic republic of iran,44306,1.23,IRN
+1978,israel,5775,1.61,ISR
+1978,italy,101782,1.82,ITA
+1978,jamaica,2487,1.2,JAM
+1978,japan,246492,2.16,JPN
+1978,jordan,993,0.46,JOR
+1978,kenya,1452,0.1,KEN
+1978,kiribati,6,0.11,KIR
+1978,kuwait,5727,4.61,KWT
+1978,lao people s democratic republic,63,0.02,LAO
+1978,lebanon,1558,0.56,LBN
+1978,liberia,411,0.23,LBR
+1978,libyan arab jamahiriyah,5792,2.07,LBY
+1978,luxembourg,3231,8.89,LUX
+1978,macau special adminstrative region of china,113,0.47,MAC
+1978,madagascar,278,0.03,MDG
+1978,malawi,183,0.03,MWI
+1978,malaysia,6337,0.48,MYS
+1978,maldives,6,0.04,MDV
+1978,mali,108,0.02,MLI
+1978,malta,255,0.81,MLT
+1978,martinique,199,0.61,MTQ
+1978,mauritania,159,0.11,MRT
+1978,mauritius,172,0.18,MUS
+1978,mexico,60717,0.93,MEX
+1978,mongolia,1577,0.98,MNG
+1978,montserrat,7,0.56,MSR
+1978,morocco,3566,0.19,MAR
+1978,mozambique,784,0.07,MOZ
+1978,myanmar (formerly burma),1406,0.04,MMR
+1978,nauru,31,4.24,NRU
+1978,nepal,90,0.01,NPL
+1978,netherland antilles and aruba,2652,15.51,ABW
+1978,netherlands,46509,3.34,NLD
+1978,new caledonia,421,3.06,NCL
+1978,new zealand,4911,1.57,NZL
+1978,nicaragua,718,0.23,NIC
+1978,niger,114,0.02,NER
+1978,nigeria,13170,0.18,NGA
+1978,niue,1,0.23,NIU
+1978,norway,9488,2.34,NOR
+1978,oman,2126,2.01,OMN
+1978,pacific islands (palau),30,0.69,PLW
+1978,pakistan,7128,0.09,PAK
+1978,panama,775,0.42,PAN
+1978,papua new guinea,457,0.15,PNG
+1978,paraguay,398,0.13,PRY
+1978,peru,6125,0.37,PER
+1978,philippines,10220,0.23,PHL
+1978,plurinational state of bolivia,1371,0.27,BOL
+1978,poland,117823,3.37,POL
+1978,portugal,6202,0.65,PRT
+1978,qatar,2872,15.1,QAT
+1978,republic of cameroon,546,0.06,CMR
+1978,republic of korea,30926,0.85,KOR
+1978,reunion,196,0.39,REU
+1978,romania,52878,2.42,ROU
+1978,rwanda,79,0.02,RWA
+1978,saint lucia,27,0.23,LCA
+1978,samoa,29,0.19,WSM
+1978,sao tome & principe,9,0.1,STP
+1978,saudi arabia,31397,3.62,SAU
+1978,senegal,717,0.14,SEN
+1978,seychelles,21,0.34,SYC
+1978,sierra leone,194,0.06,SLE
+1978,singapore,9044,3.86,SGP
+1978,solomon islands,17,0.08,SLB
+1978,somalia,152,0.03,SOM
+1978,south africa,55113,1.99,ZAF
+1978,spain,54675,1.48,ESP
+1978,sri lanka,941,0.06,LKA
+1978,st. kitts-nevis,9,0.2,KNA
+1978,st. pierre & miquelon,9,1.54,SPM
+1978,st. vincent & the grenadines,10,0.1,VCT
+1978,sudan,938,0.05,SDN
+1978,suriname,653,1.79,SUR
+1978,swaziland,120,0.21,SWZ
+1978,sweden,21689,2.62,SWE
+1978,switzerland,11513,1.81,CHE
+1978,syrian arab republic,4151,0.5,SYR
+1978,taiwan,19400,1.14,TWN
+1978,thailand,9563,0.21,THA
+1978,togo,97,0.04,TGO
+1978,tonga,10,0.11,TON
+1978,trinidad and tobago,4180,4,TTO
+1978,tunisia,2043,0.33,TUN
+1978,turkey,21068,0.5,TUR
+1978,uganda,191,0.02,UGA
+1978,united arab emirates,12221,14.75,ARE
+1978,united kingdom,165008,2.92,GBR
+1978,united republic of tanzania,601,0.03,TZA
+1978,united states of america,1333750,5.83,USA
+1978,uruguay,1566,0.54,URY
+1978,ussr,908346,3.48,RUS
+1978,vanuatu,16,0.15,VUT
+1978,venezuela,18732,1.33,VEN
+1978,viet nam,4205,0.08,VNM
+1978,yugoslavia (former socialist federal republic),27401,1.25,NA
+1978,zambia,948,0.18,ZMB
+1978,zimbabwe,2535,0.37,ZWE
+1979,afghanistan,611,0.04,AFG
+1979,albania,2069,0.79,ALB
+1979,algeria,12441,0.68,DZA
+1979,angola,1501,0.2,AGO
+1979,antigua & barbuda,111,1.58,ATG
+1979,argentina,30189,1.09,ARG
+1979,australia,55923,3.85,AUS
+1979,austria,16797,2.22,AUT
+1979,bahamas,1890,9.17,BHS
+1979,bahrain,2218,6.51,BHR
+1979,bangladesh,1813,0.02,BGD
+1979,barbados,164,0.66,BRB
+1979,belgium,38242,3.88,BEL
+1979,belize,57,0.4,BLZ
+1979,benin,100,0.03,BEN
+1979,bermuda,126,2.27,BMU
+1979,bhutan,6,0.01,BTN
+1979,botswana,257,0.27,BWA
+1979,brazil,51356,0.43,BRA
+1979,british virgin islands,8,0.7,VGB
+1979,brunei (darussalam),2029,11.09,BRN
+1979,bulgaria,21585,2.44,BGR
+1979,burkina faso,111,0.02,BFA
+1979,burundi,30,0.01,BDI
+1979,cambodia,8,0,KHM
+1979,canada,120553,4.97,CAN
+1979,cape verde,68,0.23,CPV
+1979,cayman islands,25,1.56,CYM
+1979,central african republic,28,0.01,CAF
+1979,chad,55,0.01,TCD
+1979,chile,6780,0.62,CHL
+1979,china (mainland),407652,0.42,CHN
+1979,christmas island,27,8.93,CXR
+1979,colombia,12117,0.46,COL
+1979,comoros,6,0.02,COM
+1979,congo,95,0.05,COG
+1979,cook islands,7,0.37,COK
+1979,costa rica,762,0.33,CRI
+1979,cote d ivoire,1479,0.18,CIV
+1979,cuba,8648,0.89,CUB
+1979,cyprus,819,1.2,CYP
+1979,czechoslovakia,65920,4.33,NA
+1979,democratic people s republic of korea,30153,1.77,PRK
+1979,democratic republic of the congo (formerly zaire),1024,0.04,COD
+1979,denmark,17180,3.36,DNK
+1979,djibouti,99,0.31,DJI
+1979,dominica,9,0.12,DMA
+1979,dominican republic,1857,0.33,DOM
+1979,ecuador,3318,0.43,ECU
+1979,egypt,11712,0.27,EGY
+1979,el salvador,652,0.14,SLV
+1979,equatorial guinea,17,0.08,GNQ
+1979,ethiopia,504,0.01,ETH
+1979,faeroe islands,131,3.09,FRO
+1979,falkland islands (malvinas),4,2.03,FLK
+1979,federal republic of germany,220557,3.58,DEU
+1979,fiji,229,0.37,FJI
+1979,finland,14817,3.11,FIN
+1979,former democratic yemen,594,0.33,NA
+1979,former german democratic republic,85134,5.08,NA
+1979,former panama canal zone,280,0,PAN
+1979,former yemen,285,0.05,YEM
+1979,france,144302,2.69,FRA
+1979,french guiana,149,2.29,GUF
+1979,french polynesia,77,0.53,PYF
+1979,gabon,1842,2.78,GAB
+1979,gambia,40,0.07,GMB
+1979,ghana,725,0.07,GHA
+1979,gibraltar,25,0.95,GIB
+1979,greece,13988,1.47,GRC
+1979,greenland,156,3.13,GRL
+1979,grenada,13,0.15,GRD
+1979,guadeloupe,147,0.45,GLP
+1979,guatemala,1280,0.19,GTM
+1979,guinea,258,0.06,GIN
+1979,guinea bissau,30,0.04,GNB
+1979,guyana,415,0.54,GUY
+1979,haiti,206,0.04,HTI
+1979,honduras,527,0.15,HND
+1979,hong kong special adminstrative region of china,4332,0.88,HKG
+1979,hungary,23515,2.2,HUN
+1979,iceland,542,2.4,ISL
+1979,india,80963,0.12,IND
+1979,indonesia,25933,0.18,IDN
+1979,iraq,14451,1.08,IRQ
+1979,ireland,7469,2.21,IRL
+1979,islamic republic of iran,44731,1.2,IRN
+1979,israel,5732,1.56,ISR
+1979,italy,105663,1.88,ITA
+1979,jamaica,2328,1.11,JAM
+1979,japan,260600,2.27,JPN
+1979,jordan,1035,0.46,JOR
+1979,kenya,1374,0.09,KEN
+1979,kiribati,7,0.13,KIR
+1979,kuwait,4818,3.68,KWT
+1979,lao people s democratic republic,61,0.02,LAO
+1979,lebanon,1679,0.6,LBN
+1979,liberia,531,0.28,LBR
+1979,libyan arab jamahiriyah,7099,2.43,LBY
+1979,luxembourg,3306,9.08,LUX
+1979,macau special adminstrative region of china,113,0.47,MAC
+1979,madagascar,309,0.04,MDG
+1979,malawi,174,0.03,MWI
+1979,malaysia,7439,0.55,MYS
+1979,maldives,8,0.06,MDV
+1979,mali,117,0.02,MLI
+1979,malta,247,0.77,MLT
+1979,martinique,194,0.6,MTQ
+1979,mauritania,165,0.11,MRT
+1979,mauritius,180,0.19,MUS
+1979,mexico,65687,0.98,MEX
+1979,mongolia,1718,1.04,MNG
+1979,montserrat,7,0.56,MSR
+1979,morocco,4352,0.23,MAR
+1979,mozambique,721,0.06,MOZ
+1979,myanmar (formerly burma),1391,0.04,MMR
+1979,nauru,31,4.19,NRU
+1979,nepal,140,0.01,NPL
+1979,netherland antilles and aruba,2782,16.18,ABW
+1979,netherlands,51217,3.66,NLD
+1979,new caledonia,448,3.2,NCL
+1979,new zealand,4493,1.43,NZL
+1979,nicaragua,467,0.15,NIC
+1979,niger,131,0.02,NER
+1979,nigeria,19168,0.26,NGA
+1979,niue,1,0.24,NIU
+1979,norway,9338,2.29,NOR
+1979,oman,2106,1.89,OMN
+1979,pacific islands (palau),34,0.76,PLW
+1979,pakistan,7704,0.1,PAK
+1979,panama,871,0.46,PAN
+1979,papua new guinea,490,0.16,PNG
+1979,paraguay,363,0.12,PRY
+1979,peru,6074,0.36,PER
+1979,philippines,10400,0.23,PHL
+1979,plurinational state of bolivia,1292,0.25,BOL
+1979,poland,120668,3.42,POL
+1979,portugal,6826,0.7,PRT
+1979,qatar,3916,19.26,QAT
+1979,republic of cameroon,499,0.06,CMR
+1979,republic of korea,36327,0.98,KOR
+1979,reunion,250,0.5,REU
+1979,romania,53470,2.43,ROU
+1979,rwanda,81,0.02,RWA
+1979,saint lucia,41,0.35,LCA
+1979,samoa,26,0.17,WSM
+1979,sao tome & principe,9,0.1,STP
+1979,saudi arabia,37670,4.09,SAU
+1979,senegal,791,0.15,SEN
+1979,seychelles,33,0.53,SYC
+1979,sierra leone,185,0.06,SLE
+1979,singapore,9851,4.15,SGP
+1979,solomon islands,30,0.14,SLB
+1979,somalia,133,0.02,SOM
+1979,south africa,59697,2.1,ZAF
+1979,spain,55562,1.49,ESP
+1979,sri lanka,1044,0.07,LKA
+1979,st. kitts-nevis,10,0.23,KNA
+1979,st. pierre & miquelon,10,1.68,SPM
+1979,st. vincent & the grenadines,8,0.08,VCT
+1979,sudan,974,0.05,SDN
+1979,suriname,626,1.72,SUR
+1979,swaziland,122,0.21,SWZ
+1979,sweden,23160,2.79,SWE
+1979,switzerland,10884,1.71,CHE
+1979,syrian arab republic,6149,0.71,SYR
+1979,taiwan,20694,1.2,TWN
+1979,thailand,10018,0.22,THA
+1979,togo,377,0.15,TGO
+1979,tonga,11,0.12,TON
+1979,trinidad and tobago,4561,4.3,TTO
+1979,tunisia,2392,0.38,TUN
+1979,turkey,20610,0.48,TUR
+1979,uganda,184,0.01,UGA
+1979,united arab emirates,9983,10.76,ARE
+1979,united kingdom,175864,3.11,GBR
+1979,united republic of tanzania,565,0.03,TZA
+1979,united states of america,1336732,5.79,USA
+1979,uruguay,1712,0.59,URY
+1979,ussr,915905,3.48,RUS
+1979,vanuatu,17,0.15,VUT
+1979,venezuela,20881,1.43,VEN
+1979,viet nam,4440,0.08,VNM
+1979,yugoslavia (former socialist federal republic),29804,1.35,NA
+1979,zambia,983,0.18,ZMB
+1979,zimbabwe,2577,0.37,ZWE
 1980,afghanistan,480,0.03,AFG
 1980,albania,1410,0.53,ALB
 1980,algeria,18140,0.96,DZA

@@ -24,11 +24,11 @@ my_path <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague"
 
 gtemp <- read_csv(paste0(my_path, "/data/Global_temp.csv"))
 
-temp1980 <- gtemp %>%
-  filter(Year >= 1980) %>%
+temp1970 <- gtemp %>%
+  filter(Year >= 1970) %>%
   select(c((1:13)))
 
-temp_fin <- temp1980 %>%
+temp_fin <- temp1970 %>%
   mutate_if(is.character, funs(as.numeric(.)))
 
 temp_finlong <- temp_fin %>%
@@ -42,13 +42,13 @@ temp_finlong <- temp_fin %>%
 
 co2 <- read_csv(paste0(my_path, "/data/fossil-fuel-co2-emissions-by-nation.csv"))
 
-co2_1980 <- co2 %>%
-  filter(Year >= 1980) %>%
+co2_1970 <- co2 %>%
+  filter(Year >= 1970) %>%
   clean_names() %>%
   select(year, country, total, per_capita) %>%
   mutate(country2 = tolower(country))
 
-co2_fin <- co2_1980 %>%
+co2_fin <- co2_1970 %>%
   mutate(country = case_when(
     country2 == "france (including monaco)" ~ "france",
     country2 == "italy (including san marino)" ~ "italy",

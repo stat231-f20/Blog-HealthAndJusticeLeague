@@ -9,10 +9,9 @@ library(readr)
 library(ggplot2)
 library(lubridate)
 
-my_path <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague"
+my_path <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
 
-co2 <- read_csv(paste0(my_path, "/data/co2_bycountry.csv"))
-gtemp <- read_csv(paste0(my_path, "/data/globaltemperature_long.csv"))
+co2 <- read_csv(paste0(my_path, "/co2_bycountry.csv"))
 
 data("iso3166")
 
@@ -54,43 +53,4 @@ leaflet(data = co2_leaflet) %>%
 
 
 
-#plotOutput("tempPlot")
-
-# h <- ggplot(data = gtemp, 
-#             aes(x = as.POSIXct(period, origin = "1970-01-01"), y = temp)) +
-#   geom_line(size = 0.2) +
-#   geom_smooth(alpha = 0.5, size = 1) +
-#   theme_minimal() +
-#   labs(title = "Global temperature (1970-2020)",
-#        subtitle = "Compared to 20th century average temperature") +
-#   scale_x_datetime(name = "Time") + 
-#   scale_y_continuous(name = "Global temperature (celsius)")
-
-# gtemp_react <- reactive({
-#   
-#   sample <- gtemp %>%
-#     filter(year==input$year) %>%
-#     arrange(period)
-#   
-#   ## to highlight region data
-#   data.frame(start=sample[1,1],
-#              end=sample[nrow(sample), 1])
-#   
-# })
-
-# output$tempPlot <- renderPlot({
-#   
-#   h +
-#     geom_rect(inherit.aes = FALSE,
-#               aes(xmin=as.POSIXct(gtemp_react()[1,1]), 
-#                   xmax=as.POSIXct(gtemp_react()[1,2]), 
-#                   ymin=-0.25, ymax=1.25), 
-#               fill="yellow", alpha=0.005)
-# 
-#   })
-# 
-# 
-
-# gtemp <- read_csv(paste0(my_path, "/data/globaltemperature_long.csv")) %>%
-#   mutate(year = as.numeric(substr(period, 1,4)))
 

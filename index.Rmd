@@ -59,7 +59,9 @@ Reference Used:
 
 ```{r, echo = FALSE}
 
-path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
+# path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
+
+path_lillian <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/data"
 
 gtemp <- read_csv(paste0(path_lillian, "/globaltemperature_all.csv")) %>%
   mutate(year = as.numeric(substr(period, 1,4)))
@@ -140,7 +142,9 @@ How does this relate to public health? We want to explore the ways in which clim
 
 ```{r, message = FALSE, warning = FALSE, include = FALSE}
 #use an appropriate path
-path_bella <- "C:/Users/Bella/Desktop/git/Blog-HealthAndJusticeLeague/data"
+# path_bella <- "C:/Users/Bella/Desktop/git/Blog-HealthAndJusticeLeague/data"
+path_bella <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/data"
+
 path_PM25_guide <- 'https://apps.who.int/iris/bitstream/handle/10665/69477/WHO_SDE_PHE_OEH_06.02_eng.pdf;jsessionid=5F6D84FB5F54C304E800DCDDBC13E116?sequence=1'
 
 #loading data
@@ -511,7 +515,10 @@ To investigate this problem, we obtained a dataset that recorded "impactful" nat
 
 ```{r, message = FALSE, warning = FALSE, include = FALSE, echo = FALSE}
 # calling in the datasets
-path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
+# path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
+
+path_lillian <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/data"
+
 # natural disaster dataset
 natdis <- read_csv(paste0(path_lillian, "/wrangled_natdisasters_byyear.csv")) %>%
   filter(disaster_type != "All")

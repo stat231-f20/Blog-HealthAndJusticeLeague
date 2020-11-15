@@ -30,25 +30,33 @@ library(shinythemes)
 
 # Ripple Effects of Climate Change
 
+### Extra Info for insertion of elements into Blog - don't delete until the end!
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For example, you can include **Bold** and _Italic_ and `Code` text.  For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+You should test out updating your GitHub Pages website:
+
+- clone your group's blog project repo in RStudio
+- update "Your Project Title Here" to a new title in the YAML header
+- knit `index.Rmd` 
+- commit and push BOTH the `index.Rmd` and the `index.html` files
+- go to https://stat231-f20.github.io/Blog-HealthAndJusticeLeague to see the published test document (this is publicly available!)
+
+
+## Including links and images
+
+You can include [Links](https://www.datadreaming.org/post/r-markdown-theme-gallery/) and images ![team logo](https://raw.githubusercontent.com/stat231-f20/Blog-HealthAndJusticeLeague/main/images/ph_sj1-7.png)
+
 ## Beyond Global Warming
 
-According to the NASA Earth Observatory, climate change can affect the fuuture prevalence and intensity of various climate disasters. As seen in the plot below, there has been a global temp increase over time (1880-2020). This is partially due to the increase in greenhouse gas emission into the atmosphere. Unofrtunately, subsequent effects of this temperature increase include a higher risk of droughts and possibly floods (since precipitation could fall less frequently, but in a higher amount). Furthermore, the temperature increase worldwide can homogenize the temperatures at the north and south poles, and the equator. The temperature increase will make the poles hotter and more humid, which in fact could reduce the number of storms. But this sounds like a good thing, right?
+According to the NASA Earth Observatory, climate change can affect the fuuture prevalence and intensity of various climate disasters. As seen in the plot below, there has been a global temp increase over time (1880-2020). This is partially due to the increase in greenhouse gas emission into the atmosphere. 
 
-Unfortunately, as land surface temperatures, humidity, and sea surface temperatures increase, there is more water vapor present in the atmosphere, so the intensity of the storms could increase. Furthermore, as is frequently said, rising temperatures are causing glacial melting, which increases the sea levels and thus increases the extent of coastal flooding.
+Unfortunately, subsequent effects of this temperature increase include a higher risk of droughts and possibly floods (since precipitation could fall less frequently, but in a higher amount). Furthermore, the temperature increase worldwide can homogenize the temperatures at the north and south poles, and the equator. The temperature increase will make the poles hotter and more humid, which in fact could reduce the number of storms. But this sounds like a good thing, right?
+
+As land surface temperatures, humidity, and sea surface temperatures increase, there is more water vapor present in the atmosphere, so the intensity of the storms could increase. Furthermore, as is frequently said, rising temperatures are causing glacial melting, which increases the sea levels and thus increases the extent of coastal flooding.
 
 Reference Used:
 (https://earthobservatory.nasa.gov/features/RisingCost/rising_cost5.php)
-
-How does this relate to public health? We want to explore the ways in which climate disasters have ripple effects on different societies. In this blog we will focus on 3 different questions:
-
-
-## Numbered list
-
-1. Are the effects of climate change (specifically air pollution) evident in epidemiological prevalence data or mortality data?
-
-2. What does the amount of homelessness and displacement due to climate disasters look like and how has that changed over time?
-
-3. How do climate change ripple effects (measured via infant and maternal mortality) show differently in developing (i.e. more agriculture-based) versus developed countries?
 
 
 ```{r, echo = FALSE}
@@ -119,83 +127,15 @@ shinyApp(
 
 ```
 
+How does this relate to public health? We want to explore the ways in which climate disasters have ripple effects on different societies. In this blog we will focus on 3 different questions:
+
 ## Research Questions
 
-The questions we plan to investigate are the following:
+1. Are the effects of climate change (specifically air pollution) evident in epidemiological prevalence data or mortality data?
 
-1. Bella's question
-2. Mythili's question
-3. Lillian's question
+2. What does the amount of homelessness and displacement due to climate disasters look like and how has that changed over time?
 
-### Header 3
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For example, you can include **Bold** and _Italic_ and `Code` text.  For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-You should test out updating your GitHub Pages website:
-
-- clone your group's blog project repo in RStudio
-- update "Your Project Title Here" to a new title in the YAML header
-- knit `index.Rmd` 
-- commit and push BOTH the `index.Rmd` and the `index.html` files
-- go to https://stat231-f20.github.io/Blog-HealthAndJusticeLeague to see the published test document (this is publicly available!)
-
-## Including code and plots
-
-You can embed code as normal, for example:
-
-```{r cars}
-summary(cars)
-```
-
-Let's clean up the format of that output:
-
-```{r pretty, echo=FALSE, warning=FALSE, message=FALSE}
-library(kableExtra)
-summary(cars) %>%
-  kable(col.names = c("Speed", "Distance")
-        , row.names = F) %>%
-  kable_styling(bootstrap_options = "striped"
-                , full_width = F) %>%
-  row_spec(0, bold = T, underline = T) %>%
-  column_spec(1:2, width = "1.5in") 
-```
-
-In a study from the 1920s, fifty cars were used to see how the speed of the car and the distance taken to stop were related.  Speeds ranged between `r min(cars$speed)` and `r max(cars$speed)` mph.  Distances taken to stop ranged between `r min(cars$dist)` and `r max(cars$dist)` feet, with the middle 50% falling between `r as.numeric(quantile(cars$dist)[2])` and `r as.numeric(quantile(cars$dist)[4])` feet.  
-
-You can also embed plots as normal, for example:
-
-```{r figure1, echo=FALSE}
-ggplot(data = cars, aes(x = speed, y = dist)) + 
-  geom_point() + 
-  labs(x = "Speed of car (mph)"
-       , y = "Distance taken to stop (ft)"
-       , title = "cars data (1920s)")
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
-
-## Including links and images
-
-You can include [Links](https://www.datadreaming.org/post/r-markdown-theme-gallery/) and images ![team logo](https://raw.githubusercontent.com/stat231-f20/Blog-HealthAndJusticeLeague/main/images/ph_sj1-7.png)
-
-
-## Bulleted list
-
-You can make a bulleted list like this:
-
-- item 1
-- item 2
-- item 3
-
-
-## Numbered list
-
-You can make a numbered list like this
-
-1. First thing I want to say
-2. Second thing I want to say
-3. Third thing I want to say
+3. How do climate change ripple effects (measured via infant and maternal mortality) show differently in developing (i.e. more agriculture-based) versus developed countries?
 
 
 # Tab 1: Bella's part

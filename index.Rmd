@@ -1,5 +1,5 @@
 ---
-title: "Testing AGAIN"
+title: "Considering the Ripple Effects of Climate Change"
 author: "Bella Han, Lillian Kim, Mythili Subbanna"
 date: "November 15, 2020"
 output:
@@ -27,8 +27,6 @@ library(shiny)
 library(shinythemes)
 
 ```
-
-# Ripple Effects of Climate Change
 
 ### Extra Info for insertion of elements into Blog - don't delete until the end!
 
@@ -63,7 +61,7 @@ Reference Used:
 
 path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
 
-gtemp <- read_csv(paste0(my_path, "/globaltemperature_all.csv")) %>%
+gtemp <- read_csv(paste0(path_lillian, "/globaltemperature_all.csv")) %>%
   mutate(year = as.numeric(substr(period, 1,4)))
 
 
@@ -447,22 +445,6 @@ path_mythili <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJus
 data_cluster1980s <- read_csv(paste0(path_mythili,"/wrangled_infmatmortcluster1980s.csv")) %>%
   mutate_at(c("avginfmort", "avmatmort"), funs(`std`=scale(.) %>% as.vector()))
 
-fig <- matrix(NA, nrow=10, ncol=2)
-
-set.seed(75)
-for (i in 1:10){
-  fig[i,1] <- i
-  fig[i,2] <- kmeans(data_cluster1980s[,6:7]
-                    , centers=i
-                    , nstart=20)$tot.withinss
-}
-
-ggplot(data = as.data.frame(fig[2:10,]), aes(x = V1, y = V2)) +
-  geom_point() + 
-  geom_line() +
-  scale_x_continuous(breaks=c(1:10)) +
-  labs(x = "K", y = expression("Total W"[k]))
-
 #making cluster reproducible, setting number of clusters
 set.seed(23)
 km_out <- kmeans(data_cluster1980s[,c("avginfmort_std", "avmatmort_std")], centers = 3, nstart=20)
@@ -496,22 +478,6 @@ ggplot(data = cluster1980s, aes(x = avginfmort_std, y = avmatmort_std)) +
 data_cluster2010s <- read_csv(paste0(path_mythili, "/wrangled_infmatmortcluster2010s.csv")) %>%
   mutate_at(c("avginfmort", "avmatmort"), funs(`std`=scale(.) %>% as.vector()))
 
-fig <- matrix(NA, nrow=10, ncol=2)
-
-set.seed(75)
-for (i in 1:10){
-  fig[i,1] <- i
-  fig[i,2] <- kmeans(data_cluster1980s[,6:7]
-                    , centers=i
-                    , nstart=20)$tot.withinss
-}
-
-ggplot(data = as.data.frame(fig[2:10,]), aes(x = V1, y = V2)) +
-  geom_point() + 
-  geom_line() +
-  scale_x_continuous(breaks=c(1:10)) +
-  labs(x = "K", y = expression("Total W"[k]))
-
 #making cluster reproducible, setting number of clusters
 set.seed(23)
 km_out <- kmeans(data_cluster2010s[,c("avginfmort_std", "avmatmort_std")], centers = 3, nstart=20)
@@ -537,9 +503,6 @@ ggplot(data = cluster2010s, aes(x = avginfmort_std, y = avmatmort_std)) +
 
 ```
 
-```{r, warning = FALSE}
-
-```
 
 # Tab 3: Lillian's part
 

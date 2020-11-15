@@ -36,6 +36,21 @@ According to the NASA Earth Observatory, climate change can affect the fuuture p
 
 Unfortunately, as land surface temperatures, humidity, and sea surface temperatures increase, there is more water vapor present in the atmosphere, so the intensity of the storms could increase. Furthermore, as is frequently said, rising temperatures are causing glacial melting, which increases the sea levels and thus increases the extent of coastal flooding.
 
+Reference Used:
+(https://earthobservatory.nasa.gov/features/RisingCost/rising_cost5.php)
+
+How does this relate to public health? We want to explore the ways in which climate disasters have ripple effects on different societies. In this blog we will focus on 3 different questions:
+
+
+## Numbered list
+
+1. Are the effects of climate change (specifically air pollution) evident in epidemiological prevalence data or mortality data?
+
+2. What does the amount of homelessness and displacement due to climate disasters look like and how has that changed over time?
+
+3. How do climate change ripple effects (measured via infant and maternal mortality) show differently in developing (i.e. more agriculture-based) versus developed countries?
+
+
 ```{r, echo = FALSE}
 
 path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"

@@ -10,9 +10,9 @@ library(shinythemes)
 library(plotly)
 
 # calling in the datasets
-my_path <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague"
+my_path <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
 # natural disaster dataset
-natdis <- read_csv(paste0(my_path, "/data/wrangled_natdisasters_byyear.csv")) %>%
+natdis <- read_csv(paste0(my_path, "/wrangled_natdisasters_byyear.csv")) %>%
   filter(disaster_type != "All")
 #explicitly call maps:: because map() is masked by purrr packagef
 natdis_leaflet <- maps::map("world", fill = TRUE, plot = FALSE, wrap=c(-180,180)) 
@@ -62,7 +62,7 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
                   width = "90%"))),
     fluidRow(
       column(width = 5,
-            text
+             column(offset = 1, width = 11, text)
             ),
       column(width = 7,
            leafletOutput("natdisplot"))

@@ -10,19 +10,20 @@ library(shinythemes)
 library(plotly)
 
 # calling in the datasets
-my_path <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague"
+my_path <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
 
-gtemp <- read_csv(paste0(my_path, "/data/globaltemperature_all.csv")) %>%
+gtemp <- read_csv(paste0(my_path, "/globaltemperature_all.csv")) %>%
   mutate(year = as.numeric(substr(period, 1,4)))
 
 h <- ggplot(data = gtemp,
             aes(x = as.POSIXct(period, origin = "1970-01-01"), y = temp)) +
   geom_line(size = 0.2) +
-  geom_hline(aes(yintercept = 0), color = "red", size = 0.2) +
-  geom_smooth(alpha = 0.5, size = 1, linetype = 2) +
-  theme(text = element_text(size = 15)) +
+  geom_hline(aes(yintercept = 0), color = "red", size = 0.2, linetype = 2) +
+  geom_smooth(alpha = 0.5, size = 1, linetype = 1) +
+  theme_classic() +
+  theme(text = element_text(size = 15))+
   labs(title = "Compared to 20th century average temperature") +
-  scale_x_datetime(name = "Time") +
+  scale_x_datetime(name = "Years") +
   scale_y_continuous(name = "Global temperature (celsius)")
 
 ui <- fluidPage(theme = shinytheme("cerulean"), 

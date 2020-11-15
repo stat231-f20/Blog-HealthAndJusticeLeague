@@ -5,8 +5,8 @@ account: lillianykim
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3232003
-bundleId: 3860183
+bundleId: 3863043
 url: https://lillianykim.shinyapps.io/ImpactsofNaturalDisasters/
-when: 1605364244.98582
+when: 1605449431.51404
 asMultiple: FALSE
 asStatic: FALSE

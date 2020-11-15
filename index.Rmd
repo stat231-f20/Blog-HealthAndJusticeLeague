@@ -32,7 +32,9 @@ library(shinythemes)
 
 ## Beyond Global Warming
 
-A plot showing global temp increase over time (1880-2020). Add some ~explanation~ and use it as a hook.
+According to the NASA Earth Observatory, climate change can affect the fuuture prevalence and intensity of various climate disasters. As seen in the plot below, there has been a global temp increase over time (1880-2020). This is partially due to the increase in greenhouse gas emission into the atmosphere. Unofrtunately, subsequent effects of this temperature increase include a higher risk of droughts and possibly floods (since precipitation could fall less frequently, but in a higher amount). Furthermore, the temperature increase worldwide can homogenize the temperatures at the north and south poles, and the equator. The temperature increase will make the poles hotter and more humid, which in fact could reduce the number of storms. But this sounds like a good thing, right?
+
+Unfortunately, as land surface temperatures, humidity, and sea surface temperatures increase, there is more water vapor present in the atmosphere, so the intensity of the storms could increase. Furthermore, as is frequently said, rising temperatures are causing glacial melting, which increases the sea levels and thus increases the extent of coastal flooding.
 
 ```{r, echo = FALSE}
 

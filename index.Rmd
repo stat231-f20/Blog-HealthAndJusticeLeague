@@ -2,7 +2,6 @@
 title: "Considering the Ripple Effects of Climate Change"
 author: "Bella Han, Lillian Kim, Mythili Subbanna"
 date: "November 15, 2020"
-#runtime: shiny
 output: 
   rmdformats::readthedown:
     thumbnails: false
@@ -34,7 +33,7 @@ path_bella <- "C:/Users/Bella/Desktop/git/Blog-HealthAndJusticeLeague/data"
 path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
 
 ######### fixme: change this before you run the code! ###########
-my_path <- path_bella
+my_path <- path_lillian
 
 ```
 
@@ -71,7 +70,7 @@ Given this information, we wondered whether climate change could be considered a
 Reference Used:
 (https://earthobservatory.nasa.gov/features/RisingCost/rising_cost5.php)
 
-<iframe height="500" width="100%" frameborder="no" src="https://lillianykim.shinyapps.io/naturaldisasters/"> </iframe>
+<iframe height="700" width="100%" frameborder="no" src="https://lillianykim.shinyapps.io/globaltemperature/"> </iframe>
 
 ### Research Questions
 
@@ -500,8 +499,6 @@ ggplot(data = cluster2010s, aes(x = avginfmort_std, y = avmatmort_std)) +
 
 Here, I am investigating how the impacts of natural disasters have changed over time since 1980 until 2020. Specifically, how has the frequency of natural disasters changed? How has the number of people killed, injured, affected, and displaced due to these disasters changed?  
 To investigate this problem, we obtained a dataset that recorded "impactful" natural disasters for the past 40 years. By "impactful" we mean that these disasters killed, injured, displaced, or affected humans in various ways. Take a look at the shiny app below.
-
-
 
 <iframe height="700" width="100%" frameborder="no" src="https://lillianykim.shinyapps.io/naturaldisasters/"> </iframe>
 

@@ -9,7 +9,7 @@ library(janitor)
 library(lubridate)
 library(shinyWidgets)
 
-path_in <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/shiny/question3"
+path_in <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/data"
 
 infmatmortdata <- read_csv(paste0(path_in,"/wrangled_finalinfmatmortline.csv"))
 

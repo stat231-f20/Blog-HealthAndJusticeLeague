@@ -427,7 +427,15 @@ gexposure
 
 As seen in our analysis using the choropleths, we had found that in general there seems to be a direct relationship between the change in air quality and mortality across countries. That is, an environmental factor can be evident in, and thus have directly impacted, the quality of life of the people. This being said, we wondered narrow down our focus to investigate whether an environmental factor could *disproportionately* affect countries around the world. Therefore, in the next section of this blog post, we will aim to answer the following question: "Are developing countries affected differently than developed countries by climate disasters?"
 
-# Tab 2: Mythili's part
+# Do climate change ripple effects (measured via infant and maternal mortality) vary from region-to-region? (MS)
+
+When we think of climate change, and climate disasters, maternal and infant mortality are probably not the first phrases we associate with it. However, it turns out that there is a logical association between the two. This question was inspired by the Barbier, et. al. 2018 paper on *The Impacts of Climate Change on the Poor in Disadvantaged Regions*. The research paper described two categories for areas in developing countries: less-favored agricultural areas (LFAAs) and low-elevation coastal zones (LECZs). Not surprisingly, the LFAAs can be affected by changes to the terrain, soil, and overall precipitation, while LECZs, due to their coastal location, are more vulnerable to rises in the sea level, tropical storms, etc. Now we can see more clearly that climate disasters, such as flooding, storms, droughts, etc., could disproportionately affect rural areas in developing countries compared to developed countries. Changes in climate change, looked at here via climate disaster occurrence, pose threats to both the agricultural productivity and the resources of such developing communities. A secondary effect of such rural poverty is that on infant and maternal mortality rates. First, let's consider how the distribution of countries' infant and maternal mortality rates have changed over the years.
+
+Reference Used:
+https://academic.oup.com/reep/article/12/1/26/4835833
+
+## Infant and Maternal Mortality from 1980-2018
+
 
 ```{r, warning = FALSE, message = FALSE, echo = FALSE}
 
@@ -442,7 +450,7 @@ set.seed(23)
 km_out <- kmeans(data_cluster1980s[,c("avginfmort_std", "avmatmort_std")], centers = 3, nstart=20)
 
 #vector of cluster assignments
-km_out$cluster
+#km_out$cluster
 
 # add cluster assignment to the data frame
 cluster1980s <- data_cluster1980s %>%
@@ -475,7 +483,7 @@ set.seed(23)
 km_out <- kmeans(data_cluster2010s[,c("avginfmort_std", "avmatmort_std")], centers = 3, nstart=20)
 
 #vector of cluster assignments
-km_out$cluster
+#km_out$cluster
 
 # add cluster assignment to the data frame
 cluster2010s <- data_cluster2010s %>%
@@ -494,6 +502,10 @@ ggplot(data = cluster2010s, aes(x = avginfmort_std, y = avmatmort_std)) +
        , color = "Cluster Assignment")
 
 ```
+
+## Is there an Association Between the Frequency of Climate Disasters and Infant/Maternal Mortality?
+
+We can hypothesize that countries facing higher frequencies, and more intense, natural disasters risk more damages to their agricultural and resources systems, which can reduce access to proper food, jobs, etc. that might ensure lower infant and maternal mortality rates.
 
 
 # Tab 3: Lillian's part

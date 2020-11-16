@@ -474,6 +474,7 @@ ggplot(data = cluster1980s, aes(x = avginfmort_std, y = avmatmort_std)) +
              , aes(x = avginfmort_std, y = avmatmort_std)
              , pch = "X"
              , size = 4) +
+  theme_classic()+
   labs(x = "Standardized Average Infant Mortality"
        , y = "Standardized Average Maternal Mortality", title = "Infant and Maternal Mortality in the 1980s"
        , color = "Cluster Assignment")
@@ -507,6 +508,7 @@ ggplot(data = cluster2010s, aes(x = avginfmort_std, y = avmatmort_std)) +
              , aes(x = avginfmort_std, y = avmatmort_std)
              , pch = "X"
              , size = 4) +
+  theme_classic()+
   labs(x = "Standardized Average Infant Mortality"
        , y = "Standardized Average Maternal Mortality" 
        , title = "Infant and Maternal Mortality in the 2010s"

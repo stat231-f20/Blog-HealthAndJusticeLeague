@@ -35,7 +35,9 @@ path_bella <- "C:/Users/Bella/Desktop/git/Blog-HealthAndJusticeLeague/data"
 path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
 
 ######### fixme: change this before you run the code! ###########
+
 my_path <- path_bella
+
 
 ```
 
@@ -515,15 +517,15 @@ ggplot(data = cluster2010s, aes(x = avginfmort_std, y = avmatmort_std)) +
 
 ## What does Yearly Change in Infant and Maternal Mortality Look Like?
 
+<iframe height="650" width="100%" frameborder="no" title="Relationship BetweenInfant and Maternal Mortality and Natural Disaster Occurrence" src="https://mysubb.shinyapps.io/InfMatMortNatDisast/"> </iframe>
+
+
 Let's zoom in to look how infant mortality changes yearly for a pair of countries. Consider Switzerland, the second most developed nation as of 2020, according to life expectancy, economic competitiveness, infrastructure, GDP per capita (*Developed Countries List 2020*). Switzerland's economy is based more in the service sector. Compare this to Mexico, which is less developed industrially, has more widespread poverty, and is a more agriculturally-based society. We know that Mexico would has worse infant and maternal mortality rates, compared to Switzerland (can be seen in original data tables). Specifically, Mexico started at 54.8 infant deaths per 1,000 live births in 1980 and decreased to 12.9 deaths per 1,000 live births in 2018. Switzerland started at 9.1 infant deaths per 1,000 live births in 1980 and decreased to 3.3 infant deaths per 1,000 live births in 2018. Thus, we can see that even in 1980, there was a great disparity in starting point and end point, however by 2018, the gap was greatly decreased. Now if we look at the yearly changes, we can understand how Mexico has much greater negative net changes in infant mortality. Note, I chose to focus the timeline on more recent years so that there is less impact from technological advancements in medicine. In fact, there is only one year (2017) where there is a positive net change in infant mortality. Switzerland on the other hand, while having negative net change in infant mortality between 2010 and 2018, has less frequent changes, and changes of lesser magnitude. In several years, the infant mortality rate stays the same. It also displays a positive net change in infant mortality in 2013. So it seems that in this case, the more agriculturally-based society has had a larger improvement in infant mortality rates than the classified Developed Country due to their largely varying starting points.
 
 *STILL NEED TO TYPE TEXT FOR:*
 
--image of infant mortality graphs used in analysis
 -two country comparison of maternal mortality
--image of maternal mortality graphs used in analysis
 -two country comparison of natural disasters occurrence and mortality rates
--image of natural disaster graph used in analysis
 -general trends/associations for infant mortality, maternal mortality, and natural disasters
 -limitations/improvements/speculations
 

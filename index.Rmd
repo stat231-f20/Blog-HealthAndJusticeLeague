@@ -580,12 +580,12 @@ First, we will test the hypothesis that the frequency of impactful natural disas
 
 <iframe height="650" width="100%" frameborder="no" title="Frequency of Natural Disasters" src="https://lillianykim.shinyapps.io/naturaldisasterfreq/"> </iframe>
 
+
 What do you see? First, we see that some natural disasters are more common than other disasters. Take the year 2011 as an example. There were `r natdisfreq[which(natdisfreq$year == 2011 & natdisfreq$disaster_type == "Wildfire"), 3]` landslides in 2011 worldwide, but there were `r natdisfreq[which(natdisfreq$year == 2011 & natdisfreq$disaster_type == "Storm"), 3]` floods. In year 2011, floods were `r round(natdisfreq[which(natdisfreq$year == 2011 & natdisfreq$disaster_type == "Storm"), 3] / natdisfreq[which(natdisfreq$year == 2011 & natdisfreq$disaster_type == "Wildfire"), 3], 0)` times more frequent than landslides, and this pattern holds generally true for other years as well. Floods and storms appear to be more frequent than droughts, extreme temperatures, landslides, and wildfires.  
 
 Next, we can observe that the frequency of some disasters increased more than the frequency of other disasters. Examine the frequency of Droughts from 1980 to 2020. There is a great deal of fluctuation in the annual global frequency of droughts, but ultimately the peaks in the graphs stay relatively stable. In 1999, there were `r natdisfreq[which(natdisfreq$year == 1999 & natdisfreq$disaster_type == "Drought"), 3]` droughts, and so were in 2015. ( Keep in mind that we are only looking at the frequency per se, and not how it actually affected human societies. Save that thought for below) In contrast, examine the frequency of floods over time. We can see that floods became more and more frequent over time. There were only `r natdisfreq[which(natdisfreq$year == 1988 & natdisfreq$disaster_type == "Flood"), 3]` floods in 1988, but `r natdisfreq[which(natdisfreq$year == 2006 & natdisfreq$disaster_type == "Flood"), 3]` floods in 2006! In fact, the increasing trend is clearer for extreme temperatures, floods, and storms.
 
-Most importantly, examining how the total occurrences of these 6 disasters, we can see that there is a general increasing trend. There is a noticeable increase in disaster frequency in 1990s, and it remains increased after 2000. We suspect that the increase in the frequencyin the frequencyin the frequency was stalled after 2000 b
-
+Most importantly, examining how the total occurrences of these 6 disasters, we can see that there is a general increasing trend. There is a noticeable increase in disaster frequency in 1990s, and it remains increased after 2000. We suspect that the increase may have been stalled after 2000 because countries became more equipped to handle natural disasters, suffered less damages from them. Such change would have rendered the disasters that were "impactful" in the past "impact*less*" (See the criteria in the shiny app above). Nevertheless, it is impossible to investigate **how** impactful these disasters were from this plot. For our second hypothesis, we turn to the interactive leaflet below.
 
 
 ## Impacts of Natural Disasters by Region
@@ -597,9 +597,11 @@ Take a look at the shiny app below. We created an interactive leaflet to allow t
 
 <iframe height="850" width="100%" frameborder="no" title="Impacts of Natural Disasters" src="https://lillianykim.shinyapps.io/naturaldisasters/"> </iframe>
 
+
 As we examine the plot from the earlier years to the more recent years, we noticed that the choropleth became more and more colorful. This means that more people were killed, injured, displaced, or affected by the aforementioned natural disasters in recent years.
 
 There are a few caveats that you should keep in mind:
 This dataset does not record every single storm, drought, and flood that happened for the past few decades. Because it only records the natural disasters that affected humans beyond a certain extent, the trends shown here should be understood as a proxy, rather than a direct measurement of the frequency of natural disasters. For example, a storm may wreak havoc in developing countries that lack infrastructures to predict storms, prepare for the storms, and take necessary protective measures. However, an equally severe storm may barely affect some developed countries where houses and buildings are designed to withstand natural disasters, in which case the storm will not be recorded in this dataset. 
 
 
+# Conclusion

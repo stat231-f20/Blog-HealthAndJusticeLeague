@@ -2,6 +2,7 @@
 title: "Considering the Ripple Effects of Climate Change"
 author: "Bella Han, Lillian Kim, Mythili Subbanna"
 date: "November 15, 2020"
+#css: custom.css
 output: 
   rmdformats::readthedown:
     thumbnails: false

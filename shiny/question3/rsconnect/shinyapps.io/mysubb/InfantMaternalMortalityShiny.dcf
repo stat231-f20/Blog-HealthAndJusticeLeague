@@ -1,0 +1,12 @@
+name: InfantMaternalMortalityShiny
+title: InfantMaternalMortalityShiny
+username:
+account: mysubb
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3239962
+bundleId: 3865310
+url: https://mysubb.shinyapps.io/InfantMaternalMortalityShiny/
+when: 1605505158.17534
+asMultiple: FALSE
+asStatic: FALSE

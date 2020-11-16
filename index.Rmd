@@ -2,7 +2,7 @@
 title: "Considering the Ripple Effects of Climate Change"
 author: "Bella Han, Lillian Kim, Mythili Subbanna"
 date: "November 15, 2020"
-runtime: shiny
+#runtime: shiny
 output: 
   rmdformats::readthedown:
     thumbnails: false
@@ -29,13 +29,12 @@ library(shiny)
 library(shinythemes)
 library(shiny)
 
-
 path_mythili <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/data"
 path_bella <- "C:/Users/Bella/Desktop/git/Blog-HealthAndJusticeLeague/data"
 path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
 
 ######### fixme: change this before you run the code! ###########
-my_path <- path_lillian
+my_path <- path_bella
 
 ```
 
@@ -57,22 +56,24 @@ You should test out updating your GitHub Pages website:
 You can include [Links](https://www.datadreaming.org/post/r-markdown-theme-gallery/) and images ![team logo](https://raw.githubusercontent.com/stat231-f20/Blog-HealthAndJusticeLeague/main/images/ph_sj1-7.png)
 
 ## Beyond Global Warming
+Social justice, by definition, considers justice in terms of rights, opportunities, and privileges within a society, either on a regional, national, or international level. The idea behind social justice is that everyone has an innate value as human beings, and no person’s value is more or less than anyone else’s. Therefore, these rights and opportunities include seemingly basic necessities of a person today, such as the access to healthcare, food, and safe spaces to live.
 
-According to the NASA Earth Observatory, climate change can affect the fuuture prevalence and intensity of various climate disasters. As seen in the plot below, there has been a global temp increase over time (1880-2020). This is partially due to the increase in greenhouse gas emission into the atmosphere. 
+While there are a variety of different social justice issues around the world, some of these are more relevant and prevalent across certain regions and countries than they are in other parts of the world. As these issues are often broad and diverse, we would like to focus on a single seemingly less relevant factor that may have been affecting the quality of life to a varying degree around the world (i.e. on a global scale): the environmental change. 
 
-Unfortunately, subsequent effects of this temperature increase include a higher risk of droughts and possibly floods (since precipitation could fall less frequently, but in a higher amount). Furthermore, the temperature increase worldwide can homogenize the temperatures at the north and south poles, and the equator. The temperature increase will make the poles hotter and more humid, which in fact could reduce the number of storms. But this sounds like a good thing, right?
+In 2019, the United Nations Foundation listed climate change as the top global issue to watch, as global emissions of greenhouse gases have been consistently rising since the early 2000s. In addition, according to the NASA Earth Observatory, climate change can affect the future prevalence and intensity of various climate disasters. As seen in the plot below, there has been a global temp increase over time (1880-2020). This is partially due to the increase in greenhouse gas emission into the atmosphere. 
 
-As land surface temperatures, humidity, and sea surface temperatures increase, there is more water vapor present in the atmosphere, so the intensity of the storms could increase. Furthermore, as is frequently said, rising temperatures are causing glacial melting, which increases the sea levels and thus increases the extent of coastal flooding.
+[image]()
+
+Unfortunately, subsequent effects of this temperature increase include a higher risk of droughts and possibly floods (since precipitation could fall less frequently, but in a higher amount). Furthermore, the temperature increase worldwide can homogenize the temperatures at the north and south poles, and the equator. The temperature increase will make the poles hotter and more humid, which in fact could reduce the number of storms, which sounds like a good thing. However, as land surface temperatures, humidity, and sea surface temperatures increase, there is more water vapor present in the atmosphere, so the intensity of the storms could increase. Furthermore, as is frequently said, rising temperatures are causing glacial melting, which increases the sea levels and thus increases the extent of coastal flooding.
+
+Given this information, we wondered whether climate change could be considered as one of the aforementioned social justice issues. However, before making any assumption that climate change might be directly, perhaps in fact disproportionately, related to the quality of life around the globe, we want to focus on the environmental factors themselves and investigate how certain environmental issues might be affecting the health of the general population by focusing on the following 3 different questions: 
 
 Reference Used:
 (https://earthobservatory.nasa.gov/features/RisingCost/rising_cost5.php)
 
-
 <iframe height="500" width="100%" frameborder="no" src="https://lillianykim.shinyapps.io/naturaldisasters/"> </iframe>
 
-How does this relate to public health? We want to explore the ways in which climate disasters have ripple effects on different societies. In this blog we will focus on 3 different questions:
-
-## Research Questions
+### Research Questions
 
 1. Are the effects of climate change (specifically air pollution) evident in epidemiological prevalence data or mortality data?
 
@@ -81,7 +82,19 @@ How does this relate to public health? We want to explore the ways in which clim
 3. How do climate change ripple effects (measured via infant and maternal mortality) show differently in developing (i.e. more agriculture-based) versus developed countries?
 
 
-# Tab 1: Bella's part
+# Are environmental issues evident in epidemiological prevalence data or mortality data? (BH)
+
+We are often poised to think of air pollution as one of the most apparent environmental issues around the world today, as we hear about the emission of pollutants and chemicals from various technology and industry.  Therefore, we chose to investigate air quality and whether its impact is evident in global health. 
+
+Our measure of air quality is exposure to ambient particulate matter (PM2.5), a type of air pollutants. In particular, our variable indicates the mean population exposure to outdoor PM2.5, calculated as the mean annual outdoor PM2.5 concentration weighted by population living in the relevant area, that is, the concentration level, expressed in ug/m3 to which a typical resident is exposed throughout a year. 
+
+We then chose to look at morbidity as our measure of people’s health affected by air quality. Specifically, this variable measures the disability-adjusted life years, which are calculated as the number of years lost due to exposure to environmental-related risks, expressed in absolute value, per 1000 inhabitants. DALYs are defined as the sum of years of potential life lost due to premature mortality and the years of productive life lost. Both the exposure to PM2.5 and DALY data were collected and released by the OECD; the details of the methods can be found at the end of the report. 
+
+## Investigation on Air Quality through Leaflets
+
+To visualize our data, we chose to create a series of choropleths that display the level of exposure to particulate matter and the number of years lost due to this exposure in each country around the world. The following two choropleths show PM2.5 exposure in 1990 and 2017, respectively. We chose to create leaflets to allow for interactivity of hovering over or selecting a particular country. 
+
+To help with the understanding of this measure, we will provide a few examples in context. When a user selects the country Brazil by clicking on it on the leaflet showing the data for 1990, a value of 15.402 µg/m^3 will be displayed as the PM2.5 measure. This means that the mean annual outdoor PM2.5 concentration is 15.402 µg/m^3, and this value is also weighted, or standardized, by population. As another example, Saudi Arabia displays a value of 92.368 µg/m^3 on the leaflet showing data for 2017. Based on the PM2.5 guideline provided by the World Health Organization, Brazil in 1990 is considered to be in a moderate range of PM2.5, while Saudi Arabia is in a highly dangerous range. Despite such great differences in the PM2.5 level in different countries, these two choropleths show that the air quality in general has improved over the years from 1990 to 2017. This change is most noticeable in many countries in the Eastern Europe, Latin America, and Southern Africa, while there are several countries undergoing a similar change in parts of Asia. 
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, include = FALSE}
 
@@ -203,8 +216,17 @@ PM25_change_leaflet <- leaflet(data = world_leaflet)%>%
 #PM2.5 leaflets
 PM25_1990_leaflet
 PM25_2017_leaflet
+```
+
+These leaflets are effectively mapping the PM2.5 level on a global scale and letting us compare the PM2.5 level between multiple countries. Though we can see some changes undergone by some countries, this change is not dramatically apparent at first sight. Therefore, we created an additional leaflet that shows the change in PM2.5 level from 1990 to 2017. The value indicates the change from 1990 to 2017 (i.e. value_1990 - value_2017), so a positive value indicates a decrease in PM2.5 level, while a negative value indicates an increase. For example, India experienced an increase in PM2.5 level of 8.558 µg/m^3. As we expect, now more clearly, we see a positive change in air quality in general around the world. 
+
+```{r, echo = FALSE}
 PM25_change_leaflet
 ```
+
+## Investigation on Mortality (DALY) through Leaflets
+
+Similar steps were taken for the next set of choropleths focusing on the disability-adjusted life years in 1990 and 2017 around the world. Just to interpret a few observations in context, we see that people in Brazil in 1990 lost 5.77 years of potential life due to exposure to ambient PM2.5 per 1000 inhabitants, and those in Russia in 2017 lost 15.681 years. Comparing these two choropleths, we see in general a decrease in the DALY score around the world, and this trend is most apparent in countries in Eastern Europe and Africa.
 
 ```{r, include = FALSE, warning = FALSE}
 #leaflet for pdeaths
@@ -320,8 +342,23 @@ DALY_change_leaflet <- leaflet(data = world_leaflet_DALY)%>%
 ```{r, echo = FALSE}
 DALY_1990_leaflet
 DALY_2017_leaflet
+```
+
+However, a similar concern arises as before: though we are effectively showing the distribution of DALY around the world for each year, the change is not necessarily clear at first sight due to a relatively small range of values. Therefore, similar steps were taken to show the change in DALY from 1990 to 2017. Note that the change was calculated by subtracting the value in 2017 from the value in 1990 (i.e. change = DALY_1990 - DALY_2017). Therefore, a positive value on this map indicates a decrease in DALY, while a negative value indicates an increase in DALY. For example, Spain has undergone a positive change (decrease) in DALY. Consistent with the two maps created above, we see that in general the countries experience a decrease in DALY.  
+
+```{r, echo = FALSE}
 DALY_change_leaflet
 ```
+
+Now, taking a few steps back to the original question we are trying to answer, notice that the two maps showing the change in PM2.5 and DALY look quite similar at a first glance. There are countries that show an opposing trend, where there is an increase in PM2.5 exposure and a decrease in DALY, and vice versa. This might be accounted by other factors that might not have been reflected in this study, such as noticeable improvements in medical technology that might have contributed to a decrease in DALY despite the worsened air quality. However, for the most part, the countries that have a positive change in PM2.5 also experience a positive change in DALY, so we can reasonably conclude that PM2.5, an environmental factor, is evident in and consistent with DALY, a mortality measure.
+
+## The relationship between PM2.5 and DALY through a scatterplot
+
+The choropleths have sufficiently answered the question we wished to answer. However, a curious data scientist (like ourselves) might want to see more, perhaps what might be going on in between the two given years of 1990 and 2018, and whether the relationship between PM2.5 and DALY we have established earlier still holds true, if we were to take a look at a different time frame.
+
+The most intuitive way to achieve this is probably to create plots that show the relationship between PM2.5 and DALY for a particular set of years, and without a Shiny app, we are almost certainly destined to make a multiple set of data visualizations, which can be exciting but also tedious and inefficient. In fact, this should be a supplementary resource, not a source of confusion or incompetence. Therefore, our solution to this is to retain the original vision to create a plot looking at how DALY changes with PM2.5, but produce these plots in a single gif file to show an animation of the change.   
+
+In the following plot, each colored dot represents each individual country available in our data. As we proceed from 1990 to 2017, we see that the points in general move towards the bottom-left corner from the top-right corner of the plot. A noticeable exception to this happens from 2014 to 2015 (try to observe this yourself!) where many data points move towards the right side of the plot, indicating that from 2014 to 2015 there was a relatively significant increase in PM2.5 exposure in many countries around the world. This may be something that might be worthwhile to take some time to research on; this analysis indeed revealed something that we would not have been able to see if we stopped our analysis after the first part. 
 
 ```{r, message = FALSE, warning = FALSE, include = FALSE}
 #is there a way to look at how both variables change in relation to one another over time,
@@ -331,6 +368,9 @@ g <- ggplot(data_joined, aes(PM25exposure , DALY, color = country))+
   geom_point(alpha = 0.7, show.legend = FALSE)+
   scale_size(range = c(2, 12))+
   theme_classic()+
+  theme(
+        rect = element_rect(fill = "transparent")
+      )+
   labs(title = 'Year: {round(frame_time, 0)}', x = 'PM 2.5', y = 'DALY per 1K')+
   transition_time(year)+
   ease_aes('linear')
@@ -340,6 +380,12 @@ g <- ggplot(data_joined, aes(PM25exposure , DALY, color = country))+
 animate(g, duration = 20, fps = 20, width = 400, height = 400, renderer = gifski_renderer())
 #anim_save("PM2.5 vs. DALY.gif")
 ```
+
+## What actually happened in between the years 1990 and 2017? 
+
+Now, with those in mind, an even more curious data scientist might want to see how either PM2.5 and DALY change for a particular country over a period of time that is not established through the choropleths. That is, a line graph or a similar sort where the x axis represents the year and the y axis represents either PM2.5 or DALY. This would be something that would be achieved most effectively and efficiently through shiny app’s interactivity: there are approximately 200 countries in the world (and in this data) and to display all of these countries at once would be unconventional. However, instead of making an extensive shiny app, we created a sample set of two line graphs that each show PM2.5 and DALY change over the years for a set of 10 randomly selected countries. We had done this because we did not want to put an equal or greater amount of coding efforts to something that is not the main tool to be used to achieve the original purpose, but still leave room for further investigation. 
+
+The following two interactive line graphs show the change in DM2.5 and DALY from 1990 to 2017. This is similar to the earlier change leaflets we had displayed but different in that these show all the values for a country in a given year and that these don’t account for the rest of approximately 190 countries. Therefore, we will not make a particular analysis on these visualizations, as our analysis will not account for the entirety of the data. Please consider these as simply a supplemental resource to make a similar analysis we made in order to answer our original question with an additional capability to observe the variables in a given year between 1990 and 2017.
 
 ```{r, message = FALSE, warning = FALSE, include = FALSE}
 countrylist_index <- floor(runif(10, min = 0, max = nrow(data_joined)))
@@ -376,6 +422,10 @@ gexposure <- ggplotly(ggplot(data = data_joined, mapping = aes(x = year, y = PM2
 gdaly
 gexposure
 ```
+
+## Next Steps
+
+As seen in our analysis using the choropleths, we had found that in general there seems to be a direct relationship between the change in air quality and mortality across countries. That is, an environmental factor can be evident in, and thus have directly impacted, the quality of life of the people. This being said, we wondered narrow down our focus to investigate whether an environmental factor could *disproportionately* affect countries around the world. Therefore, in the next section of this blog post, we will aim to answer the following question: "Are developing countries affected differently than developed countries by climate disasters?"
 
 # Tab 2: Mythili's part
 

@@ -208,7 +208,7 @@ PM25_change_leaflet <- leaflet(data = world_leaflet)%>%
                              " µg / m<sup>3</sup><br>"))%>%
   addLegend(pal = palchange, values = ~change, 
             opacity = 0.7, 
-            title = "Chagne in PM 2.5 Meausre from 1990 to 2017",
+            title = "Change in PM 2.5 Meausre from 1990 to 2017",
             position = "bottomright")
 ```
 
@@ -260,7 +260,7 @@ DALY_1990_leaflet <- leaflet(data = world_leaflet_DALY)%>%
                                            dashArray = "",
                                            fillOpacity = 0.7,
                                             bringToFront = TRUE),
-              label = sprintf("<strong>%s</strong><br/>%g units",
+              label = sprintf("<strong>%s</strong><br/>%g years",
                               world_leaflet_DALY$country, world_leaflet_DALY$Y1990)%>% 
                 lapply(htmltools::HTML),
               labelOptions = labelOptions(style = list("font-weight" = "normal",
@@ -605,3 +605,11 @@ This dataset does not record every single storm, drought, and flood that happene
 
 
 # Conclusion
+
+
+
+# Works Cited
+- Brown, Kaysie. “6 Global Issues to Watch in 2019.” Unfoundation.org, 23 Jan. 2020, unfoundation.org/blog/post/6-global-issues-to-watch-2019/. 
+- “Global Emissions.” Center for Climate and Energy Solutions, 7 Jan. 2020, www.c2es.org/content/international-emissions/. 
+- WHO (2018) Factsheet on ambient air quality and health. Available at http://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health
+- “Mortality, Morbidity, and Welfare Cost from Exposure to Environment-Related Risks.” Organization for Economic Co-Operation and Development (OECD), Jul. 2018. *file in repo*

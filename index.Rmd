@@ -33,7 +33,7 @@ path_bella <- "C:/Users/Bella/Desktop/git/Blog-HealthAndJusticeLeague/data"
 path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
 
 ######### fixme: change this before you run the code! ###########
-my_path <- path_mythili
+my_path <- path_lillian
 
 ```
 
@@ -58,11 +58,12 @@ You can include [Links](https://www.datadreaming.org/post/r-markdown-theme-galle
 
 Social justice, by definition, considers justice in terms of rights, opportunities, and privileges within a society, on a regional, national, or international level. The idea behind social justice is that everyone has an innate value as human beings, and no person’s value is more or less than anyone else’s. These rights and opportunities include seemingly basic necessities of a person today, such as access to healthcare, food, and safe spaces to live.
 
-While there are a variety of different social justice issues worldwide, some of them are more relevant and prevalent depending on the region you're talking about. As these issues are often broad and diverse, we would like to focus on a single, seemingly less prevalent, factor that may have been affecting people's quality of life on a global scale to varying degrees: environmental change. 
+While there are a variety of different social justice issues worldwide, some of them are more relevant and prevalent depending on the region you're talking about. As these issues are often broad and diverse, we would like to focus on a single, seemingly less prevalent, factor that may have been affecting people's quality of life on a global scale to varying degrees: **environmental change**. 
 
-In 2019, the United Nations Foundation listed climate change as the top global issue to watch, as global emissions of greenhouse gases have been consistently rising since the early 2000s. This rise has partially contributed to the global temp increase over time (1880-2020) that we have seen over time (Figure 1).
+In 2019, the United Nations Foundation listed climate change as the top global issue to watch, as global emissions of greenhouse gases have been consistently rising since the early 2000s. This rise has partially contributed to the global temperature increase over time (1880-2020) that we have seen over time (Figure 1).
 
-[image]()
+<iframe height="600" width="100%" frameborder="no" title="Increase in Global Temperature" src="https://lillianykim.shinyapps.io/globaltemperature/"> </iframe>
+
 
 Climate change, and this temperature increase, can affect the future prevalence and intensity of various climate disasters. These effects include a higher risk of droughts and possibly floods (due to less frequent, but more intense precipitation). Furthermore, the temperature increase worldwide can bring the temperatures at the north and south poles, closter to that of the equator. The temperature increase will make the poles hotter and more humid, which in fact could reduce the number of storms. But this sounds like a good thing, right? Unfortunately, as land surface temperatures, humidity, there is more water vapor present in the atmosphere, so the intensity of the storms, as well as the domain of occurrence for certain tropical storms, could increase. Furthermore, these rising land and sea surface temperatures are causing glacial melting, which increases the sea levels and thus can increases the extent of coastal flooding (*Climate Insights 2020: Natural Disasters*, *The Impact of Climate Change on Natural Disasters*).
 
@@ -72,30 +73,28 @@ References Used:
 https://earthobservatory.nasa.gov/features/RisingCost/rising_cost5.php
 https://www.rff.org/publications/reports/climateinsights2020-natural-disasters/
 
-<iframe height="700" width="100%" frameborder="no" src="https://lillianykim.shinyapps.io/globaltemperature/"> </iframe>
-
 ### Research Questions
 
 1. Are the effects of climate change (specifically air pollution) evident in epidemiological prevalence data or mortality data?
 
-2. What does the amount of homelessness and displacement due to climate disasters look like and how has that changed over time?
+2. How do climate change ripple effects (measured via infant and maternal mortality) show differently in developing (i.e. more agriculture-based) versus developed countries?
 
-3. How do climate change ripple effects (measured via infant and maternal mortality) show differently in developing (i.e. more agriculture-based) versus developed countries?
+3. How has the impact of natural disasters changed over time? How many people have been affected by these climate disasters?
 
 
 # Are environmental issues evident in epidemiological prevalence data or mortality data? (BH)
 
 We are often poised to think of air pollution as one of the most apparent environmental issues around the world today, as we hear about the emission of pollutants and chemicals from various technology and industry.  Therefore, we chose to investigate air quality and whether its impact is evident in global health. 
 
-Our measure of air quality is exposure to ambient particulate matter (PM2.5), a type of air pollutants. In particular, our variable indicates the mean population exposure to outdoor PM2.5, calculated as the mean annual outdoor PM2.5 concentration weighted by population living in the relevant area, that is, the concentration level, expressed in ug/m3 to which a typical resident is exposed throughout a year. 
+Our measure of air quality is exposure to ambient particulate matter (PM2.5), a type of air pollutants. In particular, our variable indicates the **mean population exposure to outdoor PM2.5**, calculated as the mean annual outdoor PM2.5 concentration weighted by population living in the relevant area, that is, the concentration level, expressed in ug/m^3^ to which a typical resident is exposed throughout a year. 
 
-We then chose to look at morbidity as our measure of people’s health affected by air quality. Specifically, this variable measures the disability-adjusted life years, which are calculated as the number of years lost due to exposure to environmental-related risks, expressed in absolute value, per 1000 inhabitants. DALYs are defined as the sum of years of potential life lost due to premature mortality and the years of productive life lost. Both the exposure to PM2.5 and DALY data were collected and released by the OECD; the details of the methods can be found at the end of the report. 
+We then chose to look at morbidity as our measure of people’s health affected by air quality. Specifically, this variable measures the **disability-adjusted life years (DALY)**, which are calculated as the number of years lost due to exposure to environmental-related risks, expressed in absolute value, per 1000 inhabitants. DALYs are defined as the sum of years of potential life lost due to premature mortality and the years of productive life lost. Both the exposure to PM2.5 and DALY data were collected and released by the OECD; the details of the methods can be found at the end of the report. 
 
 ## Investigation on Air Quality through Leaflets
 
 To visualize our data, we chose to create a series of choropleths that display the level of exposure to particulate matter and the number of years lost due to this exposure in each country around the world. The following two choropleths show PM2.5 exposure in 1990 and 2017, respectively. We chose to create leaflets to allow for interactivity of hovering over or selecting a particular country. 
 
-To help with the understanding of this measure, we will provide a few examples in context. When a user selects the country Brazil by clicking on it on the leaflet showing the data for 1990, a value of 15.402 µg/m^3 will be displayed as the PM2.5 measure. This means that the mean annual outdoor PM2.5 concentration is 15.402 µg/m^3, and this value is also weighted, or standardized, by population. As another example, Saudi Arabia displays a value of 92.368 µg/m^3 on the leaflet showing data for 2017. Based on the PM2.5 guideline provided by the World Health Organization, Brazil in 1990 is considered to be in a moderate range of PM2.5, while Saudi Arabia is in a highly dangerous range. Despite such great differences in the PM2.5 level in different countries, these two choropleths show that the air quality in general has improved over the years from 1990 to 2017. This change is most noticeable in many countries in the Eastern Europe, Latin America, and Southern Africa, while there are several countries undergoing a similar change in parts of Asia. 
+To help with the understanding of this measure, we will provide a few examples in context. When a user selects the country Brazil by clicking on it on the leaflet showing the data for 1990, a value of 15.402 µg/m^3^ will be displayed as the PM2.5 measure. This means that the mean annual outdoor PM2.5 concentration is 15.402 µg/m^3^, and this value is also weighted, or standardized, by population. As another example, Saudi Arabia displays a value of 92.368 µg/m^3^ on the leaflet showing data for 2017. Based on the PM2.5 guideline provided by the World Health Organization, Brazil in 1990 is considered to be in a moderate range of PM2.5, while Saudi Arabia is in a highly dangerous range. Despite such great differences in the PM2.5 level in different countries, these two choropleths show that the air quality in general has improved over the years from 1990 to 2017. This change is most noticeable in many countries in the Eastern Europe, Latin America, and Southern Africa, while there are several countries undergoing a similar change in parts of Asia. 
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, include = FALSE}
 
@@ -219,7 +218,7 @@ PM25_1990_leaflet
 PM25_2017_leaflet
 ```
 
-These leaflets are effectively mapping the PM2.5 level on a global scale and letting us compare the PM2.5 level between multiple countries. Though we can see some changes undergone by some countries, this change is not dramatically apparent at first sight. Therefore, we created an additional leaflet that shows the change in PM2.5 level from 1990 to 2017. The value indicates the change from 1990 to 2017 (i.e. value_1990 - value_2017), so a positive value indicates a decrease in PM2.5 level, while a negative value indicates an increase. For example, India experienced an increase in PM2.5 level of 8.558 µg/m^3. As we expect, now more clearly, we see a positive change in air quality in general around the world. 
+These leaflets are effectively mapping the PM2.5 level on a global scale and letting us compare the PM2.5 level between multiple countries. Though we can see some changes undergone by some countries, this change is not dramatically apparent at first sight. Therefore, we created an additional leaflet that shows the change in PM2.5 level from 1990 to 2017. The value indicates the change from 1990 to 2017 (i.e. value_1990 - value_2017), so a positive value indicates a decrease in PM2.5 level, while a negative value indicates an increase. For example, India experienced an increase in PM2.5 level of 8.558 µg/m^3^. As we expect, now more clearly, we see a positive change in air quality in general around the world. 
 
 ```{r, echo = FALSE}
 PM25_change_leaflet
@@ -544,14 +543,63 @@ https://worldpopulationreview.com/country-rankings/developing-countries
 
 ## Is there an Association Between the Frequency of Climate Disasters and Infant/Maternal Mortality?
 
-We can hypothesize that countries facing higher frequencies, and more intense, natural disasters risk more damages to their agricultural and resources systems, which can reduce access to proper food, jobs, etc. that might ensure lower infant and maternal mortality rates.
+> We can hypothesize that countries facing higher frequencies, and more intense, natural disasters risk more damages to their agricultural and resources systems, which can reduce access to proper food, jobs, etc. that might ensure lower infant and maternal mortality rates.
+
+# Impacts of Climate Disasters (LK)
+
+Lastly, we decided to investigate how the impacts of climate/natural disasters have changed over time. Specifically, how has the number of people killed, injured, affected, and displaced due to these disasters changed?    
+
+Certain natural disasters are more connected to environmental pollution and global warming more than others; for example, earthquakes are usually caused when the rock undergrounds suddenly break along the fault. The increase in global temperature or change in precipitation, therefore, is less likely to be directly relevant to earthquakes. On the other hand, floods and droughts are directly contingent on precipitation and the evapotranspiration of water to and from the atmosphere. Wildfires are more likely to occur when humidity is low. Landslides are more likely to occur when the deforestation is severe. 
+
+Therefore, here we are examining 6 natural disasters: flood, storm, wildfire, drought, extreme temperature, and landslide. We obtained a dataset that recorded "*impactful*" natural disasters for the past 40 years. By "impactful" we mean that these disasters killed, injured, displaced, or affected humans in various ways:
+
+- Death: a total number of people who lost their lives
+- Injured: a total number of people who suffered from physical injuries, trauma, or an illness
+- Homeless: a total number of people whose house was destroyed/damanged and therefore need shelter
+- Affected: a total number of people who required medical attention or immediate assistance for basic survival needs (e.g. food, water, sanitation)
+
+> We hypothesized that the frequency of impactful natural disasters would have increased since 1980. We also hypothesized that the consequences of these disasters would have intensified since 1980.
+
+## Frequency of Natural Disasters
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+
+natdisfreq <- read_csv(paste0(my_path, "/wrangled_natdisasters_byyear.csv")) %>%
+  filter(disaster_type != "All") %>%
+  select(year, disaster_type, occurrence) %>%
+  group_by(year, disaster_type) %>%
+  summarize(total_occur = sum(occurrence))
+
+```
+
+First, we will test the hypothesis that the frequency of impactful natural disasters had increased over time. Take a look at a shiny app below.
+
+- Compare the occurrences of different natural disasters. Are some natural disasters more common than others?
+- What kind of general trend over time do you see?
+- Select the disasters one by one. Did the frequency of some disasters increase more that the frequency of other disasters over time?
+
+<iframe height="650" width="100%" frameborder="no" title="Frequency of Natural Disasters" src="https://lillianykim.shinyapps.io/naturaldisasterfreq/"> </iframe>
+
+What do you see? First, we see that some natural disasters are more common than other disasters. Take the year 2011 as an example. There were `r natdisfreq[which(natdisfreq$year == 2011 & natdisfreq$disaster_type == "Wildfire"), 3]` landslides in 2011 worldwide, but there were `r natdisfreq[which(natdisfreq$year == 2011 & natdisfreq$disaster_type == "Storm"), 3]` floods. In year 2011, floods were `r round(natdisfreq[which(natdisfreq$year == 2011 & natdisfreq$disaster_type == "Storm"), 3] / natdisfreq[which(natdisfreq$year == 2011 & natdisfreq$disaster_type == "Wildfire"), 3], 0)` times more frequent than landslides, and this pattern holds generally true for other years as well. Floods and storms appear to be more frequent than droughts, extreme temperatures, landslides, and wildfires.  
+
+Next, we can observe that the frequency of some disasters increased more than the frequency of other disasters. Examine the frequency of Droughts from 1980 to 2020. There is a great deal of fluctuation in the annual global frequency of droughts, but ultimately the peaks in the graphs stay relatively stable. In 1999, there were `r natdisfreq[which(natdisfreq$year == 1999 & natdisfreq$disaster_type == "Drought"), 3]` droughts, and so were in 2015. ( Keep in mind that we are only looking at the frequency per se, and not how it actually affected human societies. Save that thought for below) In contrast, examine the frequency of floods over time. We can see that floods became more and more frequent over time. There were only `r natdisfreq[which(natdisfreq$year == 1988 & natdisfreq$disaster_type == "Flood"), 3]` floods in 1988, but `r natdisfreq[which(natdisfreq$year == 2006 & natdisfreq$disaster_type == "Flood"), 3]` floods in 2006! In fact, the increasing trend is clearer for extreme temperatures, floods, and storms.
+
+Most importantly, examining how the total occurrences of these 6 disasters, we can see that there is a general increasing trend. There is a noticeable increase in disaster frequency in 1990s, and it remains increased after 2000. We suspect that the increase in the frequencyin the frequencyin the frequency was stalled after 2000 b
 
 
-# Tab 3: Lillian's part
 
-Here, I am investigating how the impacts of natural disasters have changed over time since 1980 until 2020. Specifically, how has the frequency of natural disasters changed? How has the number of people killed, injured, affected, and displaced due to these disasters changed?  
-To investigate this problem, we obtained a dataset that recorded "impactful" natural disasters for the past 40 years. By "impactful" we mean that these disasters killed, injured, displaced, or affected humans in various ways. Take a look at the shiny app below.
+## Impacts of Natural Disasters by Region
 
-<iframe height="700" width="100%" frameborder="no" src="https://lillianykim.shinyapps.io/naturaldisasters/"> </iframe>
+Take a look at the shiny app below. We created an interactive leaflet to allow the user to select a year between 1980 and 2020 and the type of disaster they are interested in. Each region is colored according to the total number of people killed, injured, displaced, or affected by the natural disasters of chosen types. 
+
+- Start from 1980. Examine the choropleth every 4-5 years until you reach 2020. What kind of global trend do you see?
+- Examine each of the disasters one by one. What trend, if any, do you see?
+
+<iframe height="850" width="100%" frameborder="no" title="Impacts of Natural Disasters" src="https://lillianykim.shinyapps.io/naturaldisasters/"> </iframe>
+
+As we examine the plot from the earlier years to the more recent years, we noticed that the choropleth became more and more colorful. This means that more people were killed, injured, displaced, or affected by the aforementioned natural disasters in recent years.
+
+There are a few caveats that you should keep in mind:
+This dataset does not record every single storm, drought, and flood that happened for the past few decades. Because it only records the natural disasters that affected humans beyond a certain extent, the trends shown here should be understood as a proxy, rather than a direct measurement of the frequency of natural disasters. For example, a storm may wreak havoc in developing countries that lack infrastructures to predict storms, prepare for the storms, and take necessary protective measures. However, an equally severe storm may barely affect some developed countries where houses and buildings are designed to withstand natural disasters, in which case the storm will not be recorded in this dataset. 
 
 

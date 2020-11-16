@@ -63,12 +63,13 @@ In 2019, the United Nations Foundation listed climate change as the top global i
 
 [image]()
 
-According to the NASA Earth Observatory, climate change, and this temperature increase, can affect the future prevalence and intensity of various climate disasters. These effects include a higher risk of droughts and possibly floods (due to less frequent, but more intense precipitation). Furthermore, the temperature increase worldwide can bring the temperatures at the north and south poles, closter to that of the equator. The temperature increase will make the poles hotter and more humid, which in fact could reduce the number of storms. But this sounds like a good thing, right? Unfortunately, as land surface temperatures, humidity, there is more water vapor present in the atmosphere, so the intensity of the storms, as well as the domain of occurrence for certain tropical storms, could increase. Furthermore, these rising land and sea surface temperatures are causing glacial melting, which increases the sea levels and thus can increases the extent of coastal flooding.
+Climate change, and this temperature increase, can affect the future prevalence and intensity of various climate disasters. These effects include a higher risk of droughts and possibly floods (due to less frequent, but more intense precipitation). Furthermore, the temperature increase worldwide can bring the temperatures at the north and south poles, closter to that of the equator. The temperature increase will make the poles hotter and more humid, which in fact could reduce the number of storms. But this sounds like a good thing, right? Unfortunately, as land surface temperatures, humidity, there is more water vapor present in the atmosphere, so the intensity of the storms, as well as the domain of occurrence for certain tropical storms, could increase. Furthermore, these rising land and sea surface temperatures are causing glacial melting, which increases the sea levels and thus can increases the extent of coastal flooding (*Climate Insights 2020: Natural Disasters*, *The Impact of Climate Change on Natural Disasters*).
 
 Given this information, we wondered whether climate change could be considered as one of the aforementioned social justice issues, and whether it is disproportionately related to quality of life in different parts of the globe. However, considering the effects of climate change as a whole on society is a hefty task. Instead, we investigated the ripple effects of air quality and the prevalence of climate disasters, on a community's public health. Public health, in relation to these environmental events, was looked at through three different lenses, as described in the questions below:
 
-Reference Used:
-(https://earthobservatory.nasa.gov/features/RisingCost/rising_cost5.php)
+References Used:
+https://earthobservatory.nasa.gov/features/RisingCost/rising_cost5.php
+https://www.rff.org/publications/reports/climateinsights2020-natural-disasters/
 
 <iframe height="700" width="100%" frameborder="no" src="https://lillianykim.shinyapps.io/globaltemperature/"> </iframe>
 

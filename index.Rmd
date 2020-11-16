@@ -8,6 +8,7 @@ output:
     highlight: NULL
 ---
 
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, fig.align="center")
 
@@ -33,7 +34,7 @@ path_bella <- "C:/Users/Bella/Desktop/git/Blog-HealthAndJusticeLeague/data"
 path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
 
 ######### fixme: change this before you run the code! ###########
-my_path <- path_lillian
+my_path <- path_bella
 
 ```
 
@@ -97,12 +98,6 @@ To visualize our data, we chose to create a series of choropleths that display t
 To help with the understanding of this measure, we will provide a few examples in context. When a user selects the country Brazil by clicking on it on the leaflet showing the data for 1990, a value of 15.402 µg/m^3^ will be displayed as the PM2.5 measure. This means that the mean annual outdoor PM2.5 concentration is 15.402 µg/m^3^, and this value is also weighted, or standardized, by population. As another example, Saudi Arabia displays a value of 92.368 µg/m^3^ on the leaflet showing data for 2017. Based on the PM2.5 guideline provided by the World Health Organization, Brazil in 1990 is considered to be in a moderate range of PM2.5, while Saudi Arabia is in a highly dangerous range. Despite such great differences in the PM2.5 level in different countries, these two choropleths show that the air quality in general has improved over the years from 1990 to 2017. This change is most noticeable in many countries in the Eastern Europe, Latin America, and Southern Africa, while there are several countries undergoing a similar change in parts of Asia. 
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, include = FALSE}
-
-path_PM25_guide <- 'https://apps.who.int/iris/bitstream/handle/10665/69477/WHO_SDE_PHE_OEH_06.02_eng.pdf;jsessionid=5F6D84FB5F54C304E800DCDDBC13E116?sequence=1'
-
-#loading data
-#ext_PM25_guide <- extract_tables(path_PM25_guide, output = "data.frame", row.names = NULL)
-#PM25_guide <- ext_PM25_guide[[1]]
 data_air <- read_csv(paste0(my_path, "/wrangled_air_final.csv."))
 data_DALY <- read_csv(paste0(my_path, "/wrangled_DALY_final.csv."))
 data_joined <- read_csv(paste0(my_path, "/joined_air_DALY_final.csv"))
@@ -388,6 +383,7 @@ Now, with those in mind, an even more curious data scientist might want to see h
 The following two interactive line graphs show the change in DM2.5 and DALY from 1990 to 2017. This is similar to the earlier change leaflets we had displayed but different in that these show all the values for a country in a given year and that these don’t account for the rest of approximately 190 countries. Therefore, we will not make a particular analysis on these visualizations, as our analysis will not account for the entirety of the data. Please consider these as simply a supplemental resource to make a similar analysis we made in order to answer our original question with an additional capability to observe the variables in a given year between 1990 and 2017.
 
 ```{r, message = FALSE, warning = FALSE, include = FALSE}
+#generate a list of randomly selected 10 countries
 countrylist_index <- floor(runif(10, min = 0, max = nrow(data_joined)))
 countrylist <- rep(c("country"), 10)
 
@@ -397,7 +393,7 @@ for (i in 1:length(countrylist_index)){
 
 data_joined <- subset(data_joined, country %in% countrylist)
 
-
+#plot DALY using the randomly chosen 10 countries
 gdaly <- ggplotly(ggplot(data = data_joined, mapping = aes(x = year, y = DALY, color = country)) +
     geom_line() +
   scale_y_continuous(trans = "log10")+
@@ -408,6 +404,7 @@ gdaly <- ggplotly(ggplot(data = data_joined, mapping = aes(x = year, y = DALY, c
       x = "Year")+
     theme_classic())
 
+#plot PM2.5 exposure using the randomly chosen 10 countries
 gexposure <- ggplotly(ggplot(data = data_joined, mapping = aes(x = year, y = PM25exposure, color = country)) +
      geom_line() +
      labs(
@@ -419,14 +416,13 @@ gexposure <- ggplotly(ggplot(data = data_joined, mapping = aes(x = year, y = PM2
 ```
 
 ```{r, echo = FALSE}
-gdaly
 gexposure
+gdaly
 ```
 
 ## Next Steps
 
 As seen in our analysis using the choropleths, we had found that in general there seems to be a direct relationship between the change in air quality and mortality across countries. That is, an environmental factor can be evident in, and thus have directly impacted, the quality of life of the people. This being said, we wondered narrow down our focus to investigate whether an environmental factor could *disproportionately* affect countries around the world. Therefore, in the next section of this blog post, we will aim to answer the following question: "Are developing countries affected differently than developed countries by climate disasters?"
-
 
 # Do climate change ripple effects (measured via infant and maternal mortality) vary from region-to-region? (MS)
 

@@ -41,23 +41,6 @@ my_path <- path_mythili
 
 ```
 
-### Extra Info for insertion of elements into Blog - don't delete until the end!
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For example, you can include **Bold** and _Italic_ and `Code` text.  For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-You should test out updating your GitHub Pages website:
-
-- clone your group's blog project repo in RStudio
-- update "Your Project Title Here" to a new title in the YAML header
-- knit `index.Rmd` 
-- commit and push BOTH the `index.Rmd` and the `index.html` files
-- go to https://stat231-f20.github.io/Blog-HealthAndJusticeLeague to see the published test document (this is publicly available!)
-
-
-## Including links and images
-
-You can include [Links](https://www.datadreaming.org/post/r-markdown-theme-gallery/) and images ![team logo](https://raw.githubusercontent.com/stat231-f20/Blog-HealthAndJusticeLeague/main/images/ph_sj1-7.png)
-
 ## Beyond Global Warming
 
 Social justice, by definition, considers justice in terms of rights, opportunities, and privileges within a society, on a regional, national, or international level. The idea behind social justice is that everyone has an innate value as human beings, and no person’s value is more or less than anyone else’s. These rights and opportunities include seemingly basic necessities of a person today, such as access to healthcare, food, and safe spaces to live.

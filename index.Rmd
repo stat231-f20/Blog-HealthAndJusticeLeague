@@ -36,7 +36,7 @@ path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/d
 
 ######### fixme: change this before you run the code! ###########
 
-my_path <- path_bella
+my_path <- path_mythili
 
 
 ```

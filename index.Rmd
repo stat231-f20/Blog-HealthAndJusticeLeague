@@ -64,18 +64,14 @@ Social justice, by definition, considers justice in terms of rights, opportuniti
 
 While there are a variety of different social justice issues worldwide, some of them are more relevant and prevalent depending on the region you're talking about. As these issues are often broad and diverse, we would like to focus on a single, seemingly less prevalent, factor that may have been affecting people's quality of life on a global scale to varying degrees: **environmental change**. 
 
-In 2019, the United Nations Foundation listed climate change as the top global issue to watch, as global emissions of greenhouse gases have been consistently rising since the early 2000s. This rise has partially contributed to the global temperature increase over time (1880-2020) that we have seen over time (Figure 1).
+In 2019, the United Nations Foundation listed climate change as the top global issue to watch, as global emissions of greenhouse gases have been consistently rising since the early 2000s. This rise has partially contributed to the global temperature increase over time (1880-2020) that we have seen over time (see figure below).
 
 <iframe height="600" width="100%" frameborder="no" title="Increase in Global Temperature" src="https://lillianykim.shinyapps.io/globaltemperature/"> </iframe>
 
 
-Climate change, and this temperature increase, can affect the future prevalence and intensity of various climate disasters. These effects include a higher risk of droughts and possibly floods (due to less frequent, but more intense precipitation). Furthermore, the temperature increase worldwide can bring the temperatures at the north and south poles, closter to that of the equator. The temperature increase will make the poles hotter and more humid, which in fact could reduce the number of storms. But this sounds like a good thing, right? Unfortunately, as land surface temperatures, humidity, there is more water vapor present in the atmosphere, so the intensity of the storms, as well as the domain of occurrence for certain tropical storms, could increase. Furthermore, these rising land and sea surface temperatures are causing glacial melting, which increases the sea levels and thus can increases the extent of coastal flooding (*Climate Insights 2020: Natural Disasters*, *The Impact of Climate Change on Natural Disasters*).
+Climate change, and this temperature increase, can affect the future prevalence and intensity of various climate disasters. These effects include a higher risk of droughts and possibly floods (due to less frequent, but more intense precipitation). Furthermore, the temperature increase worldwide can bring the temperatures at the north and south poles, closer to that of the equator. The temperature increase will make the poles hotter and more humid, which in fact could reduce the number of storms. But this sounds like a good thing, right? Unfortunately, as land surface temperatures, humidity, there is more water vapor present in the atmosphere, so the intensity of the storms, as well as the domain of occurrence for certain tropical storms, could increase. Furthermore, these rising land and sea surface temperatures are causing glacial melting, which increases the sea levels and thus can increases the extent of coastal flooding (*Climate Insights 2020: Natural Disasters*, *The Impact of Climate Change on Natural Disasters*).
 
 Given this information, we wondered whether climate change could be considered as one of the aforementioned social justice issues, and whether it is disproportionately related to quality of life in different parts of the globe. However, considering the effects of climate change as a whole on society is a hefty task. Instead, we investigated the ripple effects of air quality and the prevalence of climate disasters, on a community's public health. Public health, in relation to these environmental events, was looked at through three different lenses, as described in the questions below:
-
-References Used:
-https://earthobservatory.nasa.gov/features/RisingCost/rising_cost5.php
-https://www.rff.org/publications/reports/climateinsights2020-natural-disasters/
 
 ### Research Questions
 
@@ -431,23 +427,14 @@ As seen in our analysis using the choropleths, we had found that in general ther
 
 When we think of climate change, and climate disasters, maternal and infant mortality are probably not the first phrases we associate with it. However, it turns out that there is a logical association between the two. This question was inspired by the Barbier, et. al. 2018 paper on *The Impacts of Climate Change on the Poor in Disadvantaged Regions*. The research paper described two categories for areas in developing countries: less-favored agricultural areas (LFAAs) and low-elevation coastal zones (LECZs). Not surprisingly, the LFAAs can be affected by changes to the terrain, soil, and overall precipitation, while LECZs, due to their coastal location, are more vulnerable to rises in the sea level, tropical storms, etc. Now we can see more clearly that climate disasters, such as flooding, storms, droughts, etc., could disproportionately affect rural areas in developing countries compared to developed countries. Changes in climate change, looked at here via climate disaster occurrence, pose threats to both the agricultural productivity and the resources of such developing communities. A secondary effect of such rural poverty is that on infant and maternal mortality rates.
 
-Reference Used:
-https://academic.oup.com/reep/article/12/1/26/4835833
-
 ## Infant and Maternal Mortality from 1980-2018
 
-First, let's consider how the distribution of countries' infant and maternal mortality rates have changed over the years. Although more recent, even in the 1980s, we did not possess all the current medicine and technology we have today, especially medically related. The data on infant and maternal mortality that we used came from the OECD. Infant mortality was categorized by no minimum threshold of gestation period or birthweight, and recorded in terms of deaths per 1,000 live births. Maternal mortality was recorded in terms of deaths per 100,000 live births. From Figures 11 and 12 we can see that without looking at specific countries, there is a trend of decreasing infant and maternal mortality. In the 1980s, 23 countries were in our self-labeled "Developing" cluster (between standardized values of around -1 to 0), while in the 2010s, 
-31 countries are in the "Developing" cluster (note the range has increased from -1 to 1). What's odd is that although we would expect a stark change in infant/maternal mortality values over time, we see more nuanced changes. The "Developing" cluster increases in size and range of values covered, while the "Middle" cluster is much more distinct and widespread than in the 1980s. We also still have one country (Mexico) that seemingly hasn't changed in terms of standardized values. It is likely that from 1980s to the 2010s, the mean infant and maternal mortality rates greatly improved, but the distirbution and distinction between various country groupings (such as "Developed", "Middle", and "Developing") has stayed fairly consistent. If infant mortality and maternal mortality all improved to the same standard, we would expect to see all countries in the "Developed" cluster. However, instead we see a larger "Developed" cluster, and blatant countries that have been left behind so to say, in terms of their infant and maternal mortality rates. All countries displayed reduction in infant/maternal mortality rates from the 1980s to 2010s. This can be better seen when looking at yearly values in the data set (use the link below to view the data used). However, from these clusters, we can draw our first conclusion, that not all countries have reached the same infant/maternal mortality rates. There is still a disparity in mortality rates for different countries.
+First, let's consider how the distribution of countries' infant and maternal mortality rates have changed over the years. Although more recent, even in the 1980s, we did not possess all the current medicine and technology we have today, especially medically related. The data on infant and maternal mortality that we used came from the OECD. Infant mortality was categorized by no minimum threshold of gestation period or birthweight, and recorded in terms of deaths per 1,000 live births. Maternal mortality was recorded in terms of deaths per 100,000 live births. In the figures below, I used the `kmeans()` function to cluster the data points of 36 countries. These figures show standardized values for the infant and maternal mortality values of 36 countries and clusters them so as to minimize within-cluster variation. We can take the clusters on the higher end of both scales to be developing countries, on the lower end to be developed, and clusters in the middle to represent countries along the spectrum of development. Each country appears as one point whose position represents its average infant/maternal mortality standardized value (over the decade).
 
-One thing to note is that the data we used only had information on countries in North and South America, Australia, and parts of Europe. Many of the more predominant developing countries and agriculturally-based societies, such as in Africa and South/Southeast Asia did not have data recorded in the dataset.
+We can see that without looking at specific countries, there is a trend of decreasing infant and maternal mortality. In the 1980s, 23 countries were in our self-labeled "Developing" cluster (between standardized values of around -1 to 0), while in the 2010s, 31 countries are in the "Developing" cluster (note the range has increased from -1 to 1).
 
-Data Used:
 
-Go to Health > Health Status > Maternal and infant mortality. Variables, years, and measures can be filtered out.
-
-https://stats.oecd.org/Index.aspx?DatasetCode=HEALTH_STAT
-
-```{r, warning = FALSE, message = FALSE, echo = FALSE}
+```{r, warning = FALSE, message = FALSE}
 
 ## 1980s Cluster
 
@@ -459,12 +446,13 @@ data_cluster1980s <- read_csv(paste0(my_path,"/wrangled_infmatmortcluster1980s.c
 set.seed(23)
 km_out <- kmeans(data_cluster1980s[,c("avginfmort_std", "avmatmort_std")], centers = 3, nstart=20)
 
-#vector of cluster assignments
-#km_out$cluster
-
 # add cluster assignment to the data frame
 cluster1980s <- data_cluster1980s %>%
   mutate(clust = as.character(km_out$cluster))
+
+```
+
+```{r, warning = FALSE, message = FALSE, echo = FALSE}
 
 # visualize the cluster assignments and centroids
 ggplot(data = cluster1980s, aes(x = avginfmort_std, y = avmatmort_std)) + 
@@ -508,29 +496,34 @@ ggplot(data = cluster2010s, aes(x = avginfmort_std, y = avmatmort_std)) +
              , aes(x = avginfmort_std, y = avmatmort_std)
              , pch = "X"
              , size = 4) +
-  theme_classic()+
+  theme_classic() +
   labs(x = "Standardized Average Infant Mortality"
        , y = "Standardized Average Maternal Mortality" 
        , title = "Infant and Maternal Mortality in the 2010s"
-       , caption = "Figures 11 and 12. These figures shows standardized values for the infant and maternal mortality values of 36 countries and clusters them so as to minimize within-cluster variation. We can take the clusters on the higher end of both scales to be more developing countries, on the lower end to be developed, and in the middle to be somewhere across the spectrum of developedness. Each country appears as one point whose position represents its average infant/maternal mortality standardized value (over the decade)."
        , color = "Cluster Assignment")
 
 ```
 
+
+What's odd is that although we would expect a stark change in infant/maternal mortality values over time, we see more nuanced changes. The "Developing" cluster increases in size and range of values covered, while the "Middle" cluster is much more distinct and widespread than in the 1980s. We also still have one country (Mexico) that seemingly hasn't changed in terms of standardized values. It is likely that from 1980s to the 2010s, the mean infant and maternal mortality rates greatly improved, but the distribution and distinction between various country groupings (such as "Developed", "Middle", and "Developing") has stayed fairly consistent. If infant mortality and maternal mortality all improved to the same standard, we would expect to see all countries in the "Developed" cluster. However, instead we see a larger "Developed" cluster, and blatant countries that have been left behind so to say, in terms of their infant and maternal mortality rates. All countries displayed reduction in infant/maternal mortality rates from the 1980s to 2010s. This can be better seen when looking at yearly values in the data set (refer to OECD citation in Works Cited Tab). However, from these clusters alone, we can draw our first conclusion, that not all countries have reached the same infant/maternal mortality rates. There is still a disparity in mortality rates for different countries.
+
+Note that the data we used only had information on countries in North and South America, Australia, and parts of Europe. Many of the more predominant developing countries and agriculturally-based societies, such as in Africa and South/Southeast Asia did not have data recorded in the dataset.
+
 ## What does Yearly Change in Infant and Maternal Mortality Look Like?
 
-Let's zoom in to look how infant mortality changes yearly for a pair of countries. Looking at the interactive graphics below, consider Switzerland, the second most developed nation as of 2020, according to life expectancy, economic competitiveness, infrastructure, GDP per capita (*Developed Countries List 2020*). Switzerland's economy is based more in the service sector. Compare this to Mexico, which is less developed industrially, has more widespread poverty, and is a more agriculturally-based society. We know that Mexico would has worse infant and maternal mortality rates, compared to Switzerland (can be seen in original data tables). Specifically, Mexico started at 54.8 infant deaths per 1,000 live births in 1980 and decreased to 12.9 deaths per 1,000 live births in 2018. Switzerland started at 9.1 infant deaths per 1,000 live births in 1980 and decreased to 3.3 infant deaths per 1,000 live births in 2018. Thus, we can see that even in 1980, there was a great disparity in starting point and end point, however by 2018, the gap was greatly decreased. Now if we look at the yearly changes, we can understand how Mexico has much greater negative net changes in infant mortality. Note, I chose to focus the timeline on more recent years so that there is less impact from technological advancements in medicine. In fact, there is only one year (2017) where there is a positive net change in infant mortality. Switzerland on the other hand, while having negative net change in infant mortality between 2010 and 2018, has less frequent changes, and changes of lesser magnitude. In several years, the infant mortality rate stays the same. It also displays a positive net change in infant mortality in 2013. So it seems that in this case, the more agriculturally-based society has had a larger improvement in infant mortality rates than the classified Developed Country due to their largely varying starting points.
-
-Now let's look at maternal mortality for those same two countries. We can note that the magnitude of net changes in maternal mortality are much less than that of infant mortality for both Mexico and Switzerland (compare the y-axis scale of -0.5 to 0.5 for infant mortality, and -5 to 5 for maternal mortality.) We should also note again that maternal mortality is measured in terms of 100,000 live births while infant mortality is measure din terms of 1,000 live births. We can see from the graphs that for Mexico, in most years, there is a decrease in maternal mortality (equal to or greater than the decreases experienced by Switzerland yearly). Switzerland, on the other hand, has a positive net change in maternal mortality in 4 out of the 8 years displayed, and these increases are greater than that experienced by Mexico. This might indicate that it is not random variation in maternal mortality, but there might be an added factor specific to Switzerland contributing to these increases between 2012 and 2017. This is contrary to our understanding of how developed Switzerland is in terms of life expectancy, access to health care, etc., but is a trend that was also noticed in infant mortality rates around 2011 (Wanner, et. al. 2017). From 2010 to 2017, Mexico's maternal mortality dropped from 43.7 to 35 deaths per 100,000 live births, while Switzerland's increased from 3.7 - 4.6 deaths per 100,000 live births. So what can we conclude from this? Surprisingly, the graphs of these two countries indicates that although Switzerland is more developed and thought to have better healthcare, their maternal mortality actually increased in the past decade, while Mexico's mainly decreased. So again we see a stronger magnitude of change towards better infant/maternal mortality stats in the devloping country vs. the developed. It is possible that there was more improvement of the health infrastructure in Mexico in the past decade that contributed to the larger rise vs. Switzerland, which already had on of the world's best health infrastructure (Rodríguez-Aguilar 2018). However, these results still make us question why a developed country is seeing such drastic increases in maternal mortality on a year to year basis.
+Let's zoom in to look at how infant mortality changes yearly for a pair of countries. Looking at the interactive graphs below, consider Switzerland, the second most developed nation as of 2020, according to life expectancy, economic competitiveness, infrastructure, GDP per capita (*Developed Countries List 2020*). Switzerland's economy is based more in the service sector. Compare this to Mexico, which is less developed industrially, has more widespread poverty, and is a more agriculturally-based society. We know that Mexico would has worse infant and maternal mortality rates, compared to Switzerland (can be seen in original data tables). Specifically, Mexico started at 54.8 infant deaths per 1,000 live births in 1980 and decreased to 12.9 deaths per 1,000 live births in 2018. Switzerland started at 9.1 infant deaths per 1,000 live births in 1980 and decreased to 3.3 infant deaths per 1,000 live births in 2018. Thus, we can see that even in 1980, there was a great disparity in starting point and end point, however by 2018, the gap was greatly decreased. Now if we look at the yearly changes, we can understand how Mexico has much greater negative net changes in infant mortality. Note, I chose to focus the timeline on more recent years so that there is less impact from technological advancements in medicine. In fact, there is only one year (2017) where there is a positive net change in infant mortality. Switzerland on the other hand, while having negative net change in infant mortality between 2010 and 2018, has less frequent changes, and changes of lesser magnitude. In several years, the infant mortality rate stays the same. It also displays a positive net change in infant mortality in 2013. So it seems that in this case, the more agriculturally-based society has had a larger improvement in infant mortality rates than the classified Developed Country due to their largely varying starting points.
 
 <iframe height="650" width="100%" frameborder="no" title="Relationship BetweenInfant and Maternal Mortality and Natural Disaster Occurrence" src="https://mysubb.shinyapps.io/InfMatMortNatDisast/"> </iframe>
 
+Now let's look at maternal mortality for those same two countries. We can note that the magnitude of net changes in maternal mortality are much less than that of infant mortality for both Mexico and Switzerland (compare the y-axis scale of -0.5 to 0.5 for infant mortality, and -5 to 5 for maternal mortality.) We should also note again that maternal mortality is measured in terms of 100,000 live births while infant mortality is measure din terms of 1,000 live births. We can see from the graphs that for Mexico, in most years, there is a decrease in maternal mortality (equal to or greater than the decreases experienced by Switzerland yearly). Switzerland, on the other hand, has a positive net change in maternal mortality in 4 out of the 8 years displayed, and these increases are greater than that experienced by Mexico. This might indicate that it is not random variation in maternal mortality, but there might be an added factor specific to Switzerland contributing to these increases between 2012 and 2017. This is contrary to our understanding of how developed Switzerland is in terms of life expectancy, access to health care, etc., but is a trend that was also noticed in infant mortality rates around 2011 (Wanner, et. al. 2017). From 2010 to 2017, Mexico's maternal mortality dropped from 43.7 to 35 deaths per 100,000 live births, while Switzerland's increased from 3.7 - 4.6 deaths per 100,000 live births. So what can we conclude from this? Surprisingly, the graphs of these two countries indicates that although Switzerland is more developed and thought to have better healthcare, their maternal mortality actually increased in the past decade, while Mexico's mainly decreased. So again we see a stronger magnitude of change towards better infant/maternal mortality stats in the devloping country vs. the developed. It is possible that there was more improvement of the health infrastructure in Mexico in the past decade that contributed to the larger rise vs. Switzerland, which already had on of the world's best health infrastructure (Rodríguez-Aguilar 2018). However, these results still make us question why a developed country is seeing such drastic increases in maternal mortality on a year to year basis.
+
 If we look at another pair of developed countries, such as Estonia and Finland, we can see a similar variation (compared to Switzerland and Mexico) between positive and negative net change in infant mortality over the past decade (albeit by different magnitudes). Finland varies much less in maternal mortality than Estonia does (in terms of magnitude of change), but they both display positive and negative changes. If we look at Germany (developed) and Hungary (in the developed/developing spectrum), we can see results similar to Switzerland and Mexico, where the more developed country bounces between positive and negative changes in mortality, while the less developed nation showcases more negative changes (of higher magnitude) in infant mortality. Maternal mortality, however, varies much more in Hungary (bounces between positive and negative changes, changes are of larger magnitude) than it does in Germany (changes of smaller magnitude, mostly negative changes in maternal mortality).
+
+Zooming out though, from the countries we've looked at, are there any conclusions we can draw about infant and maternal mortality and how they relate to different countries (depending on whether they're developed or not)?
+
 
 You can explore the trends in other countries' infant and maternal mortality stats over 2010-2018 by interacting with the graphic above. Also, you can explore the tables in the PDF located at the following link to learn more about how the UN determines [developed vs. developing countries](https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/WESP2020_Annex.pdf), and which countries are classified as what!
 
-
-Zooming out though, from the countries we've looked at, are there any conclusions we can draw about infant and maternal mortality and how they relate to different countries (depending on whether they're developed or not)?
 
 
 *STILL NEED TO TYPE TEXT FOR:*
@@ -559,13 +552,6 @@ Data Used:
 Natural Disaster Frequency Data by Country obtained from https://public.emdat.be/data
 
 Note you must create an account and validate through email in order to view the datasets. Data is available from 1900-2020.
-
-References Used:
-
-https://bmcpregnancychildbirth.biomedcentral.com/articles/10.1186/s12884-017-1332-6
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5862485/
-https://worldpopulationreview.com/country-rankings/developed-countries
-https://worldpopulationreview.com/country-rankings/developing-countries
 
 
 # Impacts of Climate Disasters (LK)
@@ -632,7 +618,31 @@ This dataset does not record every single storm, drought, and flood that happene
 
 
 # Works Cited
-- Brown, Kaysie. “6 Global Issues to Watch in 2019.” Unfoundation.org, 23 Jan. 2020, unfoundation.org/blog/post/6-global-issues-to-watch-2019/. 
+
+- Brown, Kaysie. “6 Global Issues to Watch in 2019.” Unfoundation.org, 23 Jan. 2020, unfoundation.org/blog/post/6-global-issues-to-watch-2019/.
+
 - “Global Emissions.” Center for Climate and Energy Solutions, 7 Jan. 2020, www.c2es.org/content/international-emissions/. 
+
 - WHO (2018) Factsheet on ambient air quality and health. Available at http://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health
+
 - “Mortality, Morbidity, and Welfare Cost from Exposure to Environment-Related Risks.” Organization for Economic Co-Operation and Development (OECD), Jul. 2018. *file in repo*
+
+- “Maternal and Infant Mortality.” Organization for Economic Co-Operation and Development (OECD), Jul. 2020, https://stats.oecd.org/Index.aspx?DatasetCode=HEALTH_STAT/. *file in repo*
+
+- Wanner, Philippe, and Paola Bollini. “The Contribution of the Foreign Population to the High Level of Infant Mortality in Switzerland: A Demographic Analysis.” BMC Pregnancy and Childbirth, BioMed Central, 25 May 2017, bmcpregnancychildbirth.biomedcentral.com/articles/10.1186/s12884-017-1332-6.
+
+- Rodríguez-Aguilar, Román. “Maternal Mortality in Mexico, Beyond Millennial Development Objectives: An Age-Period-Cohort Model.” PLOS ONE, PLOS ONE, 21 Mar. 2018, journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0194607.
+
+- Barbier, Edward B, and Jacob P Hochard. “The Impacts of Climate Change on the Poor in Disadvantaged Regions.” Review of Environmental Economics and Policy, vol. 12, no. 1, 2 Feb. 2018, pp. 26–47. Winter 2018, doi:https://doi.org/10.1093/reep/rex023.
+
+- “The Impact of Climate Change on Natural Disasters.” The Rising Cost of Natural Hazards, NASA Earth Observatory at NASA Goddard Space Flight Center, 30 Mar. 2005, earthobservatory.nasa.gov/features/RisingCost/rising_cost5.php.
+
+- MacInnis, Bo, and Jon Krosnick. “Surveying American Public Opinion on Climate Change and the Environment.” Climate Insights 2020: Natural Disasters, Resources for the Future, 4 Sept. 2020, www.rff.org/publications/reports/climateinsights2020-natural-disasters/.
+
+- “Developed Countries List 2020.” World Population Review, World Population Review, 2020, worldpopulationreview.com/country-rankings/developed-countries.
+
+- “Developing Countries 2020.” World Population Review, World Population Review, 2020, worldpopulationreview.com/country-rankings/developing-countries.
+
+- Economic Analysis and Policy Division (EAPD) of UN DESA. “World Economic Situation and Prospects .” Department of Economic and Social Affairs (DESA), United Nations, 2020, www.un.org/development/desa/dpad/wp-content/uploads/sites/45/WESP2020_Annex.pdf.
+
+

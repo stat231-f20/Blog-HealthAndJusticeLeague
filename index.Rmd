@@ -46,7 +46,7 @@ While there are a variety of different social justice issues worldwide, some of 
 
 In 2019, the United Nations Foundation listed climate change as the top global issue to watch, as global emissions of greenhouse gases have been consistently rising since the early 2000s. This rise has partially contributed to the global temperature increase over time (1880-2020) that we have seen over time (see figure below).
 
-```{r, eval = FALSE}
+```{r, echo = FALSE, eval = FALSE}
 # App.R file of this shiny app is in
 # Blog-HealthAndJusticeLeague>shiny>globaltemperature
 ```
@@ -511,7 +511,7 @@ Note that the data we used only had information on countries in North and South 
 
 Let's zoom in to look at how infant mortality changes yearly for a pair of countries. Looking at the interactive graphs below, consider Switzerland, the second most developed nation as of 2020, according to life expectancy, economic competitiveness, infrastructure, GDP per capita ([Developed Countries List 2020](https://www.worldpopulationreview.com/country-rankings/developed-countries.)). Switzerland's economy is based more in the service sector. Compare this to Mexico, which is less developed industrially, has more widespread poverty, and is a more agriculturally-based society. We know that Mexico would has higher infant and maternal mortality rates, compared to Switzerland (can be seen in original data tables). Specifically, Mexico started at 54.8 infant deaths per 1,000 live births in 1980 and decreased to 12.9 deaths per 1,000 live births in 2018. Switzerland started at 9.1 infant deaths per 1,000 live births in 1980 and decreased to 3.3 infant deaths per 1,000 live births in 2018. Thus, we can see that even in 1980, there was a great disparity in starting point and end point, however by 2018, the gap was greatly decreased. Now if we look at the yearly changes, we can understand how Mexico has much greater negative net changes in infant mortality. Note, I chose to focus the timeline on more recent years so that there is less impact from technological advancements in medicine. There is only one year (2017) in which Mexico displays a positive net change in infant mortality. Switzerland on the other hand, while having negative net change in infant mortality between 2010 and 2018, has less frequent changes that are of lesser magnitude. In several years, the infant mortality rate stays the same. It also displays a positive net change in infant mortality in 2013. So it seems that in this case, the more agriculturally-based society has had a larger improvement in infant mortality rates than the classified Developed Country due to their largely varying starting points.
 
-```{r, eval = FALSE}
+```{r, echo = FALSE, eval = FALSE}
 # App.R file of this shiny app is in
 # Blog-HealthAndJusticeLeague>shiny>question3
 ```
@@ -605,7 +605,7 @@ First, we will test the hypothesis that the frequency of impactful natural disas
 - What kind of general trend over time do you see?
 - Select the disasters one by one. Did the frequency of some disasters increase more that the frequency of other disasters over time?
 
-```{r, eval = FALSE}
+```{r, echo = FALSE, eval = FALSE}
 # App.R file of this shiny app is in
 # Blog-HealthAndJusticeLeague>shiny>FrequencyofDisasters
 ```
@@ -627,7 +627,7 @@ Take a look at the shiny app below. We created an interactive leaflet to allow t
 - Start from 1980. Examine the choropleth every 4-5 years until you reach 2020. What kind of global trend do you see? Are there regions that suffered more from natural disasters compared to other regions?
 - Examine each of the disasters one by one. What trend, if any, do you see? 
 
-```{r, eval = FALSE}
+```{r, echo = FALSE, eval = FALSE}
 # App.R file of this shiny app is in
 # Blog-HealthAndJusticeLeague>shiny>ImpactsofNaturalDisasters
 ```

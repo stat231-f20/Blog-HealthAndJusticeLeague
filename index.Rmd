@@ -481,7 +481,7 @@ ggplot(data = cluster1980s, aes(x = avginfmort_std, y = avmatmort_std)) +
 
 ```
 
-```{r, warning = FALSE, echo = FALSE}
+```{r, warning = FALSE, echo = FALSE, message = FALSE}
 
 ## 2010s Cluster
 
@@ -526,22 +526,25 @@ Let's zoom in to look how infant mortality changes yearly for a pair of countrie
 
 Now let's look at maternal mortality for those same two countries. We can note that the magnitude of net changes in maternal mortality are much less than that of infant mortality for both Mexico and Switzerland (compare the y-axis scale of -0.5 to 0.5 for infant mortality, and -5 to 5 for maternal mortality.) We should also note again that maternal mortality is measured in terms of 100,000 live births while infant mortality is measure din terms of 1,000 live births. We can see from the graphs that for Mexico, in most years, there is a decrease in maternal mortality (equal to or greater than the decreases experienced by Switzerland yearly). Switzerland, on the other hand, has a positive net change in maternal mortality in 4 out of the 8 years displayed, and these increases are greater than that experienced by Mexico. This might indicate that it is not random variation in maternal mortality, but there might be an added factor specific to Switzerland contributing to these increases between 2012 and 2017. This is contrary to our understanding of how developed Switzerland is in terms of life expectancy, access to health care, etc., but is a trend that was also noticed in infant mortality rates around 2011 (Wanner, et. al. 2017). From 2010 to 2017, Mexico's maternal mortality dropped from 43.7 to 35 deaths per 100,000 live births, while Switzerland's increased from 3.7 - 4.6 deaths per 100,000 live births. So what can we conclude from this? Surprisingly, the graphs of these two countries indicates that although Switzerland is more developed and thought to have better healthcare, their maternal mortality actually increased in the past decade, while Mexico's mainly decreased. So again we see a stronger magnitude of change towards better infant/maternal mortality stats in the devloping country vs. the developed. It is possible that there was more improvement of the health infrastructure in Mexico in the past decade that contributed to the larger rise vs. Switzerland, which already had on of the world's best health infrastructure (Rodríguez-Aguilar 2018). However, these results still make us question why a developed country is seeing such drastic increases in maternal mortality on a year to year basis.
 
-If we look at another pair of developed countries, such as Estonia and Finland, we can see a similar variation between positive and negative net change in infant mortality over the past decade (albeit by different magnitudes). Finland varies much less in maternal mortality than Estonia does (in terms of magnitude of change), but they both display positive and negative changes. If we look at Germany (developed) and Hungary (in the developed/developing spectrum), we can see results similar to Switzerland and Mexico, where the more developed country bounces between positive and negative changes in mortality, while the less developed nation showcases more negative changes (of higher magnitude) in infant mortality. Maternal mortality, however, varies much more in Hungary (bounces between positive and negative changes, changes are of larger magnitude) than it does in Germany (changes of smaller magnitude, mostly negative changes in maternal mortality).
+If we look at another pair of developed countries, such as Estonia and Finland, we can see a similar variation (compared to Switzerland and Mexico) between positive and negative net change in infant mortality over the past decade (albeit by different magnitudes). Finland varies much less in maternal mortality than Estonia does (in terms of magnitude of change), but they both display positive and negative changes. If we look at Germany (developed) and Hungary (in the developed/developing spectrum), we can see results similar to Switzerland and Mexico, where the more developed country bounces between positive and negative changes in mortality, while the less developed nation showcases more negative changes (of higher magnitude) in infant mortality. Maternal mortality, however, varies much more in Hungary (bounces between positive and negative changes, changes are of larger magnitude) than it does in Germany (changes of smaller magnitude, mostly negative changes in maternal mortality).
 
 
-You can explore the trends in other countries' infant and maternal mortality stats over 2010-2018 by interacting with the graphic above. 
+You can explore the trends in other countries' infant and maternal mortality stats over 2010-2018 by interacting with the graphic above. Also, you can explore the tables in the PDF located at the following link to learn more about how the UN determines developed vs. developing countries, and which countries are classified as what!
+
+[Links](https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/WESP2020_Annex.pdf)
 
 Zooming out though, from the countries we've looked at, are there any conclusions we can draw about infant and maternal mortality and how they relate to different countries (depending on whether they're developed or not)?
 
-References Used:
-https://bmcpregnancychildbirth.biomedcentral.com/articles/10.1186/s12884-017-1332-6
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5862485/
+
 *STILL NEED TO TYPE TEXT FOR:*
 
--two country comparison of maternal mortality
 -two country comparison of natural disasters occurrence and mortality rates
 -general trends/associations for infant mortality, maternal mortality, and natural disasters
 -limitations/improvements/speculations
+
+## Is there an Association Between the Frequency of Climate Disasters and Infant/Maternal Mortality?
+
+> We can hypothesize that countries facing higher frequencies, and more intense, natural disasters risk more damages to their agricultural and resources systems, which can reduce access to proper food, jobs, etc. that might ensure lower infant and maternal mortality rates.
 
 Data Used:
 
@@ -551,12 +554,11 @@ Note you must create an account and validate through email in order to view the 
 
 References Used:
 
+https://bmcpregnancychildbirth.biomedcentral.com/articles/10.1186/s12884-017-1332-6
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5862485/
 https://worldpopulationreview.com/country-rankings/developed-countries
 https://worldpopulationreview.com/country-rankings/developing-countries
 
-## Is there an Association Between the Frequency of Climate Disasters and Infant/Maternal Mortality?
-
-> We can hypothesize that countries facing higher frequencies, and more intense, natural disasters risk more damages to their agricultural and resources systems, which can reduce access to proper food, jobs, etc. that might ensure lower infant and maternal mortality rates.
 
 # Impacts of Climate Disasters (LK)
 

@@ -12,12 +12,23 @@ library(shinythemes)
 library(countrycode)
 library(viridis)
 
-my_path <- "C:/Users/Yesuel Kim/Documents/Git/STAT231/Project/naturaldisasterfreq"
+######
+# Coding done by Lillian
+# This shiny app was published from my personal repo
+# For some reason, the absolute path below worked for running the app
+# but produced an error for publishing the app
+# For publishing, we had to copy the dataset into the folder where
+# app.R file was located, and use read_csv("DATASET.csv") with a relative path.
+# If you want to reproduce the analysis AND re-publish the app, do the same, 
+# i.e. copy the dataset into the same folder and use read_csv("wrangled_natdisasters_byyear.csv")
+######
+
+my_path <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
 
 # calling in the datasets
 
 # natural disaster dataset
-natdis <- read_csv(paste0(my_path,"wrangled_natdisasters_byyear.csv")) %>%
+natdis <- read_csv(paste0(my_path,"/wrangled_natdisasters_byyear.csv")) %>%
   filter(disaster_type != "All") %>%
   select(year, disaster_type, occurrence) %>%
   group_by(year, disaster_type) %>%

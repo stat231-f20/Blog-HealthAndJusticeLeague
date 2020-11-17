@@ -9,6 +9,18 @@ library(shiny)
 library(shinythemes)
 library(plotly)
 
+
+######
+# Coding done by Lillian
+# This shiny app was published from my personal repo
+# For some reason, the absolute path below worked for running the app
+# but produced an error for publishing the app
+# For publishing, we had to copy the dataset into the folder where
+# app.R file was located, and use read_csv("DATASET.csv") with a relative path.
+# If you want to reproduce the analysis AND re-publish the app, do the same, 
+# i.e. copy the dataset into the same folder and use read_csv("/globaltemperature_all.csv")
+######
+
 # calling in the datasets
 my_path <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/data"
 

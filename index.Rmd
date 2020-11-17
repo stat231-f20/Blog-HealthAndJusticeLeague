@@ -521,13 +521,12 @@ If we look at another pair of developed countries, such as Estonia and Finland, 
 
 Zooming out though, from the countries we've looked at, are there any conclusions we can draw about infant and maternal mortality and how they relate to different countries (depending on whether they're developed or not)?
 
-
-You can explore the trends in other countries' infant and maternal mortality stats over 2010-2018 by interacting with the graphic above. Also, you can explore the tables in the PDF located at the following link to learn more about how the UN determines [developed vs. developing countries](https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/WESP2020_Annex.pdf), and which countries are classified as what!
-
-
 *STILL NEED TO TYPE TEXT FOR:*
 
 -general trends for infant mortality, maternal mortality depending on country
+
+*You can explore the trends in other countries' infant and maternal mortality stats over 2010-2018 by interacting with the graphic above. Also, you can explore the tables in the PDF located at the following link to learn more about how the UN determines [developed vs. developing countries](https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/WESP2020_Annex.pdf), and which countries are classified as what!*
+
 
 ## Is there an Association Between the Frequency of Climate Disasters and Infant/Maternal Mortality?
 

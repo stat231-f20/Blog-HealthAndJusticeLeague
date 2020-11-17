@@ -9,21 +9,29 @@ library(janitor)
 library(lubridate)
 library(shinyWidgets)
 
+## this absolute path and read_csv() line are needed to run the app.R file individually in our repo
 path_in <- "C:/Users/seshu/Documents/RStudio/projects/git/Blog-HealthAndJusticeLeague/data"
-
 infmatmortdata <- read_csv(paste0(path_in,"/wrangled_finalinfmatmortline.csv"))
 
+## the following read_csv() with a relative path was needed to publish the app
+## note: I published the app in my personal repo, but I kept the line here for reference
+## I embedded the published shiny app link into our blog post
 
+#infmatmortdata <- read_csv("wrangled_finalinfmatmortline.csv")
+
+# natdisastdata <- read_csv("wrangled_climateq3.csv") %>%
+#   rename("Extreme_temperature" = "Extreme temperature")
+
+## minute data wrangling
 infmatmortdata2 <- infmatmortdata %>%
   filter(Year %in% c(2010:2018))
 
 natdisastdata <- read_csv(paste0(path_in,"/wrangled_climateq3.csv")) %>%
   rename("Extreme_temperature" = "Extreme temperature")
 
+#creating country and variable choices for user to look at in shiny
 country_choices <- (infmatmortdata2 %>%
                       count(isocode))$isocode
-# country_choice_names <- unique(infmatmortdata$isocode)
-# names(country_choices) <- country_choice_names
 
 mort_choices_values = names(infmatmortdata2)[4:5]
 mort_choices_names <- c("Net Change in Infant Mortality", "Net Change in Maternal Mortality")
@@ -34,17 +42,6 @@ disastfreq_choices_names <- c("All Disasters", "Storms", "Wildfires"
                               , "Floods", "Droughts", "Landslides"
                               , "Extreme Temperature Events")
 names(disastfreq_choices_values) <- disastfreq_choices_names
-
-# # HTML Text: background info to display on the side
-# text <- sprintf("<strong>%s</strong>%s<br/><br/>%s<br/>%s<br/>%s<br/>%s<br/>%s<br/><br/>",
-#                 "Source: EM-DAT",
-#                 a(href="https://www.emdat.be/", " (The International Disaster Database)"),
-#                 "This app only shows the natural disasters that fulfill the following criteria:",
-#                 "a) 10 or more reported killed; or",
-#                 "b) 100 or more reported affected; or",
-#                 "c) A state of emergency declared; or",
-#                 "d) International assistance requested")%>% 
-#   lapply(htmltools::HTML)
 
 # ui 
 ui <- fluidPage(
@@ -63,7 +60,7 @@ ui <- fluidPage(
                  selectizeInput(inputId = "Countries"
                                 , label = "Choose two countries to display data for: "
                                 , choices = country_choices
-                                , selected = c("MEX", "CAN")
+                                , selected = c("MEX", "CHE")
                                 , multiple = TRUE
                                 , options = list(maxItems = 2)
                                 
@@ -90,7 +87,7 @@ ui <- fluidPage(
                )
              )
     ), 
-    
+    #so the user knows which three-letter abbreviation refers to which country
     tabPanel("Country Reference Codes",
              
              mainPanel(
@@ -102,7 +99,7 @@ ui <- fluidPage(
              )
     )
   )
-           
+  
 )
 
 
@@ -117,23 +114,32 @@ server <- function(input,output){
     data2 <- filter(natdisastdata, isocode %in% input$Countries)
   })
   
-
+  
   output$bar1 <- renderPlot({
     ggplot(data = use_data1_q3(), aes_string(x = "Year", y = input$mort)) +
       geom_bar(position = "dodge", stat = "identity", aes_string(fill = "isocode")) +
       labs(x = "Year", y = "Net Change in Mortality Per Month"
-           , title = "Infant and Maternal Mortality Worldwide from 1980-2018") +
-      theme(legend.position="bottom", plot.title = element_text(hjust = 0.5)) + 
+           , title = "Infant and Maternal Mortality Worldwide from 1980-2018") + 
+      theme_bw() + 
+      theme(legend.position="bottom", plot.title = element_text(hjust = 0.5)
+            , axis.text.x = element_text(size = 15, hjust = .5, vjust = .5)
+            , axis.text.y = element_text(size = 15, hjust = .5, vjust = .5)
+            , text = element_text(size=15)) + 
+      geom_hline(yintercept = 0, color = "black", size = 0.5) + 
       facet_wrap(~ isocode, ncol = 1)
-
+    
   })
   
   output$bar2 <- renderPlot({
     ggplot(data = use_data2_q3(), aes_string(x = "year", y = input$disastfreq)) +
       geom_bar(position = "dodge", stat = "identity", aes_string(fill = "isocode")) +
       labs(x = "Year", y = "Frequency of Chosen Natural Disaster"
-           , title = "Natural Disaster Occurrences Worldwide Between 1980 and 2018") +
-      theme(legend.position="bottom", plot.title = element_text(hjust = 0.5)) + 
+           , title = "Countrywise Natural Disaster Frequency (1980-2018)") + 
+      theme_bw() + 
+      theme(legend.position="bottom", plot.title = element_text(hjust = 0.5)
+            , axis.text.x = element_text(size = 15, hjust = .5, vjust = .5)
+            , axis.text.y = element_text(size = 15, hjust = .5, vjust = .5)
+            , text = element_text(size=15)) + 
       facet_wrap(~ isocode, ncol = 1)
     
   })

@@ -50,7 +50,7 @@ ui <- fluidPage(
   
   tabsetPanel(
     
-    tabPanel("Covid Cases by State and Race", 
+    tabPanel("Countrywise Natural Disaster Frequency, Infant and Maternal Mortality", 
              sidebarLayout(
                sidebarPanel(
                  

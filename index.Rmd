@@ -35,7 +35,7 @@ path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/d
 
 ######### fixme: change this before you run the code! ###########
 
-my_path <- path_mythili
+my_path <- path_lillian
 ```
 
 ## Beyond Global Warming
@@ -644,6 +644,8 @@ Nevertheless, the choropleth clearly showed that some countries suffered more th
 # Conclusion
 
 In this blog post, we investigated how environmental change affected public health in different regions. First, we found that environmental factors measured by air quality and public health measured by lost years of lives were directly correlated, thereby establishing a relationship between environmental factors and public health. Next, we found that there was a generally decreasing trend of mortality in both developed and developing countries, but we were not able to see explicit relationship between climate change-related natural disasters and mortality. Therefore, we investigated the natural disasters themselves, and found that their occurrences and impacts have steadily increased since 1980, which disproportionately affected people in developing countries more than developed countries.
+
+Although some of our analyses were not without limitations (*See individual sections for detailed discussion of limitations*), our analysis highlighted areas that would benefit from future research. For example, our first tab--where we found a direct relationship between air quality and public health measures--found that, contrary to common expectations, air quality has actually improved over time. Future research should take the increased usage of clean energy sources into consideration when examining the change in air quality over time. Because we only compared 1990 and 2017 in our analysis, an extensive shiny app for all countries across all years for which the data is available can also be helpful. In the second tab, we were not able to confirm the direct relationship between natural disasters and mortality. This suggested that a follow-up analysis addressing the limitations of our analysis, i.e. a more detailed data of mortality by intra-country regions (e.g. coastal regions versus landlocked regions) or a data containing lurking variables (e.g. soil quality, agricultural productivity), may be helpful in this area. The last tab was also not without limitations. Concerns about missing data and reporting bias in the natural disaster dataset remain. Despite these limitations, we hope that our analysis in this blog post illuminated the relationship between environmental change and public health and the potential inequity thereof.
  
  > We are all in this together - but some more than others.
 

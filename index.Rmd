@@ -198,7 +198,7 @@ PM25_change_leaflet <- leaflet(data = world_leaflet)%>%
             position = "bottomright")
 ```
 
-```{r, echo = FALSE, fig.width = 6}
+```{r, echo = FALSE, fig.width = 8}
 #PM2.5 leaflets
 PM25_1990_leaflet
 PM25_2017_leaflet
@@ -325,7 +325,7 @@ DALY_change_leaflet <- leaflet(data = world_leaflet_DALY)%>%
              position = "bottomright")
 ```
 
-```{r, echo = FALSE, fig.width = 6}
+```{r, echo = FALSE, fig.width = 8}
 DALY_1990_leaflet
 DALY_2017_leaflet
 ```

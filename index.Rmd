@@ -35,7 +35,7 @@ path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/d
 
 ######### fixme: change this before you run the code! ###########
 
-my_path <- path_bella
+my_path <- path_lillian
 ```
 
 ## Beyond Global Warming
@@ -689,5 +689,7 @@ https://data.giss.nasa.gov/gistemp/. *file in repo*
 - Economic Analysis and Policy Division (EAPD) of UN DESA. “World Economic Situation and Prospects.” Department of Economic and Social Affairs (DESA), United Nations, 2020, https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/WESP2020_Annex.pdf.
 
 - Guha-Sapir, D. “EM-DAT, CRED / UCLouvain". Brussels, Belgium. https://www.emdat.be. *file in repo*
+
+- Arel-Bundock, Vincent, Nils Enevoldsen, and CJ Yetman, (2018). countrycode: An R package to convert country names and country codes. Journal of Open Source Software, 3(28), 848, https://doi.org/10.21105/joss.00848
 
 

@@ -136,7 +136,7 @@ PM25_1990_leaflet <- leaflet(data = world_leaflet)%>%
                              " µg / m<sup>3</sup><br>"))%>%
   addLegend(pal = pal1990, values = ~Y1990, 
             opacity = 0.7, 
-            title = "PM 2.5 Measure in 1990",
+            title = "Exposure to PM2.5 in 1990 (µg / m<sup>3</sup>)",
             position = "bottomright")
 
 
@@ -166,7 +166,7 @@ PM25_2017_leaflet <- leaflet(data = world_leaflet)%>%
                              " µg / m<sup>3</sup><br>"))%>%
   addLegend(pal = pal2017, values = ~Y2017, 
             opacity = 0.7, 
-            title = "PM 2.5 Measure in 2017",
+            title = "Exposure to PM2.5 in 2017 (µg / m<sup>3</sup>)",
             position = "bottomright")
 
 PM25_change_leaflet <- leaflet(data = world_leaflet)%>%
@@ -194,7 +194,7 @@ PM25_change_leaflet <- leaflet(data = world_leaflet)%>%
                              " µg / m<sup>3</sup><br>"))%>%
   addLegend(pal = palchange, values = ~change, 
             opacity = 0.7, 
-            title = "Change in PM 2.5 Meausre from 1990 to 2017",
+            title = "Change in Exposure to PM 2.5 <br> from 1990 to 2017 (µg / m<sup>3</sup>)",
             position = "bottomright")
 ```
 
@@ -290,7 +290,7 @@ DALY_2017_leaflet <- leaflet(data = world_leaflet_DALY)%>%
                              " per 1K <br>"))%>%
   addLegend(pal = pal2017_2, values = ~Y2017, 
             opacity = 0.7, 
-            title = "DALY scores in 2017",
+            title = "DALY in 2017",
             position = "bottomright")
 
 #CHANGE from 1990 to 2017
@@ -308,7 +308,7 @@ DALY_change_leaflet <- leaflet(data = world_leaflet_DALY)%>%
                                            dashArray = "",
                                            fillOpacity = 0.7,
                                             bringToFront = TRUE),
-              label = sprintf("<strong>%s</strong><br/>%g units",
+              label = sprintf("<strong>%s</strong><br/>%g years per 1K inhabitants",
                               world_leaflet_DALY$country, world_leaflet_DALY$change)%>% 
                 lapply(htmltools::HTML),
               labelOptions = labelOptions(style = list("font-weight" = "normal",
@@ -316,12 +316,12 @@ DALY_change_leaflet <- leaflet(data = world_leaflet_DALY)%>%
                                           textsize = "12px",
                                           direction = "auto"),
               popup = paste0("Country: ", world_leaflet_DALY$country, "<br>",
-                             "DALY Score: ",
+                             "DALY: ",
                              round(world_leaflet_DALY$change, 3), 
-                             " per 1K <br>")) %>%
+                             " years per 1K inhabitants <br>")) %>%
    addLegend(pal = palchange2, values = ~change, 
             opacity = 0.7, 
-             title = "Change in DALY scores",
+             title = "Change in DALY",
              position = "bottomright")
 ```
 
@@ -359,7 +359,7 @@ g <- ggplot(data_joined, aes(PM25exposure , DALY, color = country))+
   theme(
         rect = element_rect(fill = "transparent")
       )+
-  labs(title = 'Year: {round(frame_time, 0)}', x = 'PM 2.5', y = 'DALY per 1K')+
+  labs(title = 'Year: {round(frame_time, 0)}', x = 'Expusure to PM 2.5 (µg / m<sup>3</sup>)', y = 'DALY per 1K Inhabitants (years)')+
   transition_time(year)+
   ease_aes('linear')
 ```
@@ -393,7 +393,7 @@ gdaly <- ggplotly(ggplot(data = data_joined, mapping = aes(x = year, y = DALY, c
     geom_line() +
   scale_y_continuous(trans = "log10")+
     labs(
-      title = "Disability-Adjusted Life (DALY) Year per 1K inhabitants",
+      title = "Disability-Adjusted Life (DALY) Years per 1K inhabitants",
       subtitle = "1990 to 2017",
       y = "DALY (Years)",
       x = "Year")+

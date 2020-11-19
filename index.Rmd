@@ -35,7 +35,7 @@ path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/d
 
 ######### fixme: change this before you run the code! ###########
 
-my_path <- path_lillian
+my_path <- path_bella
 ```
 
 ## Beyond Global Warming
@@ -79,6 +79,8 @@ The concentration level to which a typical resident is exposed throughout a year
 Our measure of air quality is **exposure to ambient particulate matter (PM2.5)**, a type of air pollutants. In particular, our variable indicates the mean population exposure to outdoor PM2.5, calculated as the mean annual outdoor PM2.5 concentration weighted by population living in the relevant area, that is, the concentration level, expressed in ug/m^3^ to which a typical resident is exposed throughout a year. 
 
 We then chose to look at morbidity as our measure of people’s health affected by air quality. Specifically, this variable measures the **disability-adjusted life years (DALY)**, which are calculated as the number of years lost due to exposure to environmental-related risks, expressed in absolute value, per 1000 inhabitants. DALYs are defined as the sum of years of potential life lost due to premature mortality and the years of productive life lost. Both the exposure to PM2.5 and DALY data were collected and released by the OECD; the details of the methods can be found at the end of the report. 
+
+> Given the information in the overview, we hypothesized that while the changes in exposure to PM2.5 and DALY are positively correlated, these changes will most likely be indicative of the ongoing climate change and global warming. That is, the air quality would have worsened over the years. 
 
 ## Investigation on Air Quality through Leaflets
 
@@ -334,9 +336,11 @@ However, a similar concern arises as before: though we are effectively showing t
 DALY_change_leaflet
 ```
 
-Now, taking a few steps back to the original question we are trying to answer, notice that the two maps showing the change in PM2.5 and DALY look quite similar at a first glance. There are countries that show an opposing trend, where there is an increase in PM2.5 exposure and a decrease in DALY, and vice versa. This might be accounted by other factors that might not have been reflected in this study, such as noticeable improvements in medical technology that might have contributed to a decrease in DALY despite the worsened air quality. However, for the most part, the countries that have a positive change in PM2.5 also experience a positive change in DALY, so we can reasonably conclude that PM2.5, an environmental factor, is evident in and consistent with DALY, a mortality measure.
+Now, taking a few steps back to the original question we are trying to answer, notice that the two maps showing the change in PM2.5 and DALY look quite similar at a first glance. There are countries that show an opposing trend, where there is an increase in PM2.5 exposure and a decrease in DALY, and vice versa. This is not what we had hypothesized, and contrary to our background knowledge in climate change, our study shows that the air quality has actually improved over time since 1990 to 2017. This might be accounted by other factors that might not have been reflected in this study, such as noticeable improvements in medical technology that might have contributed to a decrease in DALY despite the worsened air quality. However, for the most part, the countries that have a positive change in PM2.5 also experience a positive change in DALY, so we can reasonably conclude that PM2.5, an environmental factor, is evident in and consistent with DALY, a mortality measure. 
 
-## The relationship between PM2.5 and DALY through a scatterplot
+## Supplementary Resources
+
+### The relationship between PM2.5 and DALY through a scatterplot
 
 The choropleths have sufficiently answered the question we wished to answer. However, a curious data scientist (like ourselves) might want to see more, perhaps what might be going on in between the two given years of 1990 and 2018, and whether the relationship between PM2.5 and DALY we have established earlier still holds true, if we were to take a look at a different time frame.
 
@@ -365,7 +369,7 @@ animate(g, duration = 20, fps = 20, width = 400, height = 400, renderer = gifski
 #anim_save("PM2.5 vs. DALY.gif")
 ```
 
-## What actually happened in between the years 1990 and 2017? 
+### What actually happened in between the years 1990 and 2017 (Line Plot)? 
 
 Now, with those in mind, an even more curious data scientist might want to see how either PM2.5 and DALY change for a particular country over a period of time that is not established through the choropleths. That is, a line graph or a similar sort where the x axis represents the year and the y axis represents either PM2.5 or DALY. This would be something that would be achieved most effectively and efficiently through shiny app’s interactivity: there are approximately 200 countries in the world (and in this data) and to display all of these countries at once would be unconventional. However, instead of making an extensive shiny app, we created a sample set of two line graphs that each show PM2.5 and DALY change over the years for a set of 10 randomly selected countries(using `runif()`). We had done this because we did not want to put an equal or greater amount of coding efforts to something that is not the main tool to be used to achieve the original purpose, but still leave room for further investigation. 
 
@@ -389,9 +393,9 @@ gdaly <- ggplotly(ggplot(data = data_joined, mapping = aes(x = year, y = DALY, c
     geom_line() +
   scale_y_continuous(trans = "log10")+
     labs(
-      title = "Disability-Adjusted Life (DALY) Year per 1K",
+      title = "Disability-Adjusted Life (DALY) Year per 1K inhabitants",
       subtitle = "1990 to 2017",
-      y = "DALY",
+      y = "DALY (Years)",
       x = "Year")+
     theme_classic())
 
@@ -401,7 +405,7 @@ gexposure <- ggplotly(ggplot(data = data_joined, mapping = aes(x = year, y = PM2
      labs(
        title = "Population exposure to PM 2.5",
        subtitle = "1990 to 2017",
-       y = "Population exposure ",
+       y = "Exposure to PM2.5 (m<sup>3</sup>) ",
        x = "Year")+
     theme_classic())
 ```

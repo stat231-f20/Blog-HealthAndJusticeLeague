@@ -1,5 +1,5 @@
 ---
-title: "Considering the Ripple Effects of Climate Change"
+title: "Considering the Ripple Effects of Climate Change On Societal Public Health"
 author: "Bella Han, Lillian Kim, Mythili Subbanna"
 date: "November 17, 2020"
 output: 
@@ -35,10 +35,10 @@ path_lillian <- "C:/Users/Yesuel Kim/Documents/Git/Blog-HealthAndJusticeLeague/d
 
 ######### fixme: change this before you run the code! ###########
 
-my_path <- path_lillian
+my_path <- path_mythili
 ```
 
-## Beyond Global Warming
+## How Does Climate Change Relate to the Displacement, Life Expectancy, and Mortality of People Worldwide?
 
 Social justice, by definition, considers justice in terms of rights, opportunities, and privileges within a society, on a regional, national, or international level. The idea behind social justice is that everyone has an innate value as human beings, and no person’s value is more or less than anyone else’s. These rights and opportunities include seemingly basic necessities of a person today, such as access to healthcare, food, and safe spaces to live.
 
@@ -67,7 +67,7 @@ Given this information, we wondered whether climate change could be considered a
 3. How has the impact of natural disasters changed over time? How many people have been affected by these climate disasters?
 
 
-# Are environmental issues evident in epidemiological prevalence data or mortality data? (BH)
+# Air Pollution Exposure and Life Expectancy Changes (BH)
 
 We are often poised to think of air pollution as one of the most apparent environmental issues around the world today, as we hear about the emission of pollutants and chemicals from various technology and industry.  Therefore, we chose to investigate air quality and whether its impact is evident in global health. 
 
@@ -210,7 +210,7 @@ These leaflets are effectively mapping the PM2.5 level on a global scale and let
 PM25_change_leaflet
 ```
 
-## Investigation of Mortality (DALY) through Leaflets
+## Investigation of Change in Life Expectancy (DALY) through Leaflets
 
 Similar steps were taken for the next set of choropleths focusing on the disability-adjusted life years in 1990 and 2017 around the world. Just to interpret a few observations in context, we see that people in Brazil in 1990 lost 5.77 years of potential life due to exposure to ambient PM2.5 per 1000 inhabitants, and those in Russia in 2017 lost 15.681 years. Comparing these two choropleths, we see in general a decrease in the DALY score around the world, and this trend is most apparent in countries in Eastern Europe and Africa.
 
@@ -419,9 +419,11 @@ gdaly
 
 As seen in our analysis using the choropleths, we had found that in general there seems to be a direct relationship between the change in air quality and mortality across countries. That is, an environmental factor can be evident in, and thus have directly impacted, the quality of life of the people. This being said, we wondered narrow down our focus to investigate whether an environmental factor could *disproportionately* affect *countries around the world*. Therefore, in the next section of this blog post, we will aim to answer the following question: **"Are developing countries affected differently than developed countries by climate disasters?"**
 
-# Do climate change ripple effects (measured via infant and maternal mortality) vary from region-to-region? (MS)
+# Climate Disaster Frequency and Infant/Maternal Mortality (MS)
 
-When we think of climate change, and climate disasters, maternal and infant mortality are probably not the first phrases we associate with it. However, it turns out that there is a logical association between the two. This question was inspired by the Barbier, et. al. 2018 paper on *The Impacts of Climate Change on the Poor in Disadvantaged Regions*. The research paper described two categories for areas in developing countries: less-favored agricultural areas (LFAAs) and low-elevation coastal zones (LECZs). Not surprisingly, the LFAAs can be affected by changes to the terrain, soil, and overall precipitation, while LECZs, due to their coastal location, are more vulnerable to rises in the sea level, tropical storms, etc. Now we can see more clearly that climate disasters, such as flooding, storms, droughts, etc., could disproportionately affect rural areas in developing countries compared to developed countries. Changes in climate, looked at here via climate disaster occurrence, pose threats to both the agricultural productivity and the resources of such developing communities. A secondary effect of such rural poverty is that on **infant and maternal mortality rates.**
+When we think of climate change, and climate disasters, maternal and infant mortality are probably not the first phrases we associate with it. However, it turns out that there is a logical association between the two. This question was inspired by the Barbier, et. al. 2018 paper on [*The Impacts of Climate Change on the Poor in Disadvantaged Regions*](https://sustainabledevelopment.un.org/content/documents/26929Barbier_The_Impacts_of_Climate_Change_on_the_Poor_in_Disadvantaged_Regions_Barbier_and_Hochard_REEP_2018.pdf). The research paper described two categories for areas in developing countries: less-favored agricultural areas (LFAAs) and low-elevation coastal zones (LECZs). Not surprisingly, the LFAAs can be affected by changes to the terrain, soil, and overall precipitation, while LECZs, due to their coastal location, are more vulnerable to rises in the sea level, tropical storms, etc. Now we can see more clearly that climate disasters, such as flooding, storms, droughts, etc., could disproportionately affect rural areas in developing countries compared to developed countries. Changes in climate, looked at here via climate disaster occurrence, pose threats to both the agricultural productivity and the resources of such developing communities. A secondary effect of such rural poverty is that on **infant and maternal mortality rates.**
+
+Note the hyperlink above for *The Impacts of Climate Change on the Poor in Disadvantaged Regions* is not the same link I used to inform the text in my tab. It is the same article, but the original source I used has now changed access, thus, I provided a link to a PDF version of the same research article that is still openly accessible to all!
 
 ## Infant and Maternal Mortality from 1980-2018
 
@@ -433,7 +435,7 @@ Deaths per 1,000 live births | Deaths per 100,000 live births
 
 In the figures below, I used the `kmeans()` function to cluster the data points of 36 countries. These figures show standardized values for the infant and maternal mortality values of 36 countries and clusters them so as to minimize within-cluster variation. We can take the clusters on the higher end of both scales to be developing countries, on the lower end to be developed, and clusters in the middle to represent countries along the spectrum of development. Each country appears as one point whose position represents its average infant/maternal mortality standardized value (over the decade).
 
-We can see that without looking at specific countries, there is a trend of decreasing infant and maternal mortality. In the 1980s, 23 countries were in our self-labeled "Developing" cluster (between standardized values of around -1 to 0), while in the 2010s, 31 countries are in the "Developing" cluster (note the range has increased from -1 to 1).
+When looking at the original dataset, we can see that without looking at specific countries, there is a trend of decreasing infant and maternal mortality (compare country mortality rates in 1980 to mortality rates in 2018). At first this was surprising, as we expected developed/developing countries to show stagnancy or worsening numbers due to the prevalence and increasing intensity of climate disasters. However, it should be noted that even in the 1980s, the available medical technology was vastly inferior to that we have today, in any country. Thus, the overall decreasing trend is due to improvements in surgical technology, medical infrastructure, hygiene, etc. that has come in the 21st century.
 
 
 ```{r, warning = FALSE, message = FALSE}
@@ -507,7 +509,7 @@ ggplot(data = cluster2010s, aes(x = avginfmort_std, y = avmatmort_std)) +
 ```
 
 
-What's interesting here is that although we would expect a stark change in infant/maternal mortality values over time, we see more nuanced changes. The "Developing" cluster increases in size and range of values covered, while the "Middle" cluster is much more distinct and widespread than in the 1980s. We also still have one country (Mexico) that seemingly hasn't changed in terms of standardized values. It is likely that from 1980s to the 2010s, the mean infant and maternal mortality rates greatly improved, but the distribution and distinction between various country groupings (such as "Developed", "Middle", and "Developing") has stayed fairly consistent. If infant mortality and maternal mortality all improved to the same standard, we would expect to see all countries in the "Developed" cluster. However, instead we see a larger "Developed" cluster, and blatant countries that have been left behind so to say, in terms of their infant and maternal mortality rates. All countries displayed reduction in infant/maternal mortality rates from the 1980s to 2010s. This can be better seen when looking at yearly values in the data set (refer to OECD citation in Works Cited Tab). However, from these clusters alone, we can draw our first conclusion, that not all countries have reached the same infant/maternal mortality rates. **There is still a disparity in mortality rates for different countries.**
+In the 1980s, 23 countries were in our self-labeled "Developing" cluster (between standardized values of around -1 to 0), while in the 2010s, 31 countries are in the "Developing" cluster (note the range has increased from -1 to 1). What's interesting here is that although we would expect a stark change in infant/maternal mortality values over time, we see more nuanced changes. The "Developing" cluster increases in size and range of values covered, while the "Middle" cluster is much more distinct and widespread than in the 1980s. We also still have one country (Mexico) that seemingly hasn't changed in terms of standardized values. It is likely that from 1980s to the 2010s, the mean infant and maternal mortality rates greatly improved, but the distribution and distinction between various country groupings (such as "Developed", "Middle", and "Developing") has stayed fairly consistent. If infant mortality and maternal mortality all improved to the same standard, we would expect to see all countries in the "Developed" cluster. However, instead we see a larger "Developed" cluster, and blatant countries that have been left behind so to say, in terms of their infant and maternal mortality rates. All countries displayed reduction in infant/maternal mortality rates from the 1980s to 2010s. This can be better seen when looking at yearly values in the data set (refer to OECD citation in Works Cited Tab). However, from these clusters alone, we can draw our first conclusion, that not all countries have reached the same infant/maternal mortality rates. **There is still a disparity in mortality rates for different countries.**
 
 Note that the data we used only had information on countries in North and South America, Australia, and parts of Europe. Many of the more predominant developing countries and agriculturally-based societies, such as in Africa and South/Southeast Asia did not have data.
 
@@ -567,7 +569,7 @@ Part of this might have to do with geography. Different disasters bear more weig
 
 So what can be done from here on out, i.e. how can we improve our investigation? Firstly, one should look at infant/maternal mortality in more detail. This might involve looking at data for specific rural areas rather than country wide data (since regions may vary greatly in community public health). Instead of a looming factor such as natural disaster frequency, one could look at soil quality data. Events such as droughts, wildfires, floods, and storms more directly affect soil quality. So if we looked at the extent to which soil quality is affected natural disasters, the agricultural productivity of certain rural regions, and the infant/maternal mortality statistics of those areas, we could answer our question in a more focused way. That is, we could answer in a more focused way, whether the ripple effects of climate disasters are seen in community public health as measured by infant/maternal mortality.
 
-# How have the frequency and impact of Climate Disasters changed over time? (LK)
+# Climate Disaster Frequency and Displacement of People (LK)
 
 Lastly, we decided to investigate how the impacts of climate/natural disasters have changed over time. Specifically, how has the number of people killed, injured, affected, and displaced due to these disasters changed?    
 

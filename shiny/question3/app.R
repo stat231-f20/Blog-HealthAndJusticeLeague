@@ -118,7 +118,9 @@ server <- function(input,output){
   output$bar1 <- renderPlot({
     ggplot(data = use_data1_q3(), aes_string(x = "Year", y = input$mort)) +
       geom_bar(position = "dodge", stat = "identity", aes_string(fill = "isocode")) +
-      labs(x = "Year", y = "Net Change in Mortality Per Month"
+      labs(x = "Year"
+           , y = case_when(input$mort == "NetChange_Infant" ~ "Net Change in Mortality Per Month \n (deaths per 1,000 live births)"
+                           , input$mort == "NetChange_Maternal" ~ "Net Change in Mortality Per Month \n (deaths per 100,000 live births)")
            , title = "Infant and Maternal Mortality Worldwide from 1980-2018") + 
       theme_bw() + 
       theme(legend.position="bottom", plot.title = element_text(hjust = 0.5)
